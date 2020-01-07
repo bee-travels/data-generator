@@ -1,11 +1,12 @@
 import json
 import uuid
 import ibm_boto3
+
 from ibm_botocore.client import Config
 from ibm_botocore.exceptions import ClientError
 
 
-# Constants for IBM COS values
+# Constants for IBM cos values
 # Current list avaiable at https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints
 COS_API_KEY_ID = "COS_API_KEY_ID"
 # eg "W00YiRnLW4a3fTjMB-odB-2ySfTrFBIQQWanc--P3byk"
@@ -16,8 +17,7 @@ COS_ENDPOINT = "COS_ENDPOINT"
 
 def load_config():
     with open('config.json') as json_data:
-        data = json.load(json_data)
-    return data
+        return json.load(json_data)
 
 data = load_config()
 
@@ -34,19 +34,19 @@ cos = ibm_boto3.resource("s3",
 
 
 def create_bucket(bucket_name):
-    COS_BUCKET_LOCATION = "us-standard"
-    print("Creating new bucket: {0}".format(bucket_name))
+    print("Creating bucket: {0}".format(bucket_name))
     try:
-        cos.Bucket(bucket_name).create(
+        cos.create_bucket(
+            Bucket=bucket_name,
             CreateBucketConfiguration={
-                "LocationConstraint": COS_BUCKET_LOCATION
+                "LocationConstraint": "us-standard"
             }
         )
-        print("Bucket: {0} created!".format(bucket_name))
     except ClientError as be:
-        print("CLIENT ERROR: {0}\n".format(be))
+        print("Client ERROR: {0}\n".format(be))
     except Exception as e:
-        print("Unable to create bucket: {0}".format(e))
+        print("Unable to delete item: {0}".format(e))
+
 
 def delete_item(bucket_name, item_name):
     print("Deleting item: {0}".format(item_name))
@@ -54,19 +54,20 @@ def delete_item(bucket_name, item_name):
         cos.Object(bucket_name, item_name).delete()
         print("Item: {0} deleted!".format(item_name))
     except ClientError as be:
-        print("CLIENT ERROR: {0}\n".format(be))
+        print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to delete item: {0}".format(e))
 
-def create_text_file(bucket_name, item_name, file_text):
-    print("Creating new item: {0}".format(item_name))
+def create_file(bucket_name, file_path, file_name):
+    file = open(file_path, 'rb')
+    print("Creating new item: {0}".format(file_name))
     try:
-        cos.Object(bucket_name, item_name).put(
-            Body=file_text, ACL="public-read"
+        cos.Object(bucket_name, file_name).put(
+            # ACL="public-read",
+            Body=file.read()
         )
-        print("Item: {0} created!".format(item_name))
     except ClientError as be:
-        print("CLIENT ERROR: {0}\n".format(be))
+        print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to create text file: {0}".format(e))
 
@@ -82,7 +83,7 @@ def get_buckets():
             bucket_list.append(bucket.name)
         return bucket_list
     except ClientError as be:
-        print("CLIENT ERROR: {0}\n".format(be))
+        print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to retrieve list buckets: {0}".format(e))
 
@@ -95,63 +96,30 @@ def get_bucket_contents(bucket_name):
             file_list.append(file.key)
         return file_list
     except ClientError as be:
-        print("CLIENT ERROR: {0}\n".format(be))
+        print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to retrieve bucket contents: {0}".format(e))
 
 def get_item(bucket_name, item_name):
     print("Retrieving item from bucket: {0}, key: {1}".format(bucket_name, item_name))
     try:
-        file = cos.Object(bucket_name, item_name).get()
-        print(file)
-        print("File Contents: {0}".format(file["Body"].read()))
+        cos.Object(bucket_name, item_name).download_file("download-"+item_name)
     except ClientError as be:
-        print("CLIENT ERROR: {0}\n".format(be))
+        print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to retrieve file contents: {0}".format(e))
 
 def delete_bucket(bucket_name):
     print("Deleting bucket: {0}".format(bucket_name))
     try:
-        files = get_bucket_contents(bucket_name)
-        for file in files:
-            delete_item(bucket_name, file)
-        cos.Bucket(bucket_name).delete()
-        print("Bucket: {0} deleted!".format(bucket_name))
+        cos.delete_bucket(
+            Bucket=bucket_name
+        )
     except ClientError as be:
-        print("CLIENT ERROR: {0}\n".format(be))
+        print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to delete bucket: {0}".format(e))
 
-def multi_part_upload(bucket_name, item_name, file_path):
-    try:
-        print("Starting file transfer for {0} to bucket: {1}\n".format(item_name, bucket_name))
-        # set 5 MB chunks
-        part_size = 1024 * 1024 * 5
-
-        # set threadhold to 15 MB
-        file_threshold = 1024 * 1024 * 15
-
-        # set the transfer threshold and chunk size
-        transfer_config = ibm_boto3.s3.transfer.TransferConfig(
-            multipart_threshold=file_threshold,
-            multipart_chunksize=part_size
-        )
-
-        # the upload_fileobj method will automatically execute a multi-part upload
-        # in 5 MB chunks for all files over 15 MB
-        with open(file_path, "rb") as file_data:
-            cos.Object(bucket_name, item_name).upload_fileobj(
-                Fileobj=file_data,
-                Config=transfer_config,
-                ACL="public-read"
-            )
-
-        print("Transfer for {0} Complete!\n".format(item_name))
-    except ClientError as be:
-        print("CLIENT ERROR: {0}\n".format(be))
-    except Exception as e:
-        print("Unable to complete multi-part upload: {0}".format(e))
 
 def log_error(msg):
     print("UNKNOWN ERROR: {0}\n".format(msg))
@@ -161,10 +129,27 @@ def get_uuid():
 
 def main():
     try:
-        # new_bucket_name = "py.bucket." + get_uuid()
-        # new_text_file_name = "py_file_" + get_uuid() + ".txt"
-        # new_text_file_contents = "This is a test file from Python code sample!!!"
-        #
+        bucket_name = "mofi-bee-travels-hotels"
+
+
+        create_bucket(bucket_name)
+
+        # create_file(bucket_name,
+        #             "./card.png",
+        #             "card.png")
+
+        # get_url(bucket_name, "card.png")
+        # delete_bucket(bucket_name)
+
+        # get_item(bucket_name, "card.png")
+
+        # for filename in os.listdir(os.getcwd()+"/hotel-images"):
+        #     print(filename)
+
+        # with open(os.getcwd()+"/hotel-images/55e9d54b4a5bb108f5d08460962b347d173cdbe24e50744e762f72d2944ec5_1280.jpg") as file:
+        #     create_file(bucket_name, "image.jpg", file)
+
+
         # # create a new bucket
         # create_bucket(new_bucket_name)
         #
@@ -175,10 +160,12 @@ def main():
         # create_text_file(new_bucket_name, new_text_file_name, new_text_file_contents)
 
         # get the list of buckets
-        buckets = get_buckets()
-        for bucket in buckets:
-            delete_bucket(bucket)
+        # buckets = get_buckets()
+        # for bucket in buckets:
+        #     delete_bucket(bucket)
 
+
+        # multi_part_upload()
 
         # # get the list of files from the new bucket
         # get_bucket_contents(new_bucket_name)
