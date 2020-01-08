@@ -47,19 +47,37 @@ def get_price_multiplier(hotel_type):
         return 2
 
 
-def get_hotel(hotels, hotel_type):
+def get_image_urls_subset(image_urls):
+    indexes = set()
+    urls = []
+    count = random.randint(9, 12)
+    for i in range(count):
+        indexes.add(random.randint(0, len(image_urls)-1))
+    for index in list(indexes):
+        urls.append(image_urls[index])
+    return urls
+
+
+def get_hotel(hotels, hotel_type, image_urls):
     hotel = {}
     superchain = random.choice(list(hotels[hotel_type].keys()))
     hotel["superchain"] = superchain
     hotel["name"] = random.choice(hotels[hotel_type][superchain])
     hotel["type"] = hotel_type
     hotel["cost"] = get_price_multiplier(hotel_type) * (random.uniform(1, 1.5))
+    hotel["images"] = get_image_urls_subset(image_urls)
     return hotel
 
 
 hotel_list = generate_list_from_file("hotel_names.txt")
 superchain = generate_list_from_file("superchain_names.txt")
+image_urls = generate_list_from_file("urls.txt")
+
+# print(get_image_urls_subset(image_urls))
+
 hotels = get_hotels(hotel_list, superchain)
 
+for i in range(10):
+    print(json.dumps(get_hotel(hotels, "comfort", image_urls), indent=4))
 
-print(json.dumps(get_hotel(hotels, "comfort"), indent=4))
+

@@ -1,23 +1,24 @@
 import json
+import os
 import uuid
 import ibm_boto3
 
 from ibm_botocore.client import Config
 from ibm_botocore.exceptions import ClientError
 
-
 # Constants for IBM cos values
-# Current list avaiable at https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints
+# Current list available at https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints
 COS_API_KEY_ID = "COS_API_KEY_ID"
 # eg "W00YiRnLW4a3fTjMB-odB-2ySfTrFBIQQWanc--P3byk"
 COS_RESOURCE_CRN = "COS_RESOURCE_CRN"
 COS_AUTH_ENDPOINT = "COS_AUTH_ENDPOINT"
-# eg "crn:v1:bluemix:public:cloud-object-storage:global:a/3bf0d9003abfb5d29761c3e97696b71c:d6f04d83-6c4f-4a62-a165-696756d63903::"
 COS_ENDPOINT = "COS_ENDPOINT"
+
 
 def load_config():
     with open('config.json') as json_data:
         return json.load(json_data)
+
 
 data = load_config()
 
@@ -31,10 +32,12 @@ cos = ibm_boto3.resource("s3",
                          )
 
 
-
-
 def create_bucket(bucket_name):
     print("Creating bucket: {0}".format(bucket_name))
+    buckets = get_buckets()
+    if bucket_name in buckets:
+        print("bucket already exists")
+        return
     try:
         cos.create_bucket(
             Bucket=bucket_name,
@@ -58,12 +61,13 @@ def delete_item(bucket_name, item_name):
     except Exception as e:
         print("Unable to delete item: {0}".format(e))
 
+
 def create_file(bucket_name, file_path, file_name):
     file = open(file_path, 'rb')
     print("Creating new item: {0}".format(file_name))
     try:
         cos.Object(bucket_name, file_name).put(
-            # ACL="public-read",
+            ACL="public-read",
             Body=file.read()
         )
     except ClientError as be:
@@ -71,8 +75,10 @@ def create_file(bucket_name, file_path, file_name):
     except Exception as e:
         print("Unable to create text file: {0}".format(e))
 
+
 def get_url(bucket_name, item_name):
-    return data[COS_ENDPOINT]+"/"+bucket_name+"/"+item_name
+    return data[COS_ENDPOINT] + "/" + bucket_name + "/" + item_name
+
 
 def get_buckets():
     print("Retrieving list of buckets")
@@ -87,8 +93,10 @@ def get_buckets():
     except Exception as e:
         print("Unable to retrieve list buckets: {0}".format(e))
 
+
 def get_bucket_contents(bucket_name):
     print("Retrieving bucket contents from: {0}".format(bucket_name))
+
     try:
         files = cos.Bucket(bucket_name).objects.all()
         file_list = []
@@ -100,82 +108,85 @@ def get_bucket_contents(bucket_name):
     except Exception as e:
         print("Unable to retrieve bucket contents: {0}".format(e))
 
+
 def get_item(bucket_name, item_name):
     print("Retrieving item from bucket: {0}, key: {1}".format(bucket_name, item_name))
     try:
-        cos.Object(bucket_name, item_name).download_file("download-"+item_name)
+        cos.Object(bucket_name, item_name).download_file("download-" + item_name)
     except ClientError as be:
         print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to retrieve file contents: {0}".format(e))
 
+
 def delete_bucket(bucket_name):
     print("Deleting bucket: {0}".format(bucket_name))
     try:
-        cos.delete_bucket(
-            Bucket=bucket_name
-        )
+        items = get_bucket_contents(bucket_name)
+        for item in items:
+            delete_item(bucket_name, item)
+        cos.Bucket(bucket_name).delete()
+        return True
     except ClientError as be:
         print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to delete bucket: {0}".format(e))
+    return False
 
 
 def log_error(msg):
     print("UNKNOWN ERROR: {0}\n".format(msg))
 
+
 def get_uuid():
     return str(uuid.uuid4().hex)
 
+
+def get_all_file_path(folder_path):
+    files = []
+    for filename in os.listdir("./"+folder_path):
+        files.append("./"+folder_path+"/"+filename)
+    return files
+
+
+def upload_all_files(bucket_name,folder_path):
+    files = get_all_file_path(folder_path)
+    file_name = "hotel-image-{}"
+    count = 0
+    for file_path in files:
+        count += 1
+        file_name = f'hotel-image-{count:04}.jpg'
+        create_file(bucket_name, file_path, file_name)
+
+
+def get_urls(bucket_name):
+    files = get_bucket_contents(bucket_name)
+    urls = []
+    for file in files:
+        urls.append(get_url(bucket_name, file))
+    return urls
+
+
+def write_array_to_file(arr, file_name):
+    f = open(file_name, "w+")
+    for line in arr:
+        f.write("%s\n" % line)
+    f.close()
+
+
 def main():
     try:
-        bucket_name = "mofi-bee-travels-hotels"
-
-
+        bucket_name = "bee-travels-hotels"
         create_bucket(bucket_name)
 
-        # create_file(bucket_name,
-        #             "./card.png",
-        #             "card.png")
+        upload_all_files(bucket_name, "hotel-images")
 
-        # get_url(bucket_name, "card.png")
-        # delete_bucket(bucket_name)
-
-        # get_item(bucket_name, "card.png")
-
-        # for filename in os.listdir(os.getcwd()+"/hotel-images"):
-        #     print(filename)
-
-        # with open(os.getcwd()+"/hotel-images/55e9d54b4a5bb108f5d08460962b347d173cdbe24e50744e762f72d2944ec5_1280.jpg") as file:
-        #     create_file(bucket_name, "image.jpg", file)
-
-
-        # # create a new bucket
-        # create_bucket(new_bucket_name)
-        #
-        # # get the list of buckets
-        # print(get_buckets())
-
-        # create a new text file
-        # create_text_file(new_bucket_name, new_text_file_name, new_text_file_contents)
-
-        # get the list of buckets
-        # buckets = get_buckets()
-        # for bucket in buckets:
-        #     delete_bucket(bucket)
-
-
-        # multi_part_upload()
-
-        # # get the list of files from the new bucket
-        # get_bucket_contents(new_bucket_name)
-        #
-        # # get the text file contents
-        # get_item(new_bucket_name, new_text_file_name)
-
+        urls = get_urls(bucket_name)
+        write_array_to_file(urls, "urls.txt")
 
     except Exception as e:
         log_error("Main Program Error: {0}".format(e))
+
 
 if __name__ == "__main__":
     main()
