@@ -8,7 +8,7 @@ from ibm_botocore.exceptions import ClientError
 
 # Constants for IBM cos values
 # Current list available at https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints
-COS_API_KEY_ID = "apikey"
+COS_API_KEY_ID = "COS_API_KEY_ID"
 # eg "W00YiRnLW4a3fTjMB-odB-2ySfTrFBIQQWanc--P3byk"
 COS_RESOURCE_CRN = "COS_RESOURCE_CRN"
 COS_AUTH_ENDPOINT = "COS_AUTH_ENDPOINT"
@@ -107,12 +107,14 @@ def get_bucket_contents(bucket_name):
         print("Client ERROR: {0}\n".format(be))
     except Exception as e:
         print("Unable to retrieve bucket contents: {0}".format(e))
-
+    print("done!")
 
 def get_item(bucket_name, item_name):
-    print("Retrieving item from bucket: {0}, key: {1}".format(bucket_name, item_name))
+    print("Retrieving item from bucket: {0}, key: {1}".format(
+        bucket_name, item_name))
     try:
-        cos.Object(bucket_name, item_name).download_file("download-" + item_name)
+        cos.Object(bucket_name, item_name).download_file(
+            "download-" + item_name)
     except ClientError as be:
         print("Client ERROR: {0}\n".format(be))
     except Exception as e:
@@ -149,14 +151,16 @@ def get_all_file_path(folder_path):
     return files
 
 
-def upload_all_files(bucket_name,folder_path):
-    files = get_all_file_path(folder_path)
-    file_name = "hotel-image-{}"
-    count = 0
-    for file_path in files:
-        count += 1
-        file_name = f'hotel-image-{count:04}.jpg'
-        create_file(bucket_name, file_path, file_name)
+def get_all_file(folder_path):
+    return os.listdir("./" + folder_path)
+
+
+def upload_all_files(bucket_name, folder_path):
+    file_names = get_all_file(folder_path)
+    file_paths = get_all_file_path(folder_path)
+
+    for i in range(len(file_names)):
+        create_file(bucket_name, file_paths[i], file_names[i])
 
 
 def get_urls(bucket_name):
@@ -174,16 +178,35 @@ def write_array_to_file(arr, file_name):
     f.close()
 
 
+def write_json_to_file(json_data, file_name):
+    print("writing json to file")
+    with open(file_name, 'w', encoding='utf-8') as f:
+        json.dump(json_data, f, ensure_ascii=True, indent=2)
+
+
+def match_url_to_file(urls, folder_path):
+    data = {}
+    files = get_all_file(folder_path)
+    for file in files:
+        for url in urls:
+            if file in url:
+                data[file] = url
+                break
+    return data
+
 def main():
     try:
-        bucket_name = "bee-travels-hotels"
+        bucket_name = "bee-travels-cars"
+        folder_name = "car-images"
+        # delete_bucket(bucket_name)
         create_bucket(bucket_name)
-
-        upload_all_files(bucket_name, "hotel-images")
+        print(bucket_name)
+        upload_all_files(bucket_name, folder_name)
 
         urls = get_urls(bucket_name)
-        write_array_to_file(urls, "urls.txt")
-
+        urls_json = match_url_to_file(urls, folder_name)
+        # write_array_to_file(urls, "urls.txt")
+        write_json_to_file(urls_json, "urls.json")
     except Exception as e:
         log_error("Main Program Error: {0}".format(e))
 

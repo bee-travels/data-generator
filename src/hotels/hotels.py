@@ -13,33 +13,35 @@ def generate_data_for_destination(filename, hotels, image_urls):
     hotel_base_cost = 100
     csvfile = open(filename, "rt")
     reader = csv.reader(csvfile, delimiter=',')
-    hotel_data = {}
+    hotel_data = []
 
     for row in reader:
         cityname = row[0]
+        country = row[3]
         population = int(row[5])
         cost_of_living_index = float(row[4])
         upper_limit = random.randint(25, 35)
-        num_hotels = min(math.floor(population / 100000), upper_limit)
+        num_hotels = int(min(math.floor(population / 100000), upper_limit))
         hotels_in_city = []
         for i in range(num_hotels):
             hotels_in_city.append(
-                get_hotel(hotels=hotels,
+                get_hotel(city=cityname,
+                          country=country,
+                          hotels=hotels,
                           hotel_type=get_hotel_type(hotel_type),
                           image_urls=get_image_urls_subset(image_urls),
                           col_index=cost_of_living_index,
                           base_cost=hotel_base_cost)
             )
-        hotel_data[cityname] = hotels_in_city
+        hotel_data.extend(hotels_in_city)
 
-    write_json_to_file(hotel_data, "hotel-data.json")
-
+    return hotel_data
     csvfile.close()
 
 
 def write_json_to_file(json_data, file_name):
-    with open(file_name, "w+") as file:
-        json.dump(json_data, file)
+    with open(file_name, "w+") as f:
+        json.dump(json_data, f, ensure_ascii=True, indent=2)
 
 
 def generate_list_from_file(filename):
@@ -92,27 +94,37 @@ def get_image_urls_subset(image_urls):
     return urls
 
 
-def get_hotel(hotels, hotel_type, image_urls, col_index=1.0, base_cost=100):
+def get_hotel(city, country, hotels, hotel_type, image_urls, col_index=1.0, base_cost=100):
     # col_index is the cost of living index for each city
     hotel = {}
     superchain = random.choice(list(hotels[hotel_type].keys()))
+    hotel["city"] = city
+    hotel["country"] = country
     hotel["superchain"] = superchain
     hotel["name"] = random.choice(hotels[hotel_type][superchain])
     hotel["type"] = hotel_type
-    hotel["cost"] = math.ceil(get_price_multiplier(hotel_type) * (random.uniform(1, 1.5)) * col_index * base_cost)
+    hotel["cost"] = math.ceil(get_price_multiplier(
+        hotel_type) * (random.uniform(1, 1.5)) * col_index * base_cost)
     hotel["images"] = image_urls
     return hotel
 
 
-hotel_list = generate_list_from_file("hotel_names.txt")
-superchain = generate_list_from_file("superchain_names.txt")
-image_urls = generate_list_from_file("urls.txt")
+def main():
+    hotel_list = generate_list_from_file("hotel_names.txt")
+    superchain = generate_list_from_file("superchain_names.txt")
+    image_urls = generate_list_from_file("urls.txt")
 
-# print(get_image_urls_subset(image_urls))
+    # print(get_image_urls_subset(image_urls))
 
-hotels = get_hotels(hotel_list, superchain)
+    hotels = get_hotels(hotel_list, superchain)
 
-# for i in range(10):
-#     print(json.dumps(get_hotel(hotels, "comfort", image_urls), indent=4))
+    # for i in range(10):
+    #     print(json.dumps(get_hotel(hotels, "comfort", image_urls), indent=4))
 
-generate_data_for_destination("cities.csv", hotels, image_urls)
+    hotel_data = generate_data_for_destination(
+        "cities.csv", hotels, image_urls)
+    write_json_to_file(hotel_data, "hotel-data.json")
+
+
+if __name__ == "__main__":
+    main()
