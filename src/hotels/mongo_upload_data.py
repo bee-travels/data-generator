@@ -11,7 +11,7 @@ def populate_mongo():
     hotel_data = get_generated_data()
     hotel_info_data = get_hotel_info()
 
-    mongoHotels.beetravels.hotels.insert_one(hotel_info_data)
+    mongoHotels.beetravels.hotels.insert_one({"info": hotel_info_data})
 
     for hotel in hotel_data:
         mongoHotels.beetravels.hotels.insert_one(hotel)
