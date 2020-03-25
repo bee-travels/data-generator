@@ -27,20 +27,21 @@ def load_json(file_name):
         return json.load(json_data)
 
 
-def bulk_load_data(db, json_data):
+def bulk_load_data(db, json_data, upload_name):
+    print(upload_name)
     for data in json_data:
-        print("Inserrting data for %s, %s" % (data["city"], data["country"]))
         db.save(data)
+    print(upload_name + " completed")
 
 
 def main():
-    couch = couchdb.Server("http://127.0.0.1:5985/")
+    couch = couchdb.Server("http://admin:admin@127.0.0.1:5984/")
     hotel_db = get_db(couch, "hotel")
     hotel_data = load_json("hotel-data.json")
-    bulk_load_data(hotel_db, hotel_data)
+    bulk_load_data(hotel_db, hotel_data, "Hotel Data")
     hotel_info = load_json("hotel-info.json")
     info_db = get_db(couch, "hotel-info")
-    bulk_load_data(info_db, hotel_info)
+    bulk_load_data(info_db, hotel_info, "Hotel Info")
     # print(db.index())
     # city = {'selector': {'city': 'Durban'},
     #          'fields': ['city', 'country'],
