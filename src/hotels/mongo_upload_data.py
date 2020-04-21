@@ -1,20 +1,23 @@
 from pymongo import MongoClient
 import sys
 import json
+import os
 
-try:
-    mongoHotels = MongoClient(sys.argv[1])
-except:
-    exit("Error: Unable to connect to the database")
+def get_mongo_client():
+    try:
+        mongoHotels = MongoClient(os.environ["MONGO_CONNECTION_URL"])
+        return mongoHotels
+    except:
+        exit("Error: Unable to connect to the database")
 
 def populate_mongo():
     hotel_data = get_generated_data()
     hotel_info_data = get_hotel_info()
+    mongoHotels = get_mongo_client()
+    db = mongoHotels.beetravels
 
-    mongoHotels.beetravels.hotels.insert_one({"info": hotel_info_data})
-
-    for hotel in hotel_data:
-        mongoHotels.beetravels.hotels.insert_one(hotel)
+    db.hotel_info.insert_many(hotel_info_data)
+    db.hotels.insert_many(hotel_data)
 
 def get_generated_data():
     with open("hotel-data.json", "r") as hotel_file:

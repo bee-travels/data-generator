@@ -1,6 +1,7 @@
 import couchdb
 import json
 import sys
+import os
 
 
 def create_db(couch, db_name):
@@ -35,7 +36,7 @@ def bulk_load_data(db, json_data, upload_name):
 
 
 def main():
-    couch = couchdb.Server("http://admin:CdjLgHqzVWmUPuic8lvE@127.0.0.1:5984/")
+    couch = couchdb.Server(os.environ["COUCH_CONNECTION_URL"])
     hotel_db = get_db(couch, "hotel")
     hotel_data = load_json("hotel-data.json")
     bulk_load_data(hotel_db, hotel_data, "Hotel Data")
