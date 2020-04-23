@@ -15,7 +15,7 @@ with open('cities.csv', 'rt') as csvfile:
     data = json.loads(response.text)
 
     folder_name = "{}-{}".format("-".join(row[0].split(' ')), "-".join(row[3].split(' '))) 
-    os.mkdir(folder_name)
+    os.makedirs("destination-images/"+folder_name, exist_ok=True)
 
     if len(data["hits"]) < 5:
       print("Did not find enough images for {}, searching for {} instead".format(row[0], row[3]))
@@ -26,6 +26,5 @@ with open('cities.csv', 'rt') as csvfile:
       url = image["largeImageURL"]
       filename = url.split("/")[-1]
       response = req.get(url)
-      output = open(folder_name+"/"+filename, "wb")
+      output = open("destination-images/"+folder_name+"/"+filename, "wb")
       output.write(response.content)
-      output.close()

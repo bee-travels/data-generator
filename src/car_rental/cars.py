@@ -16,6 +16,8 @@ BODY_CONVERTIBLE = "convertible"
 BODY_MUSCLE = "muscle"
 BODY_SPORTS = "sports"
 
+data_id = 1
+
 
 def generate_list_from_file(filename):
     data = []
@@ -30,6 +32,7 @@ def generate_car_type_data(filename, urls):
     car_info = {}
     with open('cars.csv') as csvFile:
         csv_reader = csv.reader(csvFile, delimiter=',')
+        id = 1
         for row in csv_reader:
             vehicle_type = TYPE_BASIC
             if int(row[3]) > 60:
@@ -47,8 +50,13 @@ def generate_car_type_data(filename, urls):
 
             print(row[1])
             car_values = {
-                "name": row[0], "image": urls.get(row[1]), "price_multiplier": row[3]}
+                "id": id,
+                "name": row[0],
+                "image": urls.get(row[1]),
+                "price_multiplier": row[3]
+            }
             car_info[body_type][vehicle_type].append(car_values)
+            id = id + 1
     return car_info
 
 
@@ -71,6 +79,7 @@ def get_available_style(car_info, body_type):
 
 
 def generate_car_data_for_city(city, country, col_idx, population, car_info, base_cost=30):
+    global data_id
     car_data = []
     car_rentals = generate_list_from_file('car_rental.txt')
     availbale_types = get_available_types(col_idx)
@@ -82,27 +91,49 @@ def generate_car_data_for_city(city, country, col_idx, population, car_info, bas
         styles = get_available_style(car_info, body_type)
         style = random.choice(styles)
         selected_car = random.choice(car_info[body_type][style])
-        car_name = selected_car["name"]
-        car_image = selected_car["image"]
         car_cost = math.ceil(math.sqrt(float(selected_car["price_multiplier"]))
                              * math.sqrt(col_idx) * random.uniform(.9, 1.1) * base_cost)
-        car = {}
-        car["city"] = city
-        car["country"] = country
-        car["name"] = car_name
-        car["rental_company"] = car_rental
-        car["image"] = car_image
-        car["cost"] = car_cost
-        car["body_type"] = body_type
-        car["style"] = style
+        car = {
+            "id": data_id,
+            "car_id": selected_car["id"],
+            "city": city,
+            "country": country,
+            "name": selected_car["name"],
+            "rental_company": car_rental,
+            "image": selected_car["image"],
+            "cost": car_cost,
+            "body_type": body_type,
+            "style": style
+        }
+        data_id = data_id + 1
         car_data.append(car)
     return car_data
 
 
-def generate_car_data(filename, urls):
+def flatten_car_info(car_info):
+    flat_info = []
+    for body_type, data in car_info.items():
+        for style, cars in data.items():
+            for car in cars:
+                info = {
+                    "id": car["id"],
+                    "name": car["name"],
+                    "image": car["image"],
+                    "price_multiplier": car["price_multiplier"],
+                    "body_type": body_type,
+                    "style": style
+                }
+                flat_info.append(info)
+
+
+    return flat_info
+
+
+def generate_car_data(car_info, filename, urls):
+
     car_data = []
     base_cost = 30
-    car_info = generate_car_type_data('cars.csv', urls)
+
     with open('cities.csv') as csvFile:
         reader = csv.reader(csvFile, delimiter=",")
         for row in reader:
@@ -125,10 +156,16 @@ def load_json(file_name):
 
 def main():
     urls = load_json("urls.json")
-    car_data = generate_car_data('cities.csv', urls)
+    car_info = generate_car_type_data('cars.csv', urls)
+    car_data = generate_car_data(car_info, 'cities.csv', urls)
 
     with open('cars.json', 'w', encoding='utf-8') as f:
         json.dump(car_data, f, ensure_ascii=True, indent=2)
+
+    flat_info = flatten_car_info(car_info)
+
+    with open('car-info.json', 'w', encoding='utf-8') as f:
+        json.dump(flat_info, f, ensure_ascii=True, indent=2)
 
 
 if __name__ == "__main__":
