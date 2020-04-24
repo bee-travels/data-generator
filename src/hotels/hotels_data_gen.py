@@ -4,6 +4,7 @@ import random
 import json
 import math
 import os
+import uuid
 
 # array of tuples. (type, relative_number)
 # if the relative_number s are 3, 2, 1 type 1 will be 3 times as likely as type 3
@@ -37,7 +38,7 @@ def generate_data_for_destination(filename, hotels, image_urls):
         hotel_data.extend(hotels_in_city)
     
     for i in range(len(hotel_data)):
-        hotel_data[i]["id"] = i+1
+        hotel_data[i]["id"] = str(uuid.uuid4())
 
     return hotel_data
     csvfile.close()
@@ -114,7 +115,6 @@ def get_hotel(city, country, hotels, hotel_type, image_urls, col_index=1.0, base
 
 def flatten_hotels(hotels):
     hotel = []
-    id = 1
     for t, ss in hotels.items():
         for s, htls in ss.items():
             for h in htls:
@@ -122,8 +122,7 @@ def flatten_hotels(hotels):
                 htl["name"] = h
                 htl["superchain"] = s
                 htl["type"] = t
-                htl["id"] = id
-                id = id+1
+                htl["id"] = str(uuid.uuid4())
                 hotel.append(htl)
     return hotel
 
