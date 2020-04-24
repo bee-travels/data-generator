@@ -3,6 +3,7 @@ import os
 import json
 import math
 import random
+import uuid
 
 TYPE_BASIC = "basic"
 TYPE_LUXURY = "luxury"
@@ -15,9 +16,6 @@ BODY_CROSSOVER = "crossover"
 BODY_CONVERTIBLE = "convertible"
 BODY_MUSCLE = "muscle"
 BODY_SPORTS = "sports"
-
-data_id = 1
-
 
 def generate_list_from_file(filename):
     data = []
@@ -32,7 +30,6 @@ def generate_car_type_data(filename, urls):
     car_info = {}
     with open('cars.csv') as csvFile:
         csv_reader = csv.reader(csvFile, delimiter=',')
-        id = 1
         for row in csv_reader:
             vehicle_type = TYPE_BASIC
             if int(row[3]) > 60:
@@ -50,13 +47,12 @@ def generate_car_type_data(filename, urls):
 
             print(row[1])
             car_values = {
-                "id": id,
+                "id": str(uuid.uuid4()),
                 "name": row[0],
                 "image": urls.get(row[1]),
                 "price_multiplier": row[3]
             }
             car_info[body_type][vehicle_type].append(car_values)
-            id = id + 1
     return car_info
 
 
@@ -79,7 +75,6 @@ def get_available_style(car_info, body_type):
 
 
 def generate_car_data_for_city(city, country, col_idx, population, car_info, base_cost=30):
-    global data_id
     car_data = []
     car_rentals = generate_list_from_file('car_rental.txt')
     availbale_types = get_available_types(col_idx)
@@ -94,7 +89,7 @@ def generate_car_data_for_city(city, country, col_idx, population, car_info, bas
         car_cost = math.ceil(math.sqrt(float(selected_car["price_multiplier"]))
                              * math.sqrt(col_idx) * random.uniform(.9, 1.1) * base_cost)
         car = {
-            "id": data_id,
+            "id": str(uuid.uuid4()),
             "car_id": selected_car["id"],
             "city": city,
             "country": country,
@@ -105,7 +100,6 @@ def generate_car_data_for_city(city, country, col_idx, population, car_info, bas
             "body_type": body_type,
             "style": style
         }
-        data_id = data_id + 1
         car_data.append(car)
     return car_data
 
