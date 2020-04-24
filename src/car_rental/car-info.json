@@ -3,7 +3,6 @@
     "id": 1,
     "name": "Ferrari California",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ferrari_california.jpg",
-    "price_multiplier": "112",
     "body_type": "convertible",
     "style": "luxury"
   },
@@ -11,7 +10,6 @@
     "id": 2,
     "name": "Maserati GranCabrio Sport",
     "image": null,
-    "price_multiplier": "106",
     "body_type": "convertible",
     "style": "luxury"
   },
@@ -19,7 +17,6 @@
     "id": 3,
     "name": "Mercedes Benz SLK Class",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mercedes_benz_slk.jpg",
-    "price_multiplier": "109",
     "body_type": "convertible",
     "style": "luxury"
   },
@@ -27,7 +24,6 @@
     "id": 4,
     "name": "Mini Cooper SD",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mini_cooper.png",
-    "price_multiplier": "76",
     "body_type": "convertible",
     "style": "luxury"
   },
@@ -35,7 +31,6 @@
     "id": 5,
     "name": "Porsche 911 Carrera Cabriolet",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/porsche_911.jpg",
-    "price_multiplier": "101",
     "body_type": "convertible",
     "style": "luxury"
   },
@@ -43,7 +38,6 @@
     "id": 6,
     "name": "Acura RDX",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/acura_rdx.jpg",
-    "price_multiplier": "35",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -51,7 +45,6 @@
     "id": 11,
     "name": "Chevrolet Trax",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chevrolet_trax.jpg",
-    "price_multiplier": "32",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -59,7 +52,6 @@
     "id": 12,
     "name": "Chrysler Pacifica",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chrysler_pacifica.jpg",
-    "price_multiplier": "35",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -67,7 +59,6 @@
     "id": 14,
     "name": "Ford Ecosport",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_ecosport.jpg",
-    "price_multiplier": "31",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -75,7 +66,6 @@
     "id": 15,
     "name": "Ford Edge",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_edge.jpg",
-    "price_multiplier": "34",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -83,7 +73,6 @@
     "id": 16,
     "name": "Hyundai Tucson",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/hyundai_tucson.jpg",
-    "price_multiplier": "32",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -91,7 +80,6 @@
     "id": 18,
     "name": "Mazda CX-3",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mazda_cx3.jpg",
-    "price_multiplier": "30",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -99,7 +87,6 @@
     "id": 19,
     "name": "Nissan Murano",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/nissan_murano.jpg",
-    "price_multiplier": "31",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -107,7 +94,6 @@
     "id": 20,
     "name": "Subaru Tribeca",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/subaru_tribeca.jpg",
-    "price_multiplier": "33",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -115,7 +101,6 @@
     "id": 21,
     "name": "Toyota Rav4",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/toyota_rav4.jpg",
-    "price_multiplier": "32",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -123,7 +108,6 @@
     "id": 22,
     "name": "Volvo XC60",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/volvo_xc60.jpg",
-    "price_multiplier": "34",
     "body_type": "crossover",
     "style": "basic"
   },
@@ -131,7 +115,6 @@
     "id": 7,
     "name": "Audi Q3",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/audi_q3.jpg",
-    "price_multiplier": "47",
     "body_type": "crossover",
     "style": "premium"
   },
@@ -139,7 +122,6 @@
     "id": 8,
     "name": "BMW X1",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/bmw_x1.jpg",
-    "price_multiplier": "41",
     "body_type": "crossover",
     "style": "premium"
   },
@@ -147,7 +129,6 @@
     "id": 9,
     "name": "BMW X6",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/bmw_x6.jpg",
-    "price_multiplier": "52",
     "body_type": "crossover",
     "style": "premium"
   },
@@ -155,7 +136,6 @@
     "id": 10,
     "name": "Chevrolet Equinox",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chevrolet_equinox.jpg",
-    "price_multiplier": "38",
     "body_type": "crossover",
     "style": "premium"
   },
@@ -163,7 +143,6 @@
     "id": 13,
     "name": "Dodge Journey",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/dodge_journey.jpg",
-    "price_multiplier": "38",
     "body_type": "crossover",
     "style": "premium"
   },
@@ -171,7 +150,6 @@
     "id": 17,
     "name": "Lexus NX",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/lexus_nx.jpg",
-    "price_multiplier": "43",
     "body_type": "crossover",
     "style": "premium"
   },
@@ -179,7 +157,6 @@
     "id": 23,
     "name": "Chevrolet Spark",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chevrolet_spark.jpg",
-    "price_multiplier": "25",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -187,7 +164,6 @@
     "id": 24,
     "name": "Ford Fiesta",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_fiesta.jpg",
-    "price_multiplier": "27",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -195,7 +171,6 @@
     "id": 25,
     "name": "Honda Fit",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/honda_fit.jpg",
-    "price_multiplier": "21",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -203,7 +178,6 @@
     "id": 26,
     "name": "Hyundai Eon",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/hyundai_eon.jpg",
-    "price_multiplier": "19",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -211,7 +185,6 @@
     "id": 27,
     "name": "Hyundai i10",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/hyundai_i10.jpg",
-    "price_multiplier": "22",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -219,7 +192,6 @@
     "id": 28,
     "name": "Kia Picanto",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/kia_picanto.jpg",
-    "price_multiplier": "23",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -227,7 +199,6 @@
     "id": 29,
     "name": "Kia Rio",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/kia_rio.jpg",
-    "price_multiplier": "22",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -235,7 +206,6 @@
     "id": 30,
     "name": "Mitsubishi Mirage",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mitsubishi_mirage.jpg",
-    "price_multiplier": "25",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -243,7 +213,6 @@
     "id": 31,
     "name": "Nissan Juke",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/nissan_juke.jpg",
-    "price_multiplier": "26",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -251,7 +220,6 @@
     "id": 32,
     "name": "Suzuki Celerio",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/suzuki_celerio.jpg",
-    "price_multiplier": "24",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -259,7 +227,6 @@
     "id": 33,
     "name": "Toyota Prius",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/toyota_prius.jpg",
-    "price_multiplier": "22",
     "body_type": "hatchback",
     "style": "basic"
   },
@@ -267,7 +234,6 @@
     "id": 34,
     "name": "Chevrolet Camaro",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chevrolet_camaro.jpg",
-    "price_multiplier": "71",
     "body_type": "muscle",
     "style": "luxury"
   },
@@ -275,7 +241,6 @@
     "id": 35,
     "name": "Dodge Challenger",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/dodge_charger.jpg",
-    "price_multiplier": "75",
     "body_type": "muscle",
     "style": "luxury"
   },
@@ -283,7 +248,6 @@
     "id": 36,
     "name": "Dodge Super Bee",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/dodge_super_bee.jpg",
-    "price_multiplier": "78",
     "body_type": "muscle",
     "style": "luxury"
   },
@@ -291,7 +255,6 @@
     "id": 37,
     "name": "Ford Mustang",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_mustang.jpg",
-    "price_multiplier": "74",
     "body_type": "muscle",
     "style": "luxury"
   },
@@ -299,7 +262,6 @@
     "id": 38,
     "name": "Ford Torino",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_torino.jpg",
-    "price_multiplier": "77",
     "body_type": "muscle",
     "style": "luxury"
   },
@@ -307,7 +269,6 @@
     "id": 39,
     "name": "Ford XB Falcon",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_xb_falcon.jpg",
-    "price_multiplier": "86",
     "body_type": "muscle",
     "style": "luxury"
   },
@@ -315,7 +276,6 @@
     "id": 40,
     "name": "Pontiac Firebird",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/pontiac_firebird.jpg",
-    "price_multiplier": "84",
     "body_type": "muscle",
     "style": "luxury"
   },
@@ -323,7 +283,6 @@
     "id": 41,
     "name": "Acura RLX",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/acura_rlx.jpg",
-    "price_multiplier": "31",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -331,7 +290,6 @@
     "id": 42,
     "name": "Acura TLX",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/acura_tlx.jpg",
-    "price_multiplier": "35",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -339,7 +297,6 @@
     "id": 45,
     "name": "BMW 440",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/bmw_440.jpg",
-    "price_multiplier": "33",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -347,7 +304,6 @@
     "id": 50,
     "name": "Cehvrolet Impala",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chevrolet_impala.jpg",
-    "price_multiplier": "29",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -355,7 +311,6 @@
     "id": 51,
     "name": "Chevrolet Malibu",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chevrolet_malibu.jpg",
-    "price_multiplier": "23",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -363,7 +318,6 @@
     "id": 52,
     "name": "Ford Fusion",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_fusion.jpg",
-    "price_multiplier": "19",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -371,7 +325,6 @@
     "id": 53,
     "name": "Honda Accord",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/honda_accord.jpg",
-    "price_multiplier": "25",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -379,7 +332,6 @@
     "id": 54,
     "name": "Honda Civic",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/honda_civic.jpg",
-    "price_multiplier": "17",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -387,7 +339,6 @@
     "id": 55,
     "name": "Honda Insight",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/honda_insight.jpg",
-    "price_multiplier": "21",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -395,7 +346,6 @@
     "id": 56,
     "name": "Hyundai Elantra",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/hyundai_elantra.jpg",
-    "price_multiplier": "18",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -403,7 +353,6 @@
     "id": 59,
     "name": "Kia Optima",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/kia_optima.jpg",
-    "price_multiplier": "22",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -411,7 +360,6 @@
     "id": 62,
     "name": "Mazda 6",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mazda_6.jpg",
-    "price_multiplier": "23",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -419,7 +367,6 @@
     "id": 63,
     "name": "Mercedes-Benz C-Class",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mercedes_benz_c.jpg",
-    "price_multiplier": "31",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -427,7 +374,6 @@
     "id": 66,
     "name": "Nissan Altima",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/nissan_altima.jpg",
-    "price_multiplier": "22",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -435,7 +381,6 @@
     "id": 67,
     "name": "Nissan Maxima",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/nissan_maxima.jpg",
-    "price_multiplier": "26",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -443,7 +388,6 @@
     "id": 68,
     "name": "Nissan Versa",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/nissan_versa.jpg",
-    "price_multiplier": "18",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -451,7 +395,6 @@
     "id": 69,
     "name": "Toyota Avalon",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/toyota_avalon.jpg",
-    "price_multiplier": "19",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -459,7 +402,6 @@
     "id": 70,
     "name": "Toyota Camry",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/toyota_camry.jpg",
-    "price_multiplier": "23",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -467,7 +409,6 @@
     "id": 71,
     "name": "Toyota Corolla",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/toyota_corolla.jpg",
-    "price_multiplier": "17",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -475,7 +416,6 @@
     "id": 72,
     "name": "Volvo S60",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/volvo_s60.jpg",
-    "price_multiplier": "24",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -483,7 +423,6 @@
     "id": 73,
     "name": "Volvo S90",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/volvo_s90.jpg",
-    "price_multiplier": "28",
     "body_type": "sedan",
     "style": "basic"
   },
@@ -491,7 +430,6 @@
     "id": 43,
     "name": "Audi A3",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/audi_a3.jpg",
-    "price_multiplier": "37",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -499,7 +437,6 @@
     "id": 44,
     "name": "Audi A5",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/audi_a5.jpg",
-    "price_multiplier": "42",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -507,7 +444,6 @@
     "id": 46,
     "name": "BMW 750",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/bmw_750.jpg",
-    "price_multiplier": "55",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -515,7 +451,6 @@
     "id": 47,
     "name": "BMW M5",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/bmw_m5.jpg",
-    "price_multiplier": "53",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -523,7 +458,6 @@
     "id": 48,
     "name": "Cadillac CT5",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/cadillac_ct5.jpg",
-    "price_multiplier": "42",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -531,7 +465,6 @@
     "id": 49,
     "name": "Cadillac CT6",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/cadillac_ct6.jpg",
-    "price_multiplier": "41",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -539,7 +472,6 @@
     "id": 57,
     "name": "Jaguar XE",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/jaguar_xe.jpg",
-    "price_multiplier": "45",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -547,7 +479,6 @@
     "id": 58,
     "name": "Jaguar XF",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/jaguar_xf.jpg",
-    "price_multiplier": "51",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -555,7 +486,6 @@
     "id": 60,
     "name": "Lincoln MKZ",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/lincoln_mkz.jpg",
-    "price_multiplier": "42",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -563,7 +493,6 @@
     "id": 61,
     "name": "Maserati Ghilbi",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/maserati_ghilbi.jpg",
-    "price_multiplier": "55",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -571,7 +500,6 @@
     "id": 64,
     "name": "Mercedes-Benz E-Class",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mercedes_benz_e.jpg",
-    "price_multiplier": "42",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -579,7 +507,6 @@
     "id": 65,
     "name": "Mercedes-Benz S-Class",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mercedes_benz_s.jpg",
-    "price_multiplier": "55",
     "body_type": "sedan",
     "style": "premium"
   },
@@ -587,7 +514,6 @@
     "id": 74,
     "name": "Alfa Romeo 4C",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/alfa_romeo_4c.jpg",
-    "price_multiplier": "140",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -595,7 +521,6 @@
     "id": 75,
     "name": "Aston Martin Vantage",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/aston_martin_vantage.jpg",
-    "price_multiplier": "144",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -603,7 +528,6 @@
     "id": 76,
     "name": "Audi TT",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/audi_tt.jpg",
-    "price_multiplier": "143",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -611,7 +535,6 @@
     "id": 77,
     "name": "Bentley Continental GT",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/bentley_continental.png",
-    "price_multiplier": "135",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -619,7 +542,6 @@
     "id": 78,
     "name": "BMW Z8",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/bmw_z8.jpg",
-    "price_multiplier": "139",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -627,7 +549,6 @@
     "id": 79,
     "name": "Bugatti Chiron",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/bugatti_chiron.jpg",
-    "price_multiplier": "149",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -635,7 +556,6 @@
     "id": 80,
     "name": "Dodge Viper",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/dodge_viper.jpg",
-    "price_multiplier": "129",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -643,7 +563,6 @@
     "id": 81,
     "name": "Ferrari 458 Italia",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ferrari_458.png",
-    "price_multiplier": "141",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -651,7 +570,6 @@
     "id": 82,
     "name": "Honda NSX",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/honda_nsx.jpg",
-    "price_multiplier": "109",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -659,7 +577,6 @@
     "id": 83,
     "name": "Hyundai Genesis Coupe",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/hyundai_genesis_coupe.jpg",
-    "price_multiplier": "117",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -667,7 +584,6 @@
     "id": 84,
     "name": "Infiniti Emerg E",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/infinity_emerg_e.jpg",
-    "price_multiplier": "120",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -675,7 +591,6 @@
     "id": 85,
     "name": "Jaguar F-Type",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/jaguar_f_type.jpg",
-    "price_multiplier": "132",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -683,7 +598,6 @@
     "id": 86,
     "name": "Lamborghini Murcielago",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/lamborghini.png",
-    "price_multiplier": "147",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -691,7 +605,6 @@
     "id": 87,
     "name": "Lexus LFA",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/lexus_lfa.jpg",
-    "price_multiplier": "138",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -699,7 +612,6 @@
     "id": 88,
     "name": "Pontiac GTO",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/pontiac_gto.jpg",
-    "price_multiplier": "132",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -707,7 +619,6 @@
     "id": 89,
     "name": "Toyota 86",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/toyota_86.jpg",
-    "price_multiplier": "112",
     "body_type": "sports",
     "style": "luxury"
   },
@@ -715,7 +626,6 @@
     "id": 90,
     "name": "Acura MDX",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/acura_mdx.jpg",
-    "price_multiplier": "56",
     "body_type": "suv",
     "style": "premium"
   },
@@ -723,7 +633,6 @@
     "id": 91,
     "name": "Audi Q3 Quattro Sport",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/audi_q3.jpg",
-    "price_multiplier": "60",
     "body_type": "suv",
     "style": "premium"
   },
@@ -731,7 +640,6 @@
     "id": 92,
     "name": "Chevrolet Captiva",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chevrolet_captiva.jpg",
-    "price_multiplier": "52",
     "body_type": "suv",
     "style": "premium"
   },
@@ -739,7 +647,6 @@
     "id": 94,
     "name": "Dodge Durango",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/dodge_durango.jpg",
-    "price_multiplier": "53",
     "body_type": "suv",
     "style": "premium"
   },
@@ -747,7 +654,6 @@
     "id": 95,
     "name": "Ford Escape",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_escape.jpg",
-    "price_multiplier": "54",
     "body_type": "suv",
     "style": "premium"
   },
@@ -755,7 +661,6 @@
     "id": 96,
     "name": "Ford Explorer",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/ford_explorer.jpg",
-    "price_multiplier": "57",
     "body_type": "suv",
     "style": "premium"
   },
@@ -763,7 +668,6 @@
     "id": 97,
     "name": "Honda HR-V",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/honda_hr-v.jpg",
-    "price_multiplier": "44",
     "body_type": "suv",
     "style": "premium"
   },
@@ -771,7 +675,6 @@
     "id": 98,
     "name": "Honda Pilot",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/honda_pilot.jpg",
-    "price_multiplier": "51",
     "body_type": "suv",
     "style": "premium"
   },
@@ -779,7 +682,6 @@
     "id": 99,
     "name": "Jeep Grand Cherokee",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/jeep_grand_cherokee.jpg",
-    "price_multiplier": "56",
     "body_type": "suv",
     "style": "premium"
   },
@@ -787,7 +689,6 @@
     "id": 100,
     "name": "Kia Sorento",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/kia_sorento.jpg",
-    "price_multiplier": "42",
     "body_type": "suv",
     "style": "premium"
   },
@@ -795,7 +696,6 @@
     "id": 101,
     "name": "Kia Sportage",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/kia_sportage.jpg",
-    "price_multiplier": "54",
     "body_type": "suv",
     "style": "premium"
   },
@@ -803,7 +703,6 @@
     "id": 102,
     "name": "Lexus RX",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/lexus_rx.jpg",
-    "price_multiplier": "57",
     "body_type": "suv",
     "style": "premium"
   },
@@ -811,7 +710,6 @@
     "id": 103,
     "name": "Mazda CX-5",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mazda_cx5.jpg",
-    "price_multiplier": "45",
     "body_type": "suv",
     "style": "premium"
   },
@@ -819,7 +717,6 @@
     "id": 104,
     "name": "Mazda CX-9",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mazda_cx9.jpg",
-    "price_multiplier": "54",
     "body_type": "suv",
     "style": "premium"
   },
@@ -827,7 +724,6 @@
     "id": 105,
     "name": "Mitsubishi Pajero",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/mitsubishi_pajero.jpg",
-    "price_multiplier": "53",
     "body_type": "suv",
     "style": "premium"
   },
@@ -835,7 +731,6 @@
     "id": 106,
     "name": "Nissan Patrol",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/nissan_patrol.jpg",
-    "price_multiplier": "54",
     "body_type": "suv",
     "style": "premium"
   },
@@ -843,7 +738,6 @@
     "id": 107,
     "name": "Nissan Rougue",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/nissan_rogue.jpg",
-    "price_multiplier": "44",
     "body_type": "suv",
     "style": "premium"
   },
@@ -851,7 +745,6 @@
     "id": 109,
     "name": "Subaru Outback",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/subaru_outback.jpg",
-    "price_multiplier": "48",
     "body_type": "suv",
     "style": "premium"
   },
@@ -859,7 +752,6 @@
     "id": 110,
     "name": "Toyota Highlander",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/toyota_highlander.jpg",
-    "price_multiplier": "57",
     "body_type": "suv",
     "style": "premium"
   },
@@ -867,7 +759,6 @@
     "id": 93,
     "name": "Chevrolet Suburban",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/chevrolet_suburban.jpg",
-    "price_multiplier": "67",
     "body_type": "suv",
     "style": "luxury"
   },
@@ -875,7 +766,6 @@
     "id": 108,
     "name": "Porsche Cayenne",
     "image": "https://s3.us.cloud-object-storage.appdomain.cloud/bee-travels-cars/porsche_cayenne.jpg",
-    "price_multiplier": "72",
     "body_type": "suv",
     "style": "luxury"
   }

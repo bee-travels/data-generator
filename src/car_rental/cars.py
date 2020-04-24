@@ -119,7 +119,6 @@ def flatten_car_info(car_info):
                     "id": car["id"],
                     "name": car["name"],
                     "image": car["image"],
-                    "price_multiplier": car["price_multiplier"],
                     "body_type": body_type,
                     "style": style
                 }
