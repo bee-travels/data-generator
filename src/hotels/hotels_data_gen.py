@@ -6,12 +6,8 @@ import math
 import os
 import uuid
 
-# array of tuples. (type, relative_number)
-# if the relative_number s are 3, 2, 1 type 1 will be 3 times as likely as type 3
-hotel_type = [("budget", 2), ("comfort", 1), ("luxury", 1)]
 
-
-def generate_data_for_destination(filename, hotels, image_urls):
+def generate_data_for_destination(filename, hotels, image_urls, hotel_type):
     hotel_base_cost = 100
     csvfile = open(filename, "rt")
     reader = csv.reader(csvfile, delimiter=',')
@@ -36,7 +32,7 @@ def generate_data_for_destination(filename, hotels, image_urls):
                           base_cost=hotel_base_cost)
             )
         hotel_data.extend(hotels_in_city)
-    
+
     for i in range(len(hotel_data)):
         hotel_data[i]["id"] = str(uuid.uuid4())
 
@@ -65,7 +61,7 @@ def get_hotel_type(hotel_type):
     return random.choice(new_list)
 
 
-def get_hotels(hotel_list, superchain):
+def get_hotels(hotel_list, superchain, hotel_type):
     hotels = {}
     for hotel in hotel_list:
         superchain_choice = superchain[random.randint(0, len(superchain) - 1)]
@@ -113,6 +109,7 @@ def get_hotel(city, country, hotels, hotel_type, image_urls, col_index=1.0, base
     hotel["images"] = image_urls
     return hotel
 
+
 def flatten_hotels(hotels):
     hotel = []
     for t, ss in hotels.items():
@@ -126,6 +123,7 @@ def flatten_hotels(hotels):
                 hotel.append(htl)
     return hotel
 
+
 def generate_hotel_id(hotel_data, hotel_list):
     for i in range(len(hotel_data)):
         for hotel in hotel_list:
@@ -133,28 +131,34 @@ def generate_hotel_id(hotel_data, hotel_list):
                 hotel_data[i]["hotel_id"] = hotel["id"]
     return hotel_data
 
+
 def generate_data():
     hotel_list = generate_list_from_file("hotel_names.txt")
     superchain = generate_list_from_file("superchain_names.txt")
     image_urls = generate_list_from_file("urls.txt")
 
+    # array of tuples. (type, relative_number)
+    # if the relative_number s are 3, 2, 1 type 1 will be 3 times as likely as type 3
+    hotel_type = [("budget", 2), ("comfort", 1), ("luxury", 1)]
     # print(get_image_urls_subset(image_urls))
 
-    hotels = get_hotels(hotel_list, superchain)
+    hotels = get_hotels(hotel_list, superchain, hotel_type)
     hotel = flatten_hotels(hotels)
     # for i in range(10):
     #     print(json.dumps(get_hotel(hotels, "comfort", image_urls), indent=4))
 
     hotel_data = generate_data_for_destination(
-        "cities.csv", hotels, image_urls)
-    
+        "cities.csv", hotels, image_urls, hotel_type)
+
     hotel_data = generate_hotel_id(hotel_data, hotel)
 
     write_json_to_file(hotel_data, "hotel-data.json")
     write_json_to_file(hotel, "hotel-info.json")
 
+
 def main():
     generate_data()
+
 
 if __name__ == "__main__":
     main()
