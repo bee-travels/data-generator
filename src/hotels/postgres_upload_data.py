@@ -3,6 +3,8 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 import sys
 import json
 import os
+import logging
+import utils
 
 
 def get_connection():
@@ -15,7 +17,7 @@ def get_connection():
         cur.close()
         conn.close()
     except Exception as e:
-        logging.warning("Error: Unable to create to the database")
+        logging.warning("Unable to create to the database")
         logging.info(e)
 
     try:
@@ -28,37 +30,54 @@ def get_connection():
         logging.info(e)
         exit(e)
 
+def drop_table(cursor, table_name):
+    try:
+        cursor.execute("""
+            DROP TABLE %s;
+        """ % table_name)
+        logging.info("dropped table "+table_name)
+    except Exception as e:
+        logging.warning("drop unsuccessful")
+        logging.info(e)
+
 
 def populate_postgres():
-    hotel_data = load_json("hotel-data.json")
-    hotel_info = load_json("hotel-info.json")
+    hotel_data = utils.load_json("hotel-data.json")
+    hotel_info = utils.load_json("hotel-info.json")
     conn = get_connection()
     cur = conn.cursor()
     
+    drop_table(cur, "hotels")
+    drop_table(cur, "hotel_info")
+
     try:
+        logging.info("creating hotel info DB")
         cur.execute("""
             CREATE TABLE IF NOT EXISTS hotel_info (
-                ID INTEGER PRIMARY KEY NOT NULL,
+                ID VARCHAR(255) PRIMARY KEY NOT NULL,
                 NAME VARCHAR(255) NOT NULL,
                 Superchain VARCHAR(255) NOT NULL,
                 Type VARCHAR(255) NOT NULL
             );        
         """)
-
+        logging.info("writing to hotel info DB")
         cur.executemany("""
             INSERT INTO hotel_info VALUES (%(id)s, %(name)s, %(superchain)s, %(type)s);
         """, hotel_info)
 
+        logging.info("creating hotel DB")
         cur.execute("""
             CREATE TABLE IF NOT EXISTS hotels (
-                ID INTEGER PRIMARY KEY NOT NULL,
-                HOTEL_ID INTEGER REFERENCES hotel_info(id),
+                ID VARCHAR(255) PRIMARY KEY NOT NULL,
+                HOTEL_ID VARCHAR(255) REFERENCES hotel_info(id),
                 City VARCHAR(255) NOT NULL,
                 Country VARCHAR(255) NOT NULL,
                 Cost decimal NOT NULL,
                 Images TEXT []
             );
         """)
+
+        logging.info("writing to hotel DB")
 
         cur.executemany("""
             INSERT INTO hotels VALUES (%(id)s, %(hotel_id)s, %(city)s, %(country)s, %(cost)s, %(images)s);
@@ -67,24 +86,13 @@ def populate_postgres():
         conn.commit()
 
     except Exception as e:
-        print("Error: Unable to create and populate database", e)
+        logging.error("Error: Unable to create and populate database")
+        logging.error(e)
 
+    logging.info("data generated")
     cur.close()
     conn.close()
 
-
-def load_json(file_name):
-    with open(file_name) as json_data:
-        return json.load(json_data)
-
-
-def get_generated_data():
-    with open("hotel-data.json", "r") as hotel_file:
-        raw_data = hotel_file.read()
-
-    hotel_data = json.loads(raw_data)
-    return hotel_data
-
-
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.DEBUG)
     populate_postgres()

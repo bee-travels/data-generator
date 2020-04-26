@@ -29,12 +29,24 @@ def get_connection():
         logging.info(e)
         exit(e)
 
+def drop_table(cursor, table_name):
+    try:
+        cursor.execute("""
+            DROP TABLE %s;
+        """ % table_name)
+        logging.info("dropped table "+table_name)
+    except Exception as e:
+        logging.warning("drop unsuccessful")
+        logging.info(e)
 
 def populate_postgres():
     car_data = utils.load_json("cars.json")
     car_info = utils.load_json("car-info.json")
     conn = get_connection()
     cur = conn.cursor()
+
+    drop_table(cur, "hotels")
+    drop_table(cur, "hotel_info")
     
     try:
         logging.info("creating car info DB")
@@ -72,7 +84,8 @@ def populate_postgres():
         conn.commit()
 
     except Exception as e:
-        print("Error: Unable to create and populate database", e)
+        logging.error("Error: Unable to create and populate database")
+        logging.error(e)
 
     logging.info("data generated")
     cur.close()
