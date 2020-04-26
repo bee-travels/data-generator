@@ -2,6 +2,9 @@ from pymongo import MongoClient
 import sys
 import json
 import os
+import utils
+import logging
+
 
 def get_mongo_client():
     try:
@@ -10,28 +13,35 @@ def get_mongo_client():
     except:
         exit("Error: Unable to connect to the database")
 
-def populate_mongo():
-    hotel_data = get_generated_data()
-    hotel_info_data = get_hotel_info()
-    mongoHotels = get_mongo_client()
-    db = mongoHotels.beetravels
 
+def delete_existing_collection(db, collection_name):
+    try:
+        logging.debug("trying to delete collection "+collection_name)
+        for collection in db.list_collection_names():
+            if collection == collection_name:
+                db[collection].drop()
+                logging.info("dropped collection " + collection)
+                return
+        logging.info("collection not found for deletion")
+    except Exception as e:
+        logging.warning("could not delete db ", collection_name)
+
+
+def populate_mongo():
+    hotel_data = utils.load_json("hotel-data.json")
+    hotel_info_data = utils.load_json("hotel-info.json")
+
+    client = get_mongo_client()
+    db = client.beetravels
+    delete_existing_collection(db, "hotel_info")
+    delete_existing_collection(db, "hotels")
+
+    logging.info("inserting data")
     db.hotel_info.insert_many(hotel_info_data)
     db.hotels.insert_many(hotel_data)
+    logging.info("done inserting documents")
 
-def get_generated_data():
-    with open("hotel-data.json", "r") as hotel_file:
-        raw_data = hotel_file.read()
-    
-    hotel_data = json.loads(raw_data)
-    return hotel_data
-
-def get_hotel_info():
-    with open("hotel-info.json", "r") as hotel_info_file:
-        raw_data = hotel_info_file.read()
-    
-    hotel_info_data = json.loads(raw_data)
-    return hotel_info_data
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.DEBUG)
     populate_mongo()

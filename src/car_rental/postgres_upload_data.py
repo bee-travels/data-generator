@@ -11,16 +11,23 @@ def get_connection():
         conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port="5432")
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         cur = conn.cursor()
-        logging.debug("create beetravels database")
         cur.execute("CREATE DATABASE beetravels;")
+        logging.debug("create beetravels database")
         cur.close()
         conn.close()
+    except Exception as e:
+        logging.warning("Error: Unable to create to the database")
+        logging.info(e)
+
+    try:
         conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"],
                                 password=os.environ["PG_PASSWORD"], port="5432", database="beetravels")
-        # conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+        conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         return conn
-    except:
-        exit("Error: Unable to connect to the database")
+    except Exception as e:
+        logging.warning("Error: Unable to connect to the database")
+        logging.info(e)
+        exit(e)
 
 
 def populate_postgres():
