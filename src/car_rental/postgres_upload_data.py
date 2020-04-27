@@ -39,14 +39,12 @@ def drop_table(cursor, table_name):
         logging.warning("drop unsuccessful")
         logging.info(e)
 
-def populate_postgres():
-    car_data = utils.load_json("cars.json")
-    car_info = utils.load_json("car-info.json")
+def populate_postgres(data, info):
     conn = get_connection()
     cur = conn.cursor()
 
-    drop_table(cur, "hotels")
-    drop_table(cur, "hotel_info")
+    drop_table(cur, "cars")
+    drop_table(cur, "car_info")
     
     try:
         logging.info("creating car info DB")
@@ -62,7 +60,7 @@ def populate_postgres():
         logging.info("writing to car info DB")
         cur.executemany("""
             INSERT INTO car_info VALUES (%(id)s, %(name)s, %(body_type)s, %(style)s, %(image)s);
-        """, car_info)
+        """, info)
 
         logging.info("creating car DB")
         cur.execute("""
@@ -79,7 +77,7 @@ def populate_postgres():
         logging.info("writing to car DB")
         cur.executemany("""
             INSERT INTO cars VALUES (%(id)s, %(car_id)s, %(city)s, %(country)s, %(rental_company)s, %(cost)s);
-        """, car_data)
+        """, data)
 
         conn.commit()
 
@@ -94,4 +92,6 @@ def populate_postgres():
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    populate_postgres()
+    car_data = utils.load_json("cars.json")
+    car_info = utils.load_json("car-info.json")
+    populate_postgres(car_data, car_info)

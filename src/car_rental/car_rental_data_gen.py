@@ -4,6 +4,7 @@ import json
 import math
 import random
 import uuid
+import logging
 
 TYPE_BASIC = "basic"
 TYPE_LUXURY = "luxury"
@@ -45,7 +46,6 @@ def generate_car_type_data(filename, urls):
             if not car_info[body_type].get(vehicle_type):
                 car_info[body_type][vehicle_type] = []
 
-            print(row[1])
             car_values = {
                 "id": str(uuid.uuid4()),
                 "name": row[0],
@@ -132,7 +132,6 @@ def generate_car_data(car_info, filename, urls):
         for row in reader:
             city = row[0]
             country = row[3]
-            print("Generating Data for %s, %s" % (city, country))
             population = int(row[5])
             cost_of_living_index = float(row[4])
 
@@ -146,19 +145,23 @@ def load_json(file_name):
     with open(file_name) as json_data:
         return json.load(json_data)
 
-
-def main():
+def generate_data():
     urls = load_json("urls.json")
     car_info = generate_car_type_data('cars.csv', urls)
     car_data = generate_car_data(car_info, 'cities.csv', urls)
+    flat_info = flatten_car_info(car_info)
+    return car_data, flat_info
+
+def main():
+    logging.info("generating data for cars")
+    car_data, car_info = generate_data()
+    logging.info("done gerating car data")
 
     with open('cars.json', 'w', encoding='utf-8') as f:
         json.dump(car_data, f, ensure_ascii=True, indent=2)
 
-    flat_info = flatten_car_info(car_info)
-
     with open('car-info.json', 'w', encoding='utf-8') as f:
-        json.dump(flat_info, f, ensure_ascii=True, indent=2)
+        json.dump(car_info, f, ensure_ascii=True, indent=2)
 
 
 if __name__ == "__main__":

@@ -58,25 +58,23 @@ def upload_data(couch, data, db_name):
     db = get_db(couch, db_name)
     bulk_upload_data(db_name, data)
 
-def populate_db():
+def populate_couch(data, info):
     try:
         couch = couchdb.Server(os.environ["COUCH_CONNECTION_URL"])
-        car_data = utils.load_json("hotel-data.json")
-        car_info = utils.load_json("hotel-info.json")
+
 
         delete_db(couch, "hotels")
         delete_db(couch, "hotel_info")
 
         logging.info("starting data upload")
-        upload_data(couch, car_data, "hotels")
-        upload_data(couch, car_info, "hotel_info")
+        upload_data(couch, data, "hotels")
+        upload_data(couch, info, "hotel_info")
         logging.info("data upload complete")
     except Exception as e:
         logging.error(e)
 
-def main():
-    populate_db()
-
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    main()
+    hotel_data = utils.load_json("hotel-data.json")
+    hotel_info = utils.load_json("hotel-info.json")
+    populate_couch(hotel_data, hotel_info)

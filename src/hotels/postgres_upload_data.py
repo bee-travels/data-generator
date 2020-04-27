@@ -41,9 +41,7 @@ def drop_table(cursor, table_name):
         logging.info(e)
 
 
-def populate_postgres():
-    hotel_data = utils.load_json("hotel-data.json")
-    hotel_info = utils.load_json("hotel-info.json")
+def populate_postgres(data, info):
     conn = get_connection()
     cur = conn.cursor()
     
@@ -63,7 +61,7 @@ def populate_postgres():
         logging.info("writing to hotel info DB")
         cur.executemany("""
             INSERT INTO hotel_info VALUES (%(id)s, %(name)s, %(superchain)s, %(type)s);
-        """, hotel_info)
+        """, info)
 
         logging.info("creating hotel DB")
         cur.execute("""
@@ -81,7 +79,7 @@ def populate_postgres():
 
         cur.executemany("""
             INSERT INTO hotels VALUES (%(id)s, %(hotel_id)s, %(city)s, %(country)s, %(cost)s, %(images)s);
-        """, hotel_data)
+        """, data)
 
         conn.commit()
 
@@ -95,4 +93,6 @@ def populate_postgres():
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    populate_postgres()
+    hotel_data = utils.load_json("hotel-data.json")
+    hotel_info = utils.load_json("hotel-info.json")
+    populate_postgres(hotel_data, hotel_info)

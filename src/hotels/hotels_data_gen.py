@@ -5,6 +5,7 @@ import json
 import math
 import os
 import uuid
+import logging
 
 
 def generate_data_for_destination(filename, hotels, image_urls, hotel_type):
@@ -65,7 +66,6 @@ def get_hotels(hotel_list, superchain, hotel_type):
     hotels = {}
     for hotel in hotel_list:
         superchain_choice = superchain[random.randint(0, len(superchain) - 1)]
-        # print(superchain[superchain_choice])
         hotel_group = get_hotel_type(hotel_type)
         if not hotel_group in hotels:
             hotels[hotel_group] = {}
@@ -133,6 +133,7 @@ def generate_hotel_id(hotel_data, hotel_list):
 
 
 def generate_data():
+    logging.info("generating data for hotels")
     hotel_list = generate_list_from_file("hotel_names.txt")
     superchain = generate_list_from_file("superchain_names.txt")
     image_urls = generate_list_from_file("urls.txt")
@@ -140,25 +141,19 @@ def generate_data():
     # array of tuples. (type, relative_number)
     # if the relative_number s are 3, 2, 1 type 1 will be 3 times as likely as type 3
     hotel_type = [("budget", 2), ("comfort", 1), ("luxury", 1)]
-    # print(get_image_urls_subset(image_urls))
 
     hotels = get_hotels(hotel_list, superchain, hotel_type)
     hotel = flatten_hotels(hotels)
-    # for i in range(10):
-    #     print(json.dumps(get_hotel(hotels, "comfort", image_urls), indent=4))
 
     hotel_data = generate_data_for_destination(
         "cities.csv", hotels, image_urls, hotel_type)
 
     hotel_data = generate_hotel_id(hotel_data, hotel)
-
-    write_json_to_file(hotel_data, "hotel-data.json")
-    write_json_to_file(hotel, "hotel-info.json")
-
-
-def main():
-    generate_data()
-
+    logging.info("data generation complete")
+    return hotel_data, hotel
 
 if __name__ == "__main__":
-    main()
+    logging.basicConfig(level=logging.DEBUG)
+    hotel_data, hotel_info = generate_data()
+    write_json_to_file(hotel_data, "hotel-data.json")
+    write_json_to_file(hotel_info, "hotel-info.json")

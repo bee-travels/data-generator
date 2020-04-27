@@ -1,146 +1,146 @@
 [
   {
     "name": "Pleasant Court Hotel",
-    "superchain": "Nimbus Elites",
-    "type": "budget",
-    "id": "bc4e8525-ca1f-46c4-a84e-a5d295bd7894"
+    "superchain": "Urban Lifestyle",
+    "type": "luxury",
+    "id": "479fcb00-d047-4fd3-9ceb-34fd059a4336"
+  },
+  {
+    "name": "Sanctum Hotel",
+    "superchain": "Urban Lifestyle",
+    "type": "luxury",
+    "id": "9d4956a3-b529-42f2-8556-15f756f443d7"
   },
   {
     "name": "Secret Quest Hotel",
     "superchain": "Nimbus Elites",
+    "type": "luxury",
+    "id": "368b5927-1e1f-4c84-8833-a75f22a59959"
+  },
+  {
+    "name": "Scarlet Chasm Hotel",
+    "superchain": "Nimbus Elites",
+    "type": "luxury",
+    "id": "511819dc-716c-452b-ba97-4bde8a2a7edc"
+  },
+  {
+    "name": "Northern Ridge Hotel",
+    "superchain": "Nimbus Elites",
+    "type": "luxury",
+    "id": "3d075784-9da1-4959-9360-9fa02647950e"
+  },
+  {
+    "name": "Cozy Hotel",
+    "superchain": "Elegant Enigma Alliance",
+    "type": "luxury",
+    "id": "ab144afb-74cf-4d6e-a2d0-3bc1d79a52b6"
+  },
+  {
+    "name": "Crown Pastures Hotel",
+    "superchain": "Nimbus Elites",
     "type": "budget",
-    "id": "f73d1329-7248-4073-8d69-26cf16398883"
+    "id": "e3de00bf-6548-4a9b-ab99-ca4f362224ae"
   },
   {
     "name": "Epitome Hotel",
     "superchain": "Nimbus Elites",
     "type": "budget",
-    "id": "8d3d409b-fc4f-46cd-bbfa-5d9e69b63a5b"
-  },
-  {
-    "name": "Revelation Hotel",
-    "superchain": "Nimbus Elites",
-    "type": "budget",
-    "id": "89014993-6bb8-4b45-b896-ac15ef4609ba"
-  },
-  {
-    "name": "Scarlet Chasm Hotel",
-    "superchain": "Nimbus Elites",
-    "type": "budget",
-    "id": "fc7650a8-4b32-4fea-bafe-3af09becd44c"
-  },
-  {
-    "name": "Crown Pastures Hotel",
-    "superchain": "Urban Lifestyle",
-    "type": "budget",
-    "id": "8cf352c5-0f1e-42e4-abf4-475ca90399b0"
-  },
-  {
-    "name": "Sanctum Hotel",
-    "superchain": "Urban Lifestyle",
-    "type": "budget",
-    "id": "2240f299-09c6-4f6d-bc6d-63dd3c8f326e"
-  },
-  {
-    "name": "Starlight Hotel",
-    "superchain": "Urban Lifestyle",
-    "type": "budget",
-    "id": "c747dc0b-0a97-4a84-8cf7-5ac8b97db495"
-  },
-  {
-    "name": "Ivory Spring Hotel",
-    "superchain": "Urban Lifestyle",
-    "type": "budget",
-    "id": "5ae1db15-b9f4-4c23-b793-913aadf0a4ef"
-  },
-  {
-    "name": "Pacific Garden Hotel",
-    "superchain": "Urban Lifestyle",
-    "type": "budget",
-    "id": "e643a3b1-6882-4d2c-8468-fb5b09a6cac8"
-  },
-  {
-    "name": "Silver Mill Hotel",
-    "superchain": "Elegant Enigma Alliance",
-    "type": "budget",
-    "id": "b43468d8-18b8-4e7c-b56e-43f6f1a68fa2"
-  },
-  {
-    "name": "Echo Hotel",
-    "superchain": "Nimbus Elites",
-    "type": "luxury",
-    "id": "20c2efc0-eb3f-4676-be0d-bd3bd76fe198"
-  },
-  {
-    "name": "Cozy Hotel",
-    "superchain": "Nimbus Elites",
-    "type": "luxury",
-    "id": "509dcc61-63d2-4ac1-85ea-d894c6f2e93c"
-  },
-  {
-    "name": "Obsidian Loch Hotel",
-    "superchain": "Nimbus Elites",
-    "type": "luxury",
-    "id": "83fda88f-dd1c-4e6e-81fc-c390002adb10"
-  },
-  {
-    "name": "Grandiose Baron Hotel",
-    "superchain": "Nimbus Elites",
-    "type": "luxury",
-    "id": "0274f9e4-3ca8-4ef7-920a-b02ba745d426"
+    "id": "d688b836-bacf-4175-bf86-2e68bf13e1b0"
   },
   {
     "name": "Silver Treasure Hotel",
+    "superchain": "Nimbus Elites",
+    "type": "budget",
+    "id": "90725cfd-9f77-469f-989e-7ab956322558"
+  },
+  {
+    "name": "Ivory Spring Hotel",
+    "superchain": "Nimbus Elites",
+    "type": "budget",
+    "id": "163a9a68-7c18-45eb-87b6-adc2413bac0c"
+  },
+  {
+    "name": "Echo Hotel",
     "superchain": "Elegant Enigma Alliance",
-    "type": "luxury",
-    "id": "ca54d829-c657-4679-9dbe-23a2f0902a5c"
+    "type": "budget",
+    "id": "18c90086-1f6f-457e-838d-968c3652491d"
+  },
+  {
+    "name": "Ocean Hotel",
+    "superchain": "Elegant Enigma Alliance",
+    "type": "budget",
+    "id": "43b9cf33-8c82-4d22-940f-b5722c7a02bf"
+  },
+  {
+    "name": "Mellow Plaza Hotel",
+    "superchain": "Elegant Enigma Alliance",
+    "type": "budget",
+    "id": "b38a266a-582c-45ef-a240-95fe7a52b096"
   },
   {
     "name": "Atlantic Shroud Hotel",
+    "superchain": "Elegant Enigma Alliance",
+    "type": "budget",
+    "id": "be1e2a4f-208f-4f00-9392-2c4d1180682d"
+  },
+  {
+    "name": "Grandiose Baron Hotel",
     "superchain": "Urban Lifestyle",
-    "type": "luxury",
-    "id": "755eb647-30a0-4606-9f57-2758716fd93d"
+    "type": "budget",
+    "id": "6dc4851c-d061-4893-a503-9c46daaf1d2f"
+  },
+  {
+    "name": "Seashore Hotel",
+    "superchain": "Urban Lifestyle",
+    "type": "budget",
+    "id": "75a45231-a2c4-4fa5-a319-99e6172fafc2"
+  },
+  {
+    "name": "Silver Mill Hotel",
+    "superchain": "Urban Lifestyle",
+    "type": "budget",
+    "id": "34618def-7f73-43cb-8cee-03f57b0cffd1"
   },
   {
     "name": "Western Tide Hotel",
     "superchain": "Urban Lifestyle",
     "type": "comfort",
-    "id": "af1a3720-155c-4a1a-89fb-bfa8f9cc1876"
+    "id": "fb02c2d8-cb95-4001-9bd3-54926364e6a8"
   },
   {
-    "name": "Ocean Hotel",
-    "superchain": "Elegant Enigma Alliance",
+    "name": "Obsidian Loch Hotel",
+    "superchain": "Urban Lifestyle",
     "type": "comfort",
-    "id": "2cc4eea7-bee5-4abd-93b0-9009203f0979"
-  },
-  {
-    "name": "Seashore Hotel",
-    "superchain": "Elegant Enigma Alliance",
-    "type": "comfort",
-    "id": "fd681955-3b6a-4740-b37b-8f8070b9834a"
-  },
-  {
-    "name": "Northern Ridge Hotel",
-    "superchain": "Elegant Enigma Alliance",
-    "type": "comfort",
-    "id": "5627e9d3-7ed1-4659-8a18-87f71607f9a3"
-  },
-  {
-    "name": "Mellow Plaza Hotel",
-    "superchain": "Nimbus Elites",
-    "type": "comfort",
-    "id": "6ae15242-9fcb-41c8-8dc9-4f27b694a663"
+    "id": "2281ae9d-74bd-4b03-8e30-9c9079641537"
   },
   {
     "name": "Bronze Estate Hotel",
-    "superchain": "Nimbus Elites",
+    "superchain": "Urban Lifestyle",
     "type": "comfort",
-    "id": "c81d52bb-5a43-4bff-a49e-5d7988aa12cb"
+    "id": "6b4df29b-1253-4639-8cd7-c51b88a82695"
   },
   {
     "name": "Moss Hotel",
+    "superchain": "Urban Lifestyle",
+    "type": "comfort",
+    "id": "181313f1-857d-426a-b887-1fbae96498fe"
+  },
+  {
+    "name": "Revelation Hotel",
+    "superchain": "Elegant Enigma Alliance",
+    "type": "comfort",
+    "id": "1b871bfb-5bd6-4039-bf26-d1b68e8cde43"
+  },
+  {
+    "name": "Pacific Garden Hotel",
+    "superchain": "Elegant Enigma Alliance",
+    "type": "comfort",
+    "id": "3c938ce1-5f3f-4042-9231-10cdcaa11e4b"
+  },
+  {
+    "name": "Starlight Hotel",
     "superchain": "Nimbus Elites",
     "type": "comfort",
-    "id": "3952efe5-e1cb-4006-8523-be6b2b2b68a6"
+    "id": "d9d8cd69-431d-4ed8-9f48-56807ddfdc3d"
   }
 ]
