@@ -26,6 +26,8 @@ def generate_data():
     # flights = get_flight_map(airports, connection)
     fligths = utils.load_json("flights.json")
 
+    
+
 def get_flight_map(airports, connection):
     # connection = get_connection(airports)
     destination_airports = get_destination_aiports(airports)
