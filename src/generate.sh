@@ -28,7 +28,7 @@ postgresCreds() {
 
 couchCreds () {
 	if [ "$couchURL" ]; then
-		read -p "  Use Existing Couch Credentials (Y/N): " wantExistingCouchCreds
+		read -p "  Use Existing Couch/Cloudant Credentials (Y/N): " wantExistingCouchCreds
 		if [ "$wantExistingCouchCreds" = "N" ] || [ "$wantExistingCouchCreds" = "n" ]; then
 			read -p "  Database Connection URL: " couchURL
 		fi
@@ -49,7 +49,7 @@ if [ "$wantsDestinationData" = "Y" ] || [ "$wantsDestinationData" = "y" ]; then
 	else
 		generateDestinationData=false
 	fi
-	read -p "  Database (mongodb/postgresdb/couchdb): " destinationDatabase
+	read -p "  Database (mongodb/postgresdb/couchdb/cloudant): " destinationDatabase
 	if [ "$destinationDatabase" = "mongodb" ]; then
 		mongoCreds
 		echo ""
@@ -60,11 +60,11 @@ if [ "$wantsDestinationData" = "Y" ] || [ "$wantsDestinationData" = "y" ]; then
 		echo ""
 		echo "Starting Destination data process"
 		docker run --net host -e GENERATE_DATA=$generateDestinationData -e DATABASE=postgresdb -e PG_USER=$postgresUser -e PG_HOST=$postgresHost -e PG_PASSWORD=$postgresPassword beetravels/data-gen-destination:v2.0.0
-	elif [ "$destinationDatabase" = "couchdb" ]; then
+	elif [ "$destinationDatabase" = "couchdb" ] || [ "$destinationDatabase" = "cloudant" ]; then
 		couchCreds
 		echo ""
 		echo "Starting Destination data process"
-		docker run --net host -e GENERATE_DATA=$generateDestinationData -e DATABASE=mongodb -e COUCH_CONNECTION_URL=$couchURL beetravels/data-gen-destination:v2.0.0
+		docker run --net host -e GENERATE_DATA=$generateDestinationData -e DATABASE=couchdb -e COUCH_CONNECTION_URL=$couchURL beetravels/data-gen-destination:v2.0.0
 	fi
 	echo "Destination data process complete"
 fi
@@ -77,7 +77,7 @@ if [ "$wantsHotelData" = "Y" ] || [ "$wantsHotelData" = "y" ]; then
 	else
 		generateHotelData=false
 	fi
-	read -p "  Database (mongodb/postgresdb/couchdb): " hotelDatabase
+	read -p "  Database (mongodb/postgresdb/couchdb/cloudant): " hotelDatabase
 	if [ "$hotelDatabase" = "mongodb" ]; then
 		mongoCreds
 		echo ""
@@ -88,11 +88,11 @@ if [ "$wantsHotelData" = "Y" ] || [ "$wantsHotelData" = "y" ]; then
 		echo ""
 		echo "Starting Hotel data process"
 		docker run --net host -e GENERATE_DATA=$generateHotelData -e DATABASE=postgresdb -e PG_USER=$postgresUser -e PG_HOST=$postgresHost -e PG_PASSWORD=$postgresPassword beetravels/data-gen-hotel:v2.0.0
-	elif [ "$hotelDatabase" = "couchdb" ]; then
-		read -p "  Database Connection URL: " hotelCouchURL
+	elif [ "$hotelDatabase" = "couchdb" ] || [ "$hotelDatabase" = "cloudant" ]; then
+		couchCreds
 		echo ""
 		echo "Starting Hotel data process"
-		docker run --net host -e GENERATE_DATA=$generateHotelData -e DATABASE=mongodb -e COUCH_CONNECTION_URL=$couchURL beetravels/data-gen-hotel:v2.0.0
+		docker run --net host -e GENERATE_DATA=$generateHotelData -e DATABASE=couchdb -e COUCH_CONNECTION_URL=$couchURL beetravels/data-gen-hotel:v2.0.0
 	fi
 	echo "Hotel data process complete"
 fi
@@ -105,7 +105,7 @@ if [ "$wantsCarData" = "Y" ] || [ "$wantsCarData" = "y" ]; then
 	else
 		generateCarData=false
 	fi
-	read -p "  Database (mongodb/postgresdb/couchdb): " carDatabase
+	read -p "  Database (mongodb/postgresdb/couchdb/cloudant): " carDatabase
 	if [ "$carDatabase" = "mongodb" ]; then
 		mongoCreds
 		echo ""
@@ -116,11 +116,11 @@ if [ "$wantsCarData" = "Y" ] || [ "$wantsCarData" = "y" ]; then
 		echo ""
 		echo "Starting Car Rental data process"
 		docker run --net host -e GENERATE_DATA=$generateCarData -e DATABASE=postgresdb -e PG_USER=$postgresUser -e PG_HOST=$postgresHost -e PG_PASSWORD=$postgresPassword beetravels/data-gen-cars:v2.0.0
-	elif [ "$carDatabase" = "couchdb" ]; then
-		read -p "  Database Connection URL: " carCouchURL
+	elif [ "$carDatabase" = "couchdb" ] || [ "$carDatabase" = "cloudant" ]; then
+		couchCreds
 		echo ""
 		echo "Starting Car Rental data process"
-		docker run --net host -e GENERATE_DATA=$generateCarData -e DATABASE=mongodb -e COUCH_CONNECTION_URL=$couchURL beetravels/data-gen-cars:v2.0.0
+		docker run --net host -e GENERATE_DATA=$generateCarData -e DATABASE=couchdb -e COUCH_CONNECTION_URL=$couchURL beetravels/data-gen-cars:v2.0.0
 	fi
 	echo "Car Rental data process complete"
 fi
