@@ -12,7 +12,7 @@ mongoCreds () {
 }
 
 postgresCreds() {
-	if [ "$postgresURL" ]; then
+	if [ "$postgresHost" ]; then
 		read -p "  Use Existing Postgres Credentials (Y/N): " wantExistingPostgresCreds
 		if [ "$wantExistingPostgresCreds" = "N" ] || [ "$wantExistingPostgresCreds" = "n" ]; then
 			read -p "  User: " postgresUser
