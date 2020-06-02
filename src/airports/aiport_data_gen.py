@@ -2,6 +2,9 @@ import csv
 import logging
 import json
 import utils
+import math
+import random
+import uuid
 from math import sin, cos, radians, atan2, sqrt
 
 
@@ -9,7 +12,7 @@ def iata_code_to_airport(airports):
     iata_code_map = {}
     for airport in airports:
         iata_code_map[airport["iata_code"]] = airport
-    iata_code_map
+    return iata_code_map
 
 
 def calculate_flight_time(*distances):
@@ -20,20 +23,79 @@ def calculate_flight_time(*distances):
     return totalTime
 
 
+def calculate_flight_time_and_cost(start, end):
+    distance = distance_between_location(
+        start["latitude"], start["longitude"], end["latitude"], end["longitude"])
+    base_cost = distance * .08 + 200
+    upper = base_cost + base_cost * .15
+    lower = base_cost - base_cost * .15
+
+    cost = random.uniform(lower, upper)
+    return distance/13.5 + 30, cost
+
+
 def generate_data():
     airports = utils.load_json("airports.json")
-    connection = utils.load_json("connection.json")
-    # flights = get_flight_map(airports, connection)
-    fligths = utils.load_json("flights.json")
 
-    
+    airport_map = iata_code_to_airport(airports)
+
+    stops = utils.load_json("flights.json")
+    airlines = utils.generate_list_from_file("airlines.txt")
+
+    # hub -> hub = 4-6
+    # hub -> destination = 3-4
+    # medium -> hub = 1-2
+    # hub -> medium = 1-2
+    # large -> hub = 2-3
+    # hub -> large = 2-3
+
+    flights = []
+    get = airport_map.get
+    for airport, connections in stops.items():
+        for connection in connections:
+            num_flights = flights_per_day(
+            get(airport), get(connection))
+            # flight time is hour * 4 to get 15 min intervals
+            flight_time = random.randint(16, 24)
+            if num_flights == 1:
+                flight_time = random.randint(16, 80)
+            interval = math.floor(80/num_flights)
+            for _ in range(0, num_flights):
+                time, cost = calculate_flight_time_and_cost(get(airport), get(connection))
+                # flight_time is stored as minute starting from 00:00
+                # cost is calcucated with the formula distance * .08 + 
+                flight = {
+                    "id": str(uuid.uuid4()),
+                    "source_airport_id": get(airport)["id"],
+                    "destination_airport_id": get(connection)["id"],
+                    "flight_time": flight_time * 15,
+                    "flight_duration": time,
+                    "cost": cost,
+                    "airlines": random.choice(airlines)
+                }
+                flight_time = flight_time + interval
+                flights.append(flight)
+    utils.write_json_to_file(flights, "flight_data_large.json")
+
+def flights_per_day(airport_A, airport_B):
+    if airport_A["is_hub"] and airport_B["is_hub"]:
+        return random.choice([2,3,4])
+    elif airport_B["is_destination"]:
+        return random.choice([1,2, 3])
+    elif airport_A["type"] == "medium_airport" or airport_B["type"] == "medium_airport":
+        return random.choice([1])
+    elif airport_A["type"] == "large_airport" or airport_B["type"] == "large_airport":
+        return random.choice([1, 2])
+    return 1
+
+
 
 def get_flight_map(airports, connection):
     # connection = get_connection(airports)
     destination_airports = get_destination_aiports(airports)
     # print(len(airports))
     # print(len(destination_airports))
-    fligts = set()
+    flights = set()
     # destination_airports = destination_airports[:1]
     # airports = airports[:1]
 
@@ -41,7 +103,7 @@ def get_flight_map(airports, connection):
     for destination in destination_airports:
         print(f'{destination["name"]} : {destination["iata_code"]}')
         for airport in airports:
-            
+
             paths = []
 
             for c1 in connection.get(airport["iata_code"]):
@@ -67,7 +129,7 @@ def get_flight_map(airports, connection):
             paths.sort(key=lambda x: x["duration"])
 
             # print(len(paths))
-            
+
             ps = []
             ps.extend(paths[:2])
 
@@ -81,19 +143,20 @@ def get_flight_map(airports, connection):
             for path in ps:
                 p = path.get("path")
                 for i in range(0, len(p)-1):
-                    fligts.add((p[i], p[i+1]))
+                    flights.add((p[i], p[i+1]))
             # print(json.dumps(ps, indent=2))
-    # print(json.dumps(fligts, indent=2))
-    print(len(fligts))
+    # print(json.dumps(flights, indent=2))
+    print(len(flights))
     flight_map = {}
-    for flight in fligts:
+    for flight in flights:
         if flight[0] not in flight_map:
             flight_map[flight[0]] = []
         flight_map[flight[0]].append(flight[1])
-    
-    utils.write_json_to_file(flight_map, "flights.json")
+
+    # utils.write_json_to_file(flight_map, "flights.json")
+    utils.write_json_to_file(flight_map, "flights_large.json")
     return flight_map
-    
+
 
 def find_first_stop(paths, stops):
     for path in paths:
@@ -127,6 +190,8 @@ def get_connection(airports):
                 limit = 9000
             if j == i:
                 continue
+            if not (current["is_hub"] or current["is_destination"] or current["type"] == "large_airport"):
+                continue
             if current["is_hub"] or current["is_destination"]:
                 distance = distance_between_location(
                     start["latitude"], start["longitude"], current["latitude"], current["longitude"])
@@ -140,7 +205,8 @@ def get_connection(airports):
                         "type": current["type"]
                     })
     print("done")
-    utils.write_json_to_file(connection, "connection.json")
+    # utils.write_json_to_file(connection, "connection.json")
+    utils.write_json_to_file(connection, "connection_large.json")
     return connection
 
 
@@ -183,7 +249,7 @@ def get_airports():
 
     for row in airport_reader:
         # is of type large_airport or medium_airport
-        if row[1] == "large_airport" or row[1] == "medium_airport":
+        if row[1] == "large_airport" or (row[7] in destinations and (row[1] == "large_airport" or row[1] == "medium_airport")):
             # has iata_code or gps_code
             if row[8] != "" and row[9] != "":
                 airportType = row[1]
@@ -198,6 +264,7 @@ def get_airports():
                 is_hub = name in hubs
                 is_destination = city in destinations
                 airport = {
+                    "id": str(uuid.uuid4()),
                     "name": name,
                     "is_hub": is_hub,
                     "is_destination": is_destination,
@@ -207,13 +274,13 @@ def get_airports():
                     "latitude": latitude,
                     "longitude": longitude,
                     "gps_code": gps_code,
-                    "iata_code": iata_code,
-                    "connection": []
+                    "iata_code": iata_code
                 }
                 airports.append(airport)
-    utils.write_json_to_file(airports, "airports.json")
+    utils.write_json_to_file(airports, "airports_large.json")
     return airports
 
 
 if __name__ == "__main__":
-    generate_data()
+    # generate_data()
+    utils.minify_json("flight_data_complete.json")
