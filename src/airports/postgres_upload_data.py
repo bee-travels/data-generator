@@ -43,8 +43,8 @@ def populate_postgres(data, info):
     conn = get_connection()
     cur = conn.cursor()
 
-    drop_table(cur, "airports")
     drop_table(cur, "flights")
+    drop_table(cur, "airports")
     
     try:
         logging.info("creating airports DB")

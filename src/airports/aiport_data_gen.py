@@ -36,9 +36,7 @@ def calculate_flight_time_and_cost(start, end):
 
 def generate_data():
     airports = utils.load_json("airports.json")
-
     airport_map = iata_code_to_airport(airports)
-
     stops = utils.load_json("flights.json")
     airlines = utils.generate_list_from_file("airlines.txt")
 
@@ -75,7 +73,8 @@ def generate_data():
                 }
                 flight_time = flight_time + interval
                 flights.append(flight)
-    utils.write_json_to_file(flights, "flight_data_large.json")
+    return airports, flights
+    
 
 def flights_per_day(airport_A, airport_B):
     if airport_A["is_hub"] and airport_B["is_hub"]:
@@ -282,5 +281,6 @@ def get_airports():
 
 
 if __name__ == "__main__":
-    # generate_data()
-    utils.minify_json("flight_data_complete.json")
+    airports, flights = generate_data()
+    utils.write_json_to_file(airports, 'airports.json')
+    utils.write_json_to_file(flights, 'flight_data.json')

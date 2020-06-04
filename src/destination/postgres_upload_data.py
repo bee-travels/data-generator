@@ -46,7 +46,7 @@ def populate_postgres(data):
     drop_table(cur, "destination")
     
     try:
-        logging.info("creating car DB")
+        logging.info("creating destination DB")
         cur.execute("""
             CREATE TABLE IF NOT EXISTS DESTINATION (
                 ID VARCHAR(255) PRIMARY KEY NOT NULL,
@@ -60,7 +60,7 @@ def populate_postgres(data):
             );
         """)
 
-        logging.info("writing to car DB")
+        logging.info("writing to destination DB")
         cur.executemany("""
             INSERT INTO DESTINATION VALUES (%(id)s, %(city)s, %(country)s, %(population)s, %(latitude)s, %(longitude)s, %(description)s, %(images)s);
         """, data)

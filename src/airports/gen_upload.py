@@ -12,7 +12,7 @@ def get_data():
         return airport_data_gen.generate_data()
     logging.info("using local data")
     airport = utils.load_json("airports.json")
-    flights = utils.load_json("flights.json")
+    flights = utils.load_json("flight_data.json")
     return flights, airport
 
 

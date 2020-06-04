@@ -59,14 +59,14 @@ def write_json_to_file(json_data, file_name):
     with open(file_name, "w+") as f:
         json.dump(json_data, f, ensure_ascii=True, indent=2)
 
-def generate_destination_data():
+def generate_data():
     destination_data = generate_data_for_destination("cities.csv", "urls.txt")
-    write_json_to_file(destination_data, "destination.json")
-    return
+    return destination_data
 
 
 def main():
-    generate_destination_data()
+    data = generate_data()
+    write_json_to_file(data, "destination.json")
 
 
 if __name__ == "__main__":
