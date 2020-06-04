@@ -34,48 +34,6 @@ def calculate_flight_time_and_cost(start, end):
     return distance/13.5 + 30, cost
 
 
-def generate_data():
-    airports = utils.load_json("airports.json")
-    airport_map = iata_code_to_airport(airports)
-    stops = utils.load_json("flights.json")
-    airlines = utils.generate_list_from_file("airlines.txt")
-
-    # hub -> hub = 4-6
-    # hub -> destination = 3-4
-    # medium -> hub = 1-2
-    # hub -> medium = 1-2
-    # large -> hub = 2-3
-    # hub -> large = 2-3
-
-    flights = []
-    get = airport_map.get
-    for airport, connections in stops.items():
-        for connection in connections:
-            num_flights = flights_per_day(
-            get(airport), get(connection))
-            # flight time is hour * 4 to get 15 min intervals
-            flight_time = random.randint(16, 24)
-            if num_flights == 1:
-                flight_time = random.randint(16, 80)
-            interval = math.floor(80/num_flights)
-            for _ in range(0, num_flights):
-                time, cost = calculate_flight_time_and_cost(get(airport), get(connection))
-                # flight_time is stored as minute starting from 00:00
-                # cost is calcucated with the formula distance * .08 + 
-                flight = {
-                    "id": str(uuid.uuid4()),
-                    "source_airport_id": get(airport)["id"],
-                    "destination_airport_id": get(connection)["id"],
-                    "flight_time": flight_time * 15,
-                    "flight_duration": time,
-                    "cost": cost,
-                    "airlines": random.choice(airlines)
-                }
-                flight_time = flight_time + interval
-                flights.append(flight)
-    return airports, flights
-    
-
 def flights_per_day(airport_A, airport_B):
     if airport_A["is_hub"] and airport_B["is_hub"]:
         return random.choice([2,3,4])
@@ -279,6 +237,48 @@ def get_airports():
     utils.write_json_to_file(airports, "airports_large.json")
     return airports
 
+
+def generate_data():
+    airports = utils.load_json("airports.json")
+    airport_map = iata_code_to_airport(airports)
+    stops = utils.load_json("flights.json")
+    airlines = utils.generate_list_from_file("airlines.txt")
+
+    # hub -> hub = 4-6
+    # hub -> destination = 3-4
+    # medium -> hub = 1-2
+    # hub -> medium = 1-2
+    # large -> hub = 2-3
+    # hub -> large = 2-3
+
+    flights = []
+    get = airport_map.get
+    for airport, connections in stops.items():
+        for connection in connections:
+            num_flights = flights_per_day(
+            get(airport), get(connection))
+            # flight time is hour * 4 to get 15 min intervals
+            flight_time = random.randint(16, 24)
+            if num_flights == 1:
+                flight_time = random.randint(16, 80)
+            interval = math.floor(80/num_flights)
+            for _ in range(0, num_flights):
+                time, cost = calculate_flight_time_and_cost(get(airport), get(connection))
+                # flight_time is stored as minute starting from 00:00
+                # cost is calcucated with the formula distance * .08 + 
+                flight = {
+                    "id": str(uuid.uuid4()),
+                    "source_airport_id": get(airport)["id"],
+                    "destination_airport_id": get(connection)["id"],
+                    "flight_time": flight_time * 15,
+                    "flight_duration": time,
+                    "cost": cost,
+                    "airlines": random.choice(airlines)
+                }
+                flight_time = flight_time + interval
+                flights.append(flight)
+    return airports, flights
+    
 
 if __name__ == "__main__":
     airports, flights = generate_data()
