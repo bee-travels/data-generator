@@ -17,7 +17,7 @@ def get_data():
 
 
 def upload_to_db():
-    airports, flights = get_data()
+    flights, airports = get_data()
 
     database = os.environ["DATABASE"]
     if database == "couchdb":

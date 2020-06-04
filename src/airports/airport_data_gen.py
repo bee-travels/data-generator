@@ -277,7 +277,7 @@ def generate_data():
                 }
                 flight_time = flight_time + interval
                 flights.append(flight)
-    return airports, flights
+    return flights, airports
     
 
 if __name__ == "__main__":
