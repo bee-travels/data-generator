@@ -8,6 +8,8 @@ RUN apk update && apk add libpq
 # of @its30 below if you use this*
 RUN apk add --virtual .build-deps gcc python3-dev musl-dev postgresql-dev
 
+RUN pip install psycopg2
+
 # Delete build dependencies
 RUN apk del .build-deps
 COPY requirements.txt .
