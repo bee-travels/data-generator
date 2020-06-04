@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "TRAVIS COMMIT $TRAVIS_COMMIT"
 docker build -t beetravels/data-gen-destination:$TRAVIS_COMMIT src/destination
 docker build -t beetravels/data-gen-carrental:$TRAVIS_COMMIT src/car_rental
 docker build -t beetravels/data-gen-hotel:$TRAVIS_COMMIT src/hotels
