@@ -1,5 +1,5 @@
 CouchDB==1.2
-psycopg2-binary==2.8.5
+psycopg2==2.8.5
 pymongo==3.10.1
 requests==2.22.0
 urllib3==1.25.8
