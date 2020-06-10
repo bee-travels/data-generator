@@ -5,6 +5,7 @@ import math
 import random
 import uuid
 import logging
+import utils
 
 TYPE_BASIC = "basic"
 TYPE_LUXURY = "luxury"
@@ -159,11 +160,9 @@ def main():
     car_data, car_info = generate_data()
     logging.info("done gerating car data")
 
-    with open('cars.json', 'w', encoding='utf-8') as f:
-        json.dump(car_data, f, ensure_ascii=True, indent=2)
+    utils.write_json_to_file(car_data, "cars.json")
+    utils.write_json_to_file(car_info, "car-info.json")
 
-    with open('car-info.json', 'w', encoding='utf-8') as f:
-        json.dump(car_info, f, ensure_ascii=True, indent=2)
 
 
 if __name__ == "__main__":
