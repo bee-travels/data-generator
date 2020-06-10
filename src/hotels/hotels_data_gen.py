@@ -19,8 +19,9 @@ def generate_data_for_destination(filename, hotels, image_urls, hotel_type):
         country = row[3]
         population = int(row[5])
         cost_of_living_index = float(row[4])
-        upper_limit = random.randint(25, 35)
-        num_hotels = int(min(math.floor(population / 100000), upper_limit))
+        upper_limit = random.randint(35, 45)
+        lower_limit = int(max(random.randint(10,15), math.floor(population / 100000)))
+        num_hotels = int(min(lower_limit, upper_limit))
         hotels_in_city = []
         for i in range(num_hotels):
             hotels_in_city.append(

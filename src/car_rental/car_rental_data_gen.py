@@ -78,8 +78,10 @@ def generate_car_data_for_city(city, country, col_idx, population, car_info, bas
     car_data = []
     car_rentals = generate_list_from_file('car_rental.txt')
     availbale_types = get_available_types(col_idx)
-    upper_limit = random.randint(45, 55)
-    car_count = int(min(math.floor(population / 100000), upper_limit))
+    upper_limit = random.randint(55, 65)
+    lower_limit = int(max(random.randint(10,15), math.floor(population / 100000)))
+    
+    car_count = int(min(lower_limit, upper_limit))
     for i in range(car_count):
         body_type = random.choice(availbale_types)
         car_rental = random.choice(car_rentals)
