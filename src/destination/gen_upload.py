@@ -23,7 +23,7 @@ def upload_to_db():
         couchdb_upload_data.populate_couch(destination_data)
     elif database == "mongodb":
         mongo_upload_data.populate_mongo(destination_data)
-    elif database == "postgresdb":
+    elif database == "postgres":
         postgres_upload_data.populate_postgres(destination_data)
 
 

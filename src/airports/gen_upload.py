@@ -24,7 +24,7 @@ def upload_to_db():
         couchdb_upload_data.populate_couch(flights, airports)
     elif database == "mongodb":
         mongo_upload_data.populate_mongo(flights, airports)
-    elif database == "postgresdb":
+    elif database == "postgres":
         postgres_upload_data.populate_postgres(flights, airports)
 
 
