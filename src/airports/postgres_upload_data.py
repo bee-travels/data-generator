@@ -6,9 +6,11 @@ import os
 import utils
 import logging
 
+
 def get_connection():
     try:
-        conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port="5432")
+        conn = psycopg2.connect(
+            user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port="5432")
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         cur = conn.cursor()
         cur.execute("CREATE DATABASE beetravels;")
@@ -29,6 +31,7 @@ def get_connection():
         logging.info(e)
         exit(e)
 
+
 def drop_table(cursor, table_name):
     try:
         cursor.execute("""
@@ -39,13 +42,14 @@ def drop_table(cursor, table_name):
         logging.warning("drop unsuccessful")
         logging.info(e)
 
+
 def populate_postgres(data, info):
     conn = get_connection()
     cur = conn.cursor()
 
     drop_table(cur, "flights")
     drop_table(cur, "airports")
-    
+
     try:
         logging.info("creating airports DB")
         cur.execute("""
@@ -68,7 +72,6 @@ def populate_postgres(data, info):
             INSERT INTO AIRPORTS VALUES (%(id)s, %(name)s, %(is_hub)s, %(is_destination)s, %(type)s, %(country)s, %(city)s, %(latitude)s, %(longitude)s, %(gps_code)s, %(iata_code)s);
         """, info)
 
-
         logging.info("creating Flights DB")
         cur.execute("""
             CREATE TABLE IF NOT EXISTS FLIGHTS (
@@ -86,6 +89,51 @@ def populate_postgres(data, info):
         cur.executemany("""
             INSERT INTO FLIGHTS VALUES (%(id)s, %(source_airport_id)s, %(destination_airport_id)s, %(flight_time)s, %(flight_duration)s, %(cost)s, %(airlines)s);
         """, data)
+
+        logging.info("creating stored procedure for 2 stop flights")
+        cur.execute("""
+        CREATE or REPLACE function flight_two_stop(source_id varchar, layover_one_id varchar, destination_id varchar,
+                                           departure_time integer, duration decimal)
+    RETURNS TABLE
+            (
+                source_airport_id_ext      varchar,
+                layover_one_airport_id     varchar,
+                layover_two_airport_id     varchar,
+                destination_airport_id_ext varchar,
+                totalFlightTime            decimal,
+                totalTime                  decimal,
+                flight1time                integer,
+                flight2time                integer,
+                flight3time                integer,
+                airlines                   varchar
+            )
+as
+$$
+BEGIN
+    RETURN QUERY select source_id                                                    as source_airport_id_ext,
+                        layover_one_id                                               as layover_one_airport_id,
+                        flight1.destination_airport_id                               as layover_two_airport_id,
+                        destination_id                                               as destination_airport_id_ext,
+                        duration + flight1.flight_duration + flight2.flight_duration as totalFlightTime,
+                        duration + flight1.flight_time - departure_time + flight1.flight_duration +
+                        flight2.flight_time - flight1.flight_time +
+                        flight2.flight_duration                                      as totalTime,
+                        departure_time                                               as flight1time,
+                        flight1.flight_time                                          as flight2time,
+                        flight2.flight_time                                          as flight3time,
+                        flight1.airlines                                             as airlines
+                 from (select * from flights where flights.source_airport_id = layover_one_id and flights.flight_time >= departure_time + duration) flight1
+                          inner join (select *
+                                      from flights
+                                      where flights.destination_airport_id = destination_airport_id) flight2
+                                     on flight1.destination_airport_id = flight2.source_airport_id
+                 where flight1.airlines = flight2.airlines
+                   and flight2.flight_time >= (flight1.flight_time + flight1.flight_duration + 60)
+                 order by totalTime limit 10;
+END;
+$$
+    LANGUAGE plpgsql;
+        """)
 
         conn.commit()
 
