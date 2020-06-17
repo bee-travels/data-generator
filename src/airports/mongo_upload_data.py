@@ -10,7 +10,8 @@ def get_mongo_client():
     try:
         mongoHotels = MongoClient(os.environ["MONGO_CONNECTION_URL"])
         return mongoHotels
-    except:
+    except Exception as e:
+        logging.error("unable to connect", e)
         exit("Error: Unable to connect to the database")
 
 
