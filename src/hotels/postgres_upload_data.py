@@ -71,14 +71,15 @@ def populate_postgres(data, info):
                 City VARCHAR(255) NOT NULL,
                 Country VARCHAR(255) NOT NULL,
                 Cost decimal NOT NULL,
-                Images TEXT []
+                Images TEXT [],
+                Tags TEXT []
             );
         """)
 
         logging.info("writing to hotel DB")
 
         cur.executemany("""
-            INSERT INTO hotels VALUES (%(id)s, %(hotel_id)s, %(city)s, %(country)s, %(cost)s, %(images)s);
+            INSERT INTO hotels VALUES (%(id)s, %(hotel_id)s, %(city)s, %(country)s, %(cost)s, %(images)s, %(tags)s);
         """, data)
 
         conn.commit()

@@ -95,9 +95,17 @@ def get_image_urls_subset(image_urls):
         urls.append(image_urls[index])
     return urls
 
+def get_tags():
+    tags = ["kids", "family", "couple", "business", "accessibility", "sports", "tourist"]
+    res = set()
+    tag_count = random.randint(1, len(tags))
+    for _ in range(0, tag_count):
+        res.add(random.choice(tags))
+    return list(res)
 
 def get_hotel(city, country, hotels, hotel_type, image_urls, col_index=1.0, base_cost=100):
     # col_index is the cost of living index for each city
+    
     hotel = {}
     superchain = random.choice(list(hotels[hotel_type].keys()))
     hotel["city"] = city
@@ -108,6 +116,7 @@ def get_hotel(city, country, hotels, hotel_type, image_urls, col_index=1.0, base
     hotel["cost"] = math.ceil(get_price_multiplier(
         hotel_type) * (random.uniform(1, 1.5)) * col_index * base_cost)
     hotel["images"] = image_urls
+    hotel["tags"] = get_tags()
     return hotel
 
 
