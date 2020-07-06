@@ -1,4 +1,4 @@
-soautopep8==1.5
+autopep8==1.5
 certifi==2019.11.28
 chardet==3.0.4
 cloudant==2.12.0
