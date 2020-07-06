@@ -1,9 +1,10 @@
-autopep8==1.5
+soautopep8==1.5
 certifi==2019.11.28
 chardet==3.0.4
 cloudant==2.12.0
 CouchDB==1.2
 docutils==0.15.2
+Faker==4.1.1
 -e git+https://github.com/ibm/ibm-cos-sdk-python.git@c4194a062b08d609df631d95e4d685cd09c2bd4a#egg=ibm_cos_sdk
 ibm-cos-sdk-core==2.6.0
 ibm-cos-sdk-s3transfer==2.6.0
