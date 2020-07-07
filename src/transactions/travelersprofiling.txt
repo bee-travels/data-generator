@@ -8,7 +8,7 @@ Hotels
 - Frequent 
     - 0.75(loyalty), 0.25 comfort
     - 0.6(loyalty), 0.4 budget
-    - 0.5, 0.5 time (they will want convenience first but also security booking will work out) -- used to be business
+    - 0.5, 0.5 time/family (they will want convenience first but also security booking will work out) -- used to be business
     - 0.9(loyalty), 0.1 luxury
 - Moderate
     - 0.5(loyalty), 0.5 luxury
