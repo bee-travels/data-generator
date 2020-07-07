@@ -33,7 +33,7 @@ def get_priority(reason, income):
         return "time"
     elif income > 200000:
         return 'luxury'
-    elif reason == 'family' or reason == 'leisure' and income > 100000:
+    elif (reason == 'family' or reason == 'leisure') and income > 100000:
         return 'comfort'
     else:
         return 'budget'
