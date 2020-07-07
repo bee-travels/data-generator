@@ -3,6 +3,7 @@ TIME, LUXURY, COMFORT, BUDGET
 ^^time used to be business, there was a mixup
 
 IDEA: instead of family, do party size. Because family is only a separate category because it typically involves more people (and tend to be budget oriented in non-elite income levels)
+--> counter point: families/with children want to sit together whereas large parties of businessmen may not care. 
 Hotels
 - Frequent 
     - 0.75(loyalty), 0.25 comfort
