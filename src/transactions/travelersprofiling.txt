@@ -1,0 +1,77 @@
+TIME, LUXURY, COMFORT, BUDGET
+
+^^time used to be business, there was a mixup
+
+IDEA: instead of family, do party size. Because family is only a separate category because it typically involves more people (and tend to be budget oriented in non-elite income levels)
+--> counter point: families/with children want to sit together whereas large parties of businessmen may not care. 
+Hotels
+- Frequent 
+    - 0.75(loyalty), 0.25 comfort
+    - 0.6(loyalty), 0.4 budget
+    - 0.5, 0.5 time/family (they will want convenience first but also security booking will work out) -- used to be business
+    - 0.9(loyalty), 0.1 luxury
+- Moderate
+    - 0.5(loyalty), 0.5 luxury
+    - 0.5, 0.5 comfort/family
+    - 0.5, 0.5 time
+    - 0.4, 0.6 budget
+- Infrequent 
+    - 0.2, 0.8 luxury 
+    - 0.1, 0.9 budget
+    - 0.25, 0.75 family
+    - 0.4, 0.6 comfort 
+    - 0.5, 0.5 time
+Large Parties (>4)
+    ? ==> are they more likely to take loyalty programs if needing multiple rooms at once
+    ? exception is budget
+
+Cars
+    I think rental companies tend to be random and go by availability or experiences
+    Maybe a loyalty program has a maximum of 5-10% influence on customers
+- luxury
+- budget
+
+
+Flying
+    Miles plays a role
+- Frequent 
+    - 0.8(loyalty), 0.2 comfort
+    - 0.7(loyalty), 0.3 budget
+    - 0.2, 0.8 time/family (family just need enough seats together)
+    - 0.4(loyalty), 0.6 luxury (want first class but miles are nice)
+- Moderate
+    - 0.6 (loyalty), 0.4 luxury
+    - 0.5, 0.5 comfort
+    - 0.2, 0.8 family/time
+    - 0.5, 0.5 budget
+- Infrequent 
+    - 0.3, 0.7 luxury 
+    - 0.1, 0.9 budget
+    - 0.2, 0.8 time/family
+    - 0.4, 0.6 comfort 
+WHAT IS CONSIDERED FREQUENT, MODERATE, INFREQUENT
+our range is 
+
+----Pseudo Code----
+    user = {
+        "name": fake.name(),
+        "income": income,
+        "address": fake.address(),
+        "car_rental_loyalty": get_car_rental_company(),
+        "hotel_chain_loyalty": get_hotel_chain(),
+        "airlines_loyalty": get_airline(),
+        "travel_frequency": get_travel_frequency(reason, income),
+        "priority": get_priority(reason, income),
+        "frequently_visited_cities": [],
+        "marital_status": marital_status,
+        "party_size": get_party_size(reason, marital_status),
+        "main_reason_for_travel": reason
+    }
+
+users = lst of user
+
+for x in range(len(users)-1):
+    priority = users[x]["priority"]
+    main_reason = users[x]["main_reason_for_travel"]
+    #possibly party size matters -- an extra level of complexity to think of
+    frequency = users[x]["travel_frequency"]

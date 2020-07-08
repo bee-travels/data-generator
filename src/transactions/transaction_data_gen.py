@@ -20,6 +20,3 @@ class Repeat(object):
             # register timer.cancel to stop the timer when you exit the interpreter
             atexit.register(timer.cancel)
             timer.start()
-
-
-
