@@ -27,19 +27,16 @@ Cars
     - 0.2, 0.8 time 
     - 0.7(loyalty), 0.3 luxury
 - Moderate
-    - (loyalty),  luxury
-    - ,  comfort
+    - 0.6, 0.4 luxury
+    - 0.7, 0.3 comfort
     - 0.2, 0.8 time
-    - ,  budget
+    - 0.5, 0.5 budget
 - Infrequent 
-    - ,  luxury 
-    - ,  budget
-    - ,  comfort 
+    - 0.5, 0.5 luxury 
+    - 0.3, 0.7 budget
+    - 0.5, 0.5 comfort 
     - 0.1, 0.9 time
-    I think rental companies tend to be random and go by availability or experiences
-    Maybe a loyalty program has a maximum of 5-10% influence on customers
-- luxury
-- budget
+
 
 
 Flying
@@ -74,7 +71,7 @@ our range is 2-50
 ----Pseudo Code----
     user = {
         "name": fake.name(),
-        "income": income,
+        "income": incom
         "address": fake.address(),
         "car_rental_loyalty": get_car_rental_company(),
         "hotel_chain_loyalty": get_hotel_chain(),
@@ -103,7 +100,6 @@ def get_hotel_loyalty_status(priority, main_reason, frequency, randnum):
         elif randnum > 0.8:
             frequency<12 and priority == 'luxury'
                 yes
-        elif randnum > 0.7:
         elif randnum > 0.6:
             (frequency<24 and frequency>=12) and priority =='budget':
                 yes 
@@ -119,7 +115,6 @@ def get_hotel_loyalty_status(priority, main_reason, frequency, randnum):
                 #yes    
             (frequency<24 and frequency>=12) and priority =='luxury':
                 yes
-        elif randnum > 0.3:
         elif randnum > 0.2:
             frequency >=24 and priority == 'comfort':
                 yes
@@ -171,64 +166,61 @@ def get_flight_loyalty_status(priority, main_reason, frequency, randnum):
                 yes
             (frequency<24 and frequency>=12) and priority =='luxury':
                 yes
-        elif randnum > 0.3:
         elif randnum > 0.2:
             frequency >=24 and priority == 'comfort':
                 yes
-        elif randnum > 0.1:
         else:
             no
 
        
 
+Cars
+- Frequent 
+    - 0.7(loyalty), 0.3 comfort
+    - 0.5(loyalty), 0.5 budget   #currently not possible
+    - 0.7, 0.3 time 
+    - 0.7(loyalty), 0.3 luxury
+- Moderate
+    - 0.6, 0.4 luxury
+    - 0.7, 0.3 comfort
+    - 0.7, 0.3 time
+    - 0.5, 0.5 budget
+- Infrequent 
+    - 0.5, 0.5 luxury 
+    - 0.3, 0.7 budget
+    - 0.5, 0.5 comfort 
+    - 0.7, 0.3 time
+
     
 def get_car_loyalty_status(priority, main_reason, frequency, randnum): 
         #Car
-        if randnum > 0.9:
-
-        elif randnum > 0.8:
-
-        elif randnum > 0.7: 
-        elif randnum > 0.6:
-
+        elif randnum > 0.7:
+            frequency >=24 and priority == 'comfort':
+                yes
+            frequency<12 and priority == 'budget'
+                yes 
 
         elif randnum > 0.5:
-
-        elif randnum > 0.4:
-
-        elif randnum > 0.3:
-        elif randnum > 0.2:
-
-        elif randnum > 0.1:
-        else:
-            no
-
-            frequency<12 and priority == 'budget'
-                yes        
-            frequency<12 and priority == 'luxury'
-                yes
-            frequency < 12 and priority =='comfort':
-                yes    
-            frequency < 12 and priority == 'time':
-                yes
-            (frequency<24 and frequency>=12) and priority =='budget':
-                yes 
-            (frequency<24 and frequency>=12) and priority =='luxury':
-                yes
-            (frequency<24 and frequency>=12) and priority =='time':
-                yes          
-            (frequency<24 and frequency>=12) and priority =='comfort':
-                yes 
             #frequency >=24 and priority == 'budget':
                 #yes
-            frequency >=24 and priority == 'comfort':
+            (frequency<24 and frequency>=12) and priority =='budget':
+                yes
+            frequency<12 and (priority == 'luxury' or priority =='comfort'):
+                yes    
+         
+        elif randnum > 0.4:
+            (frequency<24 and frequency>=12) and priority =='luxury':
+                yes
+
+        elif randnum > 0.3:
+            priority == 'time':
                 yes
             frequency >=24 and priority == 'luxury':
                 yes
-
-
-
-        
+            (frequency<24 and frequency>=12) and priority =='comfort':
+                yes 
+        else:
+            no
 
         
 
@@ -242,7 +234,7 @@ def main():
         get_hotel_loyalty_status(priority, main_reason, frequency, randnum)
         get_flight_loyalty_status(priority, main_reason, frequency, randnum)
         get_car_loyalty_status(priority, main_reason, frequency, randnum)
-        
+        #using same randnum for each selection
 
 
 
