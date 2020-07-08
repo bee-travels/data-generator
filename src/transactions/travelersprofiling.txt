@@ -2,7 +2,35 @@ TIME, LUXURY, COMFORT, BUDGET
 
 ^^time used to be business, there was a mixup
 
+Booking something more than 9 months in the future is pretty difficult like 1 week, but 1 month in the future is easier
 
+Next day you can assume business
+
+How many people traveling with and how much in the future booking travel for can be indicator buisiness/leisure
+^^^^^^^indicators
+
+When generating data, have idea of frequent/infrequent but do not have info within the application
+
+Could also recommend based on most common based on other users Booking
+
+If we have users prefered hotel chain and prefered car rental, airline, and their priority
+
+
+
+Recommend based on business or leisure/family
+and most others have selectd X 
+
+
+We will pick a city from a given user's list and one from outside their traveled destination with an 80-20 split.
+For each 30 sec epoch we will take travel frequency probability
+
+
+Only go on most used car/hotel NOT flight
+
+***FOR TIME, ADJUST LIKELIHOOD OF SELECTING LOYALTY, except for flights
+
+
+***NEXT FILTER: comfort users are random for generating, luxury are most expensive, budget is least, and time goes based on income
 Hotels
 - Frequent 
     - 0.8(loyalty), 0.2 comfort
@@ -37,8 +65,6 @@ Cars
     - 0.5, 0.5 comfort 
     - 0.1, 0.9 time
 
-
-
 Flying
     Miles plays a role
 - Frequent 
@@ -71,7 +97,7 @@ our range is 2-50
 ----Pseudo Code----
     user = {
         "name": fake.name(),
-        "income": incom
+        "income": income
         "address": fake.address(),
         "car_rental_loyalty": get_car_rental_company(),
         "hotel_chain_loyalty": get_hotel_chain(),
