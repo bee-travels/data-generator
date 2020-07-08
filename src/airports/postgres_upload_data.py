@@ -90,27 +90,38 @@ def populate_postgres(data, info):
             INSERT INTO FLIGHTS VALUES (%(id)s, %(source_airport_id)s, %(destination_airport_id)s, %(flight_time)s, %(flight_duration)s, %(cost)s, %(airlines)s);
         """, data)
 
+        logging.info("dropping old stored procedures if available")
+        cur.execute("drop function flight_two_stop(source_id varchar, layover_one_id varchar, destination_id varchar, departure_time integer, duration decimal, source_cost decimal, source_airlines varchar);")
+
         logging.info("creating stored procedure for 2 stop flights")
         cur.execute("""
         CREATE or REPLACE function flight_two_stop(source_id varchar, layover_one_id varchar, destination_id varchar,
-                                           departure_time integer, duration decimal)
+                                           departure_time integer, duration decimal, source_cost decimal,
+                                           source_airlines varchar)
     RETURNS TABLE
             (
-                source_airport_id_ext      varchar,
-                layover_one_airport_id     varchar,
-                layover_two_airport_id     varchar,
-                destination_airport_id_ext varchar,
+                flight2id                  varchar,
+                flight3id                  varchar(255),
+                source_airport_id_ext      varchar(255),
+                layover_one_airport_id     varchar(255),
+                layover_two_airport_id     varchar(255),
+                destination_airport_id_ext varchar(255),
                 totalFlightTime            decimal,
                 totalTime                  decimal,
+                totalCost                  decimal,
                 flight1time                integer,
+                flight1duration            decimal,
                 flight2time                integer,
+                flight2duration            decimal,
                 flight3time                integer,
-                airlines                   varchar
+                flight3duration            decimal
             )
 as
 $$
 BEGIN
-    RETURN QUERY select source_id                                                    as source_airport_id_ext,
+    RETURN QUERY select flight1.id                                                   as flight2id,
+                        flight2.id                                                   as flight3id,
+                        source_id                                                    as source_airport_id_ext,
                         layover_one_id                                               as layover_one_airport_id,
                         flight1.destination_airport_id                               as layover_two_airport_id,
                         destination_id                                               as destination_airport_id_ext,
@@ -118,18 +129,26 @@ BEGIN
                         duration + flight1.flight_time - departure_time + flight1.flight_duration +
                         flight2.flight_time - flight1.flight_time +
                         flight2.flight_duration                                      as totalTime,
+                        source_cost + flight1.cost + flight2.cost                    as totalCost,
                         departure_time                                               as flight1time,
+                        duration                                                     as flight1duration,
                         flight1.flight_time                                          as flight2time,
+                        flight1.flight_duration                                      as flight2duration,
                         flight2.flight_time                                          as flight3time,
-                        flight1.airlines                                             as airlines
-                 from (select * from flights where flights.source_airport_id = layover_one_id and flights.flight_time >= departure_time + duration) flight1
+                        flight2.flight_duration                                      as flight3duration
+                 from (select *
+                       from flights
+                       where flights.source_airport_id = layover_one_id
+                         and flights.flight_time >= departure_time + duration) flight1
                           inner join (select *
                                       from flights
                                       where flights.destination_airport_id = destination_airport_id) flight2
                                      on flight1.destination_airport_id = flight2.source_airport_id
                  where flight1.airlines = flight2.airlines
+                   and source_airlines = flight1.airlines
                    and flight2.flight_time >= (flight1.flight_time + flight1.flight_duration + 60)
-                 order by totalTime limit 10;
+                 order by totalTime
+                 limit 10;
 END;
 $$
     LANGUAGE plpgsql;
