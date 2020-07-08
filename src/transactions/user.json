@@ -1,1402 +1,5462 @@
 [
   {
-    "name": "Margaret Rojas",
-    "income": 113382,
-    "address": "0937 Baker Brook Apt. 036\nParkerhaven, WA 28438",
+    "name": "Jacob James",
+    "income": 120408,
+    "address": "75830 Ian Mill Apt. 864\nCarrieborough, NE 96322",
     "car_rental_loyalty": "Capsule",
     "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 28,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Brandon Johnson",
-    "income": 103966,
-    "address": "7278 Hernandez Islands Suite 577\nCardenasstad, NJ 71918",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 22,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Erica Johnson",
-    "income": 119982,
-    "address": "881 Lopez Trafficway\nMooreville, ID 43805",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
     "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 29,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 4,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Deborah Harper",
-    "income": 86566,
-    "address": "771 Curtis Stravenue\nLake Jeffreyshire, NM 73109",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 4,
+    "travel_frequency": 9,
     "priority": "comfort",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "Argentina",
+        "city": "Buenos Aires"
+      },
+      {
+        "country": "Russia",
+        "city": "Novosibirsk"
+      }
+    ],
     "marital_status": "married",
     "party_size": 4,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Marie Edwards",
-    "income": 290388,
-    "address": "53267 Carl Ford Suite 835\nNew Kelsey, MN 99817",
+    "name": "Dr. James Burns",
+    "income": 147837,
+    "address": "43222 Laura Course Apt. 483\nWatsonchester, SD 20163",
     "car_rental_loyalty": "Capsule",
     "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 11,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Victoria Lopez",
-    "income": 53227,
-    "address": "78062 Dominguez Vista\nCoreyland, MN 75888",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 2,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 3,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Phillip Cherry",
-    "income": 425304,
-    "address": "898 Don Greens\nNew Shannon, NE 64284",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 35,
-    "priority": "time",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Brian Pierce",
-    "income": 133842,
-    "address": "9917 Clark Highway\nEast Hayden, MS 28418",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 4,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Jacqueline Lee",
-    "income": 49422,
-    "address": "3262 Jill Centers\nSandramouth, CO 56093",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 25,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Michael Brown",
-    "income": 138438,
-    "address": "40061 Baker Lights Apt. 795\nNorth Michael, CT 52871",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 12,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Jessica Woodard",
-    "income": 43298,
-    "address": "187 Harrison Dale\nLake Traceyland, SD 97407",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 8,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Ryan Sheppard",
-    "income": 99262,
-    "address": "583 Osborn Plains\nShermanville, LA 63643",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 7,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Brittany Martin",
-    "income": 92604,
-    "address": "977 Chen Harbor\nEast Robert, WV 71151",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 8,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Mr. Daryl Donovan",
-    "income": 213200,
-    "address": "834 Valdez Mews\nCourtneymouth, AZ 02485",
-    "car_rental_loyalty": "Rentio",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 5,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 3,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Mark Johnson",
-    "income": 43698,
-    "address": "11541 Lewis Vista Suite 915\nRodneytown, CT 00582",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 21,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 3,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Elizabeth Hopkins",
-    "income": 158187,
-    "address": "2429 Leslie Squares\nLawrencefort, NM 50096",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
     "airlines_loyalty": "Spartan Airlines",
     "travel_frequency": 7,
     "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Tianjin"
+      },
+      {
+        "country": "Australia",
+        "city": "Sydney"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Benin City"
+      },
+      {
+        "country": "China",
+        "city": "Changchun"
+      },
+      {
+        "country": "Uruguay",
+        "city": "Montevideo"
+      },
+      {
+        "country": "India",
+        "city": "Aurangabad"
+      }
+    ],
+    "marital_status": "married",
     "party_size": 2,
-    "main_reason_for_travel": "family"
+    "main_reason_for_travel": "leisure"
   },
   {
-    "name": "Anna Martin",
-    "income": 126327,
-    "address": "PSC 1957, Box 0014\nAPO AE 62613",
-    "car_rental_loyalty": "Chakra",
+    "name": "Joanne Shelton",
+    "income": 364644,
+    "address": "Unit 9387 Box 5628\nDPO AE 19604",
+    "car_rental_loyalty": "Capsule",
     "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 31,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "United States",
+        "city": "Chicago"
+      },
+      {
+        "country": "Uganda",
+        "city": "Kampala"
+      },
+      {
+        "country": "Brazil",
+        "city": "Goiania"
+      },
+      {
+        "country": "Sudan",
+        "city": "Khartoum"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Donetsk"
+      },
+      {
+        "country": "India",
+        "city": "Pune"
+      },
+      {
+        "country": "Australia",
+        "city": "Sydney"
+      },
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "China",
+        "city": "Guiyang"
+      },
+      {
+        "country": "Zambia",
+        "city": "Lusaka"
+      },
+      {
+        "country": "United Kingdom",
+        "city": "London"
+      },
+      {
+        "country": "Colombia",
+        "city": "Cali"
+      },
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "Dominican Republic",
+        "city": "Santo Domingo"
+      },
+      {
+        "country": "South Africa",
+        "city": "Cape Town"
+      },
+      {
+        "country": "China",
+        "city": "Harbin"
+      },
+      {
+        "country": "Poland",
+        "city": "Warsaw"
+      },
+      {
+        "country": "Jordan",
+        "city": "Amman"
+      },
+      {
+        "country": "Iran",
+        "city": "Tehran"
+      },
+      {
+        "country": "Thailand",
+        "city": "Bangkok"
+      },
+      {
+        "country": "Turkey",
+        "city": "Ankara"
+      },
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      },
+      {
+        "country": "Uruguay",
+        "city": "Montevideo"
+      },
+      {
+        "country": "Uganda",
+        "city": "Kampala"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Ibadan"
+      },
+      {
+        "country": "Afghanistan",
+        "city": "Kabul"
+      },
+      {
+        "country": "Russia",
+        "city": "Perm"
+      },
+      {
+        "country": "India",
+        "city": "Aurangabad"
+      },
+      {
+        "country": "Japan",
+        "city": "Kyoto"
+      },
+      {
+        "country": "United States",
+        "city": "Phoenix"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Rachel Riley",
+    "income": 103368,
+    "address": "04271 Riley Parkway Apt. 204\nStewartmouth, NE 60168",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Urban Lifestyle",
     "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 15,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 2,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Lindsey Lam",
-    "income": 279558,
-    "address": "51222 Donovan Courts\nMasonton, LA 51047",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 42,
-    "priority": "time",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 2,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Hector Bryant",
-    "income": 58092,
-    "address": "PSC 2148, Box 3658\nAPO AP 80417",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 2,
+    "travel_frequency": 10,
     "priority": "comfort",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Peru",
+        "city": "Lima"
+      },
+      {
+        "country": "United Arab Emirates",
+        "city": "Dubai"
+      },
+      {
+        "country": "United Arab Emirates",
+        "city": "Dubai"
+      },
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "Tanzania",
+        "city": "Dar es Salaam"
+      }
+    ],
     "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Erin Coleman",
-    "income": 282594,
-    "address": "01385 Johnson Curve Suite 083\nWagnertown, NH 81806",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 13,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 6,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Lisa Nunez",
-    "income": 428130,
-    "address": "4609 James Crossroad\nWilliamsfort, CO 70246",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 19,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Bryan Figueroa",
-    "income": 46132,
-    "address": "6347 Davis Prairie\nNorth Tamara, AR 37816",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 13,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Randy Randall",
-    "income": 171870,
-    "address": "95687 Tran Pike Apt. 921\nBrianchester, FL 33343",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 4,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Jesus Warner",
-    "income": 57653,
-    "address": "221 Johnson Common\nNew Marthaland, TX 26041",
-    "car_rental_loyalty": "Rentio",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 19,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Michael Cannon",
-    "income": 625824,
-    "address": "5608 Armstrong Avenue Suite 435\nMyersbury, ME 91033",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 29,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Jason Joyce",
-    "income": 86128,
-    "address": "33473 Howard Glen\nPort Cynthiahaven, KS 41844",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 5,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 3,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "David Coleman",
-    "income": 56030,
-    "address": "PSC 2510, Box 9576\nAPO AE 80844",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 2,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "David Luna",
-    "income": 46075,
-    "address": "681 Valdez Fork Suite 106\nEast Christopherbury, DC 01266",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 21,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Linda Miller",
-    "income": 45588,
-    "address": "807 Carl Harbors\nMichelleburgh, WV 36443",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 8,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Shannon Bond",
-    "income": 49054,
-    "address": "9977 Angela Rapid Apt. 375\nPittsport, CO 68188",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 2,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Jennifer Holmes",
-    "income": 453590,
-    "address": "80396 Wiley Squares\nSouth Mary, WY 09165",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 34,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
     "party_size": 3,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Kurt Dodson",
-    "income": 80712,
-    "address": "629 Lauren Underpass\nPort Ellenburgh, ME 85908",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 28,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Andrew Joseph",
-    "income": 91684,
-    "address": "1259 Alexander Island\nEast Stephanieland, WV 01901",
+    "name": "Rebecca Anderson",
+    "income": 155394,
+    "address": "909 Jared Curve Apt. 572\nSouth Amy, TX 86736",
     "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Liberty Airlines",
     "travel_frequency": 3,
-    "priority": "budget",
-    "frequently_visited_cities": [],
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Turkey",
+        "city": "Istanbul"
+      },
+      {
+        "country": "Canada",
+        "city": "Ottawa"
+      },
+      {
+        "country": "Armenia",
+        "city": "Yerevan"
+      },
+      {
+        "country": "China",
+        "city": "Wuhan"
+      }
+    ],
     "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
+    "party_size": 3,
+    "main_reason_for_travel": "family"
   },
   {
-    "name": "Jeffrey Martinez",
-    "income": 355470,
-    "address": "303 Harris Club\nBirdside, AK 91914",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "name": "Robert Brown",
+    "income": 532548,
+    "address": "3806 Harris Spurs\nEast Meganmouth, IA 39621",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Urban Lifestyle",
     "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 38,
+    "travel_frequency": 26,
     "priority": "luxury",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "United States",
+        "city": "San Antonio"
+      },
+      {
+        "country": "Canada",
+        "city": "Calgary"
+      },
+      {
+        "country": "Brazil",
+        "city": "Goiania"
+      },
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "Ghana",
+        "city": "Accra"
+      },
+      {
+        "country": "China",
+        "city": "Nanjing"
+      },
+      {
+        "country": "United States",
+        "city": "Phoenix"
+      },
+      {
+        "country": "Italy",
+        "city": "Rome"
+      },
+      {
+        "country": "Brazil",
+        "city": "Manaus"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Jakarta"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      },
+      {
+        "country": "Mozambique",
+        "city": "Maputo"
+      },
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "Brazil",
+        "city": "Recife"
+      },
+      {
+        "country": "Kenya",
+        "city": "Nairobi"
+      },
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "Venezuela",
+        "city": "Caracas"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      }
+    ],
     "marital_status": "married",
     "party_size": 3,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Clayton Mason",
-    "income": 138069,
-    "address": "58758 Moore Crest\nRoychester, TX 88902",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "MilkyWay Airlanes",
+    "name": "Olivia Garner",
+    "income": 105558,
+    "address": "3991 Love Pike\nJacquelineside, PA 62782",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Phoenix Airlines",
     "travel_frequency": 7,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Japan",
+        "city": "Sapporo"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Donetsk"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "United Kingdom",
+        "city": "London"
+      },
+      {
+        "country": "Romania",
+        "city": "Bucharest"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 3,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Cynthia Smith",
+    "income": 41370,
+    "address": "32033 Smith Rest Apt. 818\nWyattberg, AL 48724",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 14,
     "priority": "budget",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Italy",
+        "city": "Milan"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      },
+      {
+        "country": "Austria",
+        "city": "Vienna"
+      },
+      {
+        "country": "India",
+        "city": "Mumbai"
+      },
+      {
+        "country": "Chile",
+        "city": "Santiago"
+      },
+      {
+        "country": "Burkina Faso",
+        "city": "Ouagadougou"
+      }
+    ],
     "marital_status": "single",
-    "party_size": 1,
+    "party_size": 2,
     "main_reason_for_travel": "business"
   },
   {
-    "name": "Kevin Schmitt",
-    "income": 48816,
-    "address": "642 Jeanne Port\nNorth Matthewmouth, ID 45159",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 2,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 3,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Madison Gibson",
-    "income": 54339,
-    "address": "Unit 0351 Box 0990\nDPO AE 57523",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 4,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Sara Mcgrath",
-    "income": 97510,
-    "address": "778 Burns Trail Suite 569\nJohnport, MA 50441",
+    "name": "John Proctor",
+    "income": 159111,
+    "address": "07057 Poole Skyway Apt. 205\nLake Karafurt, MN 91446",
     "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 6,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Jeffrey Wiley",
-    "income": 92600,
-    "address": "28448 Christian Trafficway Apt. 865\nAngelaburgh, ME 50905",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 4,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Rachel Simon",
-    "income": 326448,
-    "address": "009 Karen Isle Suite 459\nWest Michael, LA 37474",
-    "car_rental_loyalty": "Capsule",
     "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 23,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Theresa Le",
-    "income": 133434,
-    "address": "30811 Jennifer Road Suite 410\nMendozaburgh, MN 52662",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 7,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Laura Lawson",
-    "income": 46655,
-    "address": "980 Scott Park\nPort Amy, ND 03530",
-    "car_rental_loyalty": "Rentio",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 7,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Patricia Brown",
-    "income": 117882,
-    "address": "726 Ramos Club Suite 701\nWest Brianside, UT 10935",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 8,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "James Clay",
-    "income": 50084,
-    "address": "41732 Boone Manor\nWest Jameschester, ME 11709",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
     "airlines_loyalty": "Liberty Airlines",
     "travel_frequency": 9,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Michael Mclaughlin",
-    "income": 58759,
-    "address": "18780 Foley Islands\nSimonbury, NH 60829",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 5,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Laura Gilmore",
-    "income": 59060,
-    "address": "955 Chelsey Rest Suite 911\nKevinshire, PA 96325",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 10,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Michelle Sawyer",
-    "income": 46590,
-    "address": "2989 Michael Rue Apt. 835\nHannahberg, NE 45718",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 5,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Kimberly Carter",
-    "income": 58004,
-    "address": "Unit 1699 Box 9874\nDPO AA 02243",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 19,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "William Rush",
-    "income": 56206,
-    "address": "819 Hill Oval\nEast Brianna, DE 84989",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 6,
     "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 1,
+    "frequently_visited_cities": [
+      {
+        "country": "Colombia",
+        "city": "Cali"
+      },
+      {
+        "country": "Azerbaijan",
+        "city": "Baku"
+      },
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "China",
+        "city": "Datong"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 5,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Scott Carter",
-    "income": 59847,
-    "address": "2753 Paige Crest Apt. 536\nJohnsonburgh, NE 09211",
+    "name": "Tyler Hill",
+    "income": 432000,
+    "address": "797 Jamie Crossing Apt. 596\nAprilland, RI 16830",
     "car_rental_loyalty": "Capsule",
     "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 6,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Marcus Mack",
-    "income": 137490,
-    "address": "508 Edwards Landing\nWilliamborough, ND 96256",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Urban Lifestyle",
     "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 11,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Teresa Knight",
-    "income": 104626,
-    "address": "2838 Calhoun Flat Apt. 800\nMooreville, CA 68121",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 3,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Nicholas Bennett",
-    "income": 58841,
-    "address": "80947 Guy Crescent\nNew Linda, AZ 90229",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 8,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 3,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Erika Oliver",
-    "income": 121962,
-    "address": "5954 Andrew Greens\nDerrickmouth, VA 04938",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 3,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 1,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Thomas Jones",
-    "income": 622368,
-    "address": "961 Hobbs Mountains\nTrevinoton, WI 38113",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 13,
+    "travel_frequency": 5,
     "priority": "luxury",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Iran",
+        "city": "Abadan"
+      },
+      {
+        "country": "Belarus",
+        "city": "Minsk"
+      },
+      {
+        "country": "Australia",
+        "city": "Adelaide"
+      },
+      {
+        "country": "Russia",
+        "city": "Moscow"
+      },
+      {
+        "country": "Chile",
+        "city": "Santiago"
+      },
+      {
+        "country": "China",
+        "city": "Chongqing"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Palembang"
+      },
+      {
+        "country": "Canada",
+        "city": "Calgary"
+      }
+    ],
     "marital_status": "married",
-    "party_size": 1,
+    "party_size": 5,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Sheryl Bautista",
-    "income": 126045,
-    "address": "0768 Gilbert Mews\nWest Christian, AR 08838",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 29,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Cheryl Lawson",
-    "income": 50981,
-    "address": "Unit 9275 Box 6747\nDPO AA 14615",
+    "name": "Raymond Smith",
+    "income": 116670,
+    "address": "460 Kyle Roads Suite 638\nHubermouth, KS 79286",
     "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Liberty Airlines",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
     "travel_frequency": 2,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Miranda Guzman",
-    "income": 89076,
-    "address": "96625 Choi Circles\nJimenezburgh, MI 59320",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 3,
     "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 3,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Hannah Mcconnell MD",
-    "income": 44265,
-    "address": "5548 Brian Flats\nLake Ericmouth, KS 75941",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 18,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Jonathan Franklin",
-    "income": 326532,
-    "address": "18128 Whitney Fall Suite 589\nBlakechester, FL 48792",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 34,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 7,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Guy Moore",
-    "income": 165546,
-    "address": "144 Stone Estate\nLindseychester, TN 74801",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 5,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Laura Jackson",
-    "income": 45451,
-    "address": "PSC 9420, Box 0880\nAPO AE 69228",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 7,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 2,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "John Mendez",
-    "income": 48890,
-    "address": "1391 Jones Estates Suite 572\nTimothyside, MA 98564",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 7,
-    "priority": "budget",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Amritsar"
+      },
+      {
+        "country": "Brazil",
+        "city": "Sao Paulo"
+      },
+      {
+        "country": "United Arab Emirates",
+        "city": "Dubai"
+      },
+      {
+        "country": "Venezuela",
+        "city": "Caracas"
+      },
+      {
+        "country": "Afghanistan",
+        "city": "Kabul"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "Canada",
+        "city": "Montreal"
+      },
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "Canada",
+        "city": "Ottawa"
+      },
+      {
+        "country": "Turkey",
+        "city": "Bursa"
+      }
+    ],
     "marital_status": "married",
     "party_size": 1,
     "main_reason_for_travel": "leisure"
   },
   {
-    "name": "Katrina Banks",
-    "income": 90568,
-    "address": "149 Miller Trace Suite 905\nNew Matthew, KY 53551",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 10,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Ryan Edwards",
-    "income": 343096,
-    "address": "89732 Woodward Courts\nPort Cassandrafurt, CT 14887",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 21,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 4,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Charles Kane",
-    "income": 56035,
-    "address": "38635 Steven Gardens\nPattymouth, WV 29697",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 8,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Lisa Perez",
-    "income": 43872,
-    "address": "USCGC Davis\nFPO AP 53998",
+    "name": "Thomas Meyer",
+    "income": 45746,
+    "address": "3345 Matthew Grove\nLoweport, FL 44658",
     "car_rental_loyalty": "Rentio",
     "hotel_chain_loyalty": "Elegant Enigma Alliance",
     "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 3,
+    "travel_frequency": 4,
     "priority": "budget",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Changchun"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "India",
+        "city": "Aurangabad"
+      },
+      {
+        "country": "India",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "United States",
+        "city": "Dallas"
+      },
+      {
+        "country": "Armenia",
+        "city": "Yerevan"
+      },
+      {
+        "country": "Iran",
+        "city": "Tehran"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Peshawar"
+      },
+      {
+        "country": "Mozambique",
+        "city": "Maputo"
+      },
+      {
+        "country": "Venezuela",
+        "city": "Caracas"
+      }
+    ],
     "marital_status": "married",
-    "party_size": 1,
+    "party_size": 4,
     "main_reason_for_travel": "leisure"
   },
   {
-    "name": "Diana Wilkerson",
-    "income": 454329,
-    "address": "66565 Tabitha Unions\nPort Kristiview, ID 81598",
+    "name": "Nathan Bowers",
+    "income": 341736,
+    "address": "USCGC Lopez\nFPO AA 61663",
     "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 36,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 6,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Michael Haas",
-    "income": 41007,
-    "address": "0401 Amy Flat Suite 626\nRichardsonhaven, WI 28287",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 2,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Austin Robinson",
-    "income": 499466,
-    "address": "19803 Hatfield Land\nMarkland, TN 54130",
-    "car_rental_loyalty": "Chakra",
     "hotel_chain_loyalty": "Nimbus Elites",
     "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 24,
+    "travel_frequency": 17,
     "priority": "time",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Surat"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Ibadan"
+      },
+      {
+        "country": "Hungary",
+        "city": "Budapest"
+      },
+      {
+        "country": "China",
+        "city": "Beijing"
+      },
+      {
+        "country": "Thailand",
+        "city": "Bangkok"
+      },
+      {
+        "country": "Brazil",
+        "city": "Rio de Janeiro"
+      },
+      {
+        "country": "China",
+        "city": "Wuxi"
+      }
+    ],
     "marital_status": "married",
     "party_size": 1,
     "main_reason_for_travel": "business"
   },
   {
-    "name": "Gregory Harrington",
-    "income": 166656,
-    "address": "76859 Jonathan Shores\nBenjaminfort, MD 88028",
-    "car_rental_loyalty": "Carlux",
+    "name": "Dennis Santiago",
+    "income": 84676,
+    "address": "184 Emily Roads Suite 284\nPort Amyfort, VT 85061",
+    "car_rental_loyalty": "Capsule",
     "hotel_chain_loyalty": "Elegant Enigma Alliance",
     "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 4,
+    "travel_frequency": 5,
     "priority": "comfort",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Argentina",
+        "city": "Buenos Aires"
+      },
+      {
+        "country": "Algeria",
+        "city": "Algiers"
+      },
+      {
+        "country": "Burkina Faso",
+        "city": "Ouagadougou"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 3,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Christine Anderson",
+    "income": 46894,
+    "address": "950 Gregory Landing Apt. 071\nAriaston, HI 75671",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 9,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Spain",
+        "city": "Barcelona"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Dhaka"
+      },
+      {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      {
+        "country": "Russia",
+        "city": "Moscow"
+      }
+    ],
     "marital_status": "single",
     "party_size": null,
     "main_reason_for_travel": "leisure"
   },
   {
-    "name": "Samuel Sullivan",
-    "income": 53399,
-    "address": "18649 Smith Spring\nLake Javierberg, WY 22888",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 3,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
+    "name": "Carl Anderson",
+    "income": 83270,
+    "address": "659 Jamie Radial Apt. 177\nNew Anne, HI 83358",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 6,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Brazil",
+        "city": "Belem"
+      },
+      {
+        "country": "Colombia",
+        "city": "Cali"
+      },
+      {
+        "country": "Brazil",
+        "city": "Fortaleza"
+      }
+    ],
     "marital_status": "single",
-    "party_size": 6,
+    "party_size": 2,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Michael Montgomery",
+    "income": 492399,
+    "address": "8007 David Wells Suite 698\nEast Kristinaport, AZ 79031",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 18,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Taiwan",
+        "city": "Taipei"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Jakarta"
+      },
+      {
+        "country": "Brazil",
+        "city": "Sao Paulo"
+      },
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "China",
+        "city": "Dalian"
+      },
+      {
+        "country": "Morocco",
+        "city": "Rabat"
+      },
+      {
+        "country": "Morocco",
+        "city": "Casablanca"
+      },
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "Dominican Republic",
+        "city": "Santo Domingo"
+      },
+      {
+        "country": "China",
+        "city": "Dalian"
+      },
+      {
+        "country": "United States",
+        "city": "New York"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Jordan Anderson",
+    "income": 58702,
+    "address": "66371 Hernandez Flat Apt. 556\nEast Kellistad, OH 95390",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 4,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Ibadan"
+      },
+      {
+        "country": "Iran",
+        "city": "Abadan"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Julie Sanchez",
+    "income": 89854,
+    "address": "3610 Jason Overpass Apt. 682\nEast Brian, CT 09596",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 8,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Guiyang"
+      },
+      {
+        "country": "Italy",
+        "city": "Rome"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "Iraq",
+        "city": "Baghdad"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 4,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Angela Gomez",
-    "income": 214472,
-    "address": "84371 Kyle Port Apt. 679\nNorth Andrea, ND 29790",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 26,
-    "priority": "time",
-    "frequently_visited_cities": [],
+    "name": "Glenn Hernandez",
+    "income": 53136,
+    "address": "75047 Kelly Crest\nTylermouth, FL 21790",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 14,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Russia",
+        "city": "Omsk"
+      },
+      {
+        "country": "Tanzania",
+        "city": "Dar es Salaam"
+      },
+      {
+        "country": "Canada",
+        "city": "Calgary"
+      },
+      {
+        "country": "India",
+        "city": "Jaipur"
+      },
+      {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      {
+        "country": "Sudan",
+        "city": "Khartoum"
+      },
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      }
+    ],
     "marital_status": "married",
     "party_size": 1,
     "main_reason_for_travel": "business"
   },
   {
-    "name": "Susan Baker",
-    "income": 210408,
-    "address": "181 Janet Canyon\nSouth Christophertown, MA 03695",
-    "car_rental_loyalty": "Rent Pad",
+    "name": "Mrs. Margaret Rogers MD",
+    "income": 565444,
+    "address": "8474 Davis Curve Suite 340\nMaureenborough, DC 66512",
+    "car_rental_loyalty": "Carlux",
     "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 11,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Ghana",
+        "city": "Accra"
+      },
+      {
+        "country": "Brazil",
+        "city": "Recife"
+      },
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "Argentina",
+        "city": "Buenos Aires"
+      },
+      {
+        "country": "Dominican Republic",
+        "city": "Santo Domingo"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Julie Haley",
+    "income": 513403,
+    "address": "6699 Andrews Mount\nNew Jessica, MO 99258",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 17,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Italy",
+        "city": "Rome"
+      },
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      {
+        "country": "Ghana",
+        "city": "Accra"
+      },
+      {
+        "country": "Iran",
+        "city": "Mashhad"
+      },
+      {
+        "country": "China",
+        "city": "Changchun"
+      },
+      {
+        "country": "Germany",
+        "city": "Hamburg"
+      },
+      {
+        "country": "Iran",
+        "city": "Abadan"
+      },
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      },
+      {
+        "country": "Thailand",
+        "city": "Bangkok"
+      },
+      {
+        "country": "Mexico",
+        "city": "Mexico City"
+      },
+      {
+        "country": "Japan",
+        "city": "Tokyo"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Marcus Camacho",
+    "income": 239132,
+    "address": "57445 Mark Burg\nRebekahtown, AK 89886",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Urban Lifestyle",
     "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 35,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "South Africa",
+        "city": "Cape Town"
+      },
+      {
+        "country": "Spain",
+        "city": "Barcelona"
+      },
+      {
+        "country": "South Africa",
+        "city": "Johannesburg"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "Russia",
+        "city": "Samara"
+      },
+      {
+        "country": "Turkey",
+        "city": "Adana"
+      },
+      {
+        "country": "Chile",
+        "city": "Santiago"
+      },
+      {
+        "country": "China",
+        "city": "Shenzhen"
+      },
+      {
+        "country": "Thailand",
+        "city": "Bangkok"
+      },
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "Mexico",
+        "city": "Tijuana"
+      },
+      {
+        "country": "Mali",
+        "city": "Bamako"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Donetsk"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      },
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "Azerbaijan",
+        "city": "Baku"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "China",
+        "city": "Datong"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Rawalpindi"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 4,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Jack Foster",
+    "income": 55522,
+    "address": "682 Michelle Tunnel Apt. 081\nTerrellchester, CA 46636",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 4,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Shanghai"
+      },
+      {
+        "country": "Russia",
+        "city": "Novosibirsk"
+      },
+      {
+        "country": "Brazil",
+        "city": "Goiania"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Jennifer Mccoy",
+    "income": 258845,
+    "address": "7030 Robert Prairie\nPort Bruceborough, MT 23912",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 40,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Indonesia",
+        "city": "Bandung"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Rawalpindi"
+      },
+      {
+        "country": "Turkey",
+        "city": "Istanbul"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      },
+      {
+        "country": "South Africa",
+        "city": "Cape Town"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Faisalabad"
+      },
+      {
+        "country": "China",
+        "city": "Zibo"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Karachi"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "Russia",
+        "city": "Moscow"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      },
+      {
+        "country": "Iran",
+        "city": "Qom"
+      },
+      {
+        "country": "China",
+        "city": "Guangzhou"
+      },
+      {
+        "country": "China",
+        "city": "Harbin"
+      },
+      {
+        "country": "China",
+        "city": "Baotou"
+      },
+      {
+        "country": "Austria",
+        "city": "Vienna"
+      },
+      {
+        "country": "Venezuela",
+        "city": "Caracas"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Stephanie Nguyen",
+    "income": 138702,
+    "address": "1351 Ramirez Roads Suite 483\nWest Juanborough, LA 77127",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 7,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Russia",
+        "city": "Moscow"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      },
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      },
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 4,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Hannah Davis",
+    "income": 166908,
+    "address": "2158 Olivia Freeway Suite 025\nWest Joshuachester, GA 07745",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
     "travel_frequency": 26,
-    "priority": "time",
-    "frequently_visited_cities": [],
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "South Africa",
+        "city": "Durban"
+      },
+      {
+        "country": "China",
+        "city": "Wuhan"
+      },
+      {
+        "country": "Cuba",
+        "city": "Havana"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Lagos"
+      },
+      {
+        "country": "Zimbabwe",
+        "city": "Harare"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Karachi"
+      },
+      {
+        "country": "Bulgaria",
+        "city": "Sofia"
+      },
+      {
+        "country": "France",
+        "city": "Paris"
+      },
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+      },
+      {
+        "country": "Brazil",
+        "city": "Goiania"
+      },
+      {
+        "country": "Australia",
+        "city": "Perth"
+      },
+      {
+        "country": "Iran",
+        "city": "Karaj"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "China",
+        "city": "Dalian"
+      }
+    ],
     "marital_status": "single",
     "party_size": 1,
     "main_reason_for_travel": "business"
   },
   {
-    "name": "Austin Berry",
-    "income": 45900,
-    "address": "784 Davidson Ways\nLake Meredith, IL 85296",
+    "name": "Kathryn Gillespie",
+    "income": 43493,
+    "address": "Unit 3972 Box 1983\nDPO AE 55986",
     "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "MilkyWay Airlanes",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
     "travel_frequency": 13,
     "priority": "budget",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Somalia",
+        "city": "Mogadishu"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "United States",
+        "city": "New York"
+      },
+      {
+        "country": "India",
+        "city": "Bangalore"
+      },
+      {
+        "country": "Ghana",
+        "city": "Accra"
+      },
+      {
+        "country": "China",
+        "city": "Guiyang"
+      }
+    ],
     "marital_status": "married",
-    "party_size": 1,
+    "party_size": 4,
     "main_reason_for_travel": "business"
   },
   {
-    "name": "Rachel Mccarthy",
-    "income": 122349,
-    "address": "PSC 3301, Box 7026\nAPO AP 86138",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 2,
+    "name": "Matthew Bauer",
+    "income": 107242,
+    "address": "46263 Monique Drives\nWest Dianaton, PA 50516",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 9,
     "priority": "comfort",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Philippines",
+        "city": "Quezon City"
+      },
+      {
+        "country": "China",
+        "city": "Zibo"
+      },
+      {
+        "country": "Brazil",
+        "city": "Brasilia"
+      }
+    ],
     "marital_status": "married",
     "party_size": 5,
     "main_reason_for_travel": "leisure"
   },
   {
-    "name": "Brandon Craig",
-    "income": 105332,
-    "address": "23708 Peterson Brooks\nChristinafurt, ID 17196",
+    "name": "Shane Stanley",
+    "income": 42949,
+    "address": "7449 Maxwell Viaduct\nNew Eric, WY 52383",
     "car_rental_loyalty": "Rentio",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 10,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 3,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Jared Ray",
-    "income": 108126,
-    "address": "890 Brandi Landing\nMartinezberg, NV 08049",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 3,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 2,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Michael Williams",
-    "income": 191544,
-    "address": "9929 Ball Spur\nNew Erinburgh, OK 16386",
-    "car_rental_loyalty": "Rentio",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 2,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Kevin Frazier",
-    "income": 101502,
-    "address": "2744 Conway Cliffs Apt. 138\nNew Andrew, LA 38100",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
     "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 2,
+    "travel_frequency": 5,
     "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 2,
+    "frequently_visited_cities": [
+      {
+        "country": "Uruguay",
+        "city": "Montevideo"
+      },
+      {
+        "country": "Kenya",
+        "city": "Nairobi"
+      },
+      {
+        "country": "Egypt",
+        "city": "Alexandria"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "United States",
+        "city": "Phoenix"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+      },
+      {
+        "country": "Thailand",
+        "city": "Bangkok"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Lagos"
+      },
+      {
+        "country": "China",
+        "city": "Datong"
+      },
+      {
+        "country": "Brazil",
+        "city": "Belem"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 5,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Jack Good",
-    "income": 52610,
-    "address": "735 Curtis Trafficway Suite 348\nEast Robert, ND 32033",
-    "car_rental_loyalty": "Rent Pad",
+    "name": "Mark Thompson",
+    "income": 50168,
+    "address": "2711 Elliott Turnpike\nConnortown, NJ 56588",
+    "car_rental_loyalty": "Capsule",
     "hotel_chain_loyalty": "Elegant Enigma Alliance",
     "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 2,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 3,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Jose Santiago",
-    "income": 45189,
-    "address": "9709 Cannon Oval\nPort Brian, IL 20540",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Liberty Airlines",
     "travel_frequency": 5,
     "priority": "budget",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Iran",
+        "city": "Shiraz"
+      },
+      {
+        "country": "Brazil",
+        "city": "Recife"
+      },
+      {
+        "country": "Iran",
+        "city": "Qom"
+      },
+      {
+        "country": "Iran",
+        "city": "Tabriz"
+      },
+      {
+        "country": "Canada",
+        "city": "Ottawa"
+      },
+      {
+        "country": "Italy",
+        "city": "Rome"
+      },
+      {
+        "country": "Haiti",
+        "city": "Port-au-Prince"
+      },
+      {
+        "country": "India",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Donetsk"
+      }
+    ],
     "marital_status": "single",
     "party_size": null,
     "main_reason_for_travel": "leisure"
   },
   {
-    "name": "Heidi Taylor",
-    "income": 434916,
-    "address": "4758 Campbell Mews\nColonfurt, SD 12987",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 18,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Diane Beck",
-    "income": 171220,
-    "address": "9184 Eugene Vista\nEdwardport, GA 82106",
-    "car_rental_loyalty": "Chakra",
+    "name": "Scott Clark",
+    "income": 54934,
+    "address": "2955 Little Highway Apt. 119\nSimmonston, GA 29972",
+    "car_rental_loyalty": "Carlux",
     "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 8,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 3,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Mrs. Morgan Hall",
-    "income": 99912,
-    "address": "6585 Douglas Wall Apt. 861\nWallacemouth, KY 90840",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 10,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 11,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Canada",
+        "city": "Toronto"
+      },
+      {
+        "country": "China",
+        "city": "Datong"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "Cuba",
+        "city": "Havana"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "Iran",
+        "city": "Tabriz"
+      },
+      {
+        "country": "India",
+        "city": "Aurangabad"
+      },
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      }
+    ],
     "marital_status": "single",
-    "party_size": 2,
-    "main_reason_for_travel": "family"
+    "party_size": 4,
+    "main_reason_for_travel": "business"
   },
   {
     "name": "Theodore Taylor",
-    "income": 55274,
-    "address": "1541 Rodney Green\nNorth Ashley, WV 57274",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 9,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 4,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Dominique Lee",
-    "income": 132426,
-    "address": "0328 Kevin Pass\nSandrabury, NE 97992",
-    "car_rental_loyalty": "Capsule",
+    "income": 222200,
+    "address": "PSC 8017, Box 3990\nAPO AA 98057",
+    "car_rental_loyalty": "Rentio",
     "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 4,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Jessica Cantu",
-    "income": 351576,
-    "address": "12998 Mercer Crossing Apt. 525\nThomasfort, CO 29808",
-    "car_rental_loyalty": "Carlux",
-    "hotel_chain_loyalty": "Nimbus Elites",
     "airlines_loyalty": "MilkyWay Airlanes",
     "travel_frequency": 11,
     "priority": "luxury",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "Malaysia",
+        "city": "Kuala Lumpur"
+      },
+      {
+        "country": "Belarus",
+        "city": "Minsk"
+      }
+    ],
     "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Lucas Rogers",
-    "income": 396896,
-    "address": "1761 Perez Circle Suite 989\nPort Bryan, SD 13970",
-    "car_rental_loyalty": "Rentio",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 18,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Rebecca Howell",
-    "income": 134274,
-    "address": "0424 Harris Inlet\nBrittanyport, OH 23196",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 2,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 7,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Kenneth James",
-    "income": 435500,
-    "address": "41712 Campbell Port\nLisaland, IA 84127",
-    "car_rental_loyalty": "Chakra",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 27,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 6,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "William Nguyen",
-    "income": 265700,
-    "address": "USNV Allen\nFPO AP 41833",
-    "car_rental_loyalty": "Rentio",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 9,
-    "priority": "luxury",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 6,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Tammy Koch",
-    "income": 83514,
-    "address": "5168 Martin Station\nBurkechester, KS 44520",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 8,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
-    "party_size": 1,
-    "main_reason_for_travel": "business"
-  },
-  {
-    "name": "Rebecca Gray",
-    "income": 186708,
-    "address": "629 George Cliff Suite 191\nJamesstad, WI 13824",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Spartan Airlines",
-    "travel_frequency": 5,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": 1,
-    "main_reason_for_travel": "family"
-  },
-  {
-    "name": "Jason Jordan",
-    "income": 154698,
-    "address": "40429 Reyes Fall Apt. 523\nPort Angelica, WA 76158",
-    "car_rental_loyalty": "Capsule",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 7,
-    "priority": "comfort",
-    "frequently_visited_cities": [],
-    "marital_status": "single",
-    "party_size": null,
-    "main_reason_for_travel": "leisure"
-  },
-  {
-    "name": "Sarah Mann",
-    "income": 44943,
-    "address": "USNV Adams\nFPO AA 94309",
-    "car_rental_loyalty": "Rent Pad",
-    "hotel_chain_loyalty": "Elegant Enigma Alliance",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 8,
-    "priority": "budget",
-    "frequently_visited_cities": [],
-    "marital_status": "married",
     "party_size": 2,
-    "main_reason_for_travel": "leisure"
+    "main_reason_for_travel": "family"
   },
   {
-    "name": "David Jennings",
-    "income": 51963,
-    "address": "10081 Adam Burg Suite 126\nEast Jordanville, CO 51071",
-    "car_rental_loyalty": "Rentio",
-    "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 4,
+    "name": "Margaret Watts",
+    "income": 84104,
+    "address": "3498 Richardson Court\nPhillipshaven, MO 03946",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 3,
     "priority": "comfort",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Pakistan",
+        "city": "Peshawar"
+      },
+      {
+        "country": "India",
+        "city": "Ludhiana"
+      },
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "Sudan",
+        "city": "Khartoum"
+      },
+      {
+        "country": "Spain",
+        "city": "Barcelona"
+      },
+      {
+        "country": "India",
+        "city": "Indore"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 1,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Bryan Daniel",
+    "income": 451198,
+    "address": "75482 Lori Vista Suite 920\nKyleshire, CO 85139",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 35,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Brazil",
+        "city": "Fortaleza"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "Venezuela",
+        "city": "Maracaibo"
+      },
+      {
+        "country": "France",
+        "city": "Paris"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "India",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "China",
+        "city": "Shenzhen"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Palembang"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Peshawar"
+      },
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Faisalabad"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Taipei"
+      },
+      {
+        "country": "Lebanon",
+        "city": "Beirut"
+      },
+      {
+        "country": "China",
+        "city": "Dalian"
+      },
+      {
+        "country": "China",
+        "city": "Wuxi"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "Iran",
+        "city": "Shiraz"
+      },
+      {
+        "country": "Thailand",
+        "city": "Bangkok"
+      },
+      {
+        "country": "Mozambique",
+        "city": "Maputo"
+      },
+      {
+        "country": "India",
+        "city": "Agra"
+      },
+      {
+        "country": "Brazil",
+        "city": "Recife"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "China",
+        "city": "Hefei"
+      },
+      {
+        "country": "China",
+        "city": "Wuxi"
+      },
+      {
+        "country": "Italy",
+        "city": "Milan"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      {
+        "country": "Iran",
+        "city": "Qom"
+      },
+      {
+        "country": "Brazil",
+        "city": "Brasilia"
+      },
+      {
+        "country": "China",
+        "city": "Wuhan"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "South Africa",
+        "city": "Pretoria"
+      },
+      {
+        "country": "Canada",
+        "city": "Ottawa"
+      },
+      {
+        "country": "Australia",
+        "city": "Melbourne"
+      },
+      {
+        "country": "Iran",
+        "city": "Karaj"
+      }
+    ],
     "marital_status": "single",
     "party_size": 3,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Billy Ortega",
-    "income": 54420,
-    "address": "46340 Derek Way\nAndrewland, IN 57471",
-    "car_rental_loyalty": "Capsule",
+    "name": "Ryan Palmer",
+    "income": 413875,
+    "address": "201 Cody Village\nNew Juliestad, WI 14510",
+    "car_rental_loyalty": "Carlux",
     "hotel_chain_loyalty": "Nimbus Elites",
-    "airlines_loyalty": "Liberty Airlines",
-    "travel_frequency": 9,
-    "priority": "budget",
-    "frequently_visited_cities": [],
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 24,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Armenia",
+        "city": "Yerevan"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "South Africa",
+        "city": "Durban"
+      },
+      {
+        "country": "Brazil",
+        "city": "Recife"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      }
+    ],
     "marital_status": "married",
-    "party_size": 5,
+    "party_size": 2,
     "main_reason_for_travel": "leisure"
   },
   {
-    "name": "Emily Watson",
-    "income": 43581,
-    "address": "2486 Powell Field\nSouth Stephanie, IL 95132",
+    "name": "Kristopher Davis",
+    "income": 141399,
+    "address": "8910 Madeline Fall Apt. 072\nKeithhaven, NC 25327",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 6,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "Mali",
+        "city": "Bamako"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Peshawar"
+      },
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "Uganda",
+        "city": "Kampala"
+      },
+      {
+        "country": "Peru",
+        "city": "Lima"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 3,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Sean Walker",
+    "income": 119120,
+    "address": "8690 Warren Light\nTuckerview, AR 25428",
     "car_rental_loyalty": "Rent Pad",
     "hotel_chain_loyalty": "Urban Lifestyle",
-    "airlines_loyalty": "MilkyWay Airlanes",
-    "travel_frequency": 5,
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 4,
     "priority": "comfort",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "Morocco",
+        "city": "Casablanca"
+      },
+      {
+        "country": "Iran",
+        "city": "Tehran"
+      },
+      {
+        "country": "Kenya",
+        "city": "Nairobi"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "India",
+        "city": "Vadodara"
+      },
+      {
+        "country": "China",
+        "city": "Hefei"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 6,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Michael Davis",
+    "income": 43293,
+    "address": "33347 Thomas Spurs Suite 067\nPort Andrea, OH 70941",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 2,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "South Africa",
+        "city": "Pretoria"
+      },
+      {
+        "country": "Canada",
+        "city": "Montreal"
+      },
+      {
+        "country": "Russia",
+        "city": "Perm"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "China",
+        "city": "Datong"
+      },
+      {
+        "country": "Turkey",
+        "city": "Ankara"
+      },
+      {
+        "country": "Australia",
+        "city": "Perth"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Ibadan"
+      },
+      {
+        "country": "Thailand",
+        "city": "Bangkok"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 4,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Ryan Jimenez",
+    "income": 99528,
+    "address": "36099 Tyler Station Apt. 037\nSouth Kristopherfort, DC 25964",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 8,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "Australia",
+        "city": "Sydney"
+      },
+      {
+        "country": "Armenia",
+        "city": "Yerevan"
+      },
+      {
+        "country": "Iran",
+        "city": "Mashhad"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 3,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Pam Elliott MD",
+    "income": 259806,
+    "address": "2380 Gary Valley\nNew Jennaberg, AZ 59866",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 12,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Romania",
+        "city": "Bucharest"
+      },
+      {
+        "country": "South Africa",
+        "city": "Johannesburg"
+      },
+      {
+        "country": "China",
+        "city": "Qingdao"
+      },
+      {
+        "country": "China",
+        "city": "Harbin"
+      },
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "China",
+        "city": "Guangzhou"
+      },
+      {
+        "country": "China",
+        "city": "Lanzhou"
+      },
+      {
+        "country": "India",
+        "city": "Mumbai"
+      },
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "China",
+        "city": "Harbin"
+      },
+      {
+        "country": "India",
+        "city": "Surat"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 2,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Steven Lee",
+    "income": 53436,
+    "address": "96235 Ruth Bypass\nNelsonbury, CT 77267",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 9,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Nigeria",
+        "city": "Lagos"
+      },
+      {
+        "country": "United States",
+        "city": "Houston"
+      },
+      {
+        "country": "China",
+        "city": "Zibo"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 3,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Sheila Bennett",
+    "income": 476109,
+    "address": "629 Anthony Vista Apt. 895\nTammyhaven, ID 27652",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 16,
+    "priority": "time",
+    "frequently_visited_cities": [
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      },
+      {
+        "country": "Jordan",
+        "city": "Amman"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Taipei"
+      },
+      {
+        "country": "United Kingdom",
+        "city": "London"
+      },
+      {
+        "country": "Colombia",
+        "city": "Cali"
+      },
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "India",
+        "city": "Indore"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "Iraq",
+        "city": "Mosul"
+      },
+      {
+        "country": "China",
+        "city": "Shanghai"
+      },
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      },
+      {
+        "country": "South Africa",
+        "city": "Pretoria"
+      },
+      {
+        "country": "Belarus",
+        "city": "Minsk"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 3,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Joseph Rice",
+    "income": 109588,
+    "address": "Unit 7956 Box 7832\nDPO AP 02095",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 14,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "United States",
+        "city": "San Antonio"
+      },
+      {
+        "country": "Jordan",
+        "city": "Amman"
+      },
+      {
+        "country": "United States",
+        "city": "San Antonio"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "India",
+        "city": "Amritsar"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "Romania",
+        "city": "Bucharest"
+      },
+      {
+        "country": "China",
+        "city": "Lanzhou"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      {
+        "country": "United States",
+        "city": "Chicago"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 3,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Larry Hensley",
+    "income": 54725,
+    "address": "859 Irwin Village\nLake Maria, TN 23848",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 9,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Pakistan",
+        "city": "Karachi"
+      },
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "United Kingdom",
+        "city": "London"
+      },
+      {
+        "country": "Kenya",
+        "city": "Nairobi"
+      },
+      {
+        "country": "Russia",
+        "city": "Perm"
+      },
+      {
+        "country": "Uganda",
+        "city": "Kampala"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "Morocco",
+        "city": "Casablanca"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Bruce Evans",
+    "income": 40326,
+    "address": "681 Carolyn Curve\nCurtiston, GA 56587",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 10,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "Russia",
+        "city": "Omsk"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 3,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Tabitha Cross",
+    "income": 40056,
+    "address": "USNV Smith\nFPO AP 66483",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 2,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Mexico",
+        "city": "Tijuana"
+      },
+      {
+        "country": "Austria",
+        "city": "Vienna"
+      },
+      {
+        "country": "Canada",
+        "city": "Calgary"
+      },
+      {
+        "country": "India",
+        "city": "Indore"
+      },
+      {
+        "country": "Brazil",
+        "city": "Belem"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Antonio Gonzalez",
+    "income": 44567,
+    "address": "756 Sanchez Hills Suite 870\nPort Bryanhaven, VA 40546",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 9,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "South Africa",
+        "city": "Durban"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Jakarta"
+      },
+      {
+        "country": "Iran",
+        "city": "Qom"
+      }
+    ],
     "marital_status": "married",
     "party_size": 5,
     "main_reason_for_travel": "family"
   },
   {
-    "name": "Robert Smith",
-    "income": 43908,
-    "address": "09309 Hodges Shores Suite 071\nClaytonfurt, ND 86754",
-    "car_rental_loyalty": "Carlux",
+    "name": "Jessica King",
+    "income": 58496,
+    "address": "7525 Perry Roads\nSanchezburgh, AL 98534",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 13,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Indore"
+      },
+      {
+        "country": "Colombia",
+        "city": "Cali"
+      },
+      {
+        "country": "Australia",
+        "city": "Perth"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Semarang"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "India",
+        "city": "Ludhiana"
+      },
+      {
+        "country": "Cuba",
+        "city": "Havana"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "China",
+        "city": "Baotou"
+      },
+      {
+        "country": "India",
+        "city": "Pune"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "William Frazier",
+    "income": 59351,
+    "address": "7400 Norton Wells\nWest Philipbury, MA 15869",
+    "car_rental_loyalty": "Chakra",
     "hotel_chain_loyalty": "Nimbus Elites",
     "airlines_loyalty": "Phoenix Airlines",
-    "travel_frequency": 6,
+    "travel_frequency": 2,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Peshawar"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "Canada",
+        "city": "Toronto"
+      },
+      {
+        "country": "Kazakhstan",
+        "city": "Almaty"
+      },
+      {
+        "country": "China",
+        "city": "Shanghai"
+      },
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "China",
+        "city": "Wuhan"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Chad Andrade",
+    "income": 47578,
+    "address": "48413 Allen Wells Suite 240\nWest Stephanie, NJ 74577",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 22,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Chile",
+        "city": "Santiago"
+      },
+      {
+        "country": "Brazil",
+        "city": "Belem"
+      },
+      {
+        "country": "Brazil",
+        "city": "Rio de Janeiro"
+      },
+      {
+        "country": "China",
+        "city": "Guiyang"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Ibadan"
+      },
+      {
+        "country": "South Africa",
+        "city": "Cape Town"
+      },
+      {
+        "country": "Brazil",
+        "city": "Goiania"
+      },
+      {
+        "country": "Mozambique",
+        "city": "Maputo"
+      },
+      {
+        "country": "Brazil",
+        "city": "Belem"
+      },
+      {
+        "country": "Japan",
+        "city": "Tokyo"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      {
+        "country": "Cuba",
+        "city": "Havana"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 4,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Roger Morrison",
+    "income": 43847,
+    "address": "2655 Mason Corner\nNew Mark, SC 07900",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 19,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Guiyang"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "Italy",
+        "city": "Milan"
+      },
+      {
+        "country": "Philippines",
+        "city": "Quezon City"
+      },
+      {
+        "country": "China",
+        "city": "Handan"
+      },
+      {
+        "country": "Peru",
+        "city": "Lima"
+      },
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "India",
+        "city": "Pune"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "China",
+        "city": "Wuhan"
+      },
+      {
+        "country": "Belarus",
+        "city": "Minsk"
+      },
+      {
+        "country": "Turkey",
+        "city": "Istanbul"
+      },
+      {
+        "country": "Japan",
+        "city": "Hiroshima"
+      },
+      {
+        "country": "Mali",
+        "city": "Bamako"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bandung"
+      },
+      {
+        "country": "Brazil",
+        "city": "Goiania"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Heather Boyd",
+    "income": 179616,
+    "address": "676 Taylor Divide Suite 835\nJohnsonport, CT 80852",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 12,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "India",
+        "city": "Mumbai"
+      },
+      {
+        "country": "Australia",
+        "city": "Melbourne"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "China",
+        "city": "Nanjing"
+      },
+      {
+        "country": "Italy",
+        "city": "Milan"
+      },
+      {
+        "country": "Morocco",
+        "city": "Rabat"
+      },
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Jakarta"
+      },
+      {
+        "country": "India",
+        "city": "Vadodara"
+      },
+      {
+        "country": "Zambia",
+        "city": "Lusaka"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Lindsay Jones",
+    "income": 42780,
+    "address": "779 Martinez Motorway Suite 768\nPetersmouth, ID 61174",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 2,
     "priority": "comfort",
-    "frequently_visited_cities": [],
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Guangzhou"
+      },
+      {
+        "country": "India",
+        "city": "Indore"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 2,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Karen Delacruz",
+    "income": 84428,
+    "address": "98200 Jeffrey Stravenue Suite 532\nNew Adam, MA 52816",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 9,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "United States",
+        "city": "Chicago"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      },
+      {
+        "country": "Italy",
+        "city": "Milan"
+      },
+      {
+        "country": "Spain",
+        "city": "Barcelona"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Melissa Gutierrez",
+    "income": 457704,
+    "address": "USNV Santos\nFPO AA 95115",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 39,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Brazil",
+        "city": "Rio de Janeiro"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Ibadan"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "Romania",
+        "city": "Bucharest"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      },
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Lagos"
+      },
+      {
+        "country": "India",
+        "city": "Indore"
+      },
+      {
+        "country": "Iran",
+        "city": "Abadan"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Lahore"
+      },
+      {
+        "country": "Haiti",
+        "city": "Port-au-Prince"
+      },
+      {
+        "country": "Thailand",
+        "city": "Bangkok"
+      },
+      {
+        "country": "Iran",
+        "city": "Abadan"
+      },
+      {
+        "country": "United States",
+        "city": "Chicago"
+      },
+      {
+        "country": "China",
+        "city": "Tianjin"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "Canada",
+        "city": "Ottawa"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "India",
+        "city": "Bangalore"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Semarang"
+      },
+      {
+        "country": "India",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "Venezuela",
+        "city": "Caracas"
+      },
+      {
+        "country": "Japan",
+        "city": "Sapporo"
+      },
+      {
+        "country": "China",
+        "city": "Tianjin"
+      },
+      {
+        "country": "Ethiopia",
+        "city": "Addis Ababa"
+      },
+      {
+        "country": "Uganda",
+        "city": "Kampala"
+      },
+      {
+        "country": "Kenya",
+        "city": "Nairobi"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Debra Blevins",
+    "income": 123807,
+    "address": "23791 Tyler Glens\nAshleyton, VT 69138",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 23,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "Colombia",
+        "city": "Cali"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      {
+        "country": "Canada",
+        "city": "Montreal"
+      },
+      {
+        "country": "Russia",
+        "city": "Kazan"
+      },
+      {
+        "country": "Iraq",
+        "city": "Baghdad"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Christina Short",
+    "income": 161946,
+    "address": "203 Kimberly Pike\nWest Gregoryton, NE 14890",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 5,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Germany",
+        "city": "Hamburg"
+      },
+      {
+        "country": "United States",
+        "city": "Phoenix"
+      },
+      {
+        "country": "India",
+        "city": "Indore"
+      },
+      {
+        "country": "India",
+        "city": "Pune"
+      },
+      {
+        "country": "Belarus",
+        "city": "Minsk"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Dr. Nicole Martinez DDS",
+    "income": 631609,
+    "address": "57315 Moyer Hill\nNorth Dakota, CA 20948",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 13,
+    "priority": "time",
+    "frequently_visited_cities": [
+      {
+        "country": "Algeria",
+        "city": "Algiers"
+      },
+      {
+        "country": "India",
+        "city": "Amritsar"
+      },
+      {
+        "country": "Turkey",
+        "city": "Bursa"
+      },
+      {
+        "country": "United States",
+        "city": "Los Angeles"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Lance May",
+    "income": 165714,
+    "address": "7036 Suzanne Harbor\nNew Karenland, ND 32644",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 14,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Egypt",
+        "city": "Alexandria"
+      },
+      {
+        "country": "Sudan",
+        "city": "Khartoum"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bandung"
+      },
+      {
+        "country": "China",
+        "city": "Hefei"
+      },
+      {
+        "country": "China",
+        "city": "Changchun"
+      },
+      {
+        "country": "India",
+        "city": "Amritsar"
+      },
+      {
+        "country": "United States",
+        "city": "Chicago"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Anita Jacobs",
+    "income": 498372,
+    "address": "074 Mullen Glen\nJohnsonfurt, DE 12302",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 29,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "Canada",
+        "city": "Calgary"
+      },
+      {
+        "country": "China",
+        "city": "Baotou"
+      },
+      {
+        "country": "Iran",
+        "city": "Qom"
+      },
+      {
+        "country": "Russia",
+        "city": "Kazan"
+      },
+      {
+        "country": "Mexico",
+        "city": "Mexico City"
+      },
+      {
+        "country": "India",
+        "city": "Indore"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "India",
+        "city": "Bangalore"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Palembang"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      {
+        "country": "Iran",
+        "city": "Qom"
+      },
+      {
+        "country": "Japan",
+        "city": "Kyoto"
+      },
+      {
+        "country": "Somalia",
+        "city": "Mogadishu"
+      },
+      {
+        "country": "United States",
+        "city": "Dallas"
+      },
+      {
+        "country": "Philippines",
+        "city": "Quezon City"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Benin City"
+      },
+      {
+        "country": "United States",
+        "city": "Houston"
+      }
+    ],
     "marital_status": "married",
     "party_size": 5,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Connie Perkins",
+    "income": 53295,
+    "address": "5826 Hogan River\nPort Kellychester, FL 92175",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 27,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Vadodara"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "Dominican Republic",
+        "city": "Santo Domingo"
+      },
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "United States",
+        "city": "Chicago"
+      },
+      {
+        "country": "Kazakhstan",
+        "city": "Almaty"
+      },
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "United States",
+        "city": "Dallas"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "Mexico",
+        "city": "Tijuana"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "Sudan",
+        "city": "Khartoum"
+      },
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "Japan",
+        "city": "Tokyo"
+      },
+      {
+        "country": "Egypt",
+        "city": "Alexandria"
+      },
+      {
+        "country": "Algeria",
+        "city": "Algiers"
+      },
+      {
+        "country": "Australia",
+        "city": "Adelaide"
+      },
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Jakarta"
+      },
+      {
+        "country": "China",
+        "city": "Harbin"
+      },
+      {
+        "country": "Belarus",
+        "city": "Minsk"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bandung"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Anthony King",
+    "income": 705192,
+    "address": "44538 James Ville\nNew Janetfurt, CA 03101",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 21,
+    "priority": "time",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Changchun"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Lagos"
+      },
+      {
+        "country": "China",
+        "city": "Changchun"
+      },
+      {
+        "country": "China",
+        "city": "Baotou"
+      },
+      {
+        "country": "Ethiopia",
+        "city": "Addis Ababa"
+      },
+      {
+        "country": "Poland",
+        "city": "Warsaw"
+      },
+      {
+        "country": "Germany",
+        "city": "Hamburg"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 3,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Olivia Marshall",
+    "income": 483770,
+    "address": "931 Alejandro Loaf\nKatiefort, TX 21988",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 7,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Zimbabwe",
+        "city": "Harare"
+      },
+      {
+        "country": "Egypt",
+        "city": "Alexandria"
+      },
+      {
+        "country": "South Africa",
+        "city": "Johannesburg"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 4,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Peter Sellers",
+    "income": 47756,
+    "address": "18271 Morgan Mountain\nEast Margaret, WY 02824",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 21,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "United States",
+        "city": "San Antonio"
+      },
+      {
+        "country": "Morocco",
+        "city": "Casablanca"
+      },
+      {
+        "country": "India",
+        "city": "Aurangabad"
+      },
+      {
+        "country": "United Arab Emirates",
+        "city": "Dubai"
+      },
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "Australia",
+        "city": "Adelaide"
+      },
+      {
+        "country": "France",
+        "city": "Paris"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Palembang"
+      },
+      {
+        "country": "Kazakhstan",
+        "city": "Almaty"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Jakarta"
+      },
+      {
+        "country": "Armenia",
+        "city": "Yerevan"
+      },
+      {
+        "country": "Mozambique",
+        "city": "Maputo"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "China",
+        "city": "Changsha"
+      },
+      {
+        "country": "Colombia",
+        "city": "Cali"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 3,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "James Burgess",
+    "income": 223156,
+    "address": "19828 Johnson Avenue Apt. 370\nNew Carolton, NV 97618",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 9,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Pakistan",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "China",
+        "city": "Qingdao"
+      },
+      {
+        "country": "Iran",
+        "city": "Mashhad"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Rawalpindi"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 3,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Dale Smith",
+    "income": 41921,
+    "address": "7446 James Cape Apt. 540\nRobinborough, UT 11660",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 3,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "United States",
+        "city": "Houston"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Peshawar"
+      },
+      {
+        "country": "Azerbaijan",
+        "city": "Baku"
+      },
+      {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      {
+        "country": "Brazil",
+        "city": "Brasilia"
+      },
+      {
+        "country": "China",
+        "city": "Wuhan"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Emily Carrillo",
+    "income": 58732,
+    "address": "900 Clark Alley Suite 985\nMatthewmouth, NY 79696",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 14,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      },
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bandung"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Rebecca Casey",
+    "income": 480456,
+    "address": "965 Nelson Via Apt. 837\nNathanborough, MN 78214",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 7,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      {
+        "country": "China",
+        "city": "Tianjin"
+      },
+      {
+        "country": "Canada",
+        "city": "Toronto"
+      },
+      {
+        "country": "France",
+        "city": "Paris"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Dhaka"
+      },
+      {
+        "country": "United States",
+        "city": "Dallas"
+      },
+      {
+        "country": "Burkina Faso",
+        "city": "Ouagadougou"
+      },
+      {
+        "country": "Brazil",
+        "city": "Belem"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 7,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Richard Osborn",
+    "income": 179892,
+    "address": "21312 Robert Shore\nChristopherberg, NH 69361",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 7,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Burkina Faso",
+        "city": "Ouagadougou"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "Mexico",
+        "city": "Guadalajara"
+      },
+      {
+        "country": "Lebanon",
+        "city": "Beirut"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Shelly Sexton",
+    "income": 210445,
+    "address": "830 Jackson Club Apt. 262\nAnthonyport, ND 97432",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 29,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      },
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      },
+      {
+        "country": "Ghana",
+        "city": "Accra"
+      },
+      {
+        "country": "Brazil",
+        "city": "Sao Paulo"
+      },
+      {
+        "country": "Russia",
+        "city": "Omsk"
+      },
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "United States",
+        "city": "Philadelphia"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "Austria",
+        "city": "Vienna"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Palembang"
+      },
+      {
+        "country": "Mexico",
+        "city": "Ciudad Juarez"
+      },
+      {
+        "country": "Turkey",
+        "city": "Ankara"
+      },
+      {
+        "country": "Algeria",
+        "city": "Algiers"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "Japan",
+        "city": "Hiroshima"
+      },
+      {
+        "country": "India",
+        "city": "Amritsar"
+      },
+      {
+        "country": "Australia",
+        "city": "Adelaide"
+      },
+      {
+        "country": "China",
+        "city": "Handan"
+      },
+      {
+        "country": "China",
+        "city": "Hefei"
+      },
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "Russia",
+        "city": "Novosibirsk"
+      },
+      {
+        "country": "Malaysia",
+        "city": "Kuala Lumpur"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      },
+      {
+        "country": "Canada",
+        "city": "Toronto"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Kano"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Matthew Patrick",
+    "income": 159957,
+    "address": "378 Lopez Squares\nChristopherland, IL 92289",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 2,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Spain",
+        "city": "Barcelona"
+      },
+      {
+        "country": "Kenya",
+        "city": "Nairobi"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 2,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Mrs. Tracey Garcia",
+    "income": 351659,
+    "address": "4709 Bailey Rue\nLake Melissaville, PA 42459",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 36,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Italy",
+        "city": "Rome"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "China",
+        "city": "Baotou"
+      },
+      {
+        "country": "Turkey",
+        "city": "Istanbul"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Semarang"
+      },
+      {
+        "country": "Argentina",
+        "city": "Buenos Aires"
+      },
+      {
+        "country": "Hungary",
+        "city": "Budapest"
+      },
+      {
+        "country": "Italy",
+        "city": "Rome"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Palembang"
+      },
+      {
+        "country": "China",
+        "city": "Shenzhen"
+      },
+      {
+        "country": "China",
+        "city": "Shenzhen"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "Afghanistan",
+        "city": "Kabul"
+      },
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "China",
+        "city": "Lanzhou"
+      },
+      {
+        "country": "Brazil",
+        "city": "Sao Paulo"
+      },
+      {
+        "country": "Mexico",
+        "city": "Guadalajara"
+      },
+      {
+        "country": "Venezuela",
+        "city": "Caracas"
+      },
+      {
+        "country": "Poland",
+        "city": "Warsaw"
+      },
+      {
+        "country": "Bulgaria",
+        "city": "Sofia"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      {
+        "country": "Turkey",
+        "city": "Bursa"
+      },
+      {
+        "country": "Zimbabwe",
+        "city": "Harare"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Ibadan"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Benin City"
+      },
+      {
+        "country": "China",
+        "city": "Datong"
+      },
+      {
+        "country": "Morocco",
+        "city": "Rabat"
+      },
+      {
+        "country": "Ghana",
+        "city": "Accra"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 5,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Daniel Barrett",
+    "income": 51568,
+    "address": "10636 Wright Passage\nThomasview, IA 80851",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 23,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "Hungary",
+        "city": "Budapest"
+      },
+      {
+        "country": "China",
+        "city": "Changsha"
+      },
+      {
+        "country": "Germany",
+        "city": "Munich"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Matthew Oneal",
+    "income": 44361,
+    "address": "144 Sarah Manor Apt. 403\nWest Amandahaven, CT 85228",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 2,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Kenya",
+        "city": "Nairobi"
+      },
+      {
+        "country": "Uruguay",
+        "city": "Montevideo"
+      },
+      {
+        "country": "China",
+        "city": "Nanchang"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 5,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "James Mcdaniel",
+    "income": 224296,
+    "address": "USCGC Roberts\nFPO AA 50454",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 20,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Turkey",
+        "city": "Adana"
+      },
+      {
+        "country": "Egypt",
+        "city": "Alexandria"
+      },
+      {
+        "country": "Philippines",
+        "city": "Quezon City"
+      },
+      {
+        "country": "China",
+        "city": "Wuhan"
+      },
+      {
+        "country": "China",
+        "city": "Dalian"
+      },
+      {
+        "country": "China",
+        "city": "Handan"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Vincent Nelson",
+    "income": 429040,
+    "address": "55788 Villa Manor\nSouth Thomashaven, OH 04121",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 27,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "Canada",
+        "city": "Ottawa"
+      },
+      {
+        "country": "Kazakhstan",
+        "city": "Almaty"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "Argentina",
+        "city": "Buenos Aires"
+      },
+      {
+        "country": "Mexico",
+        "city": "Tijuana"
+      },
+      {
+        "country": "Uruguay",
+        "city": "Montevideo"
+      },
+      {
+        "country": "Canada",
+        "city": "Toronto"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "Brazil",
+        "city": "Manaus"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+      },
+      {
+        "country": "Brazil",
+        "city": "Fortaleza"
+      },
+      {
+        "country": "Turkey",
+        "city": "Istanbul"
+      },
+      {
+        "country": "India",
+        "city": "Amritsar"
+      },
+      {
+        "country": "India",
+        "city": "Vadodara"
+      },
+      {
+        "country": "Uganda",
+        "city": "Kampala"
+      },
+      {
+        "country": "Brazil",
+        "city": "Rio de Janeiro"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 3,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "James Mercado",
+    "income": 362826,
+    "address": "064 Robin Square Suite 276\nMarieside, NJ 49320",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 36,
+    "priority": "time",
+    "frequently_visited_cities": [
+      {
+        "country": "Australia",
+        "city": "Adelaide"
+      },
+      {
+        "country": "Iran",
+        "city": "Mashhad"
+      },
+      {
+        "country": "Poland",
+        "city": "Warsaw"
+      },
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "Iran",
+        "city": "Shiraz"
+      },
+      {
+        "country": "Venezuela",
+        "city": "Caracas"
+      },
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "Mexico",
+        "city": "Monterrey"
+      },
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "Australia",
+        "city": "Sydney"
+      },
+      {
+        "country": "Hungary",
+        "city": "Budapest"
+      },
+      {
+        "country": "United States",
+        "city": "Phoenix"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      },
+      {
+        "country": "Jordan",
+        "city": "Amman"
+      },
+      {
+        "country": "Brazil",
+        "city": "Manaus"
+      },
+      {
+        "country": "India",
+        "city": "Delhi"
+      },
+      {
+        "country": "India",
+        "city": "Aurangabad"
+      },
+      {
+        "country": "Iran",
+        "city": "Qom"
+      },
+      {
+        "country": "Mexico",
+        "city": "Tijuana"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "India",
+        "city": "Mumbai"
+      },
+      {
+        "country": "South Africa",
+        "city": "Cape Town"
+      },
+      {
+        "country": "Russia",
+        "city": "Moscow"
+      },
+      {
+        "country": "Russia",
+        "city": "Omsk"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Loretta Carroll",
+    "income": 45584,
+    "address": "768 Taylor Mission\nMichaelview, FL 73439",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 16,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Philippines",
+        "city": "Quezon City"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "Iran",
+        "city": "Karaj"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 3,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Brian Rubio",
+    "income": 43661,
+    "address": "735 Sanders Square\nPort Kristimouth, WA 17186",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 15,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Jordan",
+        "city": "Amman"
+      },
+      {
+        "country": "Italy",
+        "city": "Milan"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Benin City"
+      },
+      {
+        "country": "Iraq",
+        "city": "Baghdad"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Belinda Thompson",
+    "income": 86378,
+    "address": "Unit 3215 Box 6402\nDPO AP 34400",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 12,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "United Kingdom",
+        "city": "London"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "Cuba",
+        "city": "Havana"
+      },
+      {
+        "country": "India",
+        "city": "Vadodara"
+      },
+      {
+        "country": "Russia",
+        "city": "Omsk"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "Turkey",
+        "city": "Adana"
+      },
+      {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      {
+        "country": "Mexico",
+        "city": "Tijuana"
+      },
+      {
+        "country": "China",
+        "city": "Dalian"
+      },
+      {
+        "country": "South Africa",
+        "city": "Pretoria"
+      },
+      {
+        "country": "Australia",
+        "city": "Melbourne"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Samantha Morris",
+    "income": 114478,
+    "address": "6806 Horn Lock\nBethview, NC 52486",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 13,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Iran",
+        "city": "Tehran"
+      },
+      {
+        "country": "Brazil",
+        "city": "Goiania"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+      },
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "United Kingdom",
+        "city": "London"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      },
+      {
+        "country": "Russia",
+        "city": "Perm"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Hyderabad"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "James Smith",
+    "income": 391041,
+    "address": "USCGC Meyer\nFPO AP 57422",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 39,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "Russia",
+        "city": "Perm"
+      },
+      {
+        "country": "China",
+        "city": "Wuxi"
+      },
+      {
+        "country": "Kenya",
+        "city": "Nairobi"
+      },
+      {
+        "country": "Uruguay",
+        "city": "Montevideo"
+      },
+      {
+        "country": "Malaysia",
+        "city": "Kuala Lumpur"
+      },
+      {
+        "country": "Canada",
+        "city": "Montreal"
+      },
+      {
+        "country": "India",
+        "city": "Bhopal"
+      },
+      {
+        "country": "China",
+        "city": "Baotou"
+      },
+      {
+        "country": "United Kingdom",
+        "city": "London"
+      },
+      {
+        "country": "Brazil",
+        "city": "Fortaleza"
+      },
+      {
+        "country": "India",
+        "city": "Surat"
+      },
+      {
+        "country": "United States",
+        "city": "Phoenix"
+      },
+      {
+        "country": "Spain",
+        "city": "Barcelona"
+      },
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "India",
+        "city": "Agra"
+      },
+      {
+        "country": "Canada",
+        "city": "Ottawa"
+      },
+      {
+        "country": "United States",
+        "city": "Los Angeles"
+      },
+      {
+        "country": "Brazil",
+        "city": "Recife"
+      },
+      {
+        "country": "Iran",
+        "city": "Tabriz"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Elizabeth Grant",
+    "income": 180952,
+    "address": "PSC 4853, Box 7902\nAPO AP 48131",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 16,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Ludhiana"
+      },
+      {
+        "country": "Spain",
+        "city": "Madrid"
+      },
+      {
+        "country": "United States",
+        "city": "San Antonio"
+      },
+      {
+        "country": "Brazil",
+        "city": "Sao Paulo"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Peshawar"
+      },
+      {
+        "country": "Brazil",
+        "city": "Manaus"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Chittagong"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Kano"
+      },
+      {
+        "country": "Mozambique",
+        "city": "Maputo"
+      },
+      {
+        "country": "China",
+        "city": "Anshan"
+      },
+      {
+        "country": "China",
+        "city": "Tianjin"
+      },
+      {
+        "country": "United States",
+        "city": "Dallas"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Dhaka"
+      },
+      {
+        "country": "South Africa",
+        "city": "Durban"
+      },
+      {
+        "country": "Sudan",
+        "city": "Khartoum"
+      },
+      {
+        "country": "Russia",
+        "city": "Kazan"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Heather Wood",
+    "income": 147189,
+    "address": "7950 Perez Plaza Apt. 716\nRebeccamouth, CT 86073",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 4,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Cuba",
+        "city": "Havana"
+      },
+      {
+        "country": "China",
+        "city": "Shanghai"
+      },
+      {
+        "country": "United States",
+        "city": "San Diego"
+      },
+      {
+        "country": "Brazil",
+        "city": "Fortaleza"
+      },
+      {
+        "country": "Russia",
+        "city": "Kazan"
+      },
+      {
+        "country": "India",
+        "city": "Ludhiana"
+      },
+      {
+        "country": "China",
+        "city": "Qingdao"
+      },
+      {
+        "country": "China",
+        "city": "Guangzhou"
+      },
+      {
+        "country": "Lebanon",
+        "city": "Beirut"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Roy Randall",
+    "income": 54187,
+    "address": "Unit 0243 Box 9653\nDPO AP 77751",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 16,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Poland",
+        "city": "Warsaw"
+      },
+      {
+        "country": "China",
+        "city": "Tianjin"
+      },
+      {
+        "country": "Mexico",
+        "city": "Mexico City"
+      },
+      {
+        "country": "India",
+        "city": "Aurangabad"
+      },
+      {
+        "country": "India",
+        "city": "Amritsar"
+      },
+      {
+        "country": "China",
+        "city": "Shenzhen"
+      },
+      {
+        "country": "Zimbabwe",
+        "city": "Harare"
+      },
+      {
+        "country": "India",
+        "city": "Agra"
+      },
+      {
+        "country": "Argentina",
+        "city": "Buenos Aires"
+      },
+      {
+        "country": "Chile",
+        "city": "Santiago"
+      },
+      {
+        "country": "Germany",
+        "city": "Hamburg"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Dhaka"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Hyderabad"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 2,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "John Hudson",
+    "income": 59221,
+    "address": "3914 Matthews Ranch Suite 245\nLake Juan, WV 34904",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 25,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Hefei"
+      },
+      {
+        "country": "Brazil",
+        "city": "Rio de Janeiro"
+      },
+      {
+        "country": "China",
+        "city": "Wuxi"
+      },
+      {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      {
+        "country": "Russia",
+        "city": "Perm"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 4,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Kyle Mendoza",
+    "income": 508662,
+    "address": "24254 Kirby Villages Suite 395\nEast Ronaldburgh, PA 76524",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Phoenix Airlines",
+    "travel_frequency": 23,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Morocco",
+        "city": "Rabat"
+      },
+      {
+        "country": "Zimbabwe",
+        "city": "Harare"
+      },
+      {
+        "country": "India",
+        "city": "Surat"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 4,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Samantha Allen",
+    "income": 45611,
+    "address": "6439 Zhang Villages\nBarnestown, IA 40580",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 21,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "Colombia",
+        "city": "Barranquilla"
+      },
+      {
+        "country": "Mali",
+        "city": "Bamako"
+      },
+      {
+        "country": "Zimbabwe",
+        "city": "Harare"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "Russia",
+        "city": "Samara"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Lahore"
+      },
+      {
+        "country": "Italy",
+        "city": "Milan"
+      },
+      {
+        "country": "China",
+        "city": "Wuxi"
+      },
+      {
+        "country": "Zambia",
+        "city": "Lusaka"
+      },
+      {
+        "country": "Madagascar",
+        "city": "Antananarivo"
+      },
+      {
+        "country": "Turkey",
+        "city": "Adana"
+      },
+      {
+        "country": "Turkey",
+        "city": "Adana"
+      },
+      {
+        "country": "Philippines",
+        "city": "Quezon City"
+      },
+      {
+        "country": "India",
+        "city": "Delhi"
+      },
+      {
+        "country": "Japan",
+        "city": "Hiroshima"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Michael Miller",
+    "income": 58281,
+    "address": "997 Tucker Courts Suite 363\nPort Markton, CA 02307",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 17,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Shenzhen"
+      },
+      {
+        "country": "Ghana",
+        "city": "Accra"
+      },
+      {
+        "country": "United States",
+        "city": "Phoenix"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Taipei"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Odessa"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Multan"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Taipei"
+      },
+      {
+        "country": "Ukraine",
+        "city": "Donetsk"
+      },
+      {
+        "country": "India",
+        "city": "Patna"
+      },
+      {
+        "country": "China",
+        "city": "Shenzhen"
+      },
+      {
+        "country": "China",
+        "city": "Yantai"
+      },
+      {
+        "country": "India",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "Kazakhstan",
+        "city": "Almaty"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 2,
+    "main_reason_for_travel": "business"
+  },
+  {
+    "name": "Mrs. Veronica Murray",
+    "income": 167436,
+    "address": "533 Mary Causeway Apt. 249\nStevensfurt, AL 78374",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 5,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Iran",
+        "city": "Tehran"
+      },
+      {
+        "country": "Bulgaria",
+        "city": "Sofia"
+      },
+      {
+        "country": "Ethiopia",
+        "city": "Addis Ababa"
+      },
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "Australia",
+        "city": "Melbourne"
+      },
+      {
+        "country": "Pakistan",
+        "city": "Peshawar"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Chittagong"
+      },
+      {
+        "country": "Japan",
+        "city": "Hiroshima"
+      },
+      {
+        "country": "Canada",
+        "city": "Montreal"
+      },
+      {
+        "country": "Hungary",
+        "city": "Budapest"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Julie Duncan",
+    "income": 446247,
+    "address": "PSC 8649, Box 6199\nAPO AA 11690",
+    "car_rental_loyalty": "Carlux",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 21,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "Turkey",
+        "city": "Istanbul"
+      },
+      {
+        "country": "Poland",
+        "city": "Warsaw"
+      },
+      {
+        "country": "Brazil",
+        "city": "Sao Paulo"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Kano"
+      },
+      {
+        "country": "South Africa",
+        "city": "Durban"
+      },
+      {
+        "country": "China",
+        "city": "Baotou"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Jakarta"
+      },
+      {
+        "country": "Lebanon",
+        "city": "Beirut"
+      },
+      {
+        "country": "Russia",
+        "city": "Omsk"
+      },
+      {
+        "country": "Morocco",
+        "city": "Casablanca"
+      },
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "United States",
+        "city": "Los Angeles"
+      },
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "Haiti",
+        "city": "Port-au-Prince"
+      },
+      {
+        "country": "Canada",
+        "city": "Calgary"
+      },
+      {
+        "country": "United Arab Emirates",
+        "city": "Dubai"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 4,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Victoria Joseph",
+    "income": 531477,
+    "address": "4661 Carlos Vista\nMendozaland, NY 28521",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 37,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Zibo"
+      },
+      {
+        "country": "Mozambique",
+        "city": "Maputo"
+      },
+      {
+        "country": "Poland",
+        "city": "Warsaw"
+      },
+      {
+        "country": "China",
+        "city": "Guangzhou"
+      },
+      {
+        "country": "India",
+        "city": "Bangalore"
+      },
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      },
+      {
+        "country": "Russia",
+        "city": "Novosibirsk"
+      },
+      {
+        "country": "Argentina",
+        "city": "Buenos Aires"
+      },
+      {
+        "country": "India",
+        "city": "Mumbai"
+      },
+      {
+        "country": "South Africa",
+        "city": "Johannesburg"
+      },
+      {
+        "country": "United States",
+        "city": "Dallas"
+      },
+      {
+        "country": "Japan",
+        "city": "Yokohama"
+      },
+      {
+        "country": "China",
+        "city": "Changsha"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Semarang"
+      },
+      {
+        "country": "Turkey",
+        "city": "Adana"
+      },
+      {
+        "country": "Japan",
+        "city": "Kyoto"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Chittagong"
+      },
+      {
+        "country": "Japan",
+        "city": "Sendai"
+      },
+      {
+        "country": "Peru",
+        "city": "Lima"
+      },
+      {
+        "country": "China",
+        "city": "Zibo"
+      },
+      {
+        "country": "United States",
+        "city": "Chicago"
+      },
+      {
+        "country": "China",
+        "city": "Shanghai"
+      },
+      {
+        "country": "China",
+        "city": "Handan"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "Armenia",
+        "city": "Yerevan"
+      },
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Jakarta"
+      },
+      {
+        "country": "Ethiopia",
+        "city": "Addis Ababa"
+      },
+      {
+        "country": "Romania",
+        "city": "Bucharest"
+      },
+      {
+        "country": "Russia",
+        "city": "Omsk"
+      },
+      {
+        "country": "China",
+        "city": "Wuhan"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 4,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Mariah Deleon",
+    "income": 46030,
+    "address": "73578 Kayla Gardens\nLake Sheriside, IL 20148",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 5,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Ecuador",
+        "city": "Guayaquil"
+      },
+      {
+        "country": "China",
+        "city": "Hefei"
+      },
+      {
+        "country": "Indonesia",
+        "city": "Bekasi"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Ibadan"
+      },
+      {
+        "country": "Australia",
+        "city": "Perth"
+      },
+      {
+        "country": "Brazil",
+        "city": "Curitiba"
+      },
+      {
+        "country": "United States",
+        "city": "Chicago"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      {
+        "country": "Japan",
+        "city": "Tokyo"
+      },
+      {
+        "country": "Russia",
+        "city": "Omsk"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 1,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Karen Craig",
+    "income": 58607,
+    "address": "367 Dustin Terrace Suite 803\nWest Christyburgh, TX 38025",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 10,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "France",
+        "city": "Paris"
+      },
+      {
+        "country": "Azerbaijan",
+        "city": "Baku"
+      },
+      {
+        "country": "Algeria",
+        "city": "Algiers"
+      },
+      {
+        "country": "Georgia",
+        "city": "Tbilisi"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+      },
+      {
+        "country": "Russia",
+        "city": "Moscow"
+      },
+      {
+        "country": "Nigeria",
+        "city": "Lagos"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 5,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Jo Lewis",
+    "income": 40421,
+    "address": "814 Joseph Loaf Apt. 288\nWest Patricia, MA 48784",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Liberty Airlines",
+    "travel_frequency": 7,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Canada",
+        "city": "Montreal"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Chittagong"
+      },
+      {
+        "country": "China",
+        "city": "Chongqing"
+      },
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "Belarus",
+        "city": "Minsk"
+      },
+      {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      {
+        "country": "Italy",
+        "city": "Rome"
+      },
+      {
+        "country": "South Africa",
+        "city": "Johannesburg"
+      },
+      {
+        "country": "Mali",
+        "city": "Bamako"
+      },
+      {
+        "country": "Ethiopia",
+        "city": "Addis Ababa"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 4,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Andrew Jones",
+    "income": 57040,
+    "address": "USS Gonzalez\nFPO AP 44545",
+    "car_rental_loyalty": "Chakra",
+    "hotel_chain_loyalty": "Nimbus Elites",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 4,
+    "priority": "budget",
+    "frequently_visited_cities": [
+      {
+        "country": "Iraq",
+        "city": "Basra"
+      },
+      {
+        "country": "Iraq",
+        "city": "Baghdad"
+      },
+      {
+        "country": "Belarus",
+        "city": "Minsk"
+      },
+      {
+        "country": "Russia",
+        "city": "Moscow"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 5,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Timothy Allen",
+    "income": 265625,
+    "address": "91449 Victoria Fort Suite 800\nEast Allisonbury, AK 09746",
+    "car_rental_loyalty": "Rent Pad",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 14,
+    "priority": "luxury",
+    "frequently_visited_cities": [
+      {
+        "country": "China",
+        "city": "Nanning"
+      },
+      {
+        "country": "Angola",
+        "city": "Luanda"
+      },
+      {
+        "country": "Russia",
+        "city": "Novosibirsk"
+      }
+    ],
+    "marital_status": "married",
+    "party_size": 4,
+    "main_reason_for_travel": "family"
+  },
+  {
+    "name": "Johnny Simpson",
+    "income": 127425,
+    "address": "USS Hayes\nFPO AA 30341",
+    "car_rental_loyalty": "Rentio",
+    "hotel_chain_loyalty": "Urban Lifestyle",
+    "airlines_loyalty": "MilkyWay Airlanes",
+    "travel_frequency": 8,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "Argentina",
+        "city": "Buenos Aires"
+      },
+      {
+        "country": "Iran",
+        "city": "Shiraz"
+      },
+      {
+        "country": "Egypt",
+        "city": "Cairo"
+      },
+      {
+        "country": "Bangladesh",
+        "city": "Dhaka"
+      },
+      {
+        "country": "India",
+        "city": "Bangalore"
+      },
+      {
+        "country": "India",
+        "city": "Indore"
+      },
+      {
+        "country": "China",
+        "city": "Guiyang"
+      },
+      {
+        "country": "China",
+        "city": "Dalian"
+      },
+      {
+        "country": "Colombia",
+        "city": "Medellin"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": null,
+    "main_reason_for_travel": "leisure"
+  },
+  {
+    "name": "Joseph King",
+    "income": 47743,
+    "address": "0532 Susan Spurs Apt. 560\nHamiltonmouth, TN 36716",
+    "car_rental_loyalty": "Capsule",
+    "hotel_chain_loyalty": "Elegant Enigma Alliance",
+    "airlines_loyalty": "Spartan Airlines",
+    "travel_frequency": 10,
+    "priority": "comfort",
+    "frequently_visited_cities": [
+      {
+        "country": "India",
+        "city": "Ludhiana"
+      },
+      {
+        "country": "Australia",
+        "city": "Perth"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+      },
+      {
+        "country": "Taiwan",
+        "city": "Taipei"
+      },
+      {
+        "country": "Spain",
+        "city": "Barcelona"
+      },
+      {
+        "country": "South Africa",
+        "city": "Johannesburg"
+      }
+    ],
+    "marital_status": "single",
+    "party_size": 2,
     "main_reason_for_travel": "family"
   }
 ]
