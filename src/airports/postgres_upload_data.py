@@ -90,9 +90,6 @@ def populate_postgres(data, info):
             INSERT INTO FLIGHTS VALUES (%(id)s, %(source_airport_id)s, %(destination_airport_id)s, %(flight_time)s, %(flight_duration)s, %(cost)s, %(airlines)s);
         """, data)
 
-        logging.info("dropping old stored procedures if available")
-        cur.execute("drop function flight_two_stop(source_id varchar, layover_one_id varchar, destination_id varchar, departure_time integer, duration decimal, source_cost decimal, source_airlines varchar);")
-
         logging.info("creating stored procedure for 2 stop flights")
         cur.execute("""
         CREATE or REPLACE function flight_two_stop(source_id varchar, layover_one_id varchar, destination_id varchar,
