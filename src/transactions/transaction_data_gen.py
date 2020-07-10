@@ -203,9 +203,20 @@ def main():
             # date depending on reason -> 3 - 30 days for business, 20 - 60 for leisure
 
         ####buisness:
-        # more likely to be buisness if traveling with 1. leaving within 7-14 days in advance 2. 2 people or less
+        # more likely to be buisness if traveling with 1. leaving within 3-30 days in advance 2. also, 1 person 
         ######leisuire:
-        # more likely to be leisure if 1. leaving 30-60 days in advanced 2. 
+        # more likely to be leisure if 1. leaving 20-60 days in advanced 2. also 2 people or more
+        # Will select the  
+        #######time
+        #leave also 7-14 days in advanced with high income > 200000: will select highest priced hotel within a 2 week timeline.
+        #    Will select the shortest duration flight, then most expensive
+        #######luxury
+        #leave 30-60 days in
+        #######budget
+        #will select cheapest
+
+
+
         #using same randnum for each selection
         # carRatio = (float(carloyal) / total) * 100.0
         # flightRatio = (float(flightloyal) / total) * 100.0
