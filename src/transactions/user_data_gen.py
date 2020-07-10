@@ -17,13 +17,13 @@ def get_reason():
 
 def get_party_size(reason, marital_status):
     if reason == 'business':
-        return random.choice([1,1,1,1,2,2,3,4])
+        return random.choice([1,1,1,1,1,2,2,3,4])
     elif reason == 'leisure' and marital_status == 'married':
         return random.choice([2,2,2,2,3,3,4,4,5,6])
     elif reason == 'leisure':
-        return random.choice([1,1,1,2,2,2,3,3,4])
+        return random.choice([1,1,1,2,2,2,2,3,3,3,4])
     elif reason == 'family':
-        return random.choice([1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,7])
+        return random.choice([1,2,2,2,3,3,3,3,4,4,4,4,5,5,6,6,7])
 
 
 def get_marital_status():
