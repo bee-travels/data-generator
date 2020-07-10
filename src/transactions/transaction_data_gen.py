@@ -185,7 +185,6 @@ def main():
             total = total + 1
             priority = user["priority"]
             main_reason = user["main_reason_for_travel"]
-            #possibly party size matters -- an extra level of complexity to think of
             frequency = user["travel_frequency"]
             # print("frequency:: " +str(frequency))
             # print("priority:: " + priority)
@@ -193,15 +192,20 @@ def main():
             carLoyal = get_carhotel_loyalty_status(priority, main_reason, frequency, randnum)
             flightLoyal = get_flight_loyalty_status(priority, main_reason, frequency, randnum)
             carFilter = {"rental_company": user["car_rental_loyalty"]}
-            flightFilter = {"airlines": user["car_rental_loyalty"]}
+            flightFilter = {"airlines": user["airlines_loyalty"]}
             if carLoyal:
                 carFilter = {"rental_company": user["car_rental_loyalty"]}
             if flightLoyal:
-                flightFilter = {"airlines": user["car_rental_loyalty"]}
+                flightFilter = {"airlines": user["airlines_loyalty"]}
 
             # destination
             # 
             # date depending on reason -> 3 - 30 days for business, 20 - 60 for leisure
+
+        ####buisness:
+        # more likely to be buisness if traveling with 1. leaving within 7-14 days in advance 2. 2 people or less
+        ######leisuire:
+        # more likely to be leisure if 1. leaving 30-60 days in advanced 2. 
         #using same randnum for each selection
         # carRatio = (float(carloyal) / total) * 100.0
         # flightRatio = (float(flightloyal) / total) * 100.0
