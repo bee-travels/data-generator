@@ -65,6 +65,8 @@ def get_hotel_chain():
 
 def get_airline():
     return random.choice(['MilkyWay Airlanes','Spartan Airlines','Phoenix Airlines','Liberty Airlines'])
+# def get_travel_date():
+
 
 def get_frequently_visited_cities(reason, frequency, destinations):
     count = 0
