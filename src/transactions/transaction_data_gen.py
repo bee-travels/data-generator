@@ -1,104 +1,21 @@
-# # 100 users
-# # start 100 timerTask
-# from threading import Timer
-# import atexit
-
-# class Repeat(object):
-
-#     count = 0
-#     @staticmethod
-#     def repeat(rep, delay, func):
-#         "repeat func rep times with a delay given in seconds"
-
-#         if Repeat.count < rep:
-#             # call func, you might want to add args here
-#             func()
-#             Repeat.count += 1
-#             # setup a timer which calls repeat recursively
-#             # again, if you need args for func, you have to add them here
-#             timer = Timer(delay, Repeat.repeat, (rep, delay, func))
-#             # register timer.cancel to stop the timer when you exit the interpreter
-#             atexit.register(timer.cancel)
-#             timer.start()
-
-
-#   {
-#     "name": "Kyle Mendoza",
-#     "income": 508662,
-#     "address": "24254 Kirby Villages Suite 395\nEast Ronaldburgh, PA 76524",
-#     "car_rental_loyalty": "Rentio",
-#     "hotel_chain_loyalty": "Elegant Enigma Alliance",
-#     "airlines_loyalty": "Phoenix Airlines",
-#     "travel_frequency": 23,
-#     "priority": "luxury",
-#     "marital_status": "married",
-#     "party_size": 4,
-#     "main_reason_for_travel": "family"
-#   },
-
-# {
-#     "name": "Raymond Smith",
-#     "income": 116670,
-#     "address": "460 Kyle Roads Suite 638\nHubermouth, KS 79286",
-#     "car_rental_loyalty": "Capsule",
-#     "hotel_chain_loyalty": "Urban Lifestyle",
-#     "airlines_loyalty": "MilkyWay Airlanes",
-#     "travel_frequency": 2,
-#     "priority": "comfort",
-#     "marital_status": "married",
-#     "party_size": 2,
-#     "main_reason_for_travel": "leisure"
-#   },
-
 import utils
 import time
 import random
+import datetime
+import urllib.parse
 
 users = utils.load_json("user.json")
+destinations = utils.load_json("destination.json")
+hotel = "http://localhost:9101/api/v1/hotels"
+car = "http://localhost:9102/api/v1/car"
+flight = "http://localhost:9103/api/v1/flights"
 
-# while True:
-
-# for user in users:
-#     get = user.get
-#     willTravel = random.randint(0,100)
-#     if willTravel > get("travel_frequency"):
-#         continue
-#     # print((willTravel, get("travel_frequency")))
-#     print(get("name"))
-
-#     priority = get("priority")
-#     if priority == "luxury":
-
-#     elif priority == "comfort":
-
-#     elif priority == "budget":
-
-#     else:
-
-# def get_car_loyalty_status(priority, main_reason, frequency, randnum): 
-#         #Car
-#     if randnum > 0.7:
-#         if frequency<12 and priority == 'budget':
-#             return True
-#     elif randnum > 0.5:
-#         if (frequency<24 and frequency>=12) and priority =='budget':
-#             return True
-#         elif frequency<12 and (priority == 'luxury' or priority =='comfort'):
-#             return True 
-#     elif randnum > 0.4:
-#         if (frequency<24 and frequency>=12) and priority =='luxury':
-#             return True
-#     elif randnum > 0.3:
-#         if priority == 'time':
-#             return True
-#         elif frequency >=24 and priority == 'luxury':
-#             return True
-#         elif (frequency<24 and frequency>=12) and priority =='comfort':
-#             return True 
-#         elif frequency >=24 and priority == 'comfort':
-#             return True
-#     return False
-
+def get_reason(reason):
+    chance = random.randint(0, 100)
+    if chance > 85:
+        return random.choice(["business", "leisure", "family"])
+    
+    return reason
 
 def get_carhotel_loyalty_status(priority, main_reason, frequency, randnum): 
     val = 1
@@ -169,10 +86,70 @@ def get_random_num():
     # print("Randnum: " + str(randnum))
     return randnum
 
-        
+def get_group_size(usual): #usual: whatever num they usually travel with, 80/20 split
+    rand = random.randint(0, 100)
+    if rand > 80:
+        return random.randint(1, 6)
+    return usual
+
+def get_travel_day_offset(reason, priority):
+    chance = random.randint(0, 100)
+    if reason == "business":
+        if chance < 60:
+            return random.randint(1, 14)
+        elif chance < 90:
+            return random.randint(15, 24)
+        else:
+            return random.randint(25, 30)
+    else:
+        if priority == "budget":
+            return random.randint(30, 60)
+        else:
+            return random.randint(15, 50)
+
+        # more likely to be leisure if (1. leaving 20-60 days in advanced (2. also 2 people or more
+        # if traveling 1-19 days in advance, 15% chance of being leisure. if also income > 200,000 then only 10% chance of leisure
+        # if traveling 20-30 days in advance and 1 person, only 40% chance of being leisure
+        # if traveling 20-30 days in advance and 2-3 people, 60% chance of being leisure
+        # if traveling 20-30 days in advance and 4 or more people, 90% chance of being leisure
+        # if traveling 30-60 days in advanced, 85% chance of leisure
+
+
+def get_travel_duration(reason, priority): #generate date based on reason
+    timed = 0
+    if reason == "business": #I could also do 80% of the time select 1-7
+      if priority == "time":
+          timed = random.choice([1,1,2,2,2,3,3,3,4,5,6,7])
+      else:
+          timed = random.choice([1,1,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,9,10])
+    else:
+        if priority != "budget":
+            timed = random.choice([2,3,3,3,3,4,4,4,5,5,5,6,6,6,7,7,8,8,8,8,8,9,9,9,9,9,10,10,11,12,13,14,14,15,16,16,16,17,18])
+        else:
+            timed = random.choice([2,3,3,3,3,4,4,4,5,5,5,5,6,6,6,7,7,8,9,10,12,13,14])
+    return timed
+
+def query_gen(query):
+    q = ""
+    for key, val in query.items():
+        if q != "":
+            q = q + "&"
+        else:
+            q = "?"
+        q = q + key + "=" + val.replace(" ", "%20")
+    return q
+
+def kebab_case(val):
+    return val.lower().replace(" ", "-")
+
+def get_destination(usual, destinations): #list of frequenty traveled locaitons
+    chance = random.randint(0, 100)
+    if chance > 80:
+        return random.choice(destinations)
+    return random.choice(usual)
 
 def main():
-    for _ in range(100):
+    for _ in range(1):
         carloyal = 0
         flightloyal = 0
         total = 0
@@ -185,23 +162,83 @@ def main():
             total = total + 1
             priority = user["priority"]
             main_reason = user["main_reason_for_travel"]
+            reason = get_reason(main_reason)
             frequency = user["travel_frequency"]
-            # print("frequency:: " +str(frequency))
-            # print("priority:: " + priority)
+
             randnum= random.randint(96, 192)
             carLoyal = get_carhotel_loyalty_status(priority, main_reason, frequency, randnum)
+            hotelLoyal = get_carhotel_loyalty_status(priority, main_reason, frequency, randnum)
             flightLoyal = get_flight_loyalty_status(priority, main_reason, frequency, randnum)
-            carFilter = {"rental_company": user["car_rental_loyalty"]}
-            flightFilter = {"airlines": user["airlines_loyalty"]}
+            carFilter = {}
+            flightFilter = {}
+            hotelFilter = {}
+            party_size = get_group_size(get("party_size"))
+
             if carLoyal:
-                carFilter = {"rental_company": user["car_rental_loyalty"]}
+                carFilter["rental_company"] = user["car_rental_loyalty"]
+            if priority != 'budget' and party_size > 2:
+                carFilter["body_type"] = "suv"
+            #body_type, style, 
+
+            if priority == "budget":
+                carFilter["style"] = "basic"
+            elif priority == "comfort":
+                carFilter["style"] = "premium"
+            else:
+                carFilter["style"] = "luxury"
+            
+
+            if hotelLoyal:
+                hotelFilter = {"superchain": user["hotel_chain_loyalty"]}
+
+
+            if priority == "budget":
+                hotelFilter["type"] = "budget"
+            elif priority == "comfort":
+                hotelFilter["type"] = "comfort"
+            else:
+                hotelFilter["type"] = "luxury"
+        
             if flightLoyal:
                 flightFilter = {"airlines": user["airlines_loyalty"]}
 
+            destination = get_destination(get("frequently_visited_cities"), destinations)
+            offset = get_travel_day_offset(reason, priority)
+            duration = get_travel_duration(reason, priority)
+            dateFrom = datetime.date.today() + datetime.timedelta(days=offset)
+            dateTo = dateFrom + datetime.timedelta(days=duration)
+
+            hotelFilter["dateFrom"] = str(dateFrom)
+            hotelFilter["dateTo"] = str(dateTo)    
+
+            print(hotel + "/" + kebab_case(destination["country"]) + "/" + kebab_case(destination["city"]) +query_gen(hotelFilter))
+            # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
+            
             # destination
             # 
             # date depending on reason -> 3 - 30 days for business, 20 - 60 for leisure
+###########################Generation################################################
+        #business: 65% of time traveling 1-19 days in advanced, 
+        #^^^5/9 of time is 1 person
+        #so, 13% of time 20-30 days in advance with 1 person
+        #11% of time 20-30 days in advanced with 2-3 people
+        #5% of the time 20-30 days in advanced with 4 or more people
+        #6% of the time 30-60 days in advanced
 
+
+        #leisure: 35% of time traveling 1-19 days in advanced
+        #
+#####Extra criteria for leisure:
+##if traveling more than 1 week then leisure
+#####################################################################################
+
+
+
+
+
+
+
+#########################Recommendation################################################
         ####buisness:
         #--> will choose recommendation based on what most business people choose. Based on income >200000, will choose the fastest option for 
         #for inbetween, randomly select OR choose middle priced options
@@ -218,9 +255,9 @@ def main():
         #           income > 200,000, still 40% chance of being time (time is a rich business man)
         #elif traveling 20-30 days in advanced 10% chance business and 4 or more people
         #           income > 200,000, still 40% chance of being time (time is a rich business man)
-        # if traveling 30-60 days in advanced, 15% chance of leisure
+        # if traveling 30-60 days in advanced, 15% chance of business
 
-        ######leisuire:
+        ######leisure:
         #--> will choose recommendation based on what most leisure people choose. Based on income >200000, will choose the luxury option 
         #for inbetween, randomly select OR choose middle priced options
         # For budget (<100000), choose least expensive recommendations
@@ -250,6 +287,8 @@ def main():
         # print("Car Ratio: ", carRatio)
         # print("Flight Ratio: ", flightRatio)
         # print()
+
+
         
 main()
 

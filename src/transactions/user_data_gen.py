@@ -2,6 +2,7 @@ from faker import Faker
 import random
 import json
 import requests
+import utils
 
 def write_json_to_file(json_data, file_name, minify=False):
     with open(file_name, "w+") as f:
@@ -85,28 +86,39 @@ def get_frequently_visited_cities(reason, frequency, destinations):
         result.append(random.choice(destinations))
     return result
 
-def map_destinations(destination):
-    return destination["city"]
 
-def get_destinations():
-    r = requests.get("https://bee-travels.v2.ibmdeveloper.net/api/v1/destinations")
-    return r.json()
+def get_sources():
+    return utils.load_json('source.json')
+
+def get_destination():
+    return utils.load_json('destination.json')
+
+def get_location(sources):
+    return random.choice(sources) 
 
 fake = Faker()
 
 users = []
 
-destinations = get_destinations()
+
+
+sources = get_sources()
+destinations = get_destination()
+
+
+
 
 for _ in range(100):
     reason = get_reason()
     income = get_income()
     marital_status = get_marital_status()
     travel_frequency = get_travel_frequency(reason, income)
+    location = get_location(sources)
     user = {
         "name": fake.name(),
         "income": income,
-        "address": fake.address(),
+        "city": location["city"],
+        "country": location["country"],
         "car_rental_loyalty": get_car_rental_company(),
         "hotel_chain_loyalty": get_hotel_chain(),
         "airlines_loyalty": get_airline(),
