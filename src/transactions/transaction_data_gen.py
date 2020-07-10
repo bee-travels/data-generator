@@ -6,9 +6,9 @@ import urllib.parse
 
 users = utils.load_json("user.json")
 destinations = utils.load_json("destination.json")
-hotel = "http://localhost:9101/api/v1/hotels"
-car = "http://localhost:9102/api/v1/car"
-flight = "http://localhost:9103/api/v1/flights"
+hotel = "https://bee-travels.v2.ibmdeveloper.net/api/v1/hotels"
+cars = "https://bee-travels.v2.ibmdeveloper.net/api/v1/cars"
+# flight = "http://localhost:9103/api/v1/flights"
 
 def get_reason(reason):
     chance = random.randint(0, 100)
@@ -208,11 +208,19 @@ def main():
             dateFrom = datetime.date.today() + datetime.timedelta(days=offset)
             dateTo = dateFrom + datetime.timedelta(days=duration)
 
-            hotelFilter["dateFrom"] = str(dateFrom)
-            hotelFilter["dateTo"] = str(dateTo)    
+            # hotelFilter["dateFrom"] = str(dateFrom)
+            # hotelFilter["dateTo"] = str(dateTo)    
 
-            print(hotel + "/" + kebab_case(destination["country"]) + "/" + kebab_case(destination["city"]) +query_gen(hotelFilter))
+
+            # carFilter["dateFrom"] = str(dateFrom)
+            # carFilter["dateTo"] = str(dateTo) 
+
+            path_params = "/" + kebab_case(destination["country"]) + "/" + kebab_case(destination["city"]) 
+
+            print(hotel + path_params + query_gen(hotelFilter))
+            print(cars + path_params + query_gen(carFilter))
             # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
+            # "http://localhost:9102/api/v1/cars/united-states/new-york?dateFrom=07-12-2020&dateTo=07-15-2020"
             
             # destination
             # 
