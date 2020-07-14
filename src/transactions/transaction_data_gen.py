@@ -165,21 +165,66 @@ def generate_user_hotel(hfull_urlq, priority, party_size, income):
     data = requests.get(hfull_urlq).json()
     if len(data) != 0:  # if the results do not come back empty
         if priority == "budget":
-            print("\t\nBUDGET\n")
             sorted_data = sorted(data, key=lambda x: x["cost"])
-            print(sorted_data)
+            return sorted_data[0]
         elif priority == "comfort":
-            print("\t\nCOMFORT\n")
-            num = int(len(data)//2)
-            print("TYPE " + str(type(num)))
+            num = int(len(data)//2)-1
             sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
-            # ^get the higher middle value :)
-            print(sorted_data[num], num)
+            return sorted_data[num]
 
         else:
-            print("\t\nLUXURY OR TIME\n")
             sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
-            print(sorted_data)
+            return sorted_data[0]
+    else:
+        num1 = hfull_urlq.find("?") + 1
+        num2 = hfull_urlq.find("&") + 1
+        b_hurlq = hfull_urlq[:num1]
+        e_hurlq = hfull_urlq[num2:]
+        new = b_hurlq + e_hurlq
+        data2 = requests.get(new).json()
+        # n2 = new.find("&") + 1
+        # e2_hurlq = new[n2:]
+        # print(b_hurlq + e2_hurlq)
+        if len(data2) != 0:
+            if priority == "budget":
+                s_data = sorted(data2, key=lambda x: x["cost"])
+                return s_data[0]
+            elif priority == "comfort":
+                n = int(len(data2)//2)-1
+                s_data = sorted(
+                    data2, key=lambda x: x["cost"], reverse=True)
+                return s_data[n]
+
+            else:
+                s_data = sorted(
+                    data2, key=lambda x: x["cost"], reverse=True)
+                return s_data[0]
+        else:
+            n2 = new.find("&") + 1
+            e2_hurlq = new[n2:]
+            a_urlq = b_hurlq + e2_hurlq
+            data3 = requests.get(a_urlq).json()
+        # if len(data2) != 0:
+        #     if priority == "budget":
+        #         s_data = sorted(data2, key=lambda x: x["cost"])
+        #         return s_data[0]
+        #     elif priority == "comfort":
+        #         n = int(len(data2)//2)-1
+        #         s_data = sorted(
+        #             data2, key=lambda x: x["cost"], reverse=True)
+        #         return s_data[n]
+
+        #     else:
+        #         s_data = sorted(
+        #             data2, key=lambda x: x["cost"], reverse=True)
+        #         return s_data[0]
+
+    return "No results"
+
+
+def creates(y, party_size):
+    if 1 in y:
+        print("kskskkas")
     else:
         if party_size < 4:
             print("\tNothing comes back")
@@ -204,11 +249,11 @@ def generate_user_hotel(hfull_urlq, priority, party_size, income):
 
 
 def main():
-    for _ in range(1):  # change back to 100
+    for _ in range(10):  # change back to 100
         carloyal = 0
         flightloyal = 0
         total = 0
-        for user in users[0:5]:
+        for user in users[0:20]:
             get = user.get
             willTravel = random.randint(0, 100)
             if willTravel > get("travel_frequency"):
@@ -280,7 +325,8 @@ def main():
             hfull_urlq = hotel + path_params + query_gen(hotelFilter)
             # print(cars + path_params + query_gen(carFilter))
             cfull_urlq = cars + path_params + query_gen(carFilter)
-            generate_user_hotel(hfull_urlq, priority, party_size, income)
+            oneHotelJson = generate_user_hotel(
+                hfull_urlq, priority, party_size, income)
             time.sleep(1)
 
             # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
