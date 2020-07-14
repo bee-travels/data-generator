@@ -204,34 +204,82 @@ def generate_user_hotel(hfull_urlq, priority, party_size, income):
             e2_hurlq = new[n2:]
             a_urlq = b_hurlq + e2_hurlq
             data3 = requests.get(a_urlq).json()
-        # if len(data2) != 0:
-        #     if priority == "budget":
-        #         s_data = sorted(data2, key=lambda x: x["cost"])
-        #         return s_data[0]
-        #     elif priority == "comfort":
-        #         n = int(len(data2)//2)-1
-        #         s_data = sorted(
-        #             data2, key=lambda x: x["cost"], reverse=True)
-        #         return s_data[n]
+            if len(data3) != 0:
+                if priority == "budget":
+                    lst_data = sorted(data3, key=lambda x: x["cost"])
+                    return lst_data[0]
+                elif priority == "comfort":
+                    nu = int(len(data3)//2)-1
+                    lst_data = sorted(
+                        data3, key=lambda x: x["cost"], reverse=True)
+                    return lst_data[nu]
 
-        #     else:
-        #         s_data = sorted(
-        #             data2, key=lambda x: x["cost"], reverse=True)
-        #         return s_data[0]
-
+                else:
+                    lst_data = sorted(
+                        data3, key=lambda x: x["cost"], reverse=True)
+                    return lst_data[0]
     return "No results"
 
 
-def creates(y, party_size):
-    if 1 in y:
-        print("kskskkas")
-    else:
-        if party_size < 4:
-            print("\tNothing comes back")
+def generate_user_car(hfull_urlq, priority, party_size, income):
+    requests_cache.install_cache('beetravels_cache')
+    data = requests.get(hfull_urlq).json()
+    if len(data) != 0:  # if the results do not come back empty
+        if priority == "budget":
+            sorted_data = sorted(data, key=lambda x: x["cost"])
+            return sorted_data[0]
+        elif priority == "comfort":
+            num = int(len(data)//2)-1
+            sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
+            return sorted_data[num]
+
         else:
-            print("large party")
-        # requests_cache.clear()
-    return
+            sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
+            return sorted_data[0]
+    else:
+        num1 = hfull_urlq.find("?") + 1
+        num2 = hfull_urlq.find("&") + 1
+        b_hurlq = hfull_urlq[:num1]
+        e_hurlq = hfull_urlq[num2:]
+        new = b_hurlq + e_hurlq
+        data2 = requests.get(new).json()
+        # n2 = new.find("&") + 1
+        # e2_hurlq = new[n2:]
+        # print(b_hurlq + e2_hurlq)
+        if len(data2) != 0:
+            if priority == "budget":
+                s_data = sorted(data2, key=lambda x: x["cost"])
+                return s_data[0]
+            elif priority == "comfort":
+                n = int(len(data2)//2)-1
+                s_data = sorted(
+                    data2, key=lambda x: x["cost"], reverse=True)
+                return s_data[n]
+
+            else:
+                s_data = sorted(
+                    data2, key=lambda x: x["cost"], reverse=True)
+                return s_data[0]
+        else:
+            n2 = new.find("&") + 1
+            e2_hurlq = new[n2:]
+            a_urlq = b_hurlq + e2_hurlq
+            data3 = requests.get(a_urlq).json()
+            if len(data3) != 0:
+                if priority == "budget":
+                    lst_data = sorted(data3, key=lambda x: x["cost"])
+                    return lst_data[0]
+                elif priority == "comfort":
+                    nu = int(len(data3)//2)-1
+                    lst_data = sorted(
+                        data3, key=lambda x: x["cost"], reverse=True)
+                    return lst_data[nu]
+
+                else:
+                    lst_data = sorted(
+                        data3, key=lambda x: x["cost"], reverse=True)
+                    return lst_data[0]
+    return "No results"
     # this line initiallizes the cache with requests-cache module, prevents calling the API over and over
 
     # 1 luxury
@@ -327,6 +375,7 @@ def main():
             cfull_urlq = cars + path_params + query_gen(carFilter)
             oneHotelJson = generate_user_hotel(
                 hfull_urlq, priority, party_size, income)
+            print(oneHotelJson)
             time.sleep(1)
 
             # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
