@@ -160,15 +160,12 @@ def get_destination(usual, destinations):  # list of frequenty traveled locaiton
     return random.choice(usual)
 
 
-def generate_user_hotel(hfull_urlq):
-    requests_cache.install_cache('test_cache')
+def generate_user_hotel(hfull_urlq, priority,):
+    requests_cache.install_cache('beetravels_cache')
     r = requests.get(hfull_urlq)
     data = r.json()
     # requests_cache.clear()
-    print(r.from_cache)
     return
-
-    # data = json.loads(r.text)
     # this line initiallizes the cache with requests-cache module, prevents calling the API over and over
 
     # 1 luxury
@@ -216,7 +213,7 @@ def main():
 
             if carLoyal:
                 carFilter["rental_company"] = user["car_rental_loyalty"]
-            if priority != 'budget' and party_size > 2:
+            if priority != 'budget' and party_size > 4:
                 carFilter["body_type"] = "suv"
             #body_type, style,
 
@@ -261,7 +258,7 @@ def main():
             hfull_urlq = hotel + path_params + query_gen(hotelFilter)
             # print(cars + path_params + query_gen(carFilter))
             cfull_urlq = cars + path_params + query_gen(carFilter)
-            generate_user_hotel(hfull_urlq)
+            generate_user_hotel(hfull_urlq, priority, )
             time.sleep(1)
 
             # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
