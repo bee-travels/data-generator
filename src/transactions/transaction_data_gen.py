@@ -3,6 +3,9 @@ import time
 import random
 import datetime
 import urllib.parse
+import requests
+import requests_cache  # cache the results
+import json
 
 users = utils.load_json("user.json")
 destinations = utils.load_json("destination.json")
@@ -156,7 +159,30 @@ def get_destination(usual, destinations):  # list of frequenty traveled locaiton
         return random.choice(destinations)
     return random.choice(usual)
 
-# def generate_user_hotel():
+
+def generate_user_hotel(hfull_urlq):
+    requests_cache.install_cache('test_cache')
+    r = requests.get(hfull_urlq)
+    data = r.json()
+    # requests_cache.clear()
+    print(r.from_cache)
+    return
+
+    # data = json.loads(r.text)
+    # this line initiallizes the cache with requests-cache module, prevents calling the API over and over
+
+    # 1 luxury
+    #    # if no results remove rental_company=... before the first &
+    #    # if still no results, remove body_type if party size < 4 and if not then remove style
+    #    # if still no results, remove style
+    # 2 budget
+    #    # if no results remove rental_company=... before the first &
+    #    # if still no results, remove body_type if party size < 4 and if not then remove style
+    #    # if still no results, remove style
+    # 3 comfort
+    #    # if no results remove rental_company=... before the first &
+    #    # if still no results, remove body_type if party size < 4 and if not then remove style
+    #    # if still no results, remove style
 
 
 def main():
@@ -164,7 +190,7 @@ def main():
         carloyal = 0
         flightloyal = 0
         total = 0
-        for user in users:
+        for user in users[0:10]:
             get = user.get
             willTravel = random.randint(0, 100)
             if willTravel > get("travel_frequency"):
@@ -233,9 +259,11 @@ def main():
 
             #print(hotel + path_params + query_gen(hotelFilter))
             hfull_urlq = hotel + path_params + query_gen(hotelFilter)
-            #print(cars + path_params + query_gen(carFilter))
+            # print(cars + path_params + query_gen(carFilter))
             cfull_urlq = cars + path_params + query_gen(carFilter)
-            print(cfull_urlq)
+            generate_user_hotel(hfull_urlq)
+            time.sleep(1)
+
             # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
             # "http://localhost:9102/api/v1/cars/united-states/new-york?dateFrom=07-12-2020&dateTo=07-15-2020"
 
