@@ -160,11 +160,32 @@ def get_destination(usual, destinations):  # list of frequenty traveled locaiton
     return random.choice(usual)
 
 
-def generate_user_hotel(hfull_urlq, priority,):
+def generate_user_hotel(hfull_urlq, priority, party_size, income):
     requests_cache.install_cache('beetravels_cache')
-    r = requests.get(hfull_urlq)
-    data = r.json()
-    # requests_cache.clear()
+    data = requests.get(hfull_urlq).json()
+    if len(data) != 0:  # if the results do not come back empty
+        if priority == "budget":
+            print("\t\nBUDGET\n")
+            sorted_data = sorted(data, key=lambda x: x["cost"])
+            print(sorted_data)
+        elif priority == "comfort":
+            print("\t\nCOMFORT\n")
+            num = int(len(data)//2)
+            print("TYPE " + str(type(num)))
+            sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
+            # ^get the higher middle value :)
+            print(sorted_data[num], num)
+
+        else:
+            print("\t\nLUXURY OR TIME\n")
+            sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
+            print(sorted_data)
+    else:
+        if party_size < 4:
+            print("\tNothing comes back")
+        else:
+            print("large party")
+        # requests_cache.clear()
     return
     # this line initiallizes the cache with requests-cache module, prevents calling the API over and over
 
@@ -183,11 +204,11 @@ def generate_user_hotel(hfull_urlq, priority,):
 
 
 def main():
-    for _ in range(1):
+    for _ in range(1):  # change back to 100
         carloyal = 0
         flightloyal = 0
         total = 0
-        for user in users[0:10]:
+        for user in users[0:5]:
             get = user.get
             willTravel = random.randint(0, 100)
             if willTravel > get("travel_frequency"):
@@ -198,6 +219,7 @@ def main():
             main_reason = user["main_reason_for_travel"]
             reason = get_reason(main_reason)
             frequency = user["travel_frequency"]
+            income = user["income"]
 
             randnum = random.randint(96, 192)
             carLoyal = get_carhotel_loyalty_status(
@@ -215,7 +237,7 @@ def main():
                 carFilter["rental_company"] = user["car_rental_loyalty"]
             if priority != 'budget' and party_size > 4:
                 carFilter["body_type"] = "suv"
-            #body_type, style,
+            # body_type, style,
 
             if priority == "budget":
                 carFilter["style"] = "basic"
@@ -254,11 +276,11 @@ def main():
                 kebab_case(destination["country"]) + \
                 "/" + kebab_case(destination["city"])
 
-            #print(hotel + path_params + query_gen(hotelFilter))
+            # print(hotel + path_params + query_gen(hotelFilter))
             hfull_urlq = hotel + path_params + query_gen(hotelFilter)
             # print(cars + path_params + query_gen(carFilter))
             cfull_urlq = cars + path_params + query_gen(carFilter)
-            generate_user_hotel(hfull_urlq, priority, )
+            generate_user_hotel(hfull_urlq, priority, party_size, income)
             time.sleep(1)
 
             # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
@@ -335,7 +357,7 @@ main()
 # for time look at the income for the type they are looking at
 
 ##############Loyalty Rules#####################
-##hotel and car
+# hotel and car
 # priority:
 # comfort
 # least frequent (baseline): 0.45
