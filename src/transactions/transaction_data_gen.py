@@ -318,6 +318,7 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                                 agh_data = sorted(
                                     data4, key=lambda x: round(float(x["cost"]), 2), reverse=True)
                                 return agh_data[0]
+# MISTAKE!!! NEED TO HAVE ELSE FOR N2 != -1 AND ELSE FOR PARTY_SIZE<=4 OR "BUDGET" .. BOTH FOR REMOVING STYLE= FROM THE URL
             else:
                 n6 = new.find("style=")
                 beg_urlq = new[:n6]
