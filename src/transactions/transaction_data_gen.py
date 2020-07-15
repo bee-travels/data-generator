@@ -161,19 +161,23 @@ def get_destination(usual, destinations):  # list of frequenty traveled locaiton
 
 
 def generate_user_hotel(hfull_urlq, priority, party_size, income):
+    # print(priority)
     # requests_cache.install_cache('beetravels_cache')
     data = requests.get(hfull_urlq).json()
     if len(data) != 0:  # if the results do not come back empty
         if priority == "budget":
-            sorted_data = sorted(data, key=lambda x: x["cost"])
+            sorted_data = sorted(
+                data, key=lambda x: round(float(x["cost"]), 2))
             return sorted_data[0]
         elif priority == "comfort":
             num = int(len(data)//2)-1
-            sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
+            sorted_data = sorted(
+                data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
             return sorted_data[num]
 
         else:
-            sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
+            sorted_data = sorted(
+                data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
             return sorted_data[0]
     else:
         num1 = hfull_urlq.find("?") + 1
@@ -187,17 +191,18 @@ def generate_user_hotel(hfull_urlq, priority, party_size, income):
         # print(b_hurlq + e2_hurlq)
         if len(data2) != 0:
             if priority == "budget":
-                s_data = sorted(data2, key=lambda x: x["cost"])
+                s_data = sorted(
+                    data2, key=lambda x: round(float(x["cost"]), 2))
                 return s_data[0]
             elif priority == "comfort":
                 n = int(len(data2)//2)-1
                 s_data = sorted(
-                    data2, key=lambda x: float(x["cost"]), reverse=True)  # prices might be 199.99
+                    data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
                 return s_data[n]
 
             else:
                 s_data = sorted(
-                    data2, key=lambda x: float(x["cost"]), reverse=True)  # prices might be 199.99
+                    data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
                 return s_data[0]
         else:
             n2 = new.find("&") + 1
@@ -206,112 +211,283 @@ def generate_user_hotel(hfull_urlq, priority, party_size, income):
             data3 = requests.get(a_urlq).json()
             if len(data3) != 0:
                 if priority == "budget":
-                    lst_data = sorted(data3, key=lambda x: float(
-                        x["cost"]))  # prices might be 199.99
-                    print(lst_data)
+                    lst_data = sorted(data3, key=lambda x: round(float(
+                        x["cost"]), 2))  # prices might be 199.99
                     return lst_data[0]
                 elif priority == "comfort":
                     nu = int(len(data3)//2)-1
                     lst_data = sorted(
-                        data3, key=lambda x: float(x["cost"]), reverse=True)
+                        data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
                     return lst_data[nu]
 
                 else:
                     lst_data = sorted(
-                        data3, key=lambda x: x["cost"], reverse=True)
+                        data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
                     return lst_data[0]
-    print("No results")
-    return "No results"
+    print(a_urlq)
+    return "\tNo Results -- hotel json generation\n"
 
 
-# def generate_user_car(hfull_urlq, priority, party_size, income):
-#     # requests_cache.install_cache('beetravels_cache')
-#     data = requests.get(hfull_urlq).json()
+#####################FIX SO PARTY SIZE > 4 IS CONSIDERED!!!!#############################
+
+
+def generate_user_car(cfull_urlq, priority, party_size, income):
+    # requests_cache.install_cache('beetravels_cache')
+    data = requests.get(cfull_urlq).json()
+    if len(data) != 0:  # if the results do not come back empty
+        if priority == "budget":
+            sorted_data = sorted(
+                data, key=lambda x: round(float(x["cost"]), 2))
+            return sorted_data[0]
+        elif priority == "comfort":
+            num = int(len(data)//2)-1
+            sorted_data = sorted(
+                data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+            return sorted_data[num]
+
+        else:
+            sorted_data = sorted(
+                data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+            return sorted_data[0]
+    else:
+        num1 = cfull_urlq.find("?") + 1
+        num2 = cfull_urlq.find("&") + 1
+        b_curlq = cfull_urlq[:num1]
+        # print(b_curlq)
+        e_curlq = cfull_urlq[num2:]
+        # print(e_curlq)
+        new = b_curlq + e_curlq
+        data2 = requests.get(new).json()
+        if len(data2) != 0:
+            if priority == "budget":
+                s_data = sorted(
+                    data2, key=lambda x: round(float(x["cost"]), 2))
+                return s_data[0]
+            elif priority == "comfort":
+                n = int(len(data2)//2)-1
+                s_data = sorted(
+                    data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                return s_data[n]
+            else:
+                s_data = sorted(
+                    data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+            return s_data[0]
+
+        else:
+            if party_size <= 4 or priority == "budget":
+                n2 = new.find("body_type=")
+                if n2 != -1:  # if body_type= is available in the url
+                    bsub = new[:n2]
+                    substr = new[n2:]
+                    n3 = substr.find("&") + 1
+                    e_curlq = substr[n3:]
+                    newer = bsub+e_curlq
+                    data3 = requests.get(newer).json()
+                    if len(data3) != 0:
+                        if priority == "budget":
+                            l_data = sorted(
+                                data3, key=lambda x: round(float(x["cost"]), 2))
+                            return l_data[0]
+                        elif priority == "comfort":
+                            n = int(len(data3)//2)-1
+                            l_data = sorted(
+                                data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                            return l_data[n]
+                        else:
+                            l_data = sorted(
+                                data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                            return l_data[0]
+                    else:
+                        n4 = newer.find("style=")
+                        b_urlq = newer[:n4]
+                        n5 = b_urlq.find("&")+1
+                        e_urlq = newer[n5:]
+                        n_urlq = b_urlq + e_urlq
+                        data4 = requests.get(n_urlq).json()
+                        if len(data4) != 0:
+                            if priority == "budget":
+                                agh_data = sorted(
+                                    data4, key=lambda x: round(float(x["cost"]), 2))
+                                return agh_data[0]
+                            elif priority == "comfort":
+                                n = int(len(data4)//2)-1
+                                agh_data = sorted(
+                                    data4, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                                return agh_data[n]
+                            else:
+                                agh_data = sorted(
+                                    data4, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                                return agh_data[0]
+            else:
+                n6 = new.find("style=")
+                beg_urlq = new[:n6]
+                n7 = b_urlq.find("&")+1
+                end_urlq = new[n7:]
+                nw_urlq = beg_urlq + end_urlq
+                data5 = requests.get(nw_urlq).json()
+                if len(data5) != 0:
+                    if priority == "comfort":
+                        nmmy = int(len(data5)//2)-1
+                        dlst = sorted(data5, key=lambda x: round(
+                            float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                        return dlst[nmmy]
+                    else:
+                        dlst = sorted(
+                            data5, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                        return dlst[0]
+                else:
+                    n8 = nw_urlq.find("body_type=")
+                    if n8 != -1:  # if body_type= is available in the url
+                        besub = nw_urlq[:n2]
+                        sbstr = nw_urlq[n2:]
+                        n9 = sbstr.find("&") + 1
+                        en_curlq = substr[n3:]
+                        newest = besub+en_curlq
+                        data6 = requests.get(newest).json()
+                    if len(data6) != 0:
+                        if priority == "comfort":
+                            n = int(len(data6)//2)-1
+                            another_data = sorted(
+                                data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                            return another_data[n]
+                        else:
+                            another_data = sorted(
+                                data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                            return another_data[0]
+
+                    # else:
+
+                    # else:
+                    #     n2 = new.find("&") + 1
+                    #     e2_curlq = new[n2:]
+                    #     a_urlq = b_curlq + e2_curlq
+                    #     data3 = requests.get(a_urlq).json()
+                    #     if len(data3) != 0:
+                    #         if priority == "budget":
+                    #             lst_data = sorted(data3, key=lambda x: round(float(
+                    #                 x["cost"]), 2))  # prices might be 199.99
+                    #             return lst_data[0]
+                    #         elif priority == "comfort":
+                    #             nu = int(len(data3)//2)-1
+                    #             lst_data = sorted(
+                    #                 data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                    #             return lst_data[nu]
+
+                    #         else:
+                    #             lst_data = sorted(
+                    #                 data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                    #             return lst_data[0]
+                    # print(a_urlq)
+    return "\tNo Results -- car json generation\n"
+##########################FIX SO PARTY SIZE > 4 IS CONSIDERED!!!!######################################
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+# ------------------------
+
+#     data = requests.get(cfull_urlq).json()
 #     if len(data) != 0:  # if the results do not come back empty
 #         if priority == "budget":
-#             sorted_data = sorted(data, key=lambda x: x["cost"])
+#             sorted_data = sorted(data, key=lambda x: float(x["cost"]))
 #             return sorted_data[0]
 #         elif priority == "comfort":
 #             num = int(len(data)//2)-1
-#             sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
+#             sorted_data = sorted(
+#                 data, key=lambda x: float(x["cost"]), reverse=True)
 #             return sorted_data[num]
 
 #         else:
-#             sorted_data = sorted(data, key=lambda x: x["cost"], reverse=True)
+#             sorted_data = sorted(
+#                 data, key=lambda x: float(x["cost"]), reverse=True)
 #             return sorted_data[0]
 #     else:
-#         non = hfull_urlq.find("&dateTo")
+#         non = cfull_urlq.find("&dateTo")+1
 #         num1 = non + len("dateTo=xxxx-xx-xx&")
+#         num2 = cfull_urlq[num1:].find("&") + 1
 #         # FIX! NEED TO REDO THIS SECTION!
-#         b_hurlq = hfull_urlq[:num1]
-#         e_hurlq = hfull_urlq[num2:]
-#         new = b_hurlq + e_hurlq
-#         data2 = requests.get(new).json()
-#         # n2 = new.find("&") + 1
-#         # e2_hurlq = new[n2:]
-#         # print(b_hurlq + e2_hurlq)
-#         if len(data2) != 0:
-#             if priority == "budget":
-#                 s_data = sorted(data2, key=lambda x: x["cost"])
-#                 return s_data[0]
-#             elif priority == "comfort":
-#                 n = int(len(data2)//2)-1
-#                 s_data = sorted(
-#                     data2, key=lambda x: x["cost"], reverse=True)
-#                 return s_data[n]
+#         b_hurlq = cfull_urlq[:num1]
+#         e_hurlq = cfull_urlq[num1:][num2:]
+#         print("b_hurlq", b_hurlq)
+#         print("e_hurlq", e_hurlq)
 
-#             else:
-#                 s_data = sorted(
-#                     data2, key=lambda x: x["cost"], reverse=True)
-#                 return s_data[0]
-#         else:
-    ##################
-    # elif party_size < 4:
-    #     n2 = new.find("&style")
-    #     e2_hurlq = new[:n2]
-    #     a_urlq = b_hurlq + e2_hurlq
-    #     data3 = requests.get(a_urlq).json()
-    #     if len(data3) != 0:
-    #         if priority == "budget":
-    #             lst_data = sorted(data3, key=lambda x: x["cost"])
-    #             return lst_data[0]
-    #         elif priority == "comfort":
-    #             nu = int(len(data3)//2)-1
-    #             lst_data = sorted(
-    #                 data3, key=lambda x: x["cost"], reverse=True)
-    #             return lst_data[nu]
-    #         else:
-    #             s_data = sorted(
-    #                 data2, key=lambda x: x["cost"], reverse=True)
-    #             return s_data[0]
-    #     else:
+#     return
+# #         new = b_hurlq + e_hurlq
+# #         data2 = requests.get(new).json()
+# #         # n2 = new.find("&") + 1
+# #         # e2_hurlq = new[n2:]
+# #         # print(b_hurlq + e2_hurlq)
+# #         if len(data2) != 0:
+# #             if priority == "budget":
+# #                 s_data = sorted(data2, key=lambda x: float(x["cost"]))
+# #                 return s_data[0]
+# #             elif priority == "comfort":
+# #                 n = int(len(data2)//2)-1
+# #                 s_data = sorted(
+# #                     data2, key=lambda x: float(x["cost"]), reverse=True)
+# #                 return s_data[n]
 
-    #     print("large party")
+# #             else:
+# #                 s_data = sorted(
+# #                     data2, key=lambda x: float(x["cost"]), reverse=True)
+# #                 return s_data[0]
+# #         else:
+# #             #################
+# #     elif party_size < 4:
+# #         n2 = new.find("&style")
+# #         e2_hurlq = new[:n2]
+# #         a_urlq = b_hurlq + e2_hurlq
+# #         data3 = requests.get(a_urlq).json()
+# #         if len(data3) != 0:
+# #             if priority == "budget":
+# #                 lst_data = sorted(data3, key=lambda x: float(x["cost"]))
+# #                 return lst_data[0]
+# #             elif priority == "comfort":
+# #                 nu = int(len(data3)//2)-1
+# #                 lst_data = sorted(
+# #                     data3, key=lambda x: float(x["cost"]), reverse=True)
+# #                 return lst_data[nu]
+# #             else:
+# #                 s_data = sorted(
+# #                     data2, key=lambda x: float(x["cost"]), reverse=True)
+# #                 return s_data[0]
+# #         else:
 
-    #             else:
-    #                 lst_data = sorted(
-    #                     data3, key=lambda x: x["cost"], reverse=True)
-    #                 return lst_data[0]
-    # return "No results"
+# #         print("large party")
 
-    # this line initiallizes the cache with requests-cache module, prevents calling the API over and over
+# #         else:
+# #             lst_data = sorted(
+# #                 data3, key=lambda x: float(x["cost"]), reverse=True)
+# #             return lst_data[0]
+# #     return "No results"
 
-    # 1 luxury
-    #    # if no results remove rental_company=... before the first &
-    #    # if still no results, remove body_type if party size < 4 and if not then remove style
-    #    # if still no results, remove style
-    # 2 budget
-    #    # if no results remove rental_company=... before the first &
-    #    # if still no results, remove body_type if party size < 4 and if not then remove style
-    #    # if still no results, remove style
-    # 3 comfort
-    #    # if no results remove rental_company=... before the first &
-    #    # if still no results, remove body_type if party size < 4 and if not then remove style
-    #    # if still no results, remove style
+# this line initiallizes the cache with requests-cache module, prevents calling the API over and over
+
+# 1 luxury
+#    # if no results remove rental_company=... before the first &
+#    # if still no results, remove body_type if party size < 4 and if not then remove style
+#    # if still no results, remove style
+# 2 budget
+#    # if no results remove rental_company=... before the first &
+#    # if still no results, remove body_type if party size < 4 and if not then remove style
+#    # if still no results, remove style
+# 3 comfort
+#    # if no results remove rental_company=... before the first &
+#    # if still no results, remove body_type if party size < 4 and if not then remove style
+#    # if still no results, remove style
 
 
 def main():
-    for _ in range(10):  # change back to 100
+    for _ in range(30):  # change back to 100
         carloyal = 0
         flightloyal = 0
         total = 0
@@ -389,7 +565,9 @@ def main():
             cfull_urlq = cars + path_params + query_gen(carFilter)
             oneHotelJson = generate_user_hotel(
                 hfull_urlq, priority, party_size, income)
-            # print(oneHotelJson)
+            oneCarJson = generate_user_car(
+                cfull_urlq, priority, party_size, income)
+            # print(cfull_urlq)
             time.sleep(1)
 
             # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
