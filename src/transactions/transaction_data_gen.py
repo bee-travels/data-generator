@@ -338,10 +338,10 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                 else:
                     n8 = nw_urlq.find("body_type=")
                     if n8 != -1:  # if body_type= is available in the url
-                        besub = nw_urlq[:n2]
-                        sbstr = nw_urlq[n2:]
+                        besub = nw_urlq[:n8]
+                        sbstr = nw_urlq[n8:]
                         n9 = sbstr.find("&") + 1
-                        en_curlq = substr[n3:]
+                        en_curlq = substr[n9:]
                         newest = besub+en_curlq
                         data6 = requests.get(newest).json()
                     if len(data6) != 0:
@@ -354,30 +354,6 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                             another_data = sorted(
                                 data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)
                             return another_data[0]
-
-                    # else:
-
-                    # else:
-                    #     n2 = new.find("&") + 1
-                    #     e2_curlq = new[n2:]
-                    #     a_urlq = b_curlq + e2_curlq
-                    #     data3 = requests.get(a_urlq).json()
-                    #     if len(data3) != 0:
-                    #         if priority == "budget":
-                    #             lst_data = sorted(data3, key=lambda x: round(float(
-                    #                 x["cost"]), 2))  # prices might be 199.99
-                    #             return lst_data[0]
-                    #         elif priority == "comfort":
-                    #             nu = int(len(data3)//2)-1
-                    #             lst_data = sorted(
-                    #                 data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                    #             return lst_data[nu]
-
-                    #         else:
-                    #             lst_data = sorted(
-                    #                 data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                    #             return lst_data[0]
-                    # print(a_urlq)
     return "\tNo Results -- car json generation\n"
 ##########################FIX SO PARTY SIZE > 4 IS CONSIDERED!!!!######################################
 # ------------------------
