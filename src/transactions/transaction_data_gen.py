@@ -345,16 +345,16 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                         en_curlq = substr[n9:]
                         newest = besub+en_curlq
                         data6 = requests.get(newest).json()
-                    if len(data6) != 0:
-                        if priority == "comfort":
-                            n = int(len(data6)//2)-1
-                            another_data = sorted(
-                                data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                            return another_data[n]
-                        else:
-                            another_data = sorted(
-                                data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                            return another_data[0]
+                        if len(data6) != 0:
+                            if priority == "comfort":
+                                n = int(len(data6)//2)-1
+                                another_data = sorted(
+                                    data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                                return another_data[n]
+                            else:
+                                another_data = sorted(
+                                    data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                                return another_data[0]
     return "\tNo Results -- car json generation\n"
 ##########################FIX SO PARTY SIZE > 4 IS CONSIDERED!!!!######################################
 # ------------------------
