@@ -4,6 +4,7 @@ import random
 import datetime
 import urllib.parse
 import requests
+# use postgres, put results in database. Send everything to checkout service which will automatically put it into the checkout service
 # import requests_cache  # cache the results
 import json
 
@@ -206,35 +207,42 @@ def generate_user_hotel(hfull_urlq, priority, party_size, income):
                 return s_data[0]
         else:
             n2 = new.find("&") + 1
+            print(n2)
             e2_hurlq = new[n2:]
             a_urlq = b_hurlq + e2_hurlq
+            print(a_urlq)
             data3 = requests.get(a_urlq).json()
-            if len(data3) != 0:
-                if priority == "budget":
-                    lst_data = sorted(data3, key=lambda x: round(float(
-                        x["cost"]), 2))  # prices might be 199.99
-                    return lst_data[0]
-                elif priority == "comfort":
-                    nu = int(len(data3)//2)-1
-                    lst_data = sorted(
-                        data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                    return lst_data[nu]
+            print("\ttype(data3))", type(data3))
+            if type(data3) == list:
+                if len(data3) != 0:
+                    if priority == "budget":
+                        lst_data = sorted(data3, key=lambda x: round(float(
+                            x["cost"]), 2))  # prices might be 199.99
+                        return lst_data[0]
+                    elif priority == "comfort":
+                        nu = int(len(data3)//2)-1
+                        lst_data = sorted(
+                            data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                        return lst_data[nu]
 
-                else:
-                    lst_data = sorted(
-                        data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                    return lst_data[0]
+                    else:
+                        lst_data = sorted(
+                            data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                        return lst_data[0]
     print(a_urlq)
     return "\tNo Results -- hotel json generation\n"
 
 
 #####################FIX SO PARTY SIZE > 4 IS CONSIDERED!!!!#############################
+# def user_car_partysize_lessthan4(cfull_urlq, priority, party_size, income):
 
 
 def generate_user_car(cfull_urlq, priority, party_size, income):
+    # separate into functions
     # requests_cache.install_cache('beetravels_cache')
     data = requests.get(cfull_urlq).json()
     if len(data) != 0:  # if the results do not come back empty
+        # http://localhost:9102/api/v1/cars/mexico/mexico-city?rental_company=Carlux&style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
         if priority == "budget":
             sorted_data = sorted(
                 data, key=lambda x: round(float(x["cost"]), 2))
@@ -245,20 +253,19 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                 data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
             return sorted_data[num]
 
-        else:
+        else:  # if results do not come back empty AND budget/time
             sorted_data = sorted(
                 data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
             return sorted_data[0]
-    else:
+    else:  # first get request returns empty response, remove loyalty program parameter
         num1 = cfull_urlq.find("?") + 1
         num2 = cfull_urlq.find("&") + 1
         b_curlq = cfull_urlq[:num1]
-        # print(b_curlq)
         e_curlq = cfull_urlq[num2:]
-        # print(e_curlq)
         new = b_curlq + e_curlq
         data2 = requests.get(new).json()
         if len(data2) != 0:
+            # http://localhost:9102/api/v1/cars/mexico/mexico-city?style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
             if priority == "budget":
                 s_data = sorted(
                     data2, key=lambda x: round(float(x["cost"]), 2))
@@ -272,11 +279,17 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                 s_data = sorted(
                     data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)
             return s_data[0]
-
-        else:
-            if party_size <= 4 or priority == "budget":
+        else:  # response results returns empty after removing loyalty program.
+            # Look at party size and budget to determine whether to remove body_type or style first
+            # basically large parties want to keep their SUV first.
+            if party_size <= 4 or priority == "budget":  # small party or budget--try to remove body_type param first
+                # http://localhost:9102/api/v1/cars/mexico/mexico-city?style=luxury&body_type=suv&dateFrom=2020-07-25&dateTo=2020-07-26
+                # body_type param optional
+                # http://localhost:9102/api/v1/cars/mexico/mexico-city?style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
                 n2 = new.find("body_type=")
-                if n2 != -1:  # if body_type= is available in the url
+                # if body_type= is available in the url, or  sometimes occurs from undiscoverable names like dar-es-salaam
+                # {'error': 'Date not legal undefined'}
+                if n2 != -1:
                     bsub = new[:n2]
                     substr = new[n2:]
                     n3 = substr.find("&") + 1
@@ -284,6 +297,7 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                     newer = bsub+e_curlq
                     data3 = requests.get(newer).json()
                     if len(data3) != 0:
+                        # http://localhost:9102/api/v1/cars/mexico/mexico-city?style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
                         if priority == "budget":
                             l_data = sorted(
                                 data3, key=lambda x: round(float(x["cost"]), 2))
@@ -300,9 +314,10 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                     else:
                         n4 = newer.find("style=")
                         b_urlq = newer[:n4]
-                        n5 = b_urlq.find("&")+1
-                        e_urlq = newer[n5:]
-                        n_urlq = b_urlq + e_urlq
+                        sub = newer[n4:]
+                        n5 = sub.find("&")+1
+                        en_urlq = sub[n5:]
+                        n_urlq = b_urlq + en_urlq
                         data4 = requests.get(n_urlq).json()
                         if len(data4) != 0:
                             if priority == "budget":
@@ -318,134 +333,71 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
                                 agh_data = sorted(
                                     data4, key=lambda x: round(float(x["cost"]), 2), reverse=True)
                                 return agh_data[0]
-# MISTAKE!!! NEED TO HAVE ELSE FOR N2 != -1 AND ELSE FOR PARTY_SIZE<=4 OR "BUDGET" .. BOTH FOR REMOVING STYLE= FROM THE URL
-            else:
-                n6 = new.find("style=")
-                beg_urlq = new[:n6]
-                n7 = b_urlq.find("&")+1
-                end_urlq = new[n7:]
-                nw_urlq = beg_urlq + end_urlq
-                data5 = requests.get(nw_urlq).json()
-                if len(data5) != 0:
-                    if priority == "comfort":
-                        nmmy = int(len(data5)//2)-1
-                        dlst = sorted(data5, key=lambda x: round(
-                            float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                        return dlst[nmmy]
-                    else:
-                        dlst = sorted(
-                            data5, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                        return dlst[0]
                 else:
-                    n8 = nw_urlq.find("body_type=")
-                    if n8 != -1:  # if body_type= is available in the url
-                        besub = nw_urlq[:n8]
-                        sbstr = nw_urlq[n8:]
-                        n9 = sbstr.find("&") + 1
-                        en_curlq = substr[n9:]
-                        newest = besub+en_curlq
-                        data6 = requests.get(newest).json()
-                        if len(data6) != 0:
-                            if priority == "comfort":
-                                n = int(len(data6)//2)-1
-                                another_data = sorted(
-                                    data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                                return another_data[n]
-                            else:
-                                another_data = sorted(
-                                    data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                                return another_data[0]
+                    n6 = new.find("style=")
+                    beg_urlq = new[:n6]
+                    subr = new[n6:]
+                    n7 = subr.find("&")+1
+                    end_urlq = subr[n7:]
+                    nw_urlq = beg_urlq + end_urlq
+                    data5 = requests.get(nw_urlq).json()
+                    if len(data5) != 0:
+                        if priority == "budget":
+                            l_data = sorted(
+                                data5, key=lambda x: round(float(x["cost"]), 2))
+                            return l_data[0]
+                        elif priority == "comfort":
+                            n = int(len(data5)//2)-1
+                            l_data = sorted(
+                                data5, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                            return l_data[n]
+                        else:
+                            l_data = sorted(
+                                data5, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                            return l_data[0]
+            else:
+                # big party size and not budget: remove body_tyoe first
+                n8 = new.find("style=")
+                if n8 != -1:  # if body_type= is available in the url or sometimes occurs when names like dar-es-salaam unavailable
+                    # {'error': 'Date not legal undefined'}
+                    besub = new[:n8]
+                    sbstr = new[n8:]
+                    n9 = sbstr.find("&") + 1
+                    en_curlq = sbstr[n9:]
+                    newest = besub+en_curlq
+                    data6 = requests.get(newest).json()
+                    if len(data6) != 0:
+                        if priority == "comfort":
+                            anum = int(len(data6)//2)-1
+                            another_data = sorted(
+                                data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                            return another_data[anum]
+                        else:
+                            another_data = sorted(
+                                data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                            return another_data[0]
+                    else:
+                        num9 = nw_urlq.find("body_type=")
+                        # sometimes, {'error': 'Date not legal undefined'} occurs from undiscoverable names like dar-es-salaam
+                        if num9 != -1:
+                            besb = nw_urlq[:num9]
+                            sbst = nw_urlq[num9:]
+                            num10 = sbst.find("&") + 1
+                            en_curlq = sbst[num10:]
+                            newest = besb+en_curlq
+                            print(newest, "^^^ check for errors\n")
+                            data7 = requests.get(newest).json()
+                            if len(data7) != 0:
+                                if priority == "comfort":
+                                    nmmy = int(len(data7)//2)-1
+                                    dlst = sorted(data7, key=lambda x: round(
+                                        float(x["cost"]), 2), reverse=True)  # prices might be 199.99
+                                    return dlst[nmmy]
+                                else:
+                                    dlst = sorted(
+                                        data7, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                                    return dlst[0]
     return "\tNo Results -- car json generation\n"
-##########################FIX SO PARTY SIZE > 4 IS CONSIDERED!!!!######################################
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-# ------------------------
-
-#     data = requests.get(cfull_urlq).json()
-#     if len(data) != 0:  # if the results do not come back empty
-#         if priority == "budget":
-#             sorted_data = sorted(data, key=lambda x: float(x["cost"]))
-#             return sorted_data[0]
-#         elif priority == "comfort":
-#             num = int(len(data)//2)-1
-#             sorted_data = sorted(
-#                 data, key=lambda x: float(x["cost"]), reverse=True)
-#             return sorted_data[num]
-
-#         else:
-#             sorted_data = sorted(
-#                 data, key=lambda x: float(x["cost"]), reverse=True)
-#             return sorted_data[0]
-#     else:
-#         non = cfull_urlq.find("&dateTo")+1
-#         num1 = non + len("dateTo=xxxx-xx-xx&")
-#         num2 = cfull_urlq[num1:].find("&") + 1
-#         # FIX! NEED TO REDO THIS SECTION!
-#         b_hurlq = cfull_urlq[:num1]
-#         e_hurlq = cfull_urlq[num1:][num2:]
-#         print("b_hurlq", b_hurlq)
-#         print("e_hurlq", e_hurlq)
-
-#     return
-# #         new = b_hurlq + e_hurlq
-# #         data2 = requests.get(new).json()
-# #         # n2 = new.find("&") + 1
-# #         # e2_hurlq = new[n2:]
-# #         # print(b_hurlq + e2_hurlq)
-# #         if len(data2) != 0:
-# #             if priority == "budget":
-# #                 s_data = sorted(data2, key=lambda x: float(x["cost"]))
-# #                 return s_data[0]
-# #             elif priority == "comfort":
-# #                 n = int(len(data2)//2)-1
-# #                 s_data = sorted(
-# #                     data2, key=lambda x: float(x["cost"]), reverse=True)
-# #                 return s_data[n]
-
-# #             else:
-# #                 s_data = sorted(
-# #                     data2, key=lambda x: float(x["cost"]), reverse=True)
-# #                 return s_data[0]
-# #         else:
-# #             #################
-# #     elif party_size < 4:
-# #         n2 = new.find("&style")
-# #         e2_hurlq = new[:n2]
-# #         a_urlq = b_hurlq + e2_hurlq
-# #         data3 = requests.get(a_urlq).json()
-# #         if len(data3) != 0:
-# #             if priority == "budget":
-# #                 lst_data = sorted(data3, key=lambda x: float(x["cost"]))
-# #                 return lst_data[0]
-# #             elif priority == "comfort":
-# #                 nu = int(len(data3)//2)-1
-# #                 lst_data = sorted(
-# #                     data3, key=lambda x: float(x["cost"]), reverse=True)
-# #                 return lst_data[nu]
-# #             else:
-# #                 s_data = sorted(
-# #                     data2, key=lambda x: float(x["cost"]), reverse=True)
-# #                 return s_data[0]
-# #         else:
-
-# #         print("large party")
-
-# #         else:
-# #             lst_data = sorted(
-# #                 data3, key=lambda x: float(x["cost"]), reverse=True)
-# #             return lst_data[0]
-# #     return "No results"
 
 # this line initiallizes the cache with requests-cache module, prevents calling the API over and over
 
@@ -542,8 +494,10 @@ def main():
             cfull_urlq = cars + path_params + query_gen(carFilter)
             oneHotelJson = generate_user_hotel(
                 hfull_urlq, priority, party_size, income)
+            print(hfull_urlq)
             oneCarJson = generate_user_car(
                 cfull_urlq, priority, party_size, income)
+            print(oneHotelJson)
             # print(cfull_urlq)
             time.sleep(1)
 
