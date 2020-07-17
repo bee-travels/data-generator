@@ -419,7 +419,7 @@ def generate_user_car(cfull_urlq, priority, party_size):
 def format_postgres(auser, h_fullurlq, c_fullurlq, priority, party_size):
 
     initdict = {"totalAmount": 0.00, "currency": "USD", "status": "unprocessed", "cartItems": [
-        {}], "billingDetails": {}, "paymentMethodDetails": {"type": "Card", "creditcardNumber": "1234 5678 9123 4567", "expMonth": 2, "expYear": 2023, "cvc": "1000"}}
+        {}], "billingDetails": {}, "paymentMethodDetails": {"type": "Card", "creditcardNumber": "0000 0000 0000 0000", "expMonth": 1, "expYear": 2050, "cvc": "0000"}}
     if "cars" in c_fullurlq:  # for the future in case we provide a blank string when people do not purchase hotel and car at same time
         carjson = generate_user_car(c_fullurlq, priority, party_size)
         initdict["cartItems"][0]["type"] = "Car"
@@ -452,7 +452,7 @@ def format_postgres(auser, h_fullurlq, c_fullurlq, priority, party_size):
         hoteljson = generate_user_hotel(h_fullurlq, priority, party_size)
         initdict["cartItems"].append({})
         initdict["cartItems"][1]["type"] = "Hotel"
-        cartVarh = initdict["cartItems"][1]["type"]
+        cartVarh = initdict["cartItems"][1]
         cartVarh['uuid'] = hoteljson["id"]
         cartVarh['description'] = ""
         cartVarh['cost'] = hoteljson["cost"]
