@@ -1,0 +1,41 @@
+{'totalAmount': 0.0, 'currency': 'USD', 'status': 'unprocessed', 'cartItems': [{'type': 'Car', 'uuid': 'e9d1d5eb-8698-4a33-aba2-ceab6870ce41', 'description': '', 'cost': 370.5, 'currency': 'USD', 'startDate': '2020 07 30', 'endDate': '2020 08 05'}], 'billingDetails': {'firstName': 'Tony', 'lastName': 'Santiago', 'address': {'line1': '00 Null', 'city': 'Birmingham', 'postalCode': '00000', 'state': 'Null', 'country': 'United Kingdom'}}, 'paymentMethodDetails': {'type': 'Card', 'creditcardNumber': '1234 5678 9123 4567', 'expMonth': 2, 'expYear': 2023, 'cvc': '1000'}}
+{'totalAmount': 0.0, 'currency': 'USD', 'status': 'unprocessed', 'cartItems': [{'type': 'Car', 'uuid': 'e9d1d5eb-8698-4a33-aba2-ceab6870ce41', 'description': '', 'cost': 370.5, 'currency': 'USD', 'startDate': '2020 07 30', 'endDate': '2020 08 05'}, {'type': 'Hotel'}], 'billingDetails': {'firstName': 'Tony', 'lastName': 'Santiago', 'address': {'line1': '00 Null', 'city': 'Birmingham', 'postalCode': '00000', 'state': 'Null', 'country': 'United Kingdom'}}, 'paymentMethodDetails': {'type': 'Card', 'creditcardNumber': '1234 5678 9123 4567', 'expMonth': 2, 'expYear': 2023, 'cvc': '1000'}}
+{
+  "totalAmount": 499.99, --total of all cart items
+  "currency": "USD",
+  "status": "unprocessed",
+  "cartItems": [
+    {
+      "type": "Car|Hotel|Flight", -- put one of them
+      "uuid": "string", --id from gen_data json results
+      "description": "string", --"name of hotel or car-name of superchain/rental_company"
+      "cost": 30.99,
+      "currency": "USD",
+      "startDate": "05 21 2020", --change date format to look like this
+      "endDate": "06 22 2020"
+    } --- for each hotel, flight, car have its own {}
+  ],
+  "billingDetails": {   
+    "firstName": "John",
+    "lastName": "Doe",
+    "phone": "+1 (415) 777 8888", --not req
+    "email": "mary@poppins.net", --not req
+    "address": {
+      "line1": "42 Avienda de Princapessa", --required: can do faker or use same address
+      "line2": "#747",
+      "city": "Málaga", 
+      "postalCode": "76NE", --can put same for everyone
+      "state": "Andalusia", --can put same for everyone or faker
+      "country": "Spain"
+    }
+  },
+  "paymentMethodDetails": {
+    "type": "Card|Paypal", ---leave all as Card
+    "creditcardNumber": "4242 4242 4242 4242", --use same for everyone
+    "expMonth": 2, --use same for everyone
+    "expYear": 2023, --use same for everyone; in future
+    "cvc": "0017" --use same for everyone
+  }
+}
+
+can use requests.post(url, data = {})
