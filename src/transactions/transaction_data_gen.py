@@ -7,6 +7,7 @@ import requests
 # use postgres, put results in database. Send everything to checkout service which will automatically put it into the checkout service
 # import requests_cache  # cache the results
 import json
+import os
 
 users = utils.load_json("user.json")
 destinations = utils.load_json("destination.json")
@@ -417,66 +418,97 @@ def generate_user_car(cfull_urlq, priority, party_size):
 
 # from full_urlq, call generate_user_hotel or generate_user_car
 def format_postgres(auser, h_fullurlq, c_fullurlq, priority, party_size):
-
-    initdict = {"totalAmount": 0.00, "currency": "USD", "status": "unprocessed", "cartItems": [
-        {}], "billingDetails": {}, "paymentMethodDetails": {"type": "Card", "creditcardNumber": "0000 0000 0000 0000", "expMonth": 1, "expYear": 2050, "cvc": "0000"}}
+    #print("h_fullurlq", h_fullurlq, "c_fullurlq", c_fullurlq)
+    string = ""
+    initdict = {"totalAmount": 0.00, "currency": "USD", "status": "unprocessed", "cartItems": [{}], "billingDetails": {
+    }, "paymentMethodDetails": {"type": "Card", "creditcardNumber": "0000 0000 0000 0000", "expMonth": 1, "expYear": 2050, "cvc": "0000"}}
     if "cars" in c_fullurlq:  # for the future in case we provide a blank string when people do not purchase hotel and car at same time
         carjson = generate_user_car(c_fullurlq, priority, party_size)
-        initdict["cartItems"][0]["type"] = "Car"
-        cartVar = initdict["cartItems"][0]
-        cartVar['uuid'] = carjson['id']
-        cartVar["description"] = ""
-        cartVar["cost"] = carjson["cost"]
-        cartVar["currency"] = "USD"
-        # cartVar =
-        dateTo = c_fullurlq.split("&")[-1].split("=")[1].replace("-", " ")
-        dateFrom = c_fullurlq.split("&")[-2].split("=")[1].replace("-", " ")
-        print(dateTo, " ", dateFrom)
-        cartVar["startDate"] = dateFrom
-        cartVar["endDate"] = dateTo
-        billingDetails = initdict["billingDetails"]
-        # CAN WE ASSUME NAMES ARE ALWAYS JUST 2 WORDS???
-        print("\tlen(auser['name']) .. is it always 2?",
-              len(auser['name'].split()))
-        billingDetails["firstName"] = auser["name"].split(" ")[0]
-        billingDetails["lastName"] = auser["name"].split(" ")[-1]
-        billingDetails["address"] = {}
-        billingDetails["address"]["line1"] = "00 Null"
-        billingDetails["address"]["city"] = auser["city"]
-        billingDetails["address"]["postalCode"] = "00000"
-        billingDetails["address"]["state"] = "Null"
-        billingDetails["address"]["country"] = auser["country"]
+        if (type(carjson) is dict) and ("error" not in carjson):
+            initdict["cartItems"][0]["type"] = "Car"
+            cartVar = initdict["cartItems"][0]
+            #print("\tCARJSON", carjson)
+            #print("\tCARTVar:  ", cartVar)
+            cartVar['uuid'] = carjson['id']
 
-        #initdict["uuid"][1]["type"] = ""
+            cartVar["description"] = "description"
+            cartVar["cost"] = carjson["cost"]
+            cartVar["currency"] = "USD"
+            # cartVar =
+            dateTo = c_fullurlq.split("&")[-1].split("=")[1].replace("-", " ")
+            year1, month1, day1 = dateTo.split(" ")
+            string = month1 + " " + day1 + " " + year1
+            cartVar["endDate"] = string
+            dateFrom = c_fullurlq.split(
+                "&")[-2].split("=")[1].replace("-", " ")
+            year2, month2, day2 = dateFrom.split(" ")
+            string = month2 + " " + day2 + " " + year2
+            cartVar["startDate"] = string
+            # print("start date: ", cartVar["startDate"],"\n end date: ", cartVar['endDate'])
+            billingDetails = initdict["billingDetails"]
+            # CAN WE ASSUME NAMES ARE ALWAYS JUST 2 WORDS???
+            print("\tlen(auser['name']) .. is it always 2?",
+                  len(auser['name'].split()))
+            billingDetails["firstName"] = auser["name"].split(" ")[0]
+            billingDetails["lastName"] = auser["name"].split(" ")[-1]
+            billingDetails["address"] = {}
+            billingDetails["address"]["line1"] = "00 Non"
+            billingDetails["address"]["city"] = auser["city"]
+            billingDetails["address"]["postalCode"] = "00000"
+            billingDetails["address"]["state"] = "Non"
+            billingDetails["address"]["country"] = auser["country"]
+
+        # initdict["uuid"][1]["type"] = ""
     if "hotels" in h_fullurlq:  # for the future in case we provide a blank string when people do not purchase hotel and car at same time
         hoteljson = generate_user_hotel(h_fullurlq, priority, party_size)
-        initdict["cartItems"].append({})
-        initdict["cartItems"][1]["type"] = "Hotel"
-        cartVarh = initdict["cartItems"][1]
-        cartVarh['uuid'] = hoteljson["id"]
-        cartVarh['description'] = ""
-        cartVarh['cost'] = hoteljson["cost"]
+        if (type(hoteljson) == dict) and ("error" not in hoteljson):
+            initdict["cartItems"].append({})
+            initdict["cartItems"][1]["type"] = "Hotel"
+            cartVarh = initdict["cartItems"][1]
+            cartVarh['uuid'] = hoteljson["id"]
+            cartVarh['description'] = "description"
+            cartVarh["currency"] = "USD"
+            cartVarh['cost'] = hoteljson["cost"]
+            dateToh = c_fullurlq.split("&")[-1].split("=")[1].replace("-", " ")
+            # dateFromh = c_fullurlq.split(
+            #     "&")[-2].split("=")[1].replace("-", " ")
+            year1, month1, day1 = dateToh.split(" ")
+            string = month1 + " " + day1 + " " + year1
+            cartVarh["endDate"] = string
+            dateFromh = c_fullurlq.split(
+                "&")[-2].split("=")[1].replace("-", " ")
+            year2, month2, day2 = dateFromh.split(" ")
+            string = month2 + " " + day2 + " " + year2
+            cartVarh["startDate"] = string
+            # print("start date: ", cartVar["startDate"],
+            # "end date: ", cartVar['endDate'])
 
-        dateToh = c_fullurlq.split("&")[-1].split("=")[1].replace("-", " ")
-        dateFromh = c_fullurlq.split("&")[-2].split("=")[1].replace("-", " ")
-        cartVar["startDate"] = dateFromh
-        cartVar["endDate"] = dateToh
-        cartVar["currency"] = "USD"
+        try:  # is this correct?
+            initdict["totalAmount"] += initdict["cartItems"][0]["cost"] + \
+                initdict["cartItems"][1]["cost"]
+            print(initdict)
+            return initdict
 
-    try:  # is this correct?
-        initdict["totalAmount"] += initdict["cartItems"][0]["cost"] + \
-            initdict["cartItems"][1]["cost"]
-        return initdict
+        except:
+            return "Error"
+    return "Error"
 
-    except:
-        return "Error"
+    # oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
+    # oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
 
-    #####            oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
-    #####            oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
+
+def posting(params):
+    # set dynamic environment var that is set in
+    base_url = 'http://localhost:9402' if "CHECK_OUT_URL" not in os.environ else os.environ["CHECK_OUT_URL"]
+    response = requests.post(base_url+'/api/v1/checkout/cart', json=params)
+    print(response.text)
+
+    # terminal with export CHECK_OUT_URL= http:// xxxxx. Default to local host port you are using if no envir variable
+    # is provided
 
 
 def main():
-    for _ in range(1):  # change back to 100
+    for _ in range(50):  # change back to 100
         carloyal = 0
         flightloyal = 0
         total = 0
@@ -552,9 +584,12 @@ def main():
             hfull_urlq = hotel + path_params + query_gen(hotelFilter)
             # print(cars + path_params + query_gen(carFilter))
             cfull_urlq = cars + path_params + query_gen(carFilter)
-            #oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
-            #oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
-            format_postgres(user, hfull_urlq, cfull_urlq, priority, party_size)
+            # oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
+            # oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
+            post_gres = format_postgres(
+                user, hfull_urlq, cfull_urlq, priority, party_size)
+            posting(post_gres)
+
             # print(cfull_urlq)
             time.sleep(1)
 
