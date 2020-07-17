@@ -463,11 +463,14 @@ def format_postgres(auser, h_fullurlq, c_fullurlq, priority, party_size):
         cartVar["endDate"] = dateToh
         cartVar["currency"] = "USD"
 
-        print(initdict)
-    else:
-        return "ERROR"
+    try:  # is this correct?
+        initdict["totalAmount"] += initdict["cartItems"][0]["cost"] + \
+            initdict["cartItems"][1]["cost"]
+        return initdict
 
-    return
+    except:
+        return "Error"
+
     #####            oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
     #####            oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
 
