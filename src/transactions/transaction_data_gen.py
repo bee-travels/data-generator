@@ -161,7 +161,7 @@ def get_destination(usual, destinations):  # list of frequenty traveled locaiton
     return random.choice(usual)
 
 
-def generate_user_hotel(hfull_urlq, priority, party_size, income):
+def generate_user_hotel(hfull_urlq, priority, party_size):
     # print(priority)
     # requests_cache.install_cache('beetravels_cache')
     data = requests.get(hfull_urlq).json()
@@ -237,7 +237,7 @@ def generate_user_hotel(hfull_urlq, priority, party_size, income):
 # def user_car_partysize_lessthan4(cfull_urlq, priority, party_size, income):
 
 
-def generate_user_car(cfull_urlq, priority, party_size, income):
+def generate_user_car(cfull_urlq, priority, party_size):
     # separate into functions
     # requests_cache.install_cache('beetravels_cache')
     data = requests.get(cfull_urlq).json()
@@ -415,12 +415,69 @@ def generate_user_car(cfull_urlq, priority, party_size, income):
 #    # if still no results, remove style
 
 
+# from full_urlq, call generate_user_hotel or generate_user_car
+def format_postgres(auser, h_fullurlq, c_fullurlq, priority, party_size):
+
+    initdict = {"totalAmount": 0.00, "currency": "USD", "status": "unprocessed", "cartItems": [
+        {}], "billingDetails": {}, "paymentMethodDetails": {"type": "Card", "creditcardNumber": "1234 5678 9123 4567", "expMonth": 2, "expYear": 2023, "cvc": "1000"}}
+    if "cars" in c_fullurlq:  # for the future in case we provide a blank string when people do not purchase hotel and car at same time
+        carjson = generate_user_car(c_fullurlq, priority, party_size)
+        initdict["cartItems"][0]["type"] = "Car"
+        cartVar = initdict["cartItems"][0]
+        cartVar['uuid'] = carjson['id']
+        cartVar["description"] = ""
+        cartVar["cost"] = carjson["cost"]
+        cartVar["currency"] = "USD"
+        # cartVar =
+        dateTo = c_fullurlq.split("&")[-1].split("=")[1].replace("-", " ")
+        dateFrom = c_fullurlq.split("&")[-2].split("=")[1].replace("-", " ")
+        print(dateTo, " ", dateFrom)
+        cartVar["startDate"] = dateFrom
+        cartVar["endDate"] = dateTo
+        billingDetails = initdict["billingDetails"]
+        # CAN WE ASSUME NAMES ARE ALWAYS JUST 2 WORDS???
+        print("\tlen(auser['name']) .. is it always 2?",
+              len(auser['name'].split()))
+        billingDetails["firstName"] = auser["name"].split(" ")[0]
+        billingDetails["lastName"] = auser["name"].split(" ")[-1]
+        billingDetails["address"] = {}
+        billingDetails["address"]["line1"] = "00 Null"
+        billingDetails["address"]["city"] = auser["city"]
+        billingDetails["address"]["postalCode"] = "00000"
+        billingDetails["address"]["state"] = "Null"
+        billingDetails["address"]["country"] = auser["country"]
+
+        #initdict["uuid"][1]["type"] = ""
+    if "hotels" in h_fullurlq:  # for the future in case we provide a blank string when people do not purchase hotel and car at same time
+        hoteljson = generate_user_hotel(h_fullurlq, priority, party_size)
+        initdict["cartItems"].append({})
+        initdict["cartItems"][1]["type"] = "Hotel"
+        cartVarh = initdict["cartItems"][1]["type"]
+        cartVarh['uuid'] = hoteljson["id"]
+        cartVarh['description'] = ""
+        cartVarh['cost'] = hoteljson["cost"]
+
+        dateToh = c_fullurlq.split("&")[-1].split("=")[1].replace("-", " ")
+        dateFromh = c_fullurlq.split("&")[-2].split("=")[1].replace("-", " ")
+        cartVar["startDate"] = dateFromh
+        cartVar["endDate"] = dateToh
+        cartVar["currency"] = "USD"
+
+        print(initdict)
+    else:
+        return "ERROR"
+
+    return
+    #####            oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
+    #####            oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
+
+
 def main():
-    for _ in range(30):  # change back to 100
+    for _ in range(1):  # change back to 100
         carloyal = 0
         flightloyal = 0
         total = 0
-        for user in users[0:20]:
+        for user in users[0:10]:
             get = user.get
             willTravel = random.randint(0, 100)
             if willTravel > get("travel_frequency"):
@@ -492,12 +549,9 @@ def main():
             hfull_urlq = hotel + path_params + query_gen(hotelFilter)
             # print(cars + path_params + query_gen(carFilter))
             cfull_urlq = cars + path_params + query_gen(carFilter)
-            oneHotelJson = generate_user_hotel(
-                hfull_urlq, priority, party_size, income)
-            print(hfull_urlq)
-            oneCarJson = generate_user_car(
-                cfull_urlq, priority, party_size, income)
-            print(oneHotelJson)
+            #oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
+            #oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
+            format_postgres(user, hfull_urlq, cfull_urlq, priority, party_size)
             # print(cfull_urlq)
             time.sleep(1)
 
