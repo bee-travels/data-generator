@@ -2,10 +2,9 @@ import utils
 import time
 import random
 import datetime
-import urllib.parse
+from urllib.parse import urlparse, parse_qsl, urlencode
 import requests
 # use postgres, put results in database. Send everything to checkout service which will automatically put it into the checkout service
-# import requests_cache  # cache the results
 import json
 import os
 
@@ -88,11 +87,10 @@ def get_flight_loyalty_status(priority, main_reason, frequency, randnum):
 
 def get_random_num():
     randnum = float(random.randint(0, 100))/100.0
-    # print("Randnum: " + str(randnum))
     return randnum
 
 
-def get_group_size(usual):  # usual: whatever num they usually travel with, 80/20 split
+def get_group_size(usual):  # usual: whatever num they usually travel with, 80/20 split chance
     rand = random.randint(0, 100)
     if rand > 80:
         return random.randint(1, 6)
@@ -162,10 +160,21 @@ def get_destination(usual, destinations):  # list of frequenty traveled locaiton
     return random.choice(usual)
 
 
-def generate_user_hotel(hfull_urlq, priority, party_size):
-    # print(priority)
-    # requests_cache.install_cache('beetravels_cache')
-    data = requests.get(hfull_urlq).json()
+def convert_tuplelist_to_dict(query_tuple):
+    result_dict = {}
+    for k, v in query_tuple:
+        result_dict[k] = v
+    return result_dict
+
+
+def delete_dict_key(dictionary, key):
+    if key in dictionary:
+        dictionary.pop(key)
+
+
+def generate_user_hotel(hotel_full_url, priority, party_size):
+    #print("hotel_full_url: ", hotel_full_url)
+    data = requests.get(hotel_full_url).json()
     if len(data) != 0:  # if the results do not come back empty
         if priority == "budget":
             sorted_data = sorted(
@@ -182,66 +191,33 @@ def generate_user_hotel(hfull_urlq, priority, party_size):
                 data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
             return sorted_data[0]
     else:
-        num1 = hfull_urlq.find("?") + 1
-        num2 = hfull_urlq.find("&") + 1
-        b_hurlq = hfull_urlq[:num1]
-        e_hurlq = hfull_urlq[num2:]
-        new = b_hurlq + e_hurlq
-        data2 = requests.get(new).json()
-        # n2 = new.find("&") + 1
-        # e2_hurlq = new[n2:]
-        # print(b_hurlq + e2_hurlq)
-        if len(data2) != 0:
-            if priority == "budget":
-                s_data = sorted(
-                    data2, key=lambda x: round(float(x["cost"]), 2))
-                return s_data[0]
-            elif priority == "comfort":
-                n = int(len(data2)//2)-1
-                s_data = sorted(
-                    data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                return s_data[n]
+        parse_url = urlparse(hotel_full_url)
+        #print("parse_url: ", parse_url)
+        query_tuple = parse_qsl(parse_url.query)
 
-            else:
-                s_data = sorted(
-                    data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                return s_data[0]
+        #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
+        query_dict = convert_tuplelist_to_dict(query_tuple)
+        if "superchain" in query_dict:
+            #print("removing superchain...")
+            delete_dict_key(query_dict, "superchain")
+        elif "type" in query_dict:
+            #print("removing type...")
+            delete_dict_key(query_dict, "type")
         else:
-            n2 = new.find("&") + 1
-            print(n2)
-            e2_hurlq = new[n2:]
-            a_urlq = b_hurlq + e2_hurlq
-            print(a_urlq)
-            data3 = requests.get(a_urlq).json()
-            print("\ttype(data3))", type(data3))
-            if type(data3) == list:
-                if len(data3) != 0:
-                    if priority == "budget":
-                        lst_data = sorted(data3, key=lambda x: round(float(
-                            x["cost"]), 2))  # prices might be 199.99
-                        return lst_data[0]
-                    elif priority == "comfort":
-                        nu = int(len(data3)//2)-1
-                        lst_data = sorted(
-                            data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                        return lst_data[nu]
-
-                    else:
-                        lst_data = sorted(
-                            data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                        return lst_data[0]
-    print(a_urlq)
-    return "\tNo Results -- hotel json generation\n"
+            return "\tNo Results -- hotel json generation\n"
+        new_hotel_url = parse_url.scheme + "://" + \
+            parse_url.netloc + parse_url.path + query_gen(query_dict)
+        return generate_user_hotel(new_hotel_url, priority, party_size)
+        # http: // localhost: 9101/api/v1/hotels/indonesia/jakarta?superchain = Urban % 20Lifestyle & type = luxury & dateFrom = 2020-08-03 & dateTo = 2020-08-08
 
 
 #####################FIX SO PARTY SIZE > 4 IS CONSIDERED!!!!#############################
-# def user_car_partysize_lessthan4(cfull_urlq, priority, party_size, income):
+# def user_car_partysize_lessthan4(car_full_url, priority, party_size, income):
 
 
-def generate_user_car(cfull_urlq, priority, party_size):
-    # separate into functions
-    # requests_cache.install_cache('beetravels_cache')
-    data = requests.get(cfull_urlq).json()
+def generate_user_car(car_full_url, priority, party_size):
+    #print("car_full_url: ", car_full_url)
+    data = requests.get(car_full_url).json()
     if len(data) != 0:  # if the results do not come back empty
         # http://localhost:9102/api/v1/cars/mexico/mexico-city?rental_company=Carlux&style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
         if priority == "budget":
@@ -259,148 +235,28 @@ def generate_user_car(cfull_urlq, priority, party_size):
                 data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
             return sorted_data[0]
     else:  # first get request returns empty response, remove loyalty program parameter
-        num1 = cfull_urlq.find("?") + 1
-        num2 = cfull_urlq.find("&") + 1
-        b_curlq = cfull_urlq[:num1]
-        e_curlq = cfull_urlq[num2:]
-        new = b_curlq + e_curlq
-        data2 = requests.get(new).json()
-        if len(data2) != 0:
-            # http://localhost:9102/api/v1/cars/mexico/mexico-city?style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
-            if priority == "budget":
-                s_data = sorted(
-                    data2, key=lambda x: round(float(x["cost"]), 2))
-                return s_data[0]
-            elif priority == "comfort":
-                n = int(len(data2)//2)-1
-                s_data = sorted(
-                    data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                return s_data[n]
-            else:
-                s_data = sorted(
-                    data2, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-            return s_data[0]
-        else:  # response results returns empty after removing loyalty program.
-            # Look at party size and budget to determine whether to remove body_type or style first
-            # basically large parties want to keep their SUV first.
-            if party_size <= 4 or priority == "budget":  # small party or budget--try to remove body_type param first
-                # http://localhost:9102/api/v1/cars/mexico/mexico-city?style=luxury&body_type=suv&dateFrom=2020-07-25&dateTo=2020-07-26
-                # body_type param optional
-                # http://localhost:9102/api/v1/cars/mexico/mexico-city?style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
-                n2 = new.find("body_type=")
-                # if body_type= is available in the url, or  sometimes occurs from undiscoverable names like dar-es-salaam
-                # {'error': 'Date not legal undefined'}
-                if n2 != -1:
-                    bsub = new[:n2]
-                    substr = new[n2:]
-                    n3 = substr.find("&") + 1
-                    e_curlq = substr[n3:]
-                    newer = bsub+e_curlq
-                    data3 = requests.get(newer).json()
-                    if len(data3) != 0:
-                        # http://localhost:9102/api/v1/cars/mexico/mexico-city?style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
-                        if priority == "budget":
-                            l_data = sorted(
-                                data3, key=lambda x: round(float(x["cost"]), 2))
-                            return l_data[0]
-                        elif priority == "comfort":
-                            n = int(len(data3)//2)-1
-                            l_data = sorted(
-                                data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                            return l_data[n]
-                        else:
-                            l_data = sorted(
-                                data3, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                            return l_data[0]
-                    else:
-                        n4 = newer.find("style=")
-                        b_urlq = newer[:n4]
-                        sub = newer[n4:]
-                        n5 = sub.find("&")+1
-                        en_urlq = sub[n5:]
-                        n_urlq = b_urlq + en_urlq
-                        data4 = requests.get(n_urlq).json()
-                        if len(data4) != 0:
-                            if priority == "budget":
-                                agh_data = sorted(
-                                    data4, key=lambda x: round(float(x["cost"]), 2))
-                                return agh_data[0]
-                            elif priority == "comfort":
-                                n = int(len(data4)//2)-1
-                                agh_data = sorted(
-                                    data4, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                                return agh_data[n]
-                            else:
-                                agh_data = sorted(
-                                    data4, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                                return agh_data[0]
-                else:
-                    n6 = new.find("style=")
-                    beg_urlq = new[:n6]
-                    subr = new[n6:]
-                    n7 = subr.find("&")+1
-                    end_urlq = subr[n7:]
-                    nw_urlq = beg_urlq + end_urlq
-                    data5 = requests.get(nw_urlq).json()
-                    if len(data5) != 0:
-                        if priority == "budget":
-                            l_data = sorted(
-                                data5, key=lambda x: round(float(x["cost"]), 2))
-                            return l_data[0]
-                        elif priority == "comfort":
-                            n = int(len(data5)//2)-1
-                            l_data = sorted(
-                                data5, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                            return l_data[n]
-                        else:
-                            l_data = sorted(
-                                data5, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                            return l_data[0]
-            else:
-                # big party size and not budget: remove body_tyoe first
-                n8 = new.find("style=")
-                if n8 != -1:  # if body_type= is available in the url or sometimes occurs when names like dar-es-salaam unavailable
-                    # {'error': 'Date not legal undefined'}
-                    besub = new[:n8]
-                    sbstr = new[n8:]
-                    n9 = sbstr.find("&") + 1
-                    en_curlq = sbstr[n9:]
-                    newest = besub+en_curlq
-                    data6 = requests.get(newest).json()
-                    if len(data6) != 0:
-                        if priority == "comfort":
-                            anum = int(len(data6)//2)-1
-                            another_data = sorted(
-                                data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                            return another_data[anum]
-                        else:
-                            another_data = sorted(
-                                data6, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                            return another_data[0]
-                    else:
-                        num9 = nw_urlq.find("body_type=")
-                        # sometimes, {'error': 'Date not legal undefined'} occurs from undiscoverable names like dar-es-salaam
-                        if num9 != -1:
-                            besb = nw_urlq[:num9]
-                            sbst = nw_urlq[num9:]
-                            num10 = sbst.find("&") + 1
-                            en_curlq = sbst[num10:]
-                            newest = besb+en_curlq
-                            print(newest, "^^^ check for errors\n")
-                            data7 = requests.get(newest).json()
-                            if len(data7) != 0:
-                                if priority == "comfort":
-                                    nmmy = int(len(data7)//2)-1
-                                    dlst = sorted(data7, key=lambda x: round(
-                                        float(x["cost"]), 2), reverse=True)  # prices might be 199.99
-                                    return dlst[nmmy]
-                                else:
-                                    dlst = sorted(
-                                        data7, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                                    return dlst[0]
-    return "\tNo Results -- car json generation\n"
-
-# this line initiallizes the cache with requests-cache module, prevents calling the API over and over
+        parse_url = urlparse(car_full_url)
+        #print("parse_url: ", parse_url)
+        query_tuple = parse_qsl(parse_url.query)
+        #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
+        query_dict = convert_tuplelist_to_dict(query_tuple)
+        if "rental_company" in query_dict:
+            #print("removing rental company...")
+            delete_dict_key(query_dict, "rental_company")
+        elif party_size > 4 and priority != "budget" and "style" in query_dict:
+            #print("removing style for large party...")
+            delete_dict_key(query_dict, "style")
+        elif "body_type" in query_dict:
+            #print("removing body_type...")
+            delete_dict_key(query_dict, "body_type")
+        elif (party_size <= 4 or priority == "budget") and ("style" in query_dict):
+            #print("removing style for small party or budget users...")
+            delete_dict_key(query_dict, "body_type")
+        else:
+            return "\tNo Results -- hotel json generation\n"
+        new_hotel_url = parse_url.scheme + "://" + \
+            parse_url.netloc + parse_url.path + query_gen(query_dict)
+        return generate_user_hotel(new_hotel_url, priority, party_size)
 
 # 1 luxury
 #    # if no results remove rental_company=... before the first &
@@ -416,101 +272,84 @@ def generate_user_car(cfull_urlq, priority, party_size):
 #    # if still no results, remove style
 
 
-# from full_urlq, call generate_user_hotel or generate_user_car
-def format_postgres(auser, h_fullurlq, c_fullurlq, priority, party_size):
-    #print("h_fullurlq", h_fullurlq, "c_fullurlq", c_fullurlq)
+def format_postgres(one_user_dict, hotel_full_url, car_full_url, priority, party_size):
     string = ""
-    initdict = {"totalAmount": 0.00, "currency": "USD", "status": "unprocessed", "cartItems": [{}], "billingDetails": {
+    initialized_dict = {"totalAmount": 0.00, "currency": "USD", "status": "unprocessed", "cartItems": [{}], "billingDetails": {
     }, "paymentMethodDetails": {"type": "Card", "creditcardNumber": "0000 0000 0000 0000", "expMonth": 1, "expYear": 2050, "cvc": "0000"}}
-    if "cars" in c_fullurlq:  # for the future in case we provide a blank string when people do not purchase hotel and car at same time
-        carjson = generate_user_car(c_fullurlq, priority, party_size)
+    if "cars" in car_full_url:  # for the future in case we provide a blank string when people do not purchase hotel and car at same time
+        carjson = generate_user_car(car_full_url, priority, party_size)
         if (type(carjson) is dict) and ("error" not in carjson):
-            initdict["cartItems"][0]["type"] = "Car"
-            cartVar = initdict["cartItems"][0]
-            #print("\tCARJSON", carjson)
-            #print("\tCARTVar:  ", cartVar)
-            cartVar['uuid'] = carjson['id']
-
-            cartVar["description"] = "description"
-            cartVar["cost"] = carjson["cost"]
-            cartVar["currency"] = "USD"
-            # cartVar =
-            dateTo = c_fullurlq.split("&")[-1].split("=")[1].replace("-", " ")
-            year1, month1, day1 = dateTo.split(" ")
-            string = month1 + " " + day1 + " " + year1
-            cartVar["endDate"] = string
-            dateFrom = c_fullurlq.split(
+            initialized_dict["cartItems"][0]["type"] = "Car"
+            cartItemsCar_dict = initialized_dict["cartItems"][0]
+            cartItemsCar_dict['uuid'] = carjson['id']
+            cartItemsCar_dict["description"] = "description"
+            cartItemsCar_dict["cost"] = carjson["cost"]
+            cartItemsCar_dict["currency"] = "USD"
+            dateTo = car_full_url.split(
+                "&")[-1].split("=")[1].replace("-", " ")
+            yearTo, monthTo, dayTo = dateTo.split(" ")
+            string = monthTo + " " + dayTo + " " + yearTo
+            cartItemsCar_dict["endDate"] = string
+            dateFrom = car_full_url.split(
                 "&")[-2].split("=")[1].replace("-", " ")
-            year2, month2, day2 = dateFrom.split(" ")
-            string = month2 + " " + day2 + " " + year2
-            cartVar["startDate"] = string
-            # print("start date: ", cartVar["startDate"],"\n end date: ", cartVar['endDate'])
-            billingDetails = initdict["billingDetails"]
-            # CAN WE ASSUME NAMES ARE ALWAYS JUST 2 WORDS???
-            print("\tlen(auser['name']) .. is it always 2?",
-                  len(auser['name'].split()))
-            billingDetails["firstName"] = auser["name"].split(" ")[0]
-            billingDetails["lastName"] = auser["name"].split(" ")[-1]
+            yearFrom, monthFrom, dayFrom = dateFrom.split(" ")
+            string = monthFrom + " " + dayFrom + " " + yearFrom
+            cartItemsCar_dict["startDate"] = string
+            billingDetails = initialized_dict["billingDetails"]
+            # CAN WE ASSUME NAMES ARE ALWAYS JUST 2 WORDS???)
+            billingDetails["firstName"] = one_user_dict["name"].split(" ")[0]
+            billingDetails["lastName"] = one_user_dict["name"].split(" ")[-1]
             billingDetails["address"] = {}
             billingDetails["address"]["line1"] = "00 Non"
-            billingDetails["address"]["city"] = auser["city"]
+            billingDetails["address"]["city"] = one_user_dict["city"]
             billingDetails["address"]["postalCode"] = "00000"
             billingDetails["address"]["state"] = "Non"
-            billingDetails["address"]["country"] = auser["country"]
+            billingDetails["address"]["country"] = one_user_dict["country"]
 
-        # initdict["uuid"][1]["type"] = ""
-    if "hotels" in h_fullurlq:  # for the future in case we provide a blank string when people do not purchase hotel and car at same time
-        hoteljson = generate_user_hotel(h_fullurlq, priority, party_size)
+    if "hotels" in hotel_full_url:  # set up so a user does not need to purchase both a hotel and car
+        hoteljson = generate_user_hotel(hotel_full_url, priority, party_size)
         if (type(hoteljson) == dict) and ("error" not in hoteljson):
-            initdict["cartItems"].append({})
-            initdict["cartItems"][1]["type"] = "Hotel"
-            cartVarh = initdict["cartItems"][1]
-            cartVarh['uuid'] = hoteljson["id"]
-            cartVarh['description'] = "description"
-            cartVarh["currency"] = "USD"
-            cartVarh['cost'] = hoteljson["cost"]
-            dateToh = c_fullurlq.split("&")[-1].split("=")[1].replace("-", " ")
-            # dateFromh = c_fullurlq.split(
-            #     "&")[-2].split("=")[1].replace("-", " ")
-            year1, month1, day1 = dateToh.split(" ")
-            string = month1 + " " + day1 + " " + year1
-            cartVarh["endDate"] = string
-            dateFromh = c_fullurlq.split(
+            initialized_dict["cartItems"].append({})
+            initialized_dict["cartItems"][1]["type"] = "Hotel"
+            cartItemsHotel_dict = initialized_dict["cartItems"][1]
+            cartItemsHotel_dict['uuid'] = hoteljson["id"]
+            cartItemsHotel_dict['description'] = "description"
+            cartItemsHotel_dict["currency"] = "USD"
+            cartItemsHotel_dict['cost'] = hoteljson["cost"]
+            dateTo_hotel = car_full_url.split(
+                "&")[-1].split("=")[1].replace("-", " ")
+            yearTo, monthTo, dayTo = dateTo_hotel.split(" ")
+            string = monthTo + " " + dayTo + " " + yearTo
+            cartItemsHotel_dict["endDate"] = string
+            dateFrom_hotel = car_full_url.split(
                 "&")[-2].split("=")[1].replace("-", " ")
-            year2, month2, day2 = dateFromh.split(" ")
-            string = month2 + " " + day2 + " " + year2
-            cartVarh["startDate"] = string
-            # print("start date: ", cartVar["startDate"],
-            # "end date: ", cartVar['endDate'])
+            yearFrom, monthFrom, dayFrom = dateFrom_hotel.split(" ")
+            string = monthFrom + " " + dayFrom + " " + yearFrom
+            cartItemsHotel_dict["startDate"] = string
 
-        try:  # is this correct?
-            initdict["totalAmount"] += initdict["cartItems"][0]["cost"] + \
-                initdict["cartItems"][1]["cost"]
-            print(initdict)
-            return initdict
+        try:
+            initialized_dict["totalAmount"] += initialized_dict["cartItems"][0]["cost"] + \
+                initialized_dict["cartItems"][1]["cost"]
+            # print(initialized_dict)
+            return initialized_dict
 
         except:
             return "Error"
     return "Error"
 
-    # oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
-    # oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
-
 
 def posting(params):
-    # set dynamic environment var that is set in
+    # set dynamic environment var that is sent in
     base_url = 'http://localhost:9402' if "CHECK_OUT_URL" not in os.environ else os.environ["CHECK_OUT_URL"]
     response = requests.post(base_url+'/api/v1/checkout/cart', json=params)
-    print(response.text)
+    # print(response.text)
 
     # terminal with export CHECK_OUT_URL= http:// xxxxx. Default to local host port you are using if no envir variable
     # is provided
 
 
 def main():
-    for _ in range(50):  # change back to 100
-        carloyal = 0
-        flightloyal = 0
+    for _ in range(1):  # change back to 100
         total = 0
         for user in users[0:10]:
             get = user.get
@@ -541,7 +380,7 @@ def main():
                 carFilter["rental_company"] = user["car_rental_loyalty"]
             if priority != 'budget' and party_size > 4:
                 carFilter["body_type"] = "suv"
-            # body_type, style,
+            # body_type, style
 
             if priority == "budget":
                 carFilter["style"] = "basic"
@@ -580,24 +419,17 @@ def main():
                 kebab_case(destination["country"]) + \
                 "/" + kebab_case(destination["city"])
 
-            # print(hotel + path_params + query_gen(hotelFilter))
-            hfull_urlq = hotel + path_params + query_gen(hotelFilter)
-            # print(cars + path_params + query_gen(carFilter))
-            cfull_urlq = cars + path_params + query_gen(carFilter)
-            # oneHotelJson = generate_user_hotel(hfull_urlq, priority, party_size)
-            # oneCarJson = generate_user_car(cfull_urlq, priority, party_size)
-            post_gres = format_postgres(
-                user, hfull_urlq, cfull_urlq, priority, party_size)
-            posting(post_gres)
+            hotel_full_url = hotel + path_params + query_gen(hotelFilter)
+            # HOTEL_FULL_URL: http://localhost:9101/api/v1/hotels/romania/bucharest?superchain=Nimbus%20Elites&type=luxury&dateFrom=2020-07-29&dateTo=2020-07-31
 
-            # print(cfull_urlq)
-            time.sleep(1)
+            car_full_url = cars + path_params + query_gen(carFilter)
+            # CAR_FULL_URL: http://localhost:9102/api/v1/cars/turkey/istanbul?rental_company=Capsule&style=luxury&dateFrom=2020-08-27&dateTo=2020-09-04
+            postgres = format_postgres(
+                user, hotel_full_url, car_full_url, priority, party_size)
+            # POSTGRES SETS DATA INTO READABLE FORMAT FOR THE POSTGRES DATABASE
+            posting(postgres)
+            # POSTS TO POSTGRES DATABASE
 
-            # http://localhost:9101/api/v1/hotels/united-states/new-york?dateFrom=2020-07-15&dateTo=2020-07-20&superchain=Nimbus%20Elites
-            # "http://localhost:9102/api/v1/cars/united-states/new-york?dateFrom=07-12-2020&dateTo=07-15-2020"
-
-            # destination
-            #
             # date depending on reason -> 3 - 30 days for business, 20 - 60 for leisure
 ###########################Generation################################################
         # business: 65% of time traveling 1-19 days in advanced,
@@ -660,7 +492,6 @@ def main():
         # print("Car Ratio: ", carRatio)
         # print("Flight Ratio: ", flightRatio)
         # print()
-
 
 main()
 
