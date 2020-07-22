@@ -115,3 +115,5 @@ hotel-images/
 
 config.json
 flight_data_complete.json
+
+*.pem
