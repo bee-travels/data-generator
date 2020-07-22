@@ -12,7 +12,7 @@ users = utils.load_json("user.json")
 destinations = utils.load_json("destination.json")
 hotel = "http://localhost:9101/api/v1/hotels"
 cars = "http://localhost:9102/api/v1/cars"
-# flight = "http://localhost:9103/api/v1/flights"
+# flight = "http://localhost:9103/api/v2/flights"
 
 
 def get_reason(reason):
@@ -173,90 +173,91 @@ def delete_dict_key(dictionary, key):
 
 
 def generate_user_hotel(hotel_full_url, priority, party_size):
-    #print("hotel_full_url: ", hotel_full_url)
+    # print("\thotel_full_url: ", hotel_full_url)
     data = requests.get(hotel_full_url).json()
-    if len(data) != 0:  # if the results do not come back empty
-        if priority == "budget":
-            sorted_data = sorted(
-                data, key=lambda x: round(float(x["cost"]), 2))
-            return sorted_data[0]
-        elif priority == "comfort":
-            num = int(len(data)//2)-1
-            sorted_data = sorted(
-                data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-            return sorted_data[num]
+    if type(data) == list:
+        if len(data) != 0:  # if the results do not come back empty
+            if priority == "budget":
+                sorted_data = sorted(
+                    data, key=lambda x: round(float(x["cost"]), 2))
+                return sorted_data[0]
+            elif priority == "comfort":
+                num = int(len(data)//2)-1
+                sorted_data = sorted(
+                    data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                return sorted_data[num]
 
+            else:
+                sorted_data = sorted(
+                    data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                return sorted_data[0]
         else:
-            sorted_data = sorted(
-                data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-            return sorted_data[0]
+            parse_url = urlparse(hotel_full_url)
+            #print("parse_url: ", parse_url)
+            query_tuple = parse_qsl(parse_url.query)
+
+            #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
+            query_dict = convert_tuplelist_to_dict(query_tuple)
+            if "superchain" in query_dict:
+                #print("removing superchain...")
+                delete_dict_key(query_dict, "superchain")
+            elif "type" in query_dict:
+                #print("removing type...")
+                delete_dict_key(query_dict, "type")
+            else:
+                return "\tNo Results -- hotel json generation\n"
+            new_hotel_url = parse_url.scheme + "://" + \
+                parse_url.netloc + parse_url.path + query_gen(query_dict)
+            return generate_user_hotel(new_hotel_url, priority, party_size)
     else:
-        parse_url = urlparse(hotel_full_url)
-        #print("parse_url: ", parse_url)
-        query_tuple = parse_qsl(parse_url.query)
-
-        #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
-        query_dict = convert_tuplelist_to_dict(query_tuple)
-        if "superchain" in query_dict:
-            #print("removing superchain...")
-            delete_dict_key(query_dict, "superchain")
-        elif "type" in query_dict:
-            #print("removing type...")
-            delete_dict_key(query_dict, "type")
-        else:
-            return "\tNo Results -- hotel json generation\n"
-        new_hotel_url = parse_url.scheme + "://" + \
-            parse_url.netloc + parse_url.path + query_gen(query_dict)
-        return generate_user_hotel(new_hotel_url, priority, party_size)
+        return "\tNo Results -- hotel json generation\n"
         # http: // localhost: 9101/api/v1/hotels/indonesia/jakarta?superchain = Urban % 20Lifestyle & type = luxury & dateFrom = 2020-08-03 & dateTo = 2020-08-08
 
 
-#####################FIX SO PARTY SIZE > 4 IS CONSIDERED!!!!#############################
-# def user_car_partysize_lessthan4(car_full_url, priority, party_size, income):
-
-
 def generate_user_car(car_full_url, priority, party_size):
-    #print("car_full_url: ", car_full_url)
     data = requests.get(car_full_url).json()
-    if len(data) != 0:  # if the results do not come back empty
-        # http://localhost:9102/api/v1/cars/mexico/mexico-city?rental_company=Carlux&style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
-        if priority == "budget":
-            sorted_data = sorted(
-                data, key=lambda x: round(float(x["cost"]), 2))
-            return sorted_data[0]
-        elif priority == "comfort":
-            num = int(len(data)//2)-1
-            sorted_data = sorted(
-                data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-            return sorted_data[num]
+    if type(data) == list:
+        if len(data) != 0:  # if the results do not come back empty
+            # http://localhost:9102/api/v1/cars/mexico/mexico-city?rental_company=Carlux&style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
+            if priority == "budget":
+                sorted_data = sorted(
+                    data, key=lambda x: round(float(x["cost"]), 2))
+                return sorted_data[0]
+            elif priority == "comfort":
+                num = int(len(data)//2)-1
+                sorted_data = sorted(
+                    data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                return sorted_data[num]
 
-        else:  # if results do not come back empty AND budget/time
-            sorted_data = sorted(
-                data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-            return sorted_data[0]
-    else:  # first get request returns empty response, remove loyalty program parameter
-        parse_url = urlparse(car_full_url)
-        #print("parse_url: ", parse_url)
-        query_tuple = parse_qsl(parse_url.query)
-        #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
-        query_dict = convert_tuplelist_to_dict(query_tuple)
-        if "rental_company" in query_dict:
-            #print("removing rental company...")
-            delete_dict_key(query_dict, "rental_company")
-        elif party_size > 4 and priority != "budget" and "style" in query_dict:
-            #print("removing style for large party...")
-            delete_dict_key(query_dict, "style")
-        elif "body_type" in query_dict:
-            #print("removing body_type...")
-            delete_dict_key(query_dict, "body_type")
-        elif (party_size <= 4 or priority == "budget") and ("style" in query_dict):
-            #print("removing style for small party or budget users...")
-            delete_dict_key(query_dict, "body_type")
-        else:
-            return "\tNo Results -- hotel json generation\n"
-        new_hotel_url = parse_url.scheme + "://" + \
-            parse_url.netloc + parse_url.path + query_gen(query_dict)
-        return generate_user_hotel(new_hotel_url, priority, party_size)
+            else:  # if results do not come back empty AND budget/time
+                sorted_data = sorted(
+                    data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                return sorted_data[0]
+        else:  # first get request returns empty response, remove loyalty program parameter
+            parse_url = urlparse(car_full_url)
+            #print("parse_url: ", parse_url)
+            query_tuple = parse_qsl(parse_url.query)
+            #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
+            query_dict = convert_tuplelist_to_dict(query_tuple)
+            if "rental_company" in query_dict:
+                #print("removing rental company...")
+                delete_dict_key(query_dict, "rental_company")
+            elif party_size > 4 and priority != "budget" and "style" in query_dict:
+                #print("removing style for large party...")
+                delete_dict_key(query_dict, "style")
+            elif "body_type" in query_dict:
+                #print("removing body_type...")
+                delete_dict_key(query_dict, "body_type")
+            elif (party_size <= 4 or priority == "budget") and ("style" in query_dict):
+                #print("removing style for small party or budget users...")
+                delete_dict_key(query_dict, "body_type")
+            else:
+                return "\tNo Results -- hotel json generation\n"
+            new_hotel_url = parse_url.scheme + "://" + \
+                parse_url.netloc + parse_url.path + query_gen(query_dict)
+            return generate_user_hotel(new_hotel_url, priority, party_size)
+    else:
+        return "\tNo Results -- car json generation\n"
 
 # 1 luxury
 #    # if no results remove rental_company=... before the first &
@@ -342,16 +343,16 @@ def posting(params):
     # set dynamic environment var that is sent in
     base_url = 'http://localhost:9402' if "CHECK_OUT_URL" not in os.environ else os.environ["CHECK_OUT_URL"]
     response = requests.post(base_url+'/api/v1/checkout/cart', json=params)
-    # print(response.text)
 
     # terminal with export CHECK_OUT_URL= http:// xxxxx. Default to local host port you are using if no envir variable
     # is provided
 
 
 def main():
-    for _ in range(1):  # change back to 100
+    counter = 0
+    for _ in range(10000):  # change back to 100
         total = 0
-        for user in users[0:10]:
+        for user in users:
             get = user.get
             willTravel = random.randint(0, 100)
             if willTravel > get("travel_frequency"):
@@ -429,8 +430,13 @@ def main():
             # POSTGRES SETS DATA INTO READABLE FORMAT FOR THE POSTGRES DATABASE
             posting(postgres)
             # POSTS TO POSTGRES DATABASE
+        counter += 1
+        if counter == 1:
+            print("iteration: 1")
+        if counter % 100 == 0:
+            print("iteration: ", counter)
 
-            # date depending on reason -> 3 - 30 days for business, 20 - 60 for leisure
+        # date depending on reason -> 3 - 30 days for business, 20 - 60 for leisure
 ###########################Generation################################################
         # business: 65% of time traveling 1-19 days in advanced,
         # ^^^5/9 of time is 1 person
