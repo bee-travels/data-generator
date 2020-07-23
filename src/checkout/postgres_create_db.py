@@ -19,8 +19,12 @@ def get_connection():
         logging.info(e)
 
     try:
-        conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"],
-                                password=os.environ["PG_PASSWORD"], port="5432", database="beetravels")
+        if "DATABASE_CERT" in os.environ:
+            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"],
+                                    port=os.environ["PG_PORT"], sslmode="verify-full", database="beetravels")
+        else:
+            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"],
+                                    password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"], database="beetravels")
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         return conn
     except Exception as e:

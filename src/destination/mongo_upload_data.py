@@ -8,9 +8,15 @@ import logging
 
 def get_mongo_client():
     try:
-        mongoHotels = MongoClient(os.environ["MONGO_CONNECTION_URL"])
-        return mongoHotels
-    except:
+        if "DATABASE_CERT" in os.environ:
+            with open("./cert.pem",'w') as cert_file:
+                cert_file.write(os.environ["DATABASE_CERT"])
+            client = MongoClient(os.environ["MONGO_CONNECTION_URL"],ssl=True,ssl_ca_certs="./cert.pem")
+        else:
+            client = MongoClient(os.environ["MONGO_CONNECTION_URL"])
+        return client
+    except Exception as e:
+        logging.error("unable to connect", e)
         exit("Error: Unable to connect to the database")
 
 
