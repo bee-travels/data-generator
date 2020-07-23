@@ -1,0 +1,7313 @@
+[
+  {
+    "totalAmount": 481.5,
+    "time_stamp": "2020-07-23T13:41:28.674569",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a924e674-93fa-44c2-b915-52ede2923795",
+        "description": "description",
+        "cost": 258.75,
+        "currency": "USD",
+        "endDate": "07-26-2020",
+        "startDate": "07-24-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4e7a1f8a-9ceb-4fdb-bc1a-7ccaad605c80",
+        "description": "description",
+        "currency": "USD",
+        "cost": 222.75,
+        "endDate": "07-26-2020",
+        "startDate": "07-24-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jasmine",
+      "lastName": "Harrison",
+      "address": {
+        "line1": "00 Non",
+        "city": "Charleston",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 484.0,
+    "time_stamp": "2020-07-23T13:41:28.958530",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "0790e2d6-6f05-4cd7-999b-a42c68583b06",
+        "description": "description",
+        "cost": 243,
+        "currency": "USD",
+        "endDate": "08-21-2020",
+        "startDate": "08-19-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "241f5f63-bb59-4af2-b080-0c26a6ba996e",
+        "description": "description",
+        "currency": "USD",
+        "cost": 241,
+        "endDate": "08-21-2020",
+        "startDate": "08-19-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Regina",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Luanda",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Angola"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 796.25,
+    "time_stamp": "2020-07-23T13:41:29.235211",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a388c229-dcd9-4460-bccd-718f46b01e0a",
+        "description": "description",
+        "cost": 421.75,
+        "currency": "USD",
+        "endDate": "07-31-2020",
+        "startDate": "07-26-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "702783ad-82cc-4730-9867-964d0729cf7a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 374.5,
+        "endDate": "07-31-2020",
+        "startDate": "07-26-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Shelby",
+      "lastName": "Le",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sacramento",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 327.0,
+    "time_stamp": "2020-07-23T13:41:29.422487",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "507c4d29-47a1-4dff-b063-053b25a13a24",
+        "description": "description",
+        "cost": 183,
+        "currency": "USD",
+        "endDate": "08-09-2020",
+        "startDate": "08-04-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "5e3f7a46-49ef-4c46-b4f8-7eb9541d4b49",
+        "description": "description",
+        "currency": "USD",
+        "cost": 144,
+        "endDate": "08-09-2020",
+        "startDate": "08-04-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Michael",
+      "lastName": "Kline",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sarajevo",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Bosnia and Herzegovina"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 378.0,
+    "time_stamp": "2020-07-23T13:41:29.823858",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "8edf7ac5-7a60-442d-96ac-21b75eb13576",
+        "description": "description",
+        "cost": 211.75,
+        "currency": "USD",
+        "endDate": "08-08-2020",
+        "startDate": "07-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "2f2d67ee-6318-457d-b257-15ee19680126",
+        "description": "description",
+        "currency": "USD",
+        "cost": 166.25,
+        "endDate": "08-08-2020",
+        "startDate": "07-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "David",
+      "lastName": "Moore",
+      "address": {
+        "line1": "00 Non",
+        "city": "Dakar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Senegal"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 285.6,
+    "time_stamp": "2020-07-23T13:41:30.014666",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "390d2e26-a1a8-49fa-99ff-44ad7c2e4452",
+        "description": "description",
+        "cost": 160,
+        "currency": "USD",
+        "endDate": "09-21-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "2fc81c96-6829-42ba-9101-5984991b9d5f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 125.60000000000001,
+        "endDate": "09-21-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Tommy",
+      "lastName": "Smith",
+      "address": {
+        "line1": "00 Non",
+        "city": "Washington",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1046.4,
+    "time_stamp": "2020-07-23T13:41:31.092539",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "b73afd36-d6e2-46f1-9e45-760735b7f2c3",
+        "description": "description",
+        "cost": 468,
+        "currency": "USD",
+        "endDate": "08-10-2020",
+        "startDate": "08-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "1c0b9f72-40c6-4e4c-aaa7-d75c670a5b81",
+        "description": "description",
+        "currency": "USD",
+        "cost": 578.4,
+        "endDate": "08-10-2020",
+        "startDate": "08-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Louis",
+      "lastName": "Khan",
+      "address": {
+        "line1": "00 Non",
+        "city": "Nottingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 525.0,
+    "time_stamp": "2020-07-23T13:41:31.288770",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e8b59b19-6665-4734-a004-a88a4607f7d8",
+        "description": "description",
+        "cost": 258,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "08-26-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "34c260ae-df29-4844-8d64-4b616712e81d",
+        "description": "description",
+        "currency": "USD",
+        "cost": 267,
+        "endDate": "09-08-2020",
+        "startDate": "08-26-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Mitchell",
+      "lastName": "Knight",
+      "address": {
+        "line1": "00 Non",
+        "city": "Barcelona",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 529.0,
+    "time_stamp": "2020-07-23T13:41:31.486933",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ed212495-5e97-45d3-99dd-4f08cd1fe8b8",
+        "description": "description",
+        "cost": 257,
+        "currency": "USD",
+        "endDate": "08-29-2020",
+        "startDate": "08-20-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8e47f232-8ddd-4d1a-8486-1409c5502a62",
+        "description": "description",
+        "currency": "USD",
+        "cost": 272,
+        "endDate": "08-29-2020",
+        "startDate": "08-20-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Matthew",
+      "lastName": "Parker",
+      "address": {
+        "line1": "00 Non",
+        "city": "Kiev",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Ukraine"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 447.59999999999997,
+    "time_stamp": "2020-07-23T13:41:31.814444",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ef0688f4-c589-4baf-997c-eca60ce6efbd",
+        "description": "description",
+        "cost": 230.39999999999998,
+        "currency": "USD",
+        "endDate": "08-18-2020",
+        "startDate": "08-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "28d06a42-487c-4970-8fcc-c324bb434001",
+        "description": "description",
+        "currency": "USD",
+        "cost": 217.2,
+        "endDate": "08-18-2020",
+        "startDate": "08-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "William",
+      "lastName": "Young",
+      "address": {
+        "line1": "00 Non",
+        "city": "Palma De Mallorca",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 940.0,
+    "time_stamp": "2020-07-23T13:41:32.000575",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d2c9bbcd-5022-4d5d-a248-90e0434d01ed",
+        "description": "description",
+        "cost": 488,
+        "currency": "USD",
+        "endDate": "08-19-2020",
+        "startDate": "08-16-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "7c789d8e-0a39-4592-ab03-f39cbbadcf54",
+        "description": "description",
+        "currency": "USD",
+        "cost": 452,
+        "endDate": "08-19-2020",
+        "startDate": "08-16-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Dr.",
+      "lastName": "DDS",
+      "address": {
+        "line1": "00 Non",
+        "city": "Minsk",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Belarus"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 506.40000000000003,
+    "time_stamp": "2020-07-23T13:41:32.178168",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "68f3015a-0be9-447c-9ebe-ec303523443f",
+        "description": "description",
+        "cost": 276.8,
+        "currency": "USD",
+        "endDate": "09-23-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a7e0ccc9-6a7e-4c2b-8e18-ccce96151aaf",
+        "description": "description",
+        "currency": "USD",
+        "cost": 229.60000000000002,
+        "endDate": "09-23-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jack",
+      "lastName": "Bray",
+      "address": {
+        "line1": "00 Non",
+        "city": "Luxor",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Egypt"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 152.0,
+    "time_stamp": "2020-07-23T13:41:32.354878",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "27428c8f-279f-4605-bb7b-4dbaf1db7c41",
+        "description": "description",
+        "cost": 92,
+        "currency": "USD",
+        "endDate": "09-24-2020",
+        "startDate": "09-19-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d759cbbc-b505-4668-8338-8c8c5dab583c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 60,
+        "endDate": "09-24-2020",
+        "startDate": "09-19-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Lori",
+      "lastName": "Henderson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Newark",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 741.0,
+    "time_stamp": "2020-07-23T13:41:32.540740",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d5deef49-a90e-45f3-ac5b-66674955b6a5",
+        "description": "description",
+        "cost": 353,
+        "currency": "USD",
+        "endDate": "09-07-2020",
+        "startDate": "09-04-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "46979656-c890-4cd2-8c6d-085b45e6f782",
+        "description": "description",
+        "currency": "USD",
+        "cost": 388,
+        "endDate": "09-07-2020",
+        "startDate": "09-04-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Heather",
+      "lastName": "Gibbs",
+      "address": {
+        "line1": "00 Non",
+        "city": "Greenville",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 489.0,
+    "time_stamp": "2020-07-23T13:41:32.724833",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "f4e93d6f-e640-4f20-8db6-85468318139a",
+        "description": "description",
+        "cost": 248,
+        "currency": "USD",
+        "endDate": "09-09-2020",
+        "startDate": "08-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8e2c0aff-04a2-45fe-ab91-9a24d43b64e0",
+        "description": "description",
+        "currency": "USD",
+        "cost": 241,
+        "endDate": "09-09-2020",
+        "startDate": "08-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Catherine",
+      "lastName": "Sanchez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Ramstein",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1084.0,
+    "time_stamp": "2020-07-23T13:41:33.046720",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6d443c28-a940-46b2-b1fe-13b14c965b5d",
+        "description": "description",
+        "cost": 542,
+        "currency": "USD",
+        "endDate": "09-03-2020",
+        "startDate": "08-24-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "33596b8f-b08a-4e3c-9be5-67f51f9e486c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 542,
+        "endDate": "09-03-2020",
+        "startDate": "08-24-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Lisa",
+      "lastName": "Little",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sydney",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 579.5999999999999,
+    "time_stamp": "2020-07-23T13:41:33.242660",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "f872238e-b1c9-49ef-8bb7-e90a9c36a3ae",
+        "description": "description",
+        "cost": 290.4,
+        "currency": "USD",
+        "endDate": "08-19-2020",
+        "startDate": "08-13-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "3e349930-9705-4980-9fd3-241402f3c679",
+        "description": "description",
+        "currency": "USD",
+        "cost": 289.2,
+        "endDate": "08-19-2020",
+        "startDate": "08-13-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Amanda",
+      "lastName": "Garcia",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hamburg",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1620.5,
+    "time_stamp": "2020-07-23T13:41:33.540343",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "64b59e59-e806-4594-a039-a9ec826c429c",
+        "description": "description",
+        "cost": 794.5,
+        "currency": "USD",
+        "endDate": "08-01-2020",
+        "startDate": "07-30-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c60845cb-8f18-40e6-8cc3-5b27ce2252a2",
+        "description": "description",
+        "currency": "USD",
+        "cost": 826,
+        "endDate": "08-01-2020",
+        "startDate": "07-30-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Regina",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Luanda",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Angola"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 434.40000000000003,
+    "time_stamp": "2020-07-23T13:41:33.721953",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a349bb88-3837-401a-865c-a35b90f56082",
+        "description": "description",
+        "cost": 212.8,
+        "currency": "USD",
+        "endDate": "09-17-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "91f98e7e-ed73-4942-9a1a-7e8e17745877",
+        "description": "description",
+        "currency": "USD",
+        "cost": 221.60000000000002,
+        "endDate": "09-17-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Tasha",
+      "lastName": "Lewis",
+      "address": {
+        "line1": "00 Non",
+        "city": "Columbia",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 667.0,
+    "time_stamp": "2020-07-23T13:41:33.935648",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "4d2ee0da-400b-4e47-a283-e67755b15923",
+        "description": "description",
+        "cost": 308,
+        "currency": "USD",
+        "endDate": "08-27-2020",
+        "startDate": "08-22-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d7b8dc5f-b023-4832-a03f-b8981dddb617",
+        "description": "description",
+        "currency": "USD",
+        "cost": 359,
+        "endDate": "08-27-2020",
+        "startDate": "08-22-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Tony",
+      "lastName": "Santiago",
+      "address": {
+        "line1": "00 Non",
+        "city": "Birmingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 924.75,
+    "time_stamp": "2020-07-23T13:41:34.113312",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "b2bbf9fc-bf1f-4afe-8788-36e0272d77af",
+        "description": "description",
+        "cost": 546.75,
+        "currency": "USD",
+        "endDate": "08-01-2020",
+        "startDate": "07-25-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "416454c8-500d-4f14-a85c-ba203090c567",
+        "description": "description",
+        "currency": "USD",
+        "cost": 378,
+        "endDate": "08-01-2020",
+        "startDate": "07-25-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christina",
+      "lastName": "Williams",
+      "address": {
+        "line1": "00 Non",
+        "city": "Alicante",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 354.0,
+    "time_stamp": "2020-07-23T13:41:34.285999",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "55ad5988-4e0a-4e4d-bee5-6f5d6b9a1dca",
+        "description": "description",
+        "cost": 209,
+        "currency": "USD",
+        "endDate": "08-24-2020",
+        "startDate": "08-16-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "e95a279b-0af9-46b8-9d3e-292dc8a85011",
+        "description": "description",
+        "currency": "USD",
+        "cost": 145,
+        "endDate": "08-24-2020",
+        "startDate": "08-16-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Castaneda",
+      "address": {
+        "line1": "00 Non",
+        "city": "Toronto",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 691.1999999999999,
+    "time_stamp": "2020-07-23T13:41:34.461284",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "4da883d9-94d0-4060-9a39-7e51a34f8603",
+        "description": "description",
+        "cost": 351.59999999999997,
+        "currency": "USD",
+        "endDate": "08-25-2020",
+        "startDate": "08-12-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "03be173b-4f05-4995-92e6-25a741433920",
+        "description": "description",
+        "currency": "USD",
+        "cost": 339.59999999999997,
+        "endDate": "08-25-2020",
+        "startDate": "08-12-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Shelby",
+      "lastName": "Le",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sacramento",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 244.0,
+    "time_stamp": "2020-07-23T13:41:34.653923",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "abd87f1c-9efa-48ba-b779-390b47a2b860",
+        "description": "description",
+        "cost": 134,
+        "currency": "USD",
+        "endDate": "08-28-2020",
+        "startDate": "08-21-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "97452578-f04f-44bb-a4e5-abbccf915da4",
+        "description": "description",
+        "currency": "USD",
+        "cost": 110,
+        "endDate": "08-28-2020",
+        "startDate": "08-21-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "David",
+      "lastName": "Moore",
+      "address": {
+        "line1": "00 Non",
+        "city": "Dakar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Senegal"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 330.75,
+    "time_stamp": "2020-07-23T13:41:34.836533",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d467f22e-388f-45f8-997d-cf8bf90b2edd",
+        "description": "description",
+        "cost": 187.25,
+        "currency": "USD",
+        "endDate": "08-03-2020",
+        "startDate": "07-28-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "3f13bc9f-2598-46e7-a319-85fa77e5c86c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 143.5,
+        "endDate": "08-03-2020",
+        "startDate": "07-28-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Troy",
+      "lastName": "Colon",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sanya",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 384.0,
+    "time_stamp": "2020-07-23T13:41:35.525262",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "b253e8e5-e34d-4d64-b377-fafe8047afd1",
+        "description": "description",
+        "cost": 225.6,
+        "currency": "USD",
+        "endDate": "08-17-2020",
+        "startDate": "08-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "ec590f33-68c7-409e-ac45-8140ddf65281",
+        "description": "description",
+        "currency": "USD",
+        "cost": 158.4,
+        "endDate": "08-17-2020",
+        "startDate": "08-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Wheeler",
+      "address": {
+        "line1": "00 Non",
+        "city": "Gran Canaria Island",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 433.19999999999993,
+    "time_stamp": "2020-07-23T13:41:36.463591",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d8f4ab78-2148-4618-8249-7afce7c68909",
+        "description": "description",
+        "cost": 248.39999999999998,
+        "currency": "USD",
+        "endDate": "08-17-2020",
+        "startDate": "08-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "b8f838d8-fe78-46c5-99b8-55b3fd779c40",
+        "description": "description",
+        "currency": "USD",
+        "cost": 184.79999999999998,
+        "endDate": "08-17-2020",
+        "startDate": "08-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Frank",
+      "lastName": "Harrington",
+      "address": {
+        "line1": "00 Non",
+        "city": "Guiyang",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 497.99999999999994,
+    "time_stamp": "2020-07-23T13:41:36.649492",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "377e1c80-7102-43f1-94d6-e295f261c190",
+        "description": "description",
+        "cost": 267.59999999999997,
+        "currency": "USD",
+        "endDate": "08-14-2020",
+        "startDate": "08-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "5680e4a4-2949-40f9-95ba-ddfccbfc4298",
+        "description": "description",
+        "currency": "USD",
+        "cost": 230.39999999999998,
+        "endDate": "08-14-2020",
+        "startDate": "08-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Wiley",
+      "address": {
+        "line1": "00 Non",
+        "city": "Alamogordo",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 591.0,
+    "time_stamp": "2020-07-23T13:41:36.889776",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "de87539b-ae3c-4db8-9b10-2a3fee5c93bb",
+        "description": "description",
+        "cost": 302,
+        "currency": "USD",
+        "endDate": "09-03-2020",
+        "startDate": "08-24-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c431fcec-73bd-4dd3-8e77-93b00832ebe1",
+        "description": "description",
+        "currency": "USD",
+        "cost": 289,
+        "endDate": "09-03-2020",
+        "startDate": "08-24-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Mitchell",
+      "lastName": "Knight",
+      "address": {
+        "line1": "00 Non",
+        "city": "Barcelona",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 244.0,
+    "time_stamp": "2020-07-23T13:41:37.596478",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d5ce32a9-0aae-42ab-8ab7-70a69503791d",
+        "description": "description",
+        "cost": 116.80000000000001,
+        "currency": "USD",
+        "endDate": "09-23-2020",
+        "startDate": "09-20-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "32bccdc8-eb22-407d-9407-9a4dadb6b39f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 127.2,
+        "endDate": "09-23-2020",
+        "startDate": "09-20-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Scott",
+      "lastName": "Brown",
+      "address": {
+        "line1": "00 Non",
+        "city": "Taiyuan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 915.5999999999999,
+    "time_stamp": "2020-07-23T13:41:37.783679",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "8435a7b2-49d3-482e-806b-690e76113d33",
+        "description": "description",
+        "cost": 508.79999999999995,
+        "currency": "USD",
+        "endDate": "08-10-2020",
+        "startDate": "08-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "b6d582e9-16ff-497a-b4c0-606d9166a81f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 406.8,
+        "endDate": "08-10-2020",
+        "startDate": "08-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Gary",
+      "lastName": "Robertson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Frankfurt am Main",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 396.0,
+    "time_stamp": "2020-07-23T13:41:37.967921",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "7d44da15-890a-4a28-819e-e72d657548ba",
+        "description": "description",
+        "cost": 220,
+        "currency": "USD",
+        "endDate": "08-30-2020",
+        "startDate": "08-22-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "83375782-73c9-47bf-9b48-27f4ffe27088",
+        "description": "description",
+        "currency": "USD",
+        "cost": 176,
+        "endDate": "08-30-2020",
+        "startDate": "08-22-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Mitchell",
+      "lastName": "Rodriguez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Lakenheath",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 360.0,
+    "time_stamp": "2020-07-23T13:41:38.163060",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "b9e6f717-eb7c-46c8-9e19-9906e30b995a",
+        "description": "description",
+        "cost": 205,
+        "currency": "USD",
+        "endDate": "08-24-2020",
+        "startDate": "08-18-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c288d100-1bb4-4e1e-a391-a5da29def41a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 155,
+        "endDate": "08-24-2020",
+        "startDate": "08-18-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Alexis",
+      "lastName": "Lang",
+      "address": {
+        "line1": "00 Non",
+        "city": "Norfolk",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 460.0,
+    "time_stamp": "2020-07-23T13:41:38.341732",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "5bbd09a4-340a-4a10-adb3-a68f0c5e7e7f",
+        "description": "description",
+        "cost": 232.8,
+        "currency": "USD",
+        "endDate": "09-27-2020",
+        "startDate": "09-10-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "2a4178f4-3593-47e1-9ae4-46ec0c85706b",
+        "description": "description",
+        "currency": "USD",
+        "cost": 227.20000000000002,
+        "endDate": "09-27-2020",
+        "startDate": "09-10-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Shannon",
+      "lastName": "Olson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Yerevan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Armenia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 762.0,
+    "time_stamp": "2020-07-23T13:41:38.538382",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d2cd526f-6d7b-4395-800e-0cb6e3871975",
+        "description": "description",
+        "cost": 362.4,
+        "currency": "USD",
+        "endDate": "08-17-2020",
+        "startDate": "08-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "52eb959d-c5fe-4fe0-b1c6-f54730f40bdd",
+        "description": "description",
+        "currency": "USD",
+        "cost": 399.59999999999997,
+        "endDate": "08-17-2020",
+        "startDate": "08-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Heather",
+      "lastName": "Gibbs",
+      "address": {
+        "line1": "00 Non",
+        "city": "Greenville",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  "Error",
+  {
+    "totalAmount": 523.0,
+    "time_stamp": "2020-07-23T13:41:39.079549",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d70a5145-0cc2-4187-8945-1ba6e5006e7d",
+        "description": "description",
+        "cost": 261,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "08-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "3af94999-9019-47d2-9f5e-ed4a769f2e96",
+        "description": "description",
+        "currency": "USD",
+        "cost": 262,
+        "endDate": "09-08-2020",
+        "startDate": "08-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jacob",
+      "lastName": "Murphy",
+      "address": {
+        "line1": "00 Non",
+        "city": "Bucharest",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Romania"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 262.4,
+    "time_stamp": "2020-07-23T13:41:39.268329",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "5c583778-d564-4a21-a94c-f4c2236178f3",
+        "description": "description",
+        "cost": 128,
+        "currency": "USD",
+        "endDate": "09-22-2020",
+        "startDate": "09-18-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "7f55d9da-c237-4654-a362-926a52f8e260",
+        "description": "description",
+        "currency": "USD",
+        "cost": 134.4,
+        "endDate": "09-22-2020",
+        "startDate": "09-18-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "James",
+      "lastName": "Montgomery",
+      "address": {
+        "line1": "00 Non",
+        "city": "Athens",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Greece"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1300.5,
+    "time_stamp": "2020-07-23T13:41:39.456434",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "97607adf-b31d-457d-a6b5-1b11bdaacc7a",
+        "description": "description",
+        "cost": 622.5,
+        "currency": "USD",
+        "endDate": "08-03-2020",
+        "startDate": "08-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "77be602c-b212-41ef-90c5-a3b4191200cc",
+        "description": "description",
+        "currency": "USD",
+        "cost": 678,
+        "endDate": "08-03-2020",
+        "startDate": "08-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Tony",
+      "lastName": "Santiago",
+      "address": {
+        "line1": "00 Non",
+        "city": "Birmingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 243.20000000000002,
+    "time_stamp": "2020-07-23T13:41:39.666967",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "8241a628-be8e-4a7e-94b2-a0c159bca549",
+        "description": "description",
+        "cost": 144.8,
+        "currency": "USD",
+        "endDate": "09-13-2020",
+        "startDate": "09-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d8cf7504-cf7e-4a12-ae0f-c927743931e2",
+        "description": "description",
+        "currency": "USD",
+        "cost": 98.4,
+        "endDate": "09-13-2020",
+        "startDate": "09-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Castaneda",
+      "address": {
+        "line1": "00 Non",
+        "city": "Toronto",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  "Error",
+  {
+    "totalAmount": 307.20000000000005,
+    "time_stamp": "2020-07-23T13:41:40.129014",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "91b3444e-513b-41c6-9905-4d7949946160",
+        "description": "description",
+        "cost": 160,
+        "currency": "USD",
+        "endDate": "09-16-2020",
+        "startDate": "09-10-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a10e65f5-b564-49de-a44e-a8e674b5ed2e",
+        "description": "description",
+        "currency": "USD",
+        "cost": 147.20000000000002,
+        "endDate": "09-16-2020",
+        "startDate": "09-10-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Benjamin",
+      "lastName": "Cline",
+      "address": {
+        "line1": "00 Non",
+        "city": "Cagliari",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Italy"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 458.4,
+    "time_stamp": "2020-07-23T13:41:40.333673",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "0af3487e-662d-4bd5-884b-3a1a80063838",
+        "description": "description",
+        "cost": 242.39999999999998,
+        "currency": "USD",
+        "endDate": "08-17-2020",
+        "startDate": "08-11-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "28ac080d-d11b-4688-8e00-be0587fd061e",
+        "description": "description",
+        "currency": "USD",
+        "cost": 216,
+        "endDate": "08-17-2020",
+        "startDate": "08-11-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Krista",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Gaziantep",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Turkey"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 595.0,
+    "time_stamp": "2020-07-23T13:41:40.629985",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "2a4131ac-997a-4e59-8c5b-6d1b637d91c3",
+        "description": "description",
+        "cost": 286,
+        "currency": "USD",
+        "endDate": "09-06-2020",
+        "startDate": "09-03-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4c313699-1712-4207-844a-16587eb4093f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 309,
+        "endDate": "09-06-2020",
+        "startDate": "09-03-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Teresa",
+      "lastName": "Fuller",
+      "address": {
+        "line1": "00 Non",
+        "city": "Adelaide",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Australia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 188.0,
+    "time_stamp": "2020-07-23T13:41:40.816498",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a232ac1e-e3c0-4987-9c4e-b956f48905bd",
+        "description": "description",
+        "cost": 105.60000000000001,
+        "currency": "USD",
+        "endDate": "09-21-2020",
+        "startDate": "09-15-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "dd8f974b-1480-40e6-bf8d-3fc1e359c471",
+        "description": "description",
+        "currency": "USD",
+        "cost": 82.4,
+        "endDate": "09-21-2020",
+        "startDate": "09-15-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Scott",
+      "lastName": "Brown",
+      "address": {
+        "line1": "00 Non",
+        "city": "Taiyuan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 146.4,
+    "time_stamp": "2020-07-23T13:41:41.045449",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e5da77db-0df8-45ad-8ca5-b466f81c847d",
+        "description": "description",
+        "cost": 81.60000000000001,
+        "currency": "USD",
+        "endDate": "10-01-2020",
+        "startDate": "09-18-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d5e42e6a-9115-4081-acdc-f89f0c2303a1",
+        "description": "description",
+        "currency": "USD",
+        "cost": 64.8,
+        "endDate": "10-01-2020",
+        "startDate": "09-18-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Wendy",
+      "lastName": "Kelley",
+      "address": {
+        "line1": "00 Non",
+        "city": "Richmond",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 401.6,
+    "time_stamp": "2020-07-23T13:41:41.287030",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ff0d7592-96b7-4a17-aabe-9d9e67e89250",
+        "description": "description",
+        "cost": 194.4,
+        "currency": "USD",
+        "endDate": "09-18-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "0fd50db5-415a-4257-8e33-62e24f141043",
+        "description": "description",
+        "currency": "USD",
+        "cost": 207.20000000000002,
+        "endDate": "09-18-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Gary",
+      "lastName": "Robertson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Frankfurt am Main",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 805.0,
+    "time_stamp": "2020-07-23T13:41:41.484094",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d7ac9aa0-d815-4c89-a385-f9db06666f7f",
+        "description": "description",
+        "cost": 411.25,
+        "currency": "USD",
+        "endDate": "07-28-2020",
+        "startDate": "07-27-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "220e0715-e6f0-456b-8951-3474b356da65",
+        "description": "description",
+        "currency": "USD",
+        "cost": 393.75,
+        "endDate": "07-28-2020",
+        "startDate": "07-27-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "James",
+      "lastName": "Robinson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Khabarovsk",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Russia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 220.0,
+    "time_stamp": "2020-07-23T13:41:41.669243",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a18a637e-1079-49e0-b840-1618acff2631",
+        "description": "description",
+        "cost": 123,
+        "currency": "USD",
+        "endDate": "08-20-2020",
+        "startDate": "08-18-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "530da4d6-b3bc-407f-b02d-8e00f91dbd46",
+        "description": "description",
+        "currency": "USD",
+        "cost": 97,
+        "endDate": "08-20-2020",
+        "startDate": "08-18-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Sheila",
+      "lastName": "Duncan",
+      "address": {
+        "line1": "00 Non",
+        "city": "Amritsar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "India"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 357.0,
+    "time_stamp": "2020-07-23T13:41:41.846348",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6b6a1e78-9b71-4132-bcdc-0dd95d66a0fe",
+        "description": "description",
+        "cost": 205,
+        "currency": "USD",
+        "endDate": "09-06-2020",
+        "startDate": "09-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "cc3a9cb8-903d-4457-b787-05c181a72374",
+        "description": "description",
+        "currency": "USD",
+        "cost": 152,
+        "endDate": "09-06-2020",
+        "startDate": "09-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jacob",
+      "lastName": "Murphy",
+      "address": {
+        "line1": "00 Non",
+        "city": "Bucharest",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Romania"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 434.40000000000003,
+    "time_stamp": "2020-07-23T13:41:43.050256",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "45540853-ca90-4f16-b07c-b07b1a01cc8b",
+        "description": "description",
+        "cost": 216.8,
+        "currency": "USD",
+        "endDate": "09-18-2020",
+        "startDate": "09-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8c0606a8-2d8b-48ac-81ec-a9d8da5924ab",
+        "description": "description",
+        "currency": "USD",
+        "cost": 217.60000000000002,
+        "endDate": "09-18-2020",
+        "startDate": "09-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Amanda",
+      "lastName": "Garcia",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hamburg",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 720.0,
+    "time_stamp": "2020-07-23T13:41:43.371516",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6b2fa2a9-9ee2-4fea-b440-9772b19e14f1",
+        "description": "description",
+        "cost": 373.5,
+        "currency": "USD",
+        "endDate": "08-04-2020",
+        "startDate": "08-01-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "02c47af6-ef00-4bab-a0e9-217cb33ba26c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 346.5,
+        "endDate": "08-04-2020",
+        "startDate": "08-01-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Regina",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Luanda",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Angola"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 873.25,
+    "time_stamp": "2020-07-23T13:41:43.660483",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "cd6d2540-aca9-4193-a2ae-9c9e792525ec",
+        "description": "description",
+        "cost": 444.5,
+        "currency": "USD",
+        "endDate": "07-30-2020",
+        "startDate": "07-28-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "ba318c48-1826-416f-9a30-9351790b4d5f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 428.75,
+        "endDate": "07-30-2020",
+        "startDate": "07-28-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Tony",
+      "lastName": "Santiago",
+      "address": {
+        "line1": "00 Non",
+        "city": "Birmingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 628.5,
+    "time_stamp": "2020-07-23T13:41:43.843092",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "f16b0b75-4d7a-47cb-aac3-2b88acbea740",
+        "description": "description",
+        "cost": 327,
+        "currency": "USD",
+        "endDate": "08-06-2020",
+        "startDate": "08-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "90eae41a-a0f9-422c-8bdf-d30f3885e1c0",
+        "description": "description",
+        "currency": "USD",
+        "cost": 301.5,
+        "endDate": "08-06-2020",
+        "startDate": "08-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "James",
+      "lastName": "Davila",
+      "address": {
+        "line1": "00 Non",
+        "city": "Haikou",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 466.0,
+    "time_stamp": "2020-07-23T13:41:44.097625",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "66e7289f-4c96-4113-ace1-3ac2bdd6b627",
+        "description": "description",
+        "cost": 233,
+        "currency": "USD",
+        "endDate": "08-28-2020",
+        "startDate": "08-18-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "9e047ee6-8652-43c2-87ff-9d6ffe9bb060",
+        "description": "description",
+        "currency": "USD",
+        "cost": 233,
+        "endDate": "08-28-2020",
+        "startDate": "08-18-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Castaneda",
+      "address": {
+        "line1": "00 Non",
+        "city": "Toronto",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 326.0,
+    "time_stamp": "2020-07-23T13:41:44.274728",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "db36db7a-26b7-4e15-aea6-9c774fb1d21d",
+        "description": "description",
+        "cost": 201,
+        "currency": "USD",
+        "endDate": "09-11-2020",
+        "startDate": "09-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "fb7484f8-223d-4981-90c3-faa34017ee7f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 125,
+        "endDate": "09-11-2020",
+        "startDate": "09-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Benjamin",
+      "lastName": "Cline",
+      "address": {
+        "line1": "00 Non",
+        "city": "Cagliari",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Italy"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 588.0,
+    "time_stamp": "2020-07-23T13:41:44.492274",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "b10bf3cd-38b4-4a4b-a3a0-0190094a67e1",
+        "description": "description",
+        "cost": 305,
+        "currency": "USD",
+        "endDate": "09-06-2020",
+        "startDate": "09-01-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "1f951e4f-27b0-4f83-bfaa-32bd4e144cca",
+        "description": "description",
+        "currency": "USD",
+        "cost": 283,
+        "endDate": "09-06-2020",
+        "startDate": "09-01-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Tommy",
+      "lastName": "Smith",
+      "address": {
+        "line1": "00 Non",
+        "city": "Washington",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 189.0,
+    "time_stamp": "2020-07-23T13:41:44.702536",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d467f22e-388f-45f8-997d-cf8bf90b2edd",
+        "description": "description",
+        "cost": 107,
+        "currency": "USD",
+        "endDate": "09-05-2020",
+        "startDate": "09-01-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "3f13bc9f-2598-46e7-a319-85fa77e5c86c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 82,
+        "endDate": "09-05-2020",
+        "startDate": "09-01-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Troy",
+      "lastName": "Colon",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sanya",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 537.0,
+    "time_stamp": "2020-07-23T13:41:44.880453",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a4311d0e-5790-4456-9098-a65db60641c7",
+        "description": "description",
+        "cost": 262,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "09-01-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "97394aad-c499-4294-8062-39207c08a6a7",
+        "description": "description",
+        "currency": "USD",
+        "cost": 275,
+        "endDate": "09-08-2020",
+        "startDate": "09-01-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Louis",
+      "lastName": "Khan",
+      "address": {
+        "line1": "00 Non",
+        "city": "Nottingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 410.0,
+    "time_stamp": "2020-07-23T13:41:45.071997",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "2132446d-93e1-40e1-b19f-0f67a887341b",
+        "description": "description",
+        "cost": 216,
+        "currency": "USD",
+        "endDate": "09-03-2020",
+        "startDate": "08-22-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a69460c6-c308-4c4d-8e3a-5f98ee19a02c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 194,
+        "endDate": "09-03-2020",
+        "startDate": "08-22-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Stacey",
+      "lastName": "Vega",
+      "address": {
+        "line1": "00 Non",
+        "city": "Praia da Vit\u00f3ria",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Portugal"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 523.0,
+    "time_stamp": "2020-07-23T13:41:45.260603",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "33cb1a79-f5d7-4b10-a749-0733ccf438aa",
+        "description": "description",
+        "cost": 264,
+        "currency": "USD",
+        "endDate": "09-05-2020",
+        "startDate": "08-26-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "f55f006b-287f-476b-8b64-ddb6c1aa8ceb",
+        "description": "description",
+        "currency": "USD",
+        "cost": 259,
+        "endDate": "09-05-2020",
+        "startDate": "08-26-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Angie",
+      "lastName": "Jimenez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sumter",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 188.0,
+    "time_stamp": "2020-07-23T13:41:45.438173",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a232ac1e-e3c0-4987-9c4e-b956f48905bd",
+        "description": "description",
+        "cost": 105.60000000000001,
+        "currency": "USD",
+        "endDate": "09-19-2020",
+        "startDate": "09-13-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "dd8f974b-1480-40e6-bf8d-3fc1e359c471",
+        "description": "description",
+        "currency": "USD",
+        "cost": 82.4,
+        "endDate": "09-19-2020",
+        "startDate": "09-13-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Scott",
+      "lastName": "Brown",
+      "address": {
+        "line1": "00 Non",
+        "city": "Taiyuan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 576.0,
+    "time_stamp": "2020-07-23T13:41:45.684802",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "2a928aaa-8272-4c44-bab1-c4119ea5aa32",
+        "description": "description",
+        "cost": 300,
+        "currency": "USD",
+        "endDate": "08-27-2020",
+        "startDate": "08-10-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "5a999d2d-6486-43ba-9b7b-a6217023cdc9",
+        "description": "description",
+        "currency": "USD",
+        "cost": 276,
+        "endDate": "08-27-2020",
+        "startDate": "08-10-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Heather",
+      "lastName": "Fisher",
+      "address": {
+        "line1": "00 Non",
+        "city": "Melbourne",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 238.8,
+    "time_stamp": "2020-07-23T13:41:45.983131",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e1479339-d0dc-402e-a35f-eb313f84558d",
+        "description": "description",
+        "cost": 128.4,
+        "currency": "USD",
+        "endDate": "08-13-2020",
+        "startDate": "08-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "451cb7c0-0831-459f-b284-0e8fc07ea0cc",
+        "description": "description",
+        "currency": "USD",
+        "cost": 110.39999999999999,
+        "endDate": "08-13-2020",
+        "startDate": "08-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Margaret",
+      "lastName": "Herrera",
+      "address": {
+        "line1": "00 Non",
+        "city": "Antalya",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Turkey"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 337.75,
+    "time_stamp": "2020-07-23T13:41:46.170819",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "1fda7ded-8c14-466b-97b5-aff36af4f7a7",
+        "description": "description",
+        "cost": 185.5,
+        "currency": "USD",
+        "endDate": "08-01-2020",
+        "startDate": "07-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a137c5dd-063a-4d66-8af4-c3b854436508",
+        "description": "description",
+        "currency": "USD",
+        "cost": 152.25,
+        "endDate": "08-01-2020",
+        "startDate": "07-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Cheryl",
+      "lastName": "Dickerson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Lyon",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "France"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 344.0,
+    "time_stamp": "2020-07-23T13:41:46.382783",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6f63052a-d42e-471e-9b1f-7b8b80265e34",
+        "description": "description",
+        "cost": 198,
+        "currency": "USD",
+        "endDate": "09-04-2020",
+        "startDate": "08-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a570d500-a0f6-4efa-b06f-791bd5ef501a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 146,
+        "endDate": "09-04-2020",
+        "startDate": "08-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Daniel",
+      "lastName": "Mclaughlin",
+      "address": {
+        "line1": "00 Non",
+        "city": "Denver",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1305.6,
+    "time_stamp": "2020-07-23T13:41:46.574133",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "1050789a-557a-4f93-aeba-adf80e1777ad",
+        "description": "description",
+        "cost": 636,
+        "currency": "USD",
+        "endDate": "08-25-2020",
+        "startDate": "08-11-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "898548d4-528b-4de1-8113-cb5dfa869ae5",
+        "description": "description",
+        "currency": "USD",
+        "cost": 669.6,
+        "endDate": "08-25-2020",
+        "startDate": "08-11-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jack",
+      "lastName": "Bray",
+      "address": {
+        "line1": "00 Non",
+        "city": "Luxor",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Egypt"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 313.0,
+    "time_stamp": "2020-07-23T13:41:46.750506",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "66c5eed1-ca38-45e4-beff-9e247cd64e09",
+        "description": "description",
+        "cost": 154,
+        "currency": "USD",
+        "endDate": "09-06-2020",
+        "startDate": "08-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "815c60ee-74c8-420d-a4e8-ef54e40a74e2",
+        "description": "description",
+        "currency": "USD",
+        "cost": 159,
+        "endDate": "09-06-2020",
+        "startDate": "08-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jenna",
+      "lastName": "Wood",
+      "address": {
+        "line1": "00 Non",
+        "city": "Copenhagen",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Denmark"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  "Error",
+  {
+    "totalAmount": 426.0,
+    "time_stamp": "2020-07-23T13:41:47.253553",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "c0e6c1ca-8dab-4ab2-a1fd-b4d89010095a",
+        "description": "description",
+        "cost": 223,
+        "currency": "USD",
+        "endDate": "08-17-2020",
+        "startDate": "08-15-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "dc0395bc-d4d3-44d7-80fb-66c711386c47",
+        "description": "description",
+        "currency": "USD",
+        "cost": 203,
+        "endDate": "08-17-2020",
+        "startDate": "08-15-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christopher",
+      "lastName": "Lewis",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hangzhou",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 500.5,
+    "time_stamp": "2020-07-23T13:41:47.462214",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d1b1af41-f71e-4360-9b81-e5a758dadb82",
+        "description": "description",
+        "cost": 264.25,
+        "currency": "USD",
+        "endDate": "08-05-2020",
+        "startDate": "07-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "567e8f10-d64d-48e1-899f-4e04a8e52fef",
+        "description": "description",
+        "currency": "USD",
+        "cost": 236.25,
+        "endDate": "08-05-2020",
+        "startDate": "07-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "David",
+      "lastName": "Parker",
+      "address": {
+        "line1": "00 Non",
+        "city": "Chicago",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 258.0,
+    "time_stamp": "2020-07-23T13:41:47.706650",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "4b4dc62a-87fa-463f-8d92-f12f7f9bff89",
+        "description": "description",
+        "cost": 151.5,
+        "currency": "USD",
+        "endDate": "08-07-2020",
+        "startDate": "07-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "180c5dcf-d153-4926-a776-a3bf911c540f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 106.5,
+        "endDate": "08-07-2020",
+        "startDate": "07-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jasmine",
+      "lastName": "Harrison",
+      "address": {
+        "line1": "00 Non",
+        "city": "Charleston",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 602.4,
+    "time_stamp": "2020-07-23T13:41:47.902579",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ff0d7592-96b7-4a17-aabe-9d9e67e89250",
+        "description": "description",
+        "cost": 291.59999999999997,
+        "currency": "USD",
+        "endDate": "08-14-2020",
+        "startDate": "08-13-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "0fd50db5-415a-4257-8e33-62e24f141043",
+        "description": "description",
+        "currency": "USD",
+        "cost": 310.8,
+        "endDate": "08-14-2020",
+        "startDate": "08-13-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Rachel",
+      "lastName": "Peters",
+      "address": {
+        "line1": "00 Non",
+        "city": "Yekaterinburg",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Russia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1333.0,
+    "time_stamp": "2020-07-23T13:41:49.481291",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "12112c1e-1c3c-49d5-97c1-f6078ae68eee",
+        "description": "description",
+        "cost": 619,
+        "currency": "USD",
+        "endDate": "08-17-2020",
+        "startDate": "08-14-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4bd2f1c5-c54c-4809-9213-b591934a8b90",
+        "description": "description",
+        "currency": "USD",
+        "cost": 714,
+        "endDate": "08-17-2020",
+        "startDate": "08-14-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Shelby",
+      "lastName": "Le",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sacramento",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 297.0,
+    "time_stamp": "2020-07-23T13:41:49.678033",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "cdfe83dc-cd19-4dd5-8e4f-8f620a528ba1",
+        "description": "description",
+        "cost": 162,
+        "currency": "USD",
+        "endDate": "08-15-2020",
+        "startDate": "08-06-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d1f909cc-67da-44ea-9107-ecf6891ab29f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 135,
+        "endDate": "08-15-2020",
+        "startDate": "08-06-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "David",
+      "lastName": "Moore",
+      "address": {
+        "line1": "00 Non",
+        "city": "Dakar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Senegal"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1120.5,
+    "time_stamp": "2020-07-23T13:41:49.872014",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "bd2e8548-7c10-4f5f-9969-aad159f1f8ae",
+        "description": "description",
+        "cost": 535.5,
+        "currency": "USD",
+        "endDate": "08-05-2020",
+        "startDate": "07-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "2b2df879-4164-4000-b8d6-4c9a71ebf55c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 585,
+        "endDate": "08-05-2020",
+        "startDate": "07-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Krista",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Gaziantep",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Turkey"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 639.5999999999999,
+    "time_stamp": "2020-07-23T13:41:50.058325",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "0084aa8b-73bd-4974-9a65-f8bd21a3c24b",
+        "description": "description",
+        "cost": 300,
+        "currency": "USD",
+        "endDate": "08-15-2020",
+        "startDate": "08-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c26850f9-bf12-4a18-8758-4925f17e1597",
+        "description": "description",
+        "currency": "USD",
+        "cost": 339.59999999999997,
+        "endDate": "08-15-2020",
+        "startDate": "08-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Justin",
+      "lastName": "Nguyen",
+      "address": {
+        "line1": "00 Non",
+        "city": "Pisa",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Italy"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 389.6,
+    "time_stamp": "2020-07-23T13:41:50.239821",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "304ae55e-c3fd-4795-83a1-a5307129b4b1",
+        "description": "description",
+        "cost": 208.8,
+        "currency": "USD",
+        "endDate": "09-13-2020",
+        "startDate": "09-10-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "db046a83-401f-499b-aa2b-757b973190fd",
+        "description": "description",
+        "currency": "USD",
+        "cost": 180.8,
+        "endDate": "09-13-2020",
+        "startDate": "09-10-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Stacey",
+      "lastName": "Vega",
+      "address": {
+        "line1": "00 Non",
+        "city": "Praia da Vit\u00f3ria",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Portugal"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 833.0,
+    "time_stamp": "2020-07-23T13:41:50.496407",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "8be2da04-4c69-4d91-a4e6-6f8179c78502",
+        "description": "description",
+        "cost": 475,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "08-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "754e07e4-2828-422b-9b9e-244617976792",
+        "description": "description",
+        "currency": "USD",
+        "cost": 358,
+        "endDate": "09-08-2020",
+        "startDate": "08-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Terrence",
+      "lastName": "Vasquez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Kazan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Russia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 850.0,
+    "time_stamp": "2020-07-23T13:41:50.697118",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "0b7f53e8-cdc6-4774-92c5-bc2df3c0e216",
+        "description": "description",
+        "cost": 438,
+        "currency": "USD",
+        "endDate": "09-03-2020",
+        "startDate": "08-30-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "867f2ac5-f8d0-45aa-b4ce-e0c8276e3df9",
+        "description": "description",
+        "currency": "USD",
+        "cost": 412,
+        "endDate": "09-03-2020",
+        "startDate": "08-30-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Mitchell",
+      "lastName": "Knight",
+      "address": {
+        "line1": "00 Non",
+        "city": "Barcelona",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 348.25,
+    "time_stamp": "2020-07-23T13:41:50.899639",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e1479339-d0dc-402e-a35f-eb313f84558d",
+        "description": "description",
+        "cost": 187.25,
+        "currency": "USD",
+        "endDate": "07-28-2020",
+        "startDate": "07-26-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "451cb7c0-0831-459f-b284-0e8fc07ea0cc",
+        "description": "description",
+        "currency": "USD",
+        "cost": 161,
+        "endDate": "07-28-2020",
+        "startDate": "07-26-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Margaret",
+      "lastName": "Herrera",
+      "address": {
+        "line1": "00 Non",
+        "city": "Antalya",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Turkey"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1415.0,
+    "time_stamp": "2020-07-23T13:41:51.091652",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "58fee038-d63a-4916-8ca9-498ed8530d5c",
+        "description": "description",
+        "cost": 644,
+        "currency": "USD",
+        "endDate": "08-29-2020",
+        "startDate": "08-26-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "f51dd23e-e88b-4fbc-ae9f-83c5a579c795",
+        "description": "description",
+        "currency": "USD",
+        "cost": 771,
+        "endDate": "08-29-2020",
+        "startDate": "08-26-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Julia",
+      "lastName": "Fischer",
+      "address": {
+        "line1": "00 Non",
+        "city": "Peshawar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Pakistan"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 425.25,
+    "time_stamp": "2020-07-23T13:41:51.289269",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e719ff1c-d403-471f-9b1f-812b681d70c6",
+        "description": "description",
+        "cost": 252,
+        "currency": "USD",
+        "endDate": "08-03-2020",
+        "startDate": "07-24-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a1a4cbb2-ce36-4003-a4db-47bd5f7c4695",
+        "description": "description",
+        "currency": "USD",
+        "cost": 173.25,
+        "endDate": "08-03-2020",
+        "startDate": "07-24-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christopher",
+      "lastName": "Fritz",
+      "address": {
+        "line1": "00 Non",
+        "city": "Chongqing",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 692.4,
+    "time_stamp": "2020-07-23T13:41:51.476752",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "71880aac-43ed-4a40-a949-ee4be4330933",
+        "description": "description",
+        "cost": 336,
+        "currency": "USD",
+        "endDate": "08-16-2020",
+        "startDate": "08-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a5ec1e70-2e0b-4319-b7b6-45136a017572",
+        "description": "description",
+        "currency": "USD",
+        "cost": 356.4,
+        "endDate": "08-16-2020",
+        "startDate": "08-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Diana",
+      "lastName": "Buchanan",
+      "address": {
+        "line1": "00 Non",
+        "city": "Osaka",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Japan"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 149.60000000000002,
+    "time_stamp": "2020-07-23T13:41:51.772922",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "7817963d-f466-4808-8ca3-92bac19d9000",
+        "description": "description",
+        "cost": 84.80000000000001,
+        "currency": "USD",
+        "endDate": "09-23-2020",
+        "startDate": "09-19-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "5de5f6fe-6099-4670-aced-9024dfd86912",
+        "description": "description",
+        "currency": "USD",
+        "cost": 64.8,
+        "endDate": "09-23-2020",
+        "startDate": "09-19-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jennifer",
+      "lastName": "Smith",
+      "address": {
+        "line1": "00 Non",
+        "city": "Amritsar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "India"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 285.59999999999997,
+    "time_stamp": "2020-07-23T13:41:51.964288",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "72e2609e-5e3a-4ab6-9022-11254fb56088",
+        "description": "description",
+        "cost": 160.79999999999998,
+        "currency": "USD",
+        "endDate": "08-21-2020",
+        "startDate": "08-12-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "71bb0f41-d3e5-41a3-8e01-5d3de02014de",
+        "description": "description",
+        "currency": "USD",
+        "cost": 124.8,
+        "endDate": "08-21-2020",
+        "startDate": "08-12-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Sheila",
+      "lastName": "Duncan",
+      "address": {
+        "line1": "00 Non",
+        "city": "Amritsar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "India"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  "Error",
+  {
+    "totalAmount": 489.0,
+    "time_stamp": "2020-07-23T13:41:52.411281",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "f4e93d6f-e640-4f20-8db6-85468318139a",
+        "description": "description",
+        "cost": 248,
+        "currency": "USD",
+        "endDate": "08-20-2020",
+        "startDate": "08-16-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8e2c0aff-04a2-45fe-ab91-9a24d43b64e0",
+        "description": "description",
+        "currency": "USD",
+        "cost": 241,
+        "endDate": "08-20-2020",
+        "startDate": "08-16-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Catherine",
+      "lastName": "Sanchez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Ramstein",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 681.0,
+    "time_stamp": "2020-07-23T13:41:52.710740",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "3a306021-0a05-42d1-b166-cfd14b88b303",
+        "description": "description",
+        "cost": 337,
+        "currency": "USD",
+        "endDate": "09-06-2020",
+        "startDate": "08-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "69a81681-020e-453e-a494-ce9741e33864",
+        "description": "description",
+        "currency": "USD",
+        "cost": 344,
+        "endDate": "09-06-2020",
+        "startDate": "08-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Lisa",
+      "lastName": "Little",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sydney",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 617.0,
+    "time_stamp": "2020-07-23T13:41:52.908671",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "151efeb3-3818-410d-bf67-0ffe2d32b31e",
+        "description": "description",
+        "cost": 313,
+        "currency": "USD",
+        "endDate": "08-29-2020",
+        "startDate": "08-26-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "6994b774-fec2-4731-b1ad-dfe1305c0aea",
+        "description": "description",
+        "currency": "USD",
+        "cost": 304,
+        "endDate": "08-29-2020",
+        "startDate": "08-26-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jacob",
+      "lastName": "Murphy",
+      "address": {
+        "line1": "00 Non",
+        "city": "Bucharest",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Romania"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1039.5,
+    "time_stamp": "2020-07-23T13:41:53.171339",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "151efeb3-3818-410d-bf67-0ffe2d32b31e",
+        "description": "description",
+        "cost": 547.75,
+        "currency": "USD",
+        "endDate": "07-30-2020",
+        "startDate": "07-27-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "6dff13d0-f11b-433b-8f15-df7f3ab2bdec",
+        "description": "description",
+        "currency": "USD",
+        "cost": 491.75,
+        "endDate": "07-30-2020",
+        "startDate": "07-27-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jasmine",
+      "lastName": "Adams",
+      "address": {
+        "line1": "00 Non",
+        "city": "Multan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Pakistan"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 911.75,
+    "time_stamp": "2020-07-23T13:41:53.360569",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e3c8a7ca-67dd-4ece-8cbd-8faaba48cc6b",
+        "description": "description",
+        "cost": 442.75,
+        "currency": "USD",
+        "endDate": "07-29-2020",
+        "startDate": "07-27-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c9b9b9dd-ef95-4387-b33a-ef960ece7866",
+        "description": "description",
+        "currency": "USD",
+        "cost": 469,
+        "endDate": "07-29-2020",
+        "startDate": "07-27-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Amanda",
+      "lastName": "Garcia",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hamburg",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  "Error",
+  {
+    "totalAmount": 1333.0,
+    "time_stamp": "2020-07-23T13:41:53.817721",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "12112c1e-1c3c-49d5-97c1-f6078ae68eee",
+        "description": "description",
+        "cost": 619,
+        "currency": "USD",
+        "endDate": "08-27-2020",
+        "startDate": "08-22-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4bd2f1c5-c54c-4809-9213-b591934a8b90",
+        "description": "description",
+        "currency": "USD",
+        "cost": 714,
+        "endDate": "08-27-2020",
+        "startDate": "08-22-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Shelby",
+      "lastName": "Le",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sacramento",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 817.0,
+    "time_stamp": "2020-07-23T13:41:54.001257",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ee79d44a-9f39-4c88-8bcc-c096bde89471",
+        "description": "description",
+        "cost": 348,
+        "currency": "USD",
+        "endDate": "09-10-2020",
+        "startDate": "09-04-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4382042c-3d07-4811-afbd-d7d50c73c4e8",
+        "description": "description",
+        "currency": "USD",
+        "cost": 469,
+        "endDate": "09-10-2020",
+        "startDate": "09-04-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jessica",
+      "lastName": "Singh",
+      "address": {
+        "line1": "00 Non",
+        "city": "Bergen",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Norway"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 540.0,
+    "time_stamp": "2020-07-23T13:41:54.172101",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "4421edc5-d59b-46af-a675-7ccd7299d999",
+        "description": "description",
+        "cost": 290.4,
+        "currency": "USD",
+        "endDate": "08-08-2020",
+        "startDate": "08-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "13176b6e-b4e3-4a60-83e2-bb7aa1ae965a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 249.6,
+        "endDate": "08-08-2020",
+        "startDate": "08-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Krista",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Gaziantep",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Turkey"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  "Error",
+  {
+    "totalAmount": 531.0,
+    "time_stamp": "2020-07-23T13:41:54.736472",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "09c07f97-d21c-41e4-8010-277ddb57cc34",
+        "description": "description",
+        "cost": 262,
+        "currency": "USD",
+        "endDate": "08-28-2020",
+        "startDate": "08-19-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d51a08b0-cb1e-4557-8cbf-5f8e95ad2978",
+        "description": "description",
+        "currency": "USD",
+        "cost": 269,
+        "endDate": "08-28-2020",
+        "startDate": "08-19-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Wiley",
+      "address": {
+        "line1": "00 Non",
+        "city": "Alamogordo",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 744.0,
+    "time_stamp": "2020-07-23T13:41:54.906595",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ca2bbac5-8aa1-4244-b109-3e91f0a2cfc9",
+        "description": "description",
+        "cost": 379.5,
+        "currency": "USD",
+        "endDate": "08-07-2020",
+        "startDate": "08-05-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "66a2f3ca-6ced-4daa-9da3-c825f16f791a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 364.5,
+        "endDate": "08-07-2020",
+        "startDate": "08-05-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Justin",
+      "lastName": "Nguyen",
+      "address": {
+        "line1": "00 Non",
+        "city": "Pisa",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Italy"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 813.75,
+    "time_stamp": "2020-07-23T13:41:55.193189",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "2160ed05-ec1e-46d6-8f8d-02d446834327",
+        "description": "description",
+        "cost": 444.5,
+        "currency": "USD",
+        "endDate": "08-01-2020",
+        "startDate": "07-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "9acf874a-cdd0-4013-bfb4-fe9532a53c6f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 369.25,
+        "endDate": "08-01-2020",
+        "startDate": "07-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Terrence",
+      "lastName": "Vasquez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Kazan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Russia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 633.0,
+    "time_stamp": "2020-07-23T13:41:55.367876",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "5a4c3f76-a8c0-4e13-b8c2-8983341dae30",
+        "description": "description",
+        "cost": 298,
+        "currency": "USD",
+        "endDate": "09-03-2020",
+        "startDate": "08-26-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "6276bd1b-017d-4081-834a-de6753c7f578",
+        "description": "description",
+        "currency": "USD",
+        "cost": 335,
+        "endDate": "09-03-2020",
+        "startDate": "08-26-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Heather",
+      "lastName": "Fisher",
+      "address": {
+        "line1": "00 Non",
+        "city": "Melbourne",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 773.6000000000001,
+    "time_stamp": "2020-07-23T13:41:55.546566",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6efc40a1-57b9-45e2-9687-fc22fc2062a0",
+        "description": "description",
+        "cost": 375.20000000000005,
+        "currency": "USD",
+        "endDate": "09-19-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "224c0b3b-f245-4d8e-89ed-763467bfcfc4",
+        "description": "description",
+        "currency": "USD",
+        "cost": 398.40000000000003,
+        "endDate": "09-19-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Matthew",
+      "lastName": "Parker",
+      "address": {
+        "line1": "00 Non",
+        "city": "Kiev",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Ukraine"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 134.4,
+    "time_stamp": "2020-07-23T13:41:55.810507",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "07a47f81-7130-4097-94ea-07c5667da3dc",
+        "description": "description",
+        "cost": 81.60000000000001,
+        "currency": "USD",
+        "endDate": "09-16-2020",
+        "startDate": "09-10-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "284246f8-4b6b-4980-ab36-aba719446356",
+        "description": "description",
+        "currency": "USD",
+        "cost": 52.800000000000004,
+        "endDate": "09-16-2020",
+        "startDate": "09-10-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Wendy",
+      "lastName": "Kelley",
+      "address": {
+        "line1": "00 Non",
+        "city": "Richmond",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 372.0,
+    "time_stamp": "2020-07-23T13:41:56.003098",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "dceeb0ae-6a2c-464b-80a3-1c47fa06785a",
+        "description": "description",
+        "cost": 200.8,
+        "currency": "USD",
+        "endDate": "09-26-2020",
+        "startDate": "09-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "67e4aaa8-8817-4ddc-ad28-02a3aa14b94b",
+        "description": "description",
+        "currency": "USD",
+        "cost": 171.20000000000002,
+        "endDate": "09-26-2020",
+        "startDate": "09-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Diana",
+      "lastName": "Buchanan",
+      "address": {
+        "line1": "00 Non",
+        "city": "Osaka",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Japan"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 468.0,
+    "time_stamp": "2020-07-23T13:41:56.190928",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "7ca00392-4783-415f-9585-58508f5f323e",
+        "description": "description",
+        "cost": 243,
+        "currency": "USD",
+        "endDate": "08-31-2020",
+        "startDate": "08-25-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d8035baf-d333-4a36-803d-2b7798b239b5",
+        "description": "description",
+        "currency": "USD",
+        "cost": 225,
+        "endDate": "08-31-2020",
+        "startDate": "08-25-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jack",
+      "lastName": "Bray",
+      "address": {
+        "line1": "00 Non",
+        "city": "Luxor",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Egypt"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 191.0,
+    "time_stamp": "2020-07-23T13:41:56.391592",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "0053fdfc-d70d-4c72-8224-483670271300",
+        "description": "description",
+        "cost": 107,
+        "currency": "USD",
+        "endDate": "09-09-2020",
+        "startDate": "09-05-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "e3f2b79f-b70b-41c8-b6c8-c299b032bdac",
+        "description": "description",
+        "currency": "USD",
+        "cost": 84,
+        "endDate": "09-09-2020",
+        "startDate": "09-05-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jenna",
+      "lastName": "Wood",
+      "address": {
+        "line1": "00 Non",
+        "city": "Copenhagen",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Denmark"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 391.2,
+    "time_stamp": "2020-07-23T13:41:56.580098",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "db36db7a-26b7-4e15-aea6-9c774fb1d21d",
+        "description": "description",
+        "cost": 241.2,
+        "currency": "USD",
+        "endDate": "08-18-2020",
+        "startDate": "08-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "fb7484f8-223d-4981-90c3-faa34017ee7f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 150,
+        "endDate": "08-18-2020",
+        "startDate": "08-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Alexis",
+      "lastName": "Lang",
+      "address": {
+        "line1": "00 Non",
+        "city": "Norfolk",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 583.0,
+    "time_stamp": "2020-07-23T13:41:56.754943",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "20a69046-3213-43d7-a9cc-6457ff8dce17",
+        "description": "description",
+        "cost": 291,
+        "currency": "USD",
+        "endDate": "08-18-2020",
+        "startDate": "08-16-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "821415d8-8942-4036-8989-01ff9fd1b407",
+        "description": "description",
+        "currency": "USD",
+        "cost": 292,
+        "endDate": "08-18-2020",
+        "startDate": "08-16-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christopher",
+      "lastName": "Lewis",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hangzhou",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 620.0,
+    "time_stamp": "2020-07-23T13:41:56.972307",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "227805fc-da58-4ae6-91eb-ec3726ae5ed0",
+        "description": "description",
+        "cost": 268,
+        "currency": "USD",
+        "endDate": "09-25-2020",
+        "startDate": "09-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d802d976-7368-424c-8e75-16cd7a04ab20",
+        "description": "description",
+        "currency": "USD",
+        "cost": 352,
+        "endDate": "09-25-2020",
+        "startDate": "09-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Lisa",
+      "lastName": "Little",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sydney",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1333.0,
+    "time_stamp": "2020-07-23T13:41:57.217101",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "12112c1e-1c3c-49d5-97c1-f6078ae68eee",
+        "description": "description",
+        "cost": 619,
+        "currency": "USD",
+        "endDate": "09-05-2020",
+        "startDate": "08-22-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4bd2f1c5-c54c-4809-9213-b591934a8b90",
+        "description": "description",
+        "currency": "USD",
+        "cost": 714,
+        "endDate": "09-05-2020",
+        "startDate": "08-22-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jacob",
+      "lastName": "Murphy",
+      "address": {
+        "line1": "00 Non",
+        "city": "Bucharest",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Romania"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 969.75,
+    "time_stamp": "2020-07-23T13:41:57.428800",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "31570c93-6a7d-49b9-b736-0ebcea8aa3b0",
+        "description": "description",
+        "cost": 553.5,
+        "currency": "USD",
+        "endDate": "07-27-2020",
+        "startDate": "07-25-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "532b66ef-7a66-4299-8358-baeef7326d3c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 416.25,
+        "endDate": "07-27-2020",
+        "startDate": "07-25-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Regina",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Luanda",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Angola"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 942.0,
+    "time_stamp": "2020-07-23T13:41:57.626076",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "c3f8842d-4428-44eb-9dac-1ef01f2bc906",
+        "description": "description",
+        "cost": 433.2,
+        "currency": "USD",
+        "endDate": "08-13-2020",
+        "startDate": "08-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "011d2b47-9496-485e-bb89-8e905958416e",
+        "description": "description",
+        "currency": "USD",
+        "cost": 508.79999999999995,
+        "endDate": "08-13-2020",
+        "startDate": "08-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Tony",
+      "lastName": "Santiago",
+      "address": {
+        "line1": "00 Non",
+        "city": "Birmingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 288.0,
+    "time_stamp": "2020-07-23T13:41:57.822403",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "b9e6f717-eb7c-46c8-9e19-9906e30b995a",
+        "description": "description",
+        "cost": 164,
+        "currency": "USD",
+        "endDate": "09-13-2020",
+        "startDate": "09-10-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c288d100-1bb4-4e1e-a391-a5da29def41a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 124,
+        "endDate": "09-13-2020",
+        "startDate": "09-10-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Benjamin",
+      "lastName": "Cline",
+      "address": {
+        "line1": "00 Non",
+        "city": "Cagliari",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Italy"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 622.5,
+    "time_stamp": "2020-07-23T13:41:57.997453",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a33576e6-bc7b-4d58-b2f7-0f2be393bf0c",
+        "description": "description",
+        "cost": 325.5,
+        "currency": "USD",
+        "endDate": "08-05-2020",
+        "startDate": "07-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "bea638e3-c953-4964-9dd0-3344366f0a74",
+        "description": "description",
+        "currency": "USD",
+        "cost": 297,
+        "endDate": "08-05-2020",
+        "startDate": "07-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Krista",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Gaziantep",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Turkey"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 635.0,
+    "time_stamp": "2020-07-23T13:41:58.207725",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "d2cd526f-6d7b-4395-800e-0cb6e3871975",
+        "description": "description",
+        "cost": 302,
+        "currency": "USD",
+        "endDate": "09-05-2020",
+        "startDate": "08-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "52eb959d-c5fe-4fe0-b1c6-f54730f40bdd",
+        "description": "description",
+        "currency": "USD",
+        "cost": 333,
+        "endDate": "09-05-2020",
+        "startDate": "08-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Wiley",
+      "address": {
+        "line1": "00 Non",
+        "city": "Alamogordo",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 276.8,
+    "time_stamp": "2020-07-23T13:41:58.407170",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6ced14c3-d7f7-4b80-b35e-d9a935bf1ec7",
+        "description": "description",
+        "cost": 168.8,
+        "currency": "USD",
+        "endDate": "09-16-2020",
+        "startDate": "09-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "630f8ebb-5f9f-44a9-8362-5c6468ab2c1a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 108,
+        "endDate": "09-16-2020",
+        "startDate": "09-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Michael",
+      "lastName": "Bradley",
+      "address": {
+        "line1": "00 Non",
+        "city": "Corpus Christi",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 468.0,
+    "time_stamp": "2020-07-23T13:41:58.588014",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "7ca00392-4783-415f-9585-58508f5f323e",
+        "description": "description",
+        "cost": 243,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "08-28-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d8035baf-d333-4a36-803d-2b7798b239b5",
+        "description": "description",
+        "currency": "USD",
+        "cost": 225,
+        "endDate": "09-08-2020",
+        "startDate": "08-28-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Stacey",
+      "lastName": "Vega",
+      "address": {
+        "line1": "00 Non",
+        "city": "Praia da Vit\u00f3ria",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Portugal"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 360.0,
+    "time_stamp": "2020-07-23T13:41:58.766208",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "b9e6f717-eb7c-46c8-9e19-9906e30b995a",
+        "description": "description",
+        "cost": 205,
+        "currency": "USD",
+        "endDate": "08-26-2020",
+        "startDate": "08-23-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c288d100-1bb4-4e1e-a391-a5da29def41a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 155,
+        "endDate": "08-26-2020",
+        "startDate": "08-23-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Mitchell",
+      "lastName": "Knight",
+      "address": {
+        "line1": "00 Non",
+        "city": "Barcelona",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 155.20000000000002,
+    "time_stamp": "2020-07-23T13:41:58.948680",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "40a7a6f4-eeb7-44ed-be76-e34af19605c4",
+        "description": "description",
+        "cost": 88.80000000000001,
+        "currency": "USD",
+        "endDate": "09-21-2020",
+        "startDate": "09-16-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8717256d-3738-4cf4-a01b-ff45571d3ebf",
+        "description": "description",
+        "currency": "USD",
+        "cost": 66.4,
+        "endDate": "09-21-2020",
+        "startDate": "09-16-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Margaret",
+      "lastName": "Herrera",
+      "address": {
+        "line1": "00 Non",
+        "city": "Antalya",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Turkey"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 217.0,
+    "time_stamp": "2020-07-23T13:41:59.116849",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "a18a637e-1079-49e0-b840-1618acff2631",
+        "description": "description",
+        "cost": 123,
+        "currency": "USD",
+        "endDate": "08-23-2020",
+        "startDate": "08-20-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a0f1b18d-fc9b-42ee-8116-a1744803e864",
+        "description": "description",
+        "currency": "USD",
+        "cost": 94,
+        "endDate": "08-23-2020",
+        "startDate": "08-20-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christopher",
+      "lastName": "Fritz",
+      "address": {
+        "line1": "00 Non",
+        "city": "Chongqing",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 544.0,
+    "time_stamp": "2020-07-23T13:41:59.319988",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ae7dfa12-7981-4c6e-a98d-aff39cf346a4",
+        "description": "description",
+        "cost": 269,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "08-29-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "f3eef03e-36ad-467b-ab44-7708a9b9887e",
+        "description": "description",
+        "currency": "USD",
+        "cost": 275,
+        "endDate": "09-08-2020",
+        "startDate": "08-29-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Alexis",
+      "lastName": "Lang",
+      "address": {
+        "line1": "00 Non",
+        "city": "Norfolk",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 423.20000000000005,
+    "time_stamp": "2020-07-23T13:41:59.509201",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "66917c06-80aa-4554-a014-158dc3090c29",
+        "description": "description",
+        "cost": 204,
+        "currency": "USD",
+        "endDate": "09-15-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "0910d459-d88b-45ff-b112-649189d51e7c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 219.20000000000002,
+        "endDate": "09-15-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Stephen",
+      "lastName": "Hines",
+      "address": {
+        "line1": "00 Non",
+        "city": "Roanoke",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 329.6,
+    "time_stamp": "2020-07-23T13:41:59.684554",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e32039b5-184c-4eb6-bfd1-895b9bb4a30a",
+        "description": "description",
+        "cost": 193.60000000000002,
+        "currency": "USD",
+        "endDate": "09-16-2020",
+        "startDate": "09-10-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "426b8171-eaa9-497f-8fb3-eda1c20212f7",
+        "description": "description",
+        "currency": "USD",
+        "cost": 136,
+        "endDate": "09-16-2020",
+        "startDate": "09-10-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jacob",
+      "lastName": "Murphy",
+      "address": {
+        "line1": "00 Non",
+        "city": "Bucharest",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Romania"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 170.0,
+    "time_stamp": "2020-07-23T13:41:59.868205",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e331a0d1-6b4f-4c0d-8ebd-664911b6e8ba",
+        "description": "description",
+        "cost": 103,
+        "currency": "USD",
+        "endDate": "08-23-2020",
+        "startDate": "08-19-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "dbfbe6b3-a1dc-4465-9702-c0d92a0ec4c4",
+        "description": "description",
+        "currency": "USD",
+        "cost": 67,
+        "endDate": "08-23-2020",
+        "startDate": "08-19-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jasmine",
+      "lastName": "Harrison",
+      "address": {
+        "line1": "00 Non",
+        "city": "Charleston",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 766.5,
+    "time_stamp": "2020-07-23T13:42:00.082148",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "cd1b9ff5-83b3-4c08-898d-c463a4e94b42",
+        "description": "description",
+        "cost": 393.75,
+        "currency": "USD",
+        "endDate": "07-29-2020",
+        "startDate": "07-27-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "83b70522-70cc-426e-8acb-8906c3d108fe",
+        "description": "description",
+        "currency": "USD",
+        "cost": 372.75,
+        "endDate": "07-29-2020",
+        "startDate": "07-27-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Regina",
+      "lastName": "Peterson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Luanda",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Angola"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 258.0,
+    "time_stamp": "2020-07-23T13:42:00.357121",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "7f85bf7e-8454-4466-ac84-6fa43c1228e5",
+        "description": "description",
+        "cost": 169,
+        "currency": "USD",
+        "endDate": "09-13-2020",
+        "startDate": "09-04-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "7950fce9-d5ca-48cd-93ac-9a1fc17f9b43",
+        "description": "description",
+        "currency": "USD",
+        "cost": 89,
+        "endDate": "09-13-2020",
+        "startDate": "09-04-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Dana",
+      "lastName": "Macias",
+      "address": {
+        "line1": "00 Non",
+        "city": "Fairbanks",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1671.0,
+    "time_stamp": "2020-07-23T13:42:00.530596",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "422d1b51-ea6a-47b6-bcf3-74bd47c866e2",
+        "description": "description",
+        "cost": 798,
+        "currency": "USD",
+        "endDate": "08-03-2020",
+        "startDate": "08-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "3e820373-d89b-4dff-b563-873b289243eb",
+        "description": "description",
+        "currency": "USD",
+        "cost": 873,
+        "endDate": "08-03-2020",
+        "startDate": "08-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Tony",
+      "lastName": "Santiago",
+      "address": {
+        "line1": "00 Non",
+        "city": "Birmingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 365.6,
+    "time_stamp": "2020-07-23T13:42:00.715594",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "61c46866-ac24-4bf5-a04d-38c9cb0dff69",
+        "description": "description",
+        "cost": 190.4,
+        "currency": "USD",
+        "endDate": "09-16-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4a4c823b-8798-49f8-a5f8-72699351a391",
+        "description": "description",
+        "currency": "USD",
+        "cost": 175.20000000000002,
+        "endDate": "09-16-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Rachel",
+      "lastName": "Peters",
+      "address": {
+        "line1": "00 Non",
+        "city": "Yekaterinburg",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Russia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 559.5,
+    "time_stamp": "2020-07-23T13:42:00.891797",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ef0688f4-c589-4baf-997c-eca60ce6efbd",
+        "description": "description",
+        "cost": 288,
+        "currency": "USD",
+        "endDate": "08-03-2020",
+        "startDate": "07-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "28d06a42-487c-4970-8fcc-c324bb434001",
+        "description": "description",
+        "currency": "USD",
+        "cost": 271.5,
+        "endDate": "08-03-2020",
+        "startDate": "07-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Shelby",
+      "lastName": "Le",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sacramento",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 459.0,
+    "time_stamp": "2020-07-23T13:42:01.173150",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "61780f51-a757-4fdb-b98b-91882c01ee4b",
+        "description": "description",
+        "cost": 198,
+        "currency": "USD",
+        "endDate": "08-24-2020",
+        "startDate": "08-20-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "516529f9-adf0-4613-a52e-28ad6f946464",
+        "description": "description",
+        "currency": "USD",
+        "cost": 261,
+        "endDate": "08-24-2020",
+        "startDate": "08-20-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Michael",
+      "lastName": "Kline",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sarajevo",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Bosnia and Herzegovina"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 681.0,
+    "time_stamp": "2020-07-23T13:42:01.362014",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "3a306021-0a05-42d1-b166-cfd14b88b303",
+        "description": "description",
+        "cost": 337,
+        "currency": "USD",
+        "endDate": "09-02-2020",
+        "startDate": "08-24-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "69a81681-020e-453e-a494-ce9741e33864",
+        "description": "description",
+        "currency": "USD",
+        "cost": 344,
+        "endDate": "09-02-2020",
+        "startDate": "08-24-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Louis",
+      "lastName": "Khan",
+      "address": {
+        "line1": "00 Non",
+        "city": "Nottingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 438.0,
+    "time_stamp": "2020-07-23T13:42:01.530683",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "554d84ad-5ca0-419a-ab1c-40d0b5b34560",
+        "description": "description",
+        "cost": 237,
+        "currency": "USD",
+        "endDate": "09-02-2020",
+        "startDate": "08-18-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "5a09f0e5-11ce-4c9c-b044-bf5999815565",
+        "description": "description",
+        "currency": "USD",
+        "cost": 201,
+        "endDate": "09-02-2020",
+        "startDate": "08-18-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Michael",
+      "lastName": "Simpson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Prishtina",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Kosovo"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 456.0,
+    "time_stamp": "2020-07-23T13:42:01.715115",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "f942832b-633d-49ef-8c01-24e4e3351b08",
+        "description": "description",
+        "cost": 248,
+        "currency": "USD",
+        "endDate": "08-24-2020",
+        "startDate": "08-18-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "3576dd6b-243c-4033-99bc-83353fdd0e66",
+        "description": "description",
+        "currency": "USD",
+        "cost": 208,
+        "endDate": "08-24-2020",
+        "startDate": "08-18-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Stacey",
+      "lastName": "Vega",
+      "address": {
+        "line1": "00 Non",
+        "city": "Praia da Vit\u00f3ria",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Portugal"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 366.4,
+    "time_stamp": "2020-07-23T13:42:01.896186",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6eb5c882-0a11-4a81-a7b8-a20aaa101ced",
+        "description": "description",
+        "cost": 204,
+        "currency": "USD",
+        "endDate": "09-12-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "26b2b5fd-e805-4f6d-b11c-d868072c1340",
+        "description": "description",
+        "currency": "USD",
+        "cost": 162.4,
+        "endDate": "09-12-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Samantha",
+      "lastName": "Gilbert",
+      "address": {
+        "line1": "00 Non",
+        "city": "San Salvador (San Luis Talpa)",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "El Salvador"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 433.0,
+    "time_stamp": "2020-07-23T13:42:02.092193",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e32039b5-184c-4eb6-bfd1-895b9bb4a30a",
+        "description": "description",
+        "cost": 242,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "08-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c84193c1-d4bc-4b93-b24b-cf2ad1357ae1",
+        "description": "description",
+        "currency": "USD",
+        "cost": 191,
+        "endDate": "09-08-2020",
+        "startDate": "08-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Mitchell",
+      "lastName": "Knight",
+      "address": {
+        "line1": "00 Non",
+        "city": "Barcelona",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 226.40000000000003,
+    "time_stamp": "2020-07-23T13:42:02.258553",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e9033882-bdbb-4b23-a9f5-651c98a2b01e",
+        "description": "description",
+        "cost": 113.60000000000001,
+        "currency": "USD",
+        "endDate": "09-17-2020",
+        "startDate": "09-15-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "45a8e74a-2525-4ee8-8904-4fc5208370df",
+        "description": "description",
+        "currency": "USD",
+        "cost": 112.80000000000001,
+        "endDate": "09-17-2020",
+        "startDate": "09-15-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Scott",
+      "lastName": "Brown",
+      "address": {
+        "line1": "00 Non",
+        "city": "Taiyuan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 477.6,
+    "time_stamp": "2020-07-23T13:42:02.464082",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "7eef1b8d-8f2e-42f3-aad0-d6a9d9a630b6",
+        "description": "description",
+        "cost": 274.8,
+        "currency": "USD",
+        "endDate": "08-17-2020",
+        "startDate": "08-08-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "48ef0072-652b-4565-ae3e-b4bee9aee556",
+        "description": "description",
+        "currency": "USD",
+        "cost": 202.79999999999998,
+        "endDate": "08-17-2020",
+        "startDate": "08-08-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Heather",
+      "lastName": "Fisher",
+      "address": {
+        "line1": "00 Non",
+        "city": "Melbourne",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1415.0,
+    "time_stamp": "2020-07-23T13:42:02.650712",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "58fee038-d63a-4916-8ca9-498ed8530d5c",
+        "description": "description",
+        "cost": 644,
+        "currency": "USD",
+        "endDate": "08-20-2020",
+        "startDate": "08-15-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "f51dd23e-e88b-4fbc-ae9f-83c5a579c795",
+        "description": "description",
+        "currency": "USD",
+        "cost": 771,
+        "endDate": "08-20-2020",
+        "startDate": "08-15-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "William",
+      "lastName": "Young",
+      "address": {
+        "line1": "00 Non",
+        "city": "Palma De Mallorca",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 412.79999999999995,
+    "time_stamp": "2020-07-23T13:42:02.979750",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6f63052a-d42e-471e-9b1f-7b8b80265e34",
+        "description": "description",
+        "cost": 237.6,
+        "currency": "USD",
+        "endDate": "08-14-2020",
+        "startDate": "08-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "a570d500-a0f6-4efa-b06f-791bd5ef501a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 175.2,
+        "endDate": "08-14-2020",
+        "startDate": "08-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Daniel",
+      "lastName": "Mclaughlin",
+      "address": {
+        "line1": "00 Non",
+        "city": "Denver",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 546.0,
+    "time_stamp": "2020-07-23T13:42:03.152588",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "333acd44-ebc0-4607-8f6e-c4d2dae90196",
+        "description": "description",
+        "cost": 268,
+        "currency": "USD",
+        "endDate": "08-29-2020",
+        "startDate": "08-19-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "5f2898ed-45d4-4c67-8af8-ebd878e17780",
+        "description": "description",
+        "currency": "USD",
+        "cost": 278,
+        "endDate": "08-29-2020",
+        "startDate": "08-19-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Alexis",
+      "lastName": "Lang",
+      "address": {
+        "line1": "00 Non",
+        "city": "Norfolk",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1170.0,
+    "time_stamp": "2020-07-23T13:42:03.345724",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "3fc4463a-7c2a-4179-a856-355491a880c9",
+        "description": "description",
+        "cost": 569.25,
+        "currency": "USD",
+        "endDate": "07-26-2020",
+        "startDate": "07-24-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "bb2a07a4-d00a-49c4-98cf-75b1bee57f1a",
+        "description": "description",
+        "currency": "USD",
+        "cost": 600.75,
+        "endDate": "07-26-2020",
+        "startDate": "07-24-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christopher",
+      "lastName": "Lewis",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hangzhou",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 232.0,
+    "time_stamp": "2020-07-23T13:42:03.520316",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "c05cfb6b-d535-43a8-8deb-84072e6bdaa4",
+        "description": "description",
+        "cost": 124,
+        "currency": "USD",
+        "endDate": "09-07-2020",
+        "startDate": "09-01-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "9731a326-a353-47af-8eba-23585a03989d",
+        "description": "description",
+        "currency": "USD",
+        "cost": 108,
+        "endDate": "09-07-2020",
+        "startDate": "09-01-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jamie",
+      "lastName": "Clark",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hag\u00e5t\u00f1a, Guam International Airport",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Guam"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 814.5,
+    "time_stamp": "2020-07-23T13:42:03.730497",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "45540853-ca90-4f16-b07c-b07b1a01cc8b",
+        "description": "description",
+        "cost": 406.5,
+        "currency": "USD",
+        "endDate": "08-08-2020",
+        "startDate": "08-06-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8c0606a8-2d8b-48ac-81ec-a9d8da5924ab",
+        "description": "description",
+        "currency": "USD",
+        "cost": 408,
+        "endDate": "08-08-2020",
+        "startDate": "08-06-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Amanda",
+      "lastName": "Garcia",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hamburg",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 360.0,
+    "time_stamp": "2020-07-23T13:42:03.993926",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "71485a47-d69a-4e80-98a1-664565aa3981",
+        "description": "description",
+        "cost": 210,
+        "currency": "USD",
+        "endDate": "08-24-2020",
+        "startDate": "08-15-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "597b973f-2b74-49c4-8311-08f58befa378",
+        "description": "description",
+        "currency": "USD",
+        "cost": 150,
+        "endDate": "08-24-2020",
+        "startDate": "08-15-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Castaneda",
+      "address": {
+        "line1": "00 Non",
+        "city": "Toronto",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 447.0,
+    "time_stamp": "2020-07-23T13:42:04.165424",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "9db2f104-612f-4024-b1de-13f0d78a68df",
+        "description": "description",
+        "cost": 239,
+        "currency": "USD",
+        "endDate": "09-03-2020",
+        "startDate": "08-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "5ecd67b2-e31e-4387-b510-8d289a6fee2f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 208,
+        "endDate": "09-03-2020",
+        "startDate": "08-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Benjamin",
+      "lastName": "Cline",
+      "address": {
+        "line1": "00 Non",
+        "city": "Cagliari",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Italy"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 681.0,
+    "time_stamp": "2020-07-23T13:42:04.352476",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "3a306021-0a05-42d1-b166-cfd14b88b303",
+        "description": "description",
+        "cost": 337,
+        "currency": "USD",
+        "endDate": "09-10-2020",
+        "startDate": "09-04-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "69a81681-020e-453e-a494-ce9741e33864",
+        "description": "description",
+        "currency": "USD",
+        "cost": 344,
+        "endDate": "09-10-2020",
+        "startDate": "09-04-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Louis",
+      "lastName": "Khan",
+      "address": {
+        "line1": "00 Non",
+        "city": "Nottingham",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 380.0,
+    "time_stamp": "2020-07-23T13:42:04.547741",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "160768da-ee60-49a4-b72b-bd5a44f180a3",
+        "description": "description",
+        "cost": 184,
+        "currency": "USD",
+        "endDate": "09-11-2020",
+        "startDate": "09-07-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "6e141782-bd08-49b7-9224-7ca155ca4338",
+        "description": "description",
+        "currency": "USD",
+        "cost": 196,
+        "endDate": "09-11-2020",
+        "startDate": "09-07-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jennifer",
+      "lastName": "Meyer",
+      "address": {
+        "line1": "00 Non",
+        "city": "Columbia",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 374.0,
+    "time_stamp": "2020-07-23T13:42:04.846756",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "c5ca8c9c-5819-44d3-a0de-3c6f64b3d8b3",
+        "description": "description",
+        "cost": 197,
+        "currency": "USD",
+        "endDate": "08-24-2020",
+        "startDate": "08-20-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "f4f52c98-7df6-4ecd-81ea-c02c4f8957ef",
+        "description": "description",
+        "currency": "USD",
+        "cost": 177,
+        "endDate": "08-24-2020",
+        "startDate": "08-20-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Ashley",
+      "lastName": "Williamson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Detroit",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 595.0,
+    "time_stamp": "2020-07-23T13:42:05.028482",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "2a4131ac-997a-4e59-8c5b-6d1b637d91c3",
+        "description": "description",
+        "cost": 286,
+        "currency": "USD",
+        "endDate": "09-10-2020",
+        "startDate": "08-25-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4c313699-1712-4207-844a-16587eb4093f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 309,
+        "endDate": "09-10-2020",
+        "startDate": "08-25-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Teresa",
+      "lastName": "Fuller",
+      "address": {
+        "line1": "00 Non",
+        "city": "Adelaide",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Australia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 152.8,
+    "time_stamp": "2020-07-23T13:42:05.216808",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "0053fdfc-d70d-4c72-8224-483670271300",
+        "description": "description",
+        "cost": 85.60000000000001,
+        "currency": "USD",
+        "endDate": "09-25-2020",
+        "startDate": "09-20-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "e3f2b79f-b70b-41c8-b6c8-c299b032bdac",
+        "description": "description",
+        "currency": "USD",
+        "cost": 67.2,
+        "endDate": "09-25-2020",
+        "startDate": "09-20-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jenna",
+      "lastName": "Wood",
+      "address": {
+        "line1": "00 Non",
+        "city": "Copenhagen",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Denmark"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 450.0,
+    "time_stamp": "2020-07-23T13:42:05.404044",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "edbdf6d9-a65b-4169-b394-eb413b48da8f",
+        "description": "description",
+        "cost": 249,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "09-04-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "7b1b55ef-21b6-451c-9d69-384852b117ed",
+        "description": "description",
+        "currency": "USD",
+        "cost": 201,
+        "endDate": "09-08-2020",
+        "startDate": "09-04-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Alexis",
+      "lastName": "Lang",
+      "address": {
+        "line1": "00 Non",
+        "city": "Norfolk",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 742.5,
+    "time_stamp": "2020-07-23T13:42:05.574988",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ff0d7592-96b7-4a17-aabe-9d9e67e89250",
+        "description": "description",
+        "cost": 364.5,
+        "currency": "USD",
+        "endDate": "08-07-2020",
+        "startDate": "08-04-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "10b0fb64-ccf0-43c1-9a64-0523dae388c4",
+        "description": "description",
+        "currency": "USD",
+        "cost": 378,
+        "endDate": "08-07-2020",
+        "startDate": "08-04-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christopher",
+      "lastName": "Lewis",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hangzhou",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 391.20000000000005,
+    "time_stamp": "2020-07-23T13:42:05.762069",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "f4e93d6f-e640-4f20-8db6-85468318139a",
+        "description": "description",
+        "cost": 198.4,
+        "currency": "USD",
+        "endDate": "09-18-2020",
+        "startDate": "09-10-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8e2c0aff-04a2-45fe-ab91-9a24d43b64e0",
+        "description": "description",
+        "currency": "USD",
+        "cost": 192.8,
+        "endDate": "09-18-2020",
+        "startDate": "09-10-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Catherine",
+      "lastName": "Sanchez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Ramstein",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1450.5,
+    "time_stamp": "2020-07-23T13:42:06.067678",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6efc40a1-57b9-45e2-9687-fc22fc2062a0",
+        "description": "description",
+        "cost": 703.5,
+        "currency": "USD",
+        "endDate": "08-05-2020",
+        "startDate": "08-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "224c0b3b-f245-4d8e-89ed-763467bfcfc4",
+        "description": "description",
+        "currency": "USD",
+        "cost": 747,
+        "endDate": "08-05-2020",
+        "startDate": "08-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Dr.",
+      "lastName": "Mercado",
+      "address": {
+        "line1": "00 Non",
+        "city": "London",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 445.0,
+    "time_stamp": "2020-07-23T13:42:06.248540",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "2160ed05-ec1e-46d6-8f8d-02d446834327",
+        "description": "description",
+        "cost": 254,
+        "currency": "USD",
+        "endDate": "09-12-2020",
+        "startDate": "08-31-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "ba1bd102-1b15-4fc3-8856-4f5895dc0a52",
+        "description": "description",
+        "currency": "USD",
+        "cost": 191,
+        "endDate": "09-12-2020",
+        "startDate": "08-31-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jasmine",
+      "lastName": "Adams",
+      "address": {
+        "line1": "00 Non",
+        "city": "Multan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Pakistan"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 458.0,
+    "time_stamp": "2020-07-23T13:42:07.220070",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "0d721525-df41-46d5-b1a3-4784a3f254ce",
+        "description": "description",
+        "cost": 229,
+        "currency": "USD",
+        "endDate": "08-22-2020",
+        "startDate": "08-21-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "469f08fb-90dd-4f62-98e2-c173e252c7aa",
+        "description": "description",
+        "currency": "USD",
+        "cost": 229,
+        "endDate": "08-22-2020",
+        "startDate": "08-21-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christina",
+      "lastName": "Williams",
+      "address": {
+        "line1": "00 Non",
+        "city": "Alicante",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 343.0,
+    "time_stamp": "2020-07-23T13:42:07.510899",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "388d9f0f-66e4-4010-aa10-82598555d34f",
+        "description": "description",
+        "cost": 197,
+        "currency": "USD",
+        "endDate": "08-26-2020",
+        "startDate": "08-16-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "153be274-06a7-46ae-b259-4b1f2840ed9d",
+        "description": "description",
+        "currency": "USD",
+        "cost": 146,
+        "endDate": "08-26-2020",
+        "startDate": "08-16-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Barbara",
+      "lastName": "Castaneda",
+      "address": {
+        "line1": "00 Non",
+        "city": "Toronto",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 190.0,
+    "time_stamp": "2020-07-23T13:42:07.715806",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "09f3b81c-7e46-41b0-9079-769cd7f1fafd",
+        "description": "description",
+        "cost": 113,
+        "currency": "USD",
+        "endDate": "09-15-2020",
+        "startDate": "09-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "dbecaf45-11e5-4cb1-9927-0ffa617818b0",
+        "description": "description",
+        "currency": "USD",
+        "cost": 77,
+        "endDate": "09-15-2020",
+        "startDate": "09-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "David",
+      "lastName": "Moore",
+      "address": {
+        "line1": "00 Non",
+        "city": "Dakar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Senegal"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  "Error",
+  {
+    "totalAmount": 395.0,
+    "time_stamp": "2020-07-23T13:42:08.253269",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "fa1b6e97-c117-4dac-a636-ebf71a74ab97",
+        "description": "description",
+        "cost": 217,
+        "currency": "USD",
+        "endDate": "09-08-2020",
+        "startDate": "09-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8c982f86-861c-4619-8b7c-471527d4b17f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 178,
+        "endDate": "09-08-2020",
+        "startDate": "09-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jennifer",
+      "lastName": "Meyer",
+      "address": {
+        "line1": "00 Non",
+        "city": "Columbia",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 565.0,
+    "time_stamp": "2020-07-23T13:42:08.502955",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "de87539b-ae3c-4db8-9b10-2a3fee5c93bb",
+        "description": "description",
+        "cost": 302,
+        "currency": "USD",
+        "endDate": "08-29-2020",
+        "startDate": "08-25-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "8e051375-f549-436d-8624-07a9934e78e5",
+        "description": "description",
+        "currency": "USD",
+        "cost": 263,
+        "endDate": "08-29-2020",
+        "startDate": "08-25-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Justin",
+      "lastName": "Nguyen",
+      "address": {
+        "line1": "00 Non",
+        "city": "Pisa",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Italy"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 465.0,
+    "time_stamp": "2020-07-23T13:42:08.672943",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "2160ed05-ec1e-46d6-8f8d-02d446834327",
+        "description": "description",
+        "cost": 254,
+        "currency": "USD",
+        "endDate": "09-12-2020",
+        "startDate": "09-05-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "9acf874a-cdd0-4013-bfb4-fe9532a53c6f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 211,
+        "endDate": "09-12-2020",
+        "startDate": "09-05-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Terrence",
+      "lastName": "Vasquez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Kazan",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Russia"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1026.0,
+    "time_stamp": "2020-07-23T13:42:08.852387",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "fc7d5de8-3c95-43a6-9992-77d9a711fd01",
+        "description": "description",
+        "cost": 530,
+        "currency": "USD",
+        "endDate": "08-26-2020",
+        "startDate": "08-18-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "c527b374-1d95-4977-adc2-82c94ff764d0",
+        "description": "description",
+        "currency": "USD",
+        "cost": 496,
+        "endDate": "08-26-2020",
+        "startDate": "08-18-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Matthew",
+      "lastName": "Parker",
+      "address": {
+        "line1": "00 Non",
+        "city": "Kiev",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Ukraine"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 183.0,
+    "time_stamp": "2020-07-23T13:42:09.048355",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "e5da77db-0df8-45ad-8ca5-b466f81c847d",
+        "description": "description",
+        "cost": 102,
+        "currency": "USD",
+        "endDate": "09-09-2020",
+        "startDate": "08-27-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d5e42e6a-9115-4081-acdc-f89f0c2303a1",
+        "description": "description",
+        "currency": "USD",
+        "cost": 81,
+        "endDate": "09-09-2020",
+        "startDate": "08-27-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Wendy",
+      "lastName": "Kelley",
+      "address": {
+        "line1": "00 Non",
+        "city": "Richmond",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1599.6,
+    "time_stamp": "2020-07-23T13:42:09.291303",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "12112c1e-1c3c-49d5-97c1-f6078ae68eee",
+        "description": "description",
+        "cost": 742.8,
+        "currency": "USD",
+        "endDate": "08-15-2020",
+        "startDate": "08-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "4bd2f1c5-c54c-4809-9213-b591934a8b90",
+        "description": "description",
+        "currency": "USD",
+        "cost": 856.8,
+        "endDate": "08-15-2020",
+        "startDate": "08-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "William",
+      "lastName": "Young",
+      "address": {
+        "line1": "00 Non",
+        "city": "Palma De Mallorca",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Spain"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 2209.5,
+    "time_stamp": "2020-07-23T13:42:09.473815",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "7693e21e-7e25-4a0f-94c5-5d1f82e4a4e5",
+        "description": "description",
+        "cost": 1138.5,
+        "currency": "USD",
+        "endDate": "07-29-2020",
+        "startDate": "07-24-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "0a8e87e5-edee-4f76-88c2-fa8fc105a83f",
+        "description": "description",
+        "currency": "USD",
+        "cost": 1071,
+        "endDate": "07-29-2020",
+        "startDate": "07-24-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Julia",
+      "lastName": "Fischer",
+      "address": {
+        "line1": "00 Non",
+        "city": "Peshawar",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Pakistan"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 273.59999999999997,
+    "time_stamp": "2020-07-23T13:42:09.651503",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "993908a5-19cf-46e8-bee6-18d06dea7af9",
+        "description": "description",
+        "cost": 148.79999999999998,
+        "currency": "USD",
+        "endDate": "08-19-2020",
+        "startDate": "08-11-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "d66a5f97-8e7e-4723-b373-a680a84d2e83",
+        "description": "description",
+        "currency": "USD",
+        "cost": 124.8,
+        "endDate": "08-19-2020",
+        "startDate": "08-11-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christopher",
+      "lastName": "Fritz",
+      "address": {
+        "line1": "00 Non",
+        "city": "Chongqing",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 450.0,
+    "time_stamp": "2020-07-23T13:42:09.835282",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "4832884b-3564-49b7-a769-faf164a37695",
+        "description": "description",
+        "cost": 234,
+        "currency": "USD",
+        "endDate": "09-11-2020",
+        "startDate": "09-02-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "2548b32c-15c1-4361-a795-fae4c613293b",
+        "description": "description",
+        "currency": "USD",
+        "cost": 216,
+        "endDate": "09-11-2020",
+        "startDate": "09-02-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Gary",
+      "lastName": "Robertson",
+      "address": {
+        "line1": "00 Non",
+        "city": "Frankfurt am Main",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Germany"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 571.0,
+    "time_stamp": "2020-07-23T13:42:10.014801",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "db05a6b9-1510-4151-a04b-093a424d3717",
+        "description": "description",
+        "cost": 277,
+        "currency": "USD",
+        "endDate": "09-15-2020",
+        "startDate": "09-06-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "2dd49e35-27e1-455a-bb58-21ab3aadc965",
+        "description": "description",
+        "currency": "USD",
+        "cost": 294,
+        "endDate": "09-15-2020",
+        "startDate": "09-06-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Elizabeth",
+      "lastName": "Flores",
+      "address": {
+        "line1": "00 Non",
+        "city": "London",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United Kingdom"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 1300.8,
+    "time_stamp": "2020-07-23T13:42:10.272779",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "6d443c28-a940-46b2-b1fe-13b14c965b5d",
+        "description": "description",
+        "cost": 650.4,
+        "currency": "USD",
+        "endDate": "08-15-2020",
+        "startDate": "08-13-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "33596b8f-b08a-4e3c-9be5-67f51f9e486c",
+        "description": "description",
+        "currency": "USD",
+        "cost": 650.4,
+        "endDate": "08-15-2020",
+        "startDate": "08-13-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Christopher",
+      "lastName": "Lewis",
+      "address": {
+        "line1": "00 Non",
+        "city": "Hangzhou",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "China"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 335.20000000000005,
+    "time_stamp": "2020-07-23T13:42:10.455811",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "f16b0b75-4d7a-47cb-aac3-2b88acbea740",
+        "description": "description",
+        "cost": 174.4,
+        "currency": "USD",
+        "endDate": "09-27-2020",
+        "startDate": "09-21-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "90eae41a-a0f9-422c-8bdf-d30f3885e1c0",
+        "description": "description",
+        "currency": "USD",
+        "cost": 160.8,
+        "endDate": "09-27-2020",
+        "startDate": "09-21-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Lisa",
+      "lastName": "Hernandez",
+      "address": {
+        "line1": "00 Non",
+        "city": "Portland",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "United States"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 480.0,
+    "time_stamp": "2020-07-23T13:42:10.655118",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "410ad510-7ccb-43de-9a52-f22c6baba6fa",
+        "description": "description",
+        "cost": 274.8,
+        "currency": "USD",
+        "endDate": "08-15-2020",
+        "startDate": "08-09-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "b9484058-63ca-4334-a982-7bf1ccb89dcc",
+        "description": "description",
+        "currency": "USD",
+        "cost": 205.2,
+        "endDate": "08-15-2020",
+        "startDate": "08-09-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Lisa",
+      "lastName": "Little",
+      "address": {
+        "line1": "00 Non",
+        "city": "Sydney",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Canada"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  },
+  {
+    "totalAmount": 498.0,
+    "time_stamp": "2020-07-23T13:42:10.856675",
+    "currency": "USD",
+    "status": "unprocessed",
+    "cartItems": [
+      {
+        "type": "Car",
+        "uuid": "ca513158-56d0-41b0-982a-4cd4a9d91e47",
+        "description": "description",
+        "cost": 256,
+        "currency": "USD",
+        "endDate": "08-19-2020",
+        "startDate": "08-16-2020"
+      },
+      {
+        "type": "Hotel",
+        "uuid": "620e860b-8705-4373-83e4-29de74b0baa3",
+        "description": "description",
+        "currency": "USD",
+        "cost": 242,
+        "endDate": "08-19-2020",
+        "startDate": "08-16-2020"
+      }
+    ],
+    "billingDetails": {
+      "firstName": "Jacob",
+      "lastName": "Murphy",
+      "address": {
+        "line1": "00 Non",
+        "city": "Bucharest",
+        "postalCode": "00000",
+        "state": "Non",
+        "country": "Romania"
+      }
+    },
+    "paymentMethodDetails": {
+      "type": "Card",
+      "creditcardNumber": "0000 0000 0000 0000",
+      "expMonth": 1,
+      "expYear": 2050,
+      "cvc": "0000"
+    }
+  }
+]
