@@ -1,3 +1,4 @@
 destination-images/
 __pycache__
 config.json
+cert.pem

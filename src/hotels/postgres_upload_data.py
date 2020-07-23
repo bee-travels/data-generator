@@ -9,7 +9,13 @@ import utils
 
 def get_connection():
     try:
-        conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port="5432")
+        if "DATABASE_CERT" in os.environ:
+            with open("./cert.pem",'w') as cert_file:
+                cert_file.write(os.environ["DATABASE_CERT"])
+            os.environ["PGSSLROOTCERT"] = "./cert.pem"
+            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"], sslmode="verify-full", dbname=os.environ["PG_DB"])
+        else:
+            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"])
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         cur = conn.cursor()
         cur.execute("CREATE DATABASE beetravels;")
@@ -21,8 +27,10 @@ def get_connection():
         logging.info(e)
 
     try:
-        conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"],
-                                password=os.environ["PG_PASSWORD"], port="5432", database="beetravels")
+        if "DATABASE_CERT" in os.environ:
+            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"], sslmode="verify-full", database="beetravels")
+        else:
+            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"], database="beetravels")
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         return conn
     except Exception as e:
