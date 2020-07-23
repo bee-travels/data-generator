@@ -6,13 +6,8 @@ import logging
 
 def get_connection():
     try:
-        if "DATABASE_CERT" in os.environ:
-            with open("./cert.pem",'w') as cert_file:
-                cert_file.write(os.environ["DATABASE_CERT"])
-            os.environ["PGSSLROOTCERT"] = "./cert.pem"
-            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"], sslmode="verify-full", dbname=os.environ["PG_DB"])
-        else:
-            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"])
+        conn = psycopg2.connect(
+            user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port="5432")
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         cur = conn.cursor()
         cur.execute("CREATE DATABASE beetravels;")
@@ -25,15 +20,18 @@ def get_connection():
 
     try:
         if "DATABASE_CERT" in os.environ:
-            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"], sslmode="verify-full", database="beetravels")
+            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"],
+                                    port=os.environ["PG_PORT"], sslmode="verify-full", database="beetravels")
         else:
-            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"], database="beetravels")
+            conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"],
+                                    password=os.environ["PG_PASSWORD"], port=os.environ["PG_PORT"], database="beetravels")
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         return conn
     except Exception as e:
         logging.warning("Error: Unable to connect to the database")
         logging.info(e)
         exit(e)
+
 
 def drop_table(cursor, table_name):
     try:
@@ -49,10 +47,10 @@ def drop_table(cursor, table_name):
 def create_postgres_tables():
     conn = get_connection()
     cur = conn.cursor()
-    
+
     drop_table(cur, "cart_items")
     drop_table(cur, "transactions")
-    
+
     try:
         logging.info("creating transactions table")
         cur.execute("""
@@ -96,6 +94,7 @@ def create_postgres_tables():
     logging.info("database created")
     cur.close()
     conn.close()
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
