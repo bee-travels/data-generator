@@ -6,7 +6,8 @@ import logging
 
 def get_connection():
     try:
-        conn = psycopg2.connect(user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port="5432")
+        conn = psycopg2.connect(
+            user=os.environ["PG_USER"], host=os.environ["PG_HOST"], password=os.environ["PG_PASSWORD"], port="5432")
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         cur = conn.cursor()
         cur.execute("CREATE DATABASE beetravels;")
@@ -27,6 +28,7 @@ def get_connection():
         logging.info(e)
         exit(e)
 
+
 def drop_table(cursor, table_name):
     try:
         cursor.execute("""
@@ -41,10 +43,10 @@ def drop_table(cursor, table_name):
 def create_postgres_tables():
     conn = get_connection()
     cur = conn.cursor()
-    
+
     drop_table(cur, "cart_items")
     drop_table(cur, "transactions")
-    
+
     try:
         logging.info("creating transactions table")
         cur.execute("""
@@ -88,6 +90,7 @@ def create_postgres_tables():
     logging.info("database created")
     cur.close()
     conn.close()
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
