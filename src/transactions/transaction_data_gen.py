@@ -10,8 +10,8 @@ import os
 
 users = utils.load_json("user.json")
 destinations = utils.load_json("destination.json")
-hotel = "http://localhost:9101/api/v1/hotels"
-cars = "http://localhost:9102/api/v1/cars"
+hotel = "http://169.63.175.87:32461/api/v1/hotels"
+cars = "http://169.63.175.87:30505/api/v1/cars"
 # flight = "http://localhost:9103/api/v2/flights"
 
 
@@ -174,90 +174,101 @@ def delete_dict_key(dictionary, key):
 
 def generate_user_hotel(hotel_full_url, priority, party_size):
     # print("\thotel_full_url: ", hotel_full_url)
-    data = requests.get(hotel_full_url).json()
-    if type(data) == list:
-        if len(data) != 0:  # if the results do not come back empty
-            if priority == "budget":
-                sorted_data = sorted(
-                    data, key=lambda x: round(float(x["cost"]), 2))
-                return sorted_data[0]
-            elif priority == "comfort":
-                num = int(len(data)//2)-1
-                sorted_data = sorted(
-                    data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                return sorted_data[num]
+    try:
+        data = requests.get(hotel_full_url).json()
+        if type(data) == list:
+            if len(data) != 0:  # if the results do not come back empty
+                if priority == "budget":
+                    sorted_data = sorted(
+                        data, key=lambda x: round(float(x["cost"]), 2))
+                    return sorted_data[0]
+                elif priority == "comfort":
+                    num = int(len(data)//2)-1
+                    sorted_data = sorted(
+                        data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                    return sorted_data[num]
 
+                else:
+                    sorted_data = sorted(
+                        data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                    return sorted_data[0]
             else:
-                sorted_data = sorted(
-                    data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                return sorted_data[0]
+                parse_url = urlparse(hotel_full_url)
+                #print("parse_url: ", parse_url)
+                query_tuple = parse_qsl(parse_url.query)
+
+                #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
+                query_dict = convert_tuplelist_to_dict(query_tuple)
+                if "superchain" in query_dict:
+                    #print("removing superchain...")
+                    delete_dict_key(query_dict, "superchain")
+                elif "type" in query_dict:
+                    #print("removing type...")
+                    delete_dict_key(query_dict, "type")
+                else:
+                    return "\tNo Results -- hotel json generation\n"
+                new_hotel_url = parse_url.scheme + "://" + \
+                    parse_url.netloc + parse_url.path + query_gen(query_dict)
+                return generate_user_hotel(new_hotel_url, priority, party_size)
         else:
-            parse_url = urlparse(hotel_full_url)
-            #print("parse_url: ", parse_url)
-            query_tuple = parse_qsl(parse_url.query)
-
-            #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
-            query_dict = convert_tuplelist_to_dict(query_tuple)
-            if "superchain" in query_dict:
-                #print("removing superchain...")
-                delete_dict_key(query_dict, "superchain")
-            elif "type" in query_dict:
-                #print("removing type...")
-                delete_dict_key(query_dict, "type")
-            else:
-                return "\tNo Results -- hotel json generation\n"
-            new_hotel_url = parse_url.scheme + "://" + \
-                parse_url.netloc + parse_url.path + query_gen(query_dict)
-            return generate_user_hotel(new_hotel_url, priority, party_size)
-    else:
-        return "\tNo Results -- hotel json generation\n"
+            return "\tNo Results -- hotel json generation\n"
+    except:
+        time.sleep(10)
+        print("EXCEPTION HOTEL")
+        return "\tNo Results -- car json generation"
         # http: // localhost: 9101/api/v1/hotels/indonesia/jakarta?superchain = Urban % 20Lifestyle & type = luxury & dateFrom = 2020-08-03 & dateTo = 2020-08-08
 
 
 def generate_user_car(car_full_url, priority, party_size):
-    data = requests.get(car_full_url).json()
-    if type(data) == list:
-        if len(data) != 0:  # if the results do not come back empty
-            # http://localhost:9102/api/v1/cars/mexico/mexico-city?rental_company=Carlux&style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
-            if priority == "budget":
-                sorted_data = sorted(
-                    data, key=lambda x: round(float(x["cost"]), 2))
-                return sorted_data[0]
-            elif priority == "comfort":
-                num = int(len(data)//2)-1
-                sorted_data = sorted(
-                    data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                return sorted_data[num]
+    try:
+        data = requests.get(car_full_url).json()
+        if type(data) == list:
+            if len(data) != 0:  # if the results do not come back empty
+                # http://localhost:9102/api/v1/cars/mexico/mexico-city?rental_company=Carlux&style=luxury&dateFrom=2020-07-25&dateTo=2020-07-26
+                if priority == "budget":
+                    sorted_data = sorted(
+                        data, key=lambda x: round(float(x["cost"]), 2))
+                    return sorted_data[0]
+                elif priority == "comfort":
+                    num = int(len(data)//2)-1
+                    sorted_data = sorted(
+                        data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                    return sorted_data[num]
 
-            else:  # if results do not come back empty AND budget/time
-                sorted_data = sorted(
-                    data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
-                return sorted_data[0]
-        else:  # first get request returns empty response, remove loyalty program parameter
-            parse_url = urlparse(car_full_url)
-            #print("parse_url: ", parse_url)
-            query_tuple = parse_qsl(parse_url.query)
-            #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
-            query_dict = convert_tuplelist_to_dict(query_tuple)
-            if "rental_company" in query_dict:
-                #print("removing rental company...")
-                delete_dict_key(query_dict, "rental_company")
-            elif party_size > 4 and priority != "budget" and "style" in query_dict:
-                #print("removing style for large party...")
-                delete_dict_key(query_dict, "style")
-            elif "body_type" in query_dict:
-                #print("removing body_type...")
-                delete_dict_key(query_dict, "body_type")
-            elif (party_size <= 4 or priority == "budget") and ("style" in query_dict):
-                #print("removing style for small party or budget users...")
-                delete_dict_key(query_dict, "body_type")
-            else:
-                return "\tNo Results -- hotel json generation\n"
-            new_hotel_url = parse_url.scheme + "://" + \
-                parse_url.netloc + parse_url.path + query_gen(query_dict)
-            return generate_user_hotel(new_hotel_url, priority, party_size)
-    else:
-        return "\tNo Results -- car json generation\n"
+                else:  # if results do not come back empty AND budget/time
+                    sorted_data = sorted(
+                        data, key=lambda x: round(float(x["cost"]), 2), reverse=True)
+                    return sorted_data[0]
+            else:  # first get request returns empty response, remove loyalty program parameter
+                parse_url = urlparse(car_full_url)
+                #print("parse_url: ", parse_url)
+                query_tuple = parse_qsl(parse_url.query)
+                #print("\tquery_dict", convert_tuplelist_to_dict(query_tuple))
+                query_dict = convert_tuplelist_to_dict(query_tuple)
+                if "rental_company" in query_dict:
+                    #print("removing rental company...")
+                    delete_dict_key(query_dict, "rental_company")
+                elif party_size > 4 and priority != "budget" and "style" in query_dict:
+                    #print("removing style for large party...")
+                    delete_dict_key(query_dict, "style")
+                elif "body_type" in query_dict:
+                    #print("removing body_type...")
+                    delete_dict_key(query_dict, "body_type")
+                elif (party_size <= 4 or priority == "budget") and ("style" in query_dict):
+                    #print("removing style for small party or budget users...")
+                    delete_dict_key(query_dict, "body_type")
+                else:
+                    return "\tNo Results -- hotel json generation\n"
+                new_hotel_url = parse_url.scheme + "://" + \
+                    parse_url.netloc + parse_url.path + query_gen(query_dict)
+                return generate_user_hotel(new_hotel_url, priority, party_size)
+        else:
+            return "\tNo Results -- car json generation\n"
+    except:
+        time.sleep(10)
+        print("EXCEPTION CAR")
+        return "\tNo Results -- car json generation"
+
 
 # 1 luxury
 #    # if no results remove rental_company=... before the first &
