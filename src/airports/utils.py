@@ -17,6 +17,6 @@ def generate_list_from_file(filename):
             data.append(line.strip())
     return data
 
-def minify_json(file_name):
+def minify_json(file_name, new_file_name):
     data = load_json(file_name)
-    write_json_to_file(data, file_name, True)
+    write_json_to_file(data, new_file_name, True)

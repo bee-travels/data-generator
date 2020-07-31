@@ -117,3 +117,6 @@ config.json
 flight_data_complete.json
 
 *.pem
+
+transaction.json
+minify.json
