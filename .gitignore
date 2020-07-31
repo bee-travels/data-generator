@@ -118,5 +118,5 @@ flight_data_complete.json
 
 *.pem
 
-transaction.json
+transactions.json
 minify.json
