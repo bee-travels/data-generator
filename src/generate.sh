@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dockerTag=57d4b5fdb837d1b7f05f2a9d451b4310309b95c5
+dockerTag=9b343cf3994669f0f0b5687d09fcca1c51949900
 
 mongoInitCreds() {
 	read -p "  Database Connection URL: " mongoURL
