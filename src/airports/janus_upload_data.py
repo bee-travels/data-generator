@@ -46,13 +46,15 @@ def populate_janus(flights, airports):
 
     airport_vertices = {}
 
-    drop_graph(g)
+    #drop_graph(g)
 
     try:
         logging.info("creating airport vertices")
 
         for airport in airports:
             airport_vertex = g.addV("airport").property(
+                "object_type", "airport"
+            ).property(
                 "id", airport["id"]
             ).property(
                 "name", airport["name"]
@@ -82,6 +84,8 @@ def populate_janus(flights, airports):
 
         for flight in flights:
             flight_vertex = g.addV("flight").property(
+                "object_type", "flight"
+            ).property(
                 "id", flight["id"]
             ).property(
                 "source_airport_id", flight["source_airport_id"]
